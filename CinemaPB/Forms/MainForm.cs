@@ -23,5 +23,10 @@ namespace CinemaPB.Forms
         {
             FormHelper.LoadUserControl(mainSPanel, new MoviesForm());
         }
+
+        private void employeelistACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new EmployeeListForm());
+        }
     }
 }

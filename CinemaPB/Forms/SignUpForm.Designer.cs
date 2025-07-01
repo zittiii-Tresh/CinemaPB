@@ -40,13 +40,12 @@
             this.textEditPassword = new DevExpress.XtraEditors.ButtonEdit();
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.closeBTN = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.buttonEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.buttonEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.buttonEdit5 = new DevExpress.XtraEditors.TextEdit();
@@ -54,12 +53,12 @@
             this.middlenameTE = new DevExpress.XtraEditors.TextEdit();
             this.lastnameTE = new DevExpress.XtraEditors.TextEdit();
             this.buttonEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.sidePanel1.SuspendLayout();
             this.sidePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEditPassword.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             this.sidePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit5.Properties)).BeginInit();
@@ -67,6 +66,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.middlenameTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastnameTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.SuspendLayout();
             // 
             // sidePanel1
@@ -93,7 +93,7 @@
             this.sidePanel2.Controls.Add(this.textEditPassword);
             this.sidePanel2.Controls.Add(this.radioGroup1);
             this.sidePanel2.Controls.Add(this.labelControl3);
-            this.sidePanel2.Controls.Add(this.simpleButton2);
+            this.sidePanel2.Controls.Add(this.closeBTN);
             this.sidePanel2.Controls.Add(this.simpleButton1);
             this.sidePanel2.Controls.Add(this.labelControl2);
             this.sidePanel2.Controls.Add(this.labelControl1);
@@ -168,23 +168,24 @@
             this.labelControl3.TabIndex = 21;
             this.labelControl3.Text = "Position";
             // 
-            // simpleButton2
+            // closeBTN
             // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(25)))), ((int)(((byte)(11)))));
-            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(25)))), ((int)(((byte)(11)))));
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.Transparent;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseBorderColor = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.simpleButton2.Location = new System.Drawing.Point(6, 596);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(1);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Padding = new System.Windows.Forms.Padding(2);
-            this.simpleButton2.Size = new System.Drawing.Size(35, 33);
-            this.simpleButton2.TabIndex = 10;
+            this.closeBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(25)))), ((int)(((byte)(11)))));
+            this.closeBTN.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(25)))), ((int)(((byte)(11)))));
+            this.closeBTN.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.closeBTN.Appearance.Options.UseBackColor = true;
+            this.closeBTN.Appearance.Options.UseBorderColor = true;
+            this.closeBTN.Appearance.Options.UseForeColor = true;
+            this.closeBTN.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.closeBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.closeBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
+            this.closeBTN.Location = new System.Drawing.Point(6, 596);
+            this.closeBTN.Margin = new System.Windows.Forms.Padding(1);
+            this.closeBTN.Name = "closeBTN";
+            this.closeBTN.Padding = new System.Windows.Forms.Padding(2);
+            this.closeBTN.Size = new System.Drawing.Size(35, 33);
+            this.closeBTN.TabIndex = 10;
+            this.closeBTN.Click += new System.EventHandler(this.closeBTN_Click);
             // 
             // simpleButton1
             // 
@@ -249,12 +250,6 @@
             this.sidePanel4.Size = new System.Drawing.Size(292, 88);
             this.sidePanel4.TabIndex = 1;
             this.sidePanel4.Text = "sidePanel4";
-            // 
-            // imageCollection1
-            // 
-            this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
-            this.imageCollection1.Images.SetKeyName(0, "eyeclose.png");
-            this.imageCollection1.Images.SetKeyName(1, "eyeopen.png");
             // 
             // buttonEdit3
             // 
@@ -368,6 +363,12 @@
             this.buttonEdit6.Size = new System.Drawing.Size(158, 27);
             this.buttonEdit6.TabIndex = 17;
             // 
+            // imageCollection1
+            // 
+            this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
+            this.imageCollection1.Images.SetKeyName(0, "eyeclose.png");
+            this.imageCollection1.Images.SetKeyName(1, "eyeopen.png");
+            // 
             // SignUpForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(24)))), ((int)(((byte)(35)))));
@@ -388,7 +389,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             this.sidePanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit5.Properties)).EndInit();
@@ -396,6 +396,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.middlenameTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastnameTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -409,7 +410,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton closeBTN;
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.ButtonEdit textEditPassword;
