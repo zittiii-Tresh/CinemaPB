@@ -7,20 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
+using CinemaPB.Forms;
 
 namespace CinemaPB.Forms
 {
-    public partial class SignUpForm : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class EmployeeListForm : DevExpress.XtraEditors.XtraUserControl
     {
-        public SignUpForm()
+        public EmployeeListForm()
         {
             InitializeComponent();
         }
 
-        private void closeBTN_Click(object sender, EventArgs e)
+        private void addemployeeBTN_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            FormHelper.DisplayForm(new SignUpForm());
         }
     }
 }

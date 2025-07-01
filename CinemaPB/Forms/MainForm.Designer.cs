@@ -36,7 +36,7 @@
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.moviesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.employeelistACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -68,7 +68,7 @@
             this.accordionControlSeparator1,
             this.accordionControlElement3,
             this.moviesACE,
-            this.accordionControlElement5,
+            this.employeelistACE,
             this.accordionControlElement6,
             this.accordionControlElement9});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
@@ -143,21 +143,22 @@
             this.moviesACE.Text = "Movies";
             this.moviesACE.Click += new System.EventHandler(this.moviesACE_Click);
             // 
-            // accordionControlElement5
+            // employeelistACE
             // 
-            this.accordionControlElement5.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement5.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.accordionControlElement5.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement5.Appearance.Default.Options.UseForeColor = true;
-            this.accordionControlElement5.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.accordionControlElement5.Appearance.Hovered.Options.UseBackColor = true;
-            this.accordionControlElement5.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.accordionControlElement5.Appearance.Pressed.Options.UseBackColor = true;
-            this.accordionControlElement5.HeaderIndent = 34;
-            this.accordionControlElement5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement5.ImageOptions.SvgImage")));
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "Employee List";
+            this.employeelistACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeelistACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.employeelistACE.Appearance.Default.Options.UseFont = true;
+            this.employeelistACE.Appearance.Default.Options.UseForeColor = true;
+            this.employeelistACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.employeelistACE.Appearance.Hovered.Options.UseBackColor = true;
+            this.employeelistACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.employeelistACE.Appearance.Pressed.Options.UseBackColor = true;
+            this.employeelistACE.HeaderIndent = 34;
+            this.employeelistACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement5.ImageOptions.SvgImage")));
+            this.employeelistACE.Name = "employeelistACE";
+            this.employeelistACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.employeelistACE.Text = "Employee List";
+            this.employeelistACE.Click += new System.EventHandler(this.employeelistACE_Click);
             // 
             // accordionControlElement6
             // 
@@ -396,7 +397,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement moviesACE;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement employeelistACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;

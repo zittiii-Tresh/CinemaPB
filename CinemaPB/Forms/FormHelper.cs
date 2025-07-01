@@ -9,7 +9,10 @@ namespace CinemaPB
         public static void SwitchForm(Form currentForm, Form targetForm)
         {
             targetForm.Show();
-            currentForm.Hide();
+        }
+        public static void DisplayForm(Form targetForm)
+        {
+            targetForm.Show();
         }
         public static void LoadUserControl(SidePanel targetPanel, UserControl controlToLoad)
         {
