@@ -16,6 +16,7 @@ namespace CinemaPB
         public Login()
         {
             InitializeComponent();
+            ApplyTextEditBehaviors();
         }
 
         private void SignUphlbl_Click(object sender, EventArgs e)
@@ -26,6 +27,11 @@ namespace CinemaPB
         private void loginBTN_Click(object sender, EventArgs e)
         {
             FormHelper.SwitchForm(this, new MainForm());
+        }
+        private void ApplyTextEditBehaviors()
+        {
+            TextHideShowHelper.AttachBehavior(usernameTE, "Username");
+            TextHideShowHelper.AttachBehavior(passwordTE, "Password", true);
         }
     }
 }
