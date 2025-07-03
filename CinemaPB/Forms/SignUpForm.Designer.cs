@@ -37,6 +37,10 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
+            this.resultLBL = new DevExpress.XtraEditors.LabelControl();
+            this.resultcaptionLBL = new DevExpress.XtraEditors.LabelControl();
+            this.genderRG = new DevExpress.XtraEditors.RadioGroup();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.passwordBE = new DevExpress.XtraEditors.ButtonEdit();
             this.positionRG = new DevExpress.XtraEditors.RadioGroup();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -54,12 +58,9 @@
             this.lastnameTE = new DevExpress.XtraEditors.TextEdit();
             this.usernameTE = new DevExpress.XtraEditors.TextEdit();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.genderRG = new DevExpress.XtraEditors.RadioGroup();
-            this.resultcaptionLBL = new DevExpress.XtraEditors.LabelControl();
-            this.resultLBL = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel1.SuspendLayout();
             this.sidePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.genderRG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.passwordBE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.positionRG.Properties)).BeginInit();
             this.sidePanel3.SuspendLayout();
@@ -71,7 +72,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lastnameTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genderRG.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // sidePanel1
@@ -122,6 +122,56 @@
             this.sidePanel2.Size = new System.Drawing.Size(552, 638);
             this.sidePanel2.TabIndex = 2;
             this.sidePanel2.Text = "sidePanel2";
+            // 
+            // resultLBL
+            // 
+            this.resultLBL.Location = new System.Drawing.Point(194, 357);
+            this.resultLBL.Name = "resultLBL";
+            this.resultLBL.Size = new System.Drawing.Size(0, 16);
+            this.resultLBL.TabIndex = 27;
+            // 
+            // resultcaptionLBL
+            // 
+            this.resultcaptionLBL.Location = new System.Drawing.Point(194, 334);
+            this.resultcaptionLBL.Name = "resultcaptionLBL";
+            this.resultcaptionLBL.Size = new System.Drawing.Size(0, 16);
+            this.resultcaptionLBL.TabIndex = 26;
+            // 
+            // genderRG
+            // 
+            this.genderRG.Location = new System.Drawing.Point(21, 439);
+            this.genderRG.Margin = new System.Windows.Forms.Padding(4);
+            this.genderRG.Name = "genderRG";
+            this.genderRG.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.genderRG.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.genderRG.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderRG.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.genderRG.Properties.Appearance.Options.UseBackColor = true;
+            this.genderRG.Properties.Appearance.Options.UseBorderColor = true;
+            this.genderRG.Properties.Appearance.Options.UseFont = true;
+            this.genderRG.Properties.Appearance.Options.UseForeColor = true;
+            this.genderRG.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
+            this.genderRG.Properties.AppearanceDisabled.Options.UseBorderColor = true;
+            this.genderRG.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.genderRG.Properties.Columns = 2;
+            this.genderRG.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("Male", "Male", true, "Male", "Male"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("Female", "Female", true, "Female", "Female")});
+            this.genderRG.Size = new System.Drawing.Size(166, 37);
+            this.genderRG.TabIndex = 25;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Location = new System.Drawing.Point(23, 413);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(56, 23);
+            this.labelControl4.TabIndex = 24;
+            this.labelControl4.Text = "Gender";
             // 
             // passwordBE
             // 
@@ -381,56 +431,6 @@
             this.imageCollection1.Images.SetKeyName(0, "eyeclose.png");
             this.imageCollection1.Images.SetKeyName(1, "eyeopen.png");
             // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(23, 413);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(56, 23);
-            this.labelControl4.TabIndex = 24;
-            this.labelControl4.Text = "Gender";
-            // 
-            // genderRG
-            // 
-            this.genderRG.Location = new System.Drawing.Point(21, 439);
-            this.genderRG.Margin = new System.Windows.Forms.Padding(4);
-            this.genderRG.Name = "genderRG";
-            this.genderRG.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.genderRG.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.genderRG.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderRG.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.genderRG.Properties.Appearance.Options.UseBackColor = true;
-            this.genderRG.Properties.Appearance.Options.UseBorderColor = true;
-            this.genderRG.Properties.Appearance.Options.UseFont = true;
-            this.genderRG.Properties.Appearance.Options.UseForeColor = true;
-            this.genderRG.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
-            this.genderRG.Properties.AppearanceDisabled.Options.UseBorderColor = true;
-            this.genderRG.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.genderRG.Properties.Columns = 2;
-            this.genderRG.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("Male", "Male", true, "Male", "Male"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("Female", "Female", true, "Female", "Female")});
-            this.genderRG.Size = new System.Drawing.Size(166, 37);
-            this.genderRG.TabIndex = 25;
-            // 
-            // resultcaptionLBL
-            // 
-            this.resultcaptionLBL.Location = new System.Drawing.Point(194, 334);
-            this.resultcaptionLBL.Name = "resultcaptionLBL";
-            this.resultcaptionLBL.Size = new System.Drawing.Size(0, 16);
-            this.resultcaptionLBL.TabIndex = 26;
-            // 
-            // resultLBL
-            // 
-            this.resultLBL.Location = new System.Drawing.Point(194, 357);
-            this.resultLBL.Name = "resultLBL";
-            this.resultLBL.Size = new System.Drawing.Size(0, 16);
-            this.resultLBL.TabIndex = 27;
-            // 
             // SignUpForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(24)))), ((int)(((byte)(35)))));
@@ -448,6 +448,7 @@
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel2.ResumeLayout(false);
             this.sidePanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.genderRG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.passwordBE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.positionRG.Properties)).EndInit();
             this.sidePanel3.ResumeLayout(false);
@@ -459,7 +460,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lastnameTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genderRG.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
