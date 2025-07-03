@@ -37,35 +37,40 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
-            this.textEditPassword = new DevExpress.XtraEditors.ButtonEdit();
-            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
+            this.resultLBL = new DevExpress.XtraEditors.LabelControl();
+            this.resultcaptionLBL = new DevExpress.XtraEditors.LabelControl();
+            this.genderRG = new DevExpress.XtraEditors.RadioGroup();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.passwordBE = new DevExpress.XtraEditors.ButtonEdit();
+            this.positionRG = new DevExpress.XtraEditors.RadioGroup();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.closeBTN = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.signupBTN = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
-            this.buttonEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.buttonEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.buttonEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.extensionTE = new DevExpress.XtraEditors.TextEdit();
+            this.contactnoTE = new DevExpress.XtraEditors.TextEdit();
+            this.addressTE = new DevExpress.XtraEditors.TextEdit();
             this.firstnameTE = new DevExpress.XtraEditors.TextEdit();
             this.middlenameTE = new DevExpress.XtraEditors.TextEdit();
             this.lastnameTE = new DevExpress.XtraEditors.TextEdit();
-            this.buttonEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.usernameTE = new DevExpress.XtraEditors.TextEdit();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.sidePanel1.SuspendLayout();
             this.sidePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditPassword.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.genderRG.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordBE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.positionRG.Properties)).BeginInit();
             this.sidePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extensionTE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactnoTE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addressTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstnameTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.middlenameTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastnameTE.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usernameTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,21 +95,25 @@
             this.sidePanel2.Appearance.Options.UseBackColor = true;
             this.sidePanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel2.BackgroundImage")));
             this.sidePanel2.BorderThickness = 0;
-            this.sidePanel2.Controls.Add(this.textEditPassword);
-            this.sidePanel2.Controls.Add(this.radioGroup1);
+            this.sidePanel2.Controls.Add(this.resultLBL);
+            this.sidePanel2.Controls.Add(this.resultcaptionLBL);
+            this.sidePanel2.Controls.Add(this.genderRG);
+            this.sidePanel2.Controls.Add(this.labelControl4);
+            this.sidePanel2.Controls.Add(this.passwordBE);
+            this.sidePanel2.Controls.Add(this.positionRG);
             this.sidePanel2.Controls.Add(this.labelControl3);
             this.sidePanel2.Controls.Add(this.closeBTN);
-            this.sidePanel2.Controls.Add(this.simpleButton1);
+            this.sidePanel2.Controls.Add(this.signupBTN);
             this.sidePanel2.Controls.Add(this.labelControl2);
             this.sidePanel2.Controls.Add(this.labelControl1);
             this.sidePanel2.Controls.Add(this.sidePanel3);
-            this.sidePanel2.Controls.Add(this.buttonEdit3);
-            this.sidePanel2.Controls.Add(this.buttonEdit4);
-            this.sidePanel2.Controls.Add(this.buttonEdit5);
+            this.sidePanel2.Controls.Add(this.extensionTE);
+            this.sidePanel2.Controls.Add(this.contactnoTE);
+            this.sidePanel2.Controls.Add(this.addressTE);
             this.sidePanel2.Controls.Add(this.firstnameTE);
             this.sidePanel2.Controls.Add(this.middlenameTE);
             this.sidePanel2.Controls.Add(this.lastnameTE);
-            this.sidePanel2.Controls.Add(this.buttonEdit6);
+            this.sidePanel2.Controls.Add(this.usernameTE);
             this.sidePanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidePanel2.Location = new System.Drawing.Point(0, 0);
@@ -114,46 +123,98 @@
             this.sidePanel2.TabIndex = 2;
             this.sidePanel2.Text = "sidePanel2";
             // 
-            // textEditPassword
+            // resultLBL
             // 
-            this.textEditPassword.EditValue = "Password";
-            this.textEditPassword.Location = new System.Drawing.Point(194, 325);
-            this.textEditPassword.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.textEditPassword.Name = "textEditPassword";
-            this.textEditPassword.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEditPassword.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEditPassword.Properties.Appearance.Options.UseFont = true;
-            this.textEditPassword.Properties.Appearance.Options.UseForeColor = true;
-            this.textEditPassword.Properties.AutoHeight = false;
+            this.resultLBL.Location = new System.Drawing.Point(194, 357);
+            this.resultLBL.Name = "resultLBL";
+            this.resultLBL.Size = new System.Drawing.Size(0, 16);
+            this.resultLBL.TabIndex = 27;
+            // 
+            // resultcaptionLBL
+            // 
+            this.resultcaptionLBL.Location = new System.Drawing.Point(194, 334);
+            this.resultcaptionLBL.Name = "resultcaptionLBL";
+            this.resultcaptionLBL.Size = new System.Drawing.Size(0, 16);
+            this.resultcaptionLBL.TabIndex = 26;
+            // 
+            // genderRG
+            // 
+            this.genderRG.Location = new System.Drawing.Point(21, 439);
+            this.genderRG.Margin = new System.Windows.Forms.Padding(4);
+            this.genderRG.Name = "genderRG";
+            this.genderRG.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.genderRG.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.genderRG.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderRG.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.genderRG.Properties.Appearance.Options.UseBackColor = true;
+            this.genderRG.Properties.Appearance.Options.UseBorderColor = true;
+            this.genderRG.Properties.Appearance.Options.UseFont = true;
+            this.genderRG.Properties.Appearance.Options.UseForeColor = true;
+            this.genderRG.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
+            this.genderRG.Properties.AppearanceDisabled.Options.UseBorderColor = true;
+            this.genderRG.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.genderRG.Properties.Columns = 2;
+            this.genderRG.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("Male", "Male", true, "Male", "Male"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("Female", "Female", true, "Female", "Female")});
+            this.genderRG.Size = new System.Drawing.Size(166, 37);
+            this.genderRG.TabIndex = 25;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Location = new System.Drawing.Point(23, 413);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(56, 23);
+            this.labelControl4.TabIndex = 24;
+            this.labelControl4.Text = "Gender";
+            // 
+            // passwordBE
+            // 
+            this.passwordBE.EditValue = "Password";
+            this.passwordBE.Location = new System.Drawing.Point(194, 302);
+            this.passwordBE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.passwordBE.Name = "passwordBE";
+            this.passwordBE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordBE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.passwordBE.Properties.Appearance.Options.UseFont = true;
+            this.passwordBE.Properties.Appearance.Options.UseForeColor = true;
+            this.passwordBE.Properties.AutoHeight = false;
             editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
-            this.textEditPassword.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.passwordBE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.textEditPassword.Size = new System.Drawing.Size(158, 27);
-            this.textEditPassword.TabIndex = 23;
-            this.textEditPassword.Tag = "close";
+            this.passwordBE.Size = new System.Drawing.Size(158, 27);
+            this.passwordBE.TabIndex = 23;
+            this.passwordBE.Tag = "close";
+            this.passwordBE.ButtonPressed += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.passwordTE_ButtonPressed_1);
+            this.passwordBE.EditValueChanged += new System.EventHandler(this.passwordTE_EditValueChanged);
             // 
-            // radioGroup1
+            // positionRG
             // 
-            this.radioGroup1.Location = new System.Drawing.Point(23, 399);
-            this.radioGroup1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioGroup1.Name = "radioGroup1";
-            this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.radioGroup1.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.radioGroup1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioGroup1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
-            this.radioGroup1.Properties.Appearance.Options.UseBorderColor = true;
-            this.radioGroup1.Properties.Appearance.Options.UseFont = true;
-            this.radioGroup1.Properties.Appearance.Options.UseForeColor = true;
-            this.radioGroup1.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
-            this.radioGroup1.Properties.AppearanceDisabled.Options.UseBorderColor = true;
-            this.radioGroup1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.radioGroup1.Properties.Columns = 2;
-            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Admin", true, null, "Admin"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Staff", true, null, "Staff")});
-            this.radioGroup1.Size = new System.Drawing.Size(166, 37);
-            this.radioGroup1.TabIndex = 19;
+            this.positionRG.Location = new System.Drawing.Point(20, 368);
+            this.positionRG.Margin = new System.Windows.Forms.Padding(4);
+            this.positionRG.Name = "positionRG";
+            this.positionRG.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.positionRG.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.positionRG.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.positionRG.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.positionRG.Properties.Appearance.Options.UseBackColor = true;
+            this.positionRG.Properties.Appearance.Options.UseBorderColor = true;
+            this.positionRG.Properties.Appearance.Options.UseFont = true;
+            this.positionRG.Properties.Appearance.Options.UseForeColor = true;
+            this.positionRG.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
+            this.positionRG.Properties.AppearanceDisabled.Options.UseBorderColor = true;
+            this.positionRG.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.positionRG.Properties.Columns = 2;
+            this.positionRG.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((short)(1)), "Admin", true, "Admin", "Admin"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((short)(2)), "Staff", true, "Staff", "Staff")});
+            this.positionRG.Size = new System.Drawing.Size(166, 37);
+            this.positionRG.TabIndex = 19;
             // 
             // labelControl3
             // 
@@ -161,7 +222,7 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(23, 370);
+            this.labelControl3.Location = new System.Drawing.Point(20, 346);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(61, 23);
@@ -177,7 +238,7 @@
             this.closeBTN.Appearance.Options.UseBorderColor = true;
             this.closeBTN.Appearance.Options.UseForeColor = true;
             this.closeBTN.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.closeBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.closeBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("closeBTN.ImageOptions.SvgImage")));
             this.closeBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.closeBTN.Location = new System.Drawing.Point(6, 596);
             this.closeBTN.Margin = new System.Windows.Forms.Padding(1);
@@ -187,18 +248,19 @@
             this.closeBTN.TabIndex = 10;
             this.closeBTN.Click += new System.EventHandler(this.closeBTN_Click);
             // 
-            // simpleButton1
+            // signupBTN
             // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(117)))), ((int)(((byte)(24)))));
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(77, 479);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(310, 38);
-            this.simpleButton1.TabIndex = 3;
-            this.simpleButton1.Text = "Sign Up";
+            this.signupBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(117)))), ((int)(((byte)(24)))));
+            this.signupBTN.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupBTN.Appearance.Options.UseBackColor = true;
+            this.signupBTN.Appearance.Options.UseFont = true;
+            this.signupBTN.Location = new System.Drawing.Point(79, 512);
+            this.signupBTN.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.signupBTN.Name = "signupBTN";
+            this.signupBTN.Size = new System.Drawing.Size(310, 38);
+            this.signupBTN.TabIndex = 3;
+            this.signupBTN.Text = "Sign Up";
+            this.signupBTN.Click += new System.EventHandler(this.signupBTN_Click);
             // 
             // labelControl2
             // 
@@ -206,7 +268,7 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(23, 198);
+            this.labelControl2.Location = new System.Drawing.Point(23, 175);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(127, 23);
@@ -219,7 +281,7 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(20, 157);
+            this.labelControl1.Location = new System.Drawing.Point(20, 134);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(230, 37);
@@ -251,58 +313,58 @@
             this.sidePanel4.TabIndex = 1;
             this.sidePanel4.Text = "sidePanel4";
             // 
-            // buttonEdit3
+            // extensionTE
             // 
-            this.buttonEdit3.EditValue = "Extension";
-            this.buttonEdit3.Location = new System.Drawing.Point(20, 284);
-            this.buttonEdit3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonEdit3.Name = "buttonEdit3";
-            this.buttonEdit3.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.buttonEdit3.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.buttonEdit3.Properties.Appearance.Options.UseBorderColor = true;
-            this.buttonEdit3.Properties.Appearance.Options.UseFont = true;
-            this.buttonEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.buttonEdit3.Properties.AutoHeight = false;
-            this.buttonEdit3.Size = new System.Drawing.Size(108, 27);
-            this.buttonEdit3.TabIndex = 14;
+            this.extensionTE.EditValue = "Extension";
+            this.extensionTE.Location = new System.Drawing.Point(20, 261);
+            this.extensionTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extensionTE.Name = "extensionTE";
+            this.extensionTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
+            this.extensionTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extensionTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.extensionTE.Properties.Appearance.Options.UseBorderColor = true;
+            this.extensionTE.Properties.Appearance.Options.UseFont = true;
+            this.extensionTE.Properties.Appearance.Options.UseForeColor = true;
+            this.extensionTE.Properties.AutoHeight = false;
+            this.extensionTE.Size = new System.Drawing.Size(108, 27);
+            this.extensionTE.TabIndex = 14;
             // 
-            // buttonEdit4
+            // contactnoTE
             // 
-            this.buttonEdit4.EditValue = "Contact no.";
-            this.buttonEdit4.Location = new System.Drawing.Point(142, 284);
-            this.buttonEdit4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonEdit4.Name = "buttonEdit4";
-            this.buttonEdit4.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.buttonEdit4.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEdit4.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.buttonEdit4.Properties.Appearance.Options.UseBorderColor = true;
-            this.buttonEdit4.Properties.Appearance.Options.UseFont = true;
-            this.buttonEdit4.Properties.Appearance.Options.UseForeColor = true;
-            this.buttonEdit4.Properties.AutoHeight = false;
-            this.buttonEdit4.Size = new System.Drawing.Size(108, 27);
-            this.buttonEdit4.TabIndex = 15;
+            this.contactnoTE.EditValue = "Contact no.";
+            this.contactnoTE.Location = new System.Drawing.Point(142, 261);
+            this.contactnoTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.contactnoTE.Name = "contactnoTE";
+            this.contactnoTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
+            this.contactnoTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactnoTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.contactnoTE.Properties.Appearance.Options.UseBorderColor = true;
+            this.contactnoTE.Properties.Appearance.Options.UseFont = true;
+            this.contactnoTE.Properties.Appearance.Options.UseForeColor = true;
+            this.contactnoTE.Properties.AutoHeight = false;
+            this.contactnoTE.Size = new System.Drawing.Size(108, 27);
+            this.contactnoTE.TabIndex = 15;
             // 
-            // buttonEdit5
+            // addressTE
             // 
-            this.buttonEdit5.EditValue = "Address";
-            this.buttonEdit5.Location = new System.Drawing.Point(264, 284);
-            this.buttonEdit5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonEdit5.Name = "buttonEdit5";
-            this.buttonEdit5.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.buttonEdit5.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEdit5.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.buttonEdit5.Properties.Appearance.Options.UseBorderColor = true;
-            this.buttonEdit5.Properties.Appearance.Options.UseFont = true;
-            this.buttonEdit5.Properties.Appearance.Options.UseForeColor = true;
-            this.buttonEdit5.Properties.AutoHeight = false;
-            this.buttonEdit5.Size = new System.Drawing.Size(170, 27);
-            this.buttonEdit5.TabIndex = 16;
+            this.addressTE.EditValue = "Address";
+            this.addressTE.Location = new System.Drawing.Point(264, 261);
+            this.addressTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.addressTE.Name = "addressTE";
+            this.addressTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
+            this.addressTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.addressTE.Properties.Appearance.Options.UseBorderColor = true;
+            this.addressTE.Properties.Appearance.Options.UseFont = true;
+            this.addressTE.Properties.Appearance.Options.UseForeColor = true;
+            this.addressTE.Properties.AutoHeight = false;
+            this.addressTE.Size = new System.Drawing.Size(170, 27);
+            this.addressTE.TabIndex = 16;
             // 
             // firstnameTE
             // 
             this.firstnameTE.EditValue = "Firstname";
-            this.firstnameTE.Location = new System.Drawing.Point(20, 241);
+            this.firstnameTE.Location = new System.Drawing.Point(20, 218);
             this.firstnameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.firstnameTE.Name = "firstnameTE";
             this.firstnameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
@@ -318,7 +380,7 @@
             // middlenameTE
             // 
             this.middlenameTE.EditValue = "Middlename";
-            this.middlenameTE.Location = new System.Drawing.Point(142, 241);
+            this.middlenameTE.Location = new System.Drawing.Point(142, 218);
             this.middlenameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.middlenameTE.Name = "middlenameTE";
             this.middlenameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
@@ -334,7 +396,7 @@
             // lastnameTE
             // 
             this.lastnameTE.EditValue = "Lastname";
-            this.lastnameTE.Location = new System.Drawing.Point(264, 241);
+            this.lastnameTE.Location = new System.Drawing.Point(264, 218);
             this.lastnameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.lastnameTE.Name = "lastnameTE";
             this.lastnameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
@@ -347,21 +409,21 @@
             this.lastnameTE.Size = new System.Drawing.Size(108, 27);
             this.lastnameTE.TabIndex = 13;
             // 
-            // buttonEdit6
+            // usernameTE
             // 
-            this.buttonEdit6.EditValue = "Username";
-            this.buttonEdit6.Location = new System.Drawing.Point(20, 325);
-            this.buttonEdit6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.buttonEdit6.Name = "buttonEdit6";
-            this.buttonEdit6.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.buttonEdit6.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEdit6.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.buttonEdit6.Properties.Appearance.Options.UseBorderColor = true;
-            this.buttonEdit6.Properties.Appearance.Options.UseFont = true;
-            this.buttonEdit6.Properties.Appearance.Options.UseForeColor = true;
-            this.buttonEdit6.Properties.AutoHeight = false;
-            this.buttonEdit6.Size = new System.Drawing.Size(158, 27);
-            this.buttonEdit6.TabIndex = 17;
+            this.usernameTE.EditValue = "Username";
+            this.usernameTE.Location = new System.Drawing.Point(20, 302);
+            this.usernameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.usernameTE.Name = "usernameTE";
+            this.usernameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
+            this.usernameTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.usernameTE.Properties.Appearance.Options.UseBorderColor = true;
+            this.usernameTE.Properties.Appearance.Options.UseFont = true;
+            this.usernameTE.Properties.Appearance.Options.UseForeColor = true;
+            this.usernameTE.Properties.AutoHeight = false;
+            this.usernameTE.Size = new System.Drawing.Size(158, 27);
+            this.usernameTE.TabIndex = 17;
             // 
             // imageCollection1
             // 
@@ -386,16 +448,17 @@
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel2.ResumeLayout(false);
             this.sidePanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditPassword.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.genderRG.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordBE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.positionRG.Properties)).EndInit();
             this.sidePanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extensionTE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactnoTE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addressTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstnameTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.middlenameTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastnameTE.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usernameTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             this.ResumeLayout(false);
 
@@ -409,18 +472,22 @@
         private DevExpress.XtraEditors.SidePanel sidePanel4;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton signupBTN;
         private DevExpress.XtraEditors.SimpleButton closeBTN;
-        private DevExpress.XtraEditors.RadioGroup radioGroup1;
+        private DevExpress.XtraEditors.RadioGroup positionRG;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.ButtonEdit textEditPassword;
+        private DevExpress.XtraEditors.ButtonEdit passwordBE;
         private DevExpress.Utils.ImageCollection imageCollection1;
-        private DevExpress.XtraEditors.TextEdit buttonEdit3;
-        private DevExpress.XtraEditors.TextEdit buttonEdit4;
-        private DevExpress.XtraEditors.TextEdit buttonEdit5;
+        private DevExpress.XtraEditors.TextEdit extensionTE;
+        private DevExpress.XtraEditors.TextEdit contactnoTE;
+        private DevExpress.XtraEditors.TextEdit addressTE;
         private DevExpress.XtraEditors.TextEdit firstnameTE;
         private DevExpress.XtraEditors.TextEdit middlenameTE;
         private DevExpress.XtraEditors.TextEdit lastnameTE;
-        private DevExpress.XtraEditors.TextEdit buttonEdit6;
+        private DevExpress.XtraEditors.TextEdit usernameTE;
+        private DevExpress.XtraEditors.RadioGroup genderRG;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl resultcaptionLBL;
+        private DevExpress.XtraEditors.LabelControl resultLBL;
     }
 }
