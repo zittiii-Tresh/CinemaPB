@@ -9,14 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using CinemaPB.Forms;
+using CinemaPB.Infrastructure.Repositories;
+using CinemaPB.Configuration;
 
 namespace CinemaPB.Forms
 {
     public partial class MainForm : DevExpress.XtraEditors.XtraForm
     {
+        private readonly MovieRepository _movieRepository;
         public MainForm()
         {
             InitializeComponent();
+            _movieRepository = new MovieRepository(GlobalSetting.GetConnectionString());
         }
 
         private void moviesACE_Click(object sender, EventArgs e)
