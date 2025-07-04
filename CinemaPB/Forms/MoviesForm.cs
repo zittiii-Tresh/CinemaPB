@@ -136,12 +136,13 @@ namespace CinemaPB.Forms
 
         private void addgenreBTN_Click(object sender, EventArgs e)
         {
-            FormHelper.DisplayForm(new InsertGenreForm());
+            FormHelper.DisplayForm(new InsertGenreForm(_movieRepository, LoadLookUpEdit), LoadLookUpEdit);
         }
 
         private void addlanguageBTN_Click(object sender, EventArgs e)
         {
-            FormHelper.DisplayForm(new InsertLanguageForm());
+            FormHelper.DisplayForm(new InsertLanguageForm(_movieRepository, LoadLookUpEdit), LoadLookUpEdit);
+
         }
     }
 }

@@ -86,5 +86,29 @@ namespace CinemaPB.Infrastructure.Repositories
                 return ms.ToArray();
             }
         }
+
+        public void InsertGenre(Genre genre)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            { 
+                var parameters = new
+                {
+                    genre.GenreName
+                };
+                connection.Execute(SQL.MovieSQL.InsertGenre, parameters);
+            }
+        }
+
+        public void InsertLanguage(Language language)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var parameters = new
+                {
+                    language.LanguageName
+                };
+                connection.Execute(SQL.MovieSQL.InsertLanguage, parameters);
+            }
+        }
     }
 }

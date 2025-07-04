@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using CinemaPB.Forms;
 using DevExpress.XtraEditors;
 
@@ -10,9 +11,14 @@ namespace CinemaPB
         {
             targetForm.Show();
         }
+        public static void DisplayForm(Form targetForm, Action onCloseCallback)
+        {
+            targetForm.FormClosed += (s, e) => onCloseCallback?.Invoke();
+            targetForm.Show();
+        }
         public static void DisplayForm(Form targetForm)
         {
-            targetForm.Show();
+            targetForm.Show(); // Non-blocking, no callback
         }
         public static void LoadUserControl(SidePanel targetPanel, UserControl controlToLoad)
         {
