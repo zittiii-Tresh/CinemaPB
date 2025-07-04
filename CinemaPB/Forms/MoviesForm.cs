@@ -65,16 +65,16 @@ namespace CinemaPB.Forms
         private void saveBTN_Click(object sender, EventArgs e)
         {
             // ✅ Validate required fields (description is NOT required)
-            if (string.IsNullOrWhiteSpace(movienameTE.Text) ||
-                moviegenreLUE.EditValue == null ||
-                string.IsNullOrWhiteSpace(moviedurationTE.Text) ||
-                movielanguageLUE.EditValue == null ||
-                movieratingLUE.EditValue == null ||
-                posterPE.Image == null)
-            {
-                XtraMessageBox.Show("Please fill in all required fields (except description) and select a poster image.", "Validation Error");
-                return;
-            }
+            //if (string.IsNullOrWhiteSpace(movienameTE.Text) ||
+            //    moviegenreLUE.EditValue == null ||
+            //    string.IsNullOrWhiteSpace(moviedurationTE.Text) ||
+            //    movielanguageLUE.EditValue == null ||
+            //    movieratingLUE.EditValue == null ||
+            //    posterPE.Image == null)
+            //{
+            //    XtraMessageBox.Show("Please fill in all required fields (except description) and select a poster image.", "Validation Error");
+            //    return;
+            //}
 
             // ✅ Parse duration safely
             TimeSpan dur = durationTE.Time.TimeOfDay;
@@ -132,6 +132,16 @@ namespace CinemaPB.Forms
                     }
                 }
             }
+        }
+
+        private void addgenreBTN_Click(object sender, EventArgs e)
+        {
+            FormHelper.DisplayForm(new InsertGenreForm());
+        }
+
+        private void addlanguageBTN_Click(object sender, EventArgs e)
+        {
+            FormHelper.DisplayForm(new InsertLanguageForm());
         }
     }
 }
