@@ -8,6 +8,7 @@ namespace CinemaPB.Employees
 {
     public class Employee
     {
+        public string EmployeeName { get; set; }
         public string FirstName { get; set; }
 
         public string MiddleName { get; set; }

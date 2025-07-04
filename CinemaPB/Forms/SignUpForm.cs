@@ -105,7 +105,7 @@ namespace CinemaPB.Forms
             using (var connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
             {
                 connection.Open();
-                string query = "SELECT COUNT(*) FROM Employees WHERE Username = @Username";
+                string query = "SELECT COUNT(*) FROM emp.Employees WHERE Username = @Username";
                 int count = connection.ExecuteScalar<int>(query, new { Username = username });
                 return count > 0;
             }
@@ -135,7 +135,7 @@ namespace CinemaPB.Forms
                 FirstName = firstnameTE.Text,
                 MiddleName = middlenameTE.Text,
                 LastName = lastnameTE.Text,
-                NameExtension = extensionTE.Text,
+                NameExtension = string.IsNullOrWhiteSpace(extensionTE.Text) || extensionTE.Text == "Extension" ? null : extensionTE.Text,
                 ContactNo = contactnoTE.Text,
                 Address = addressTE.Text,
                 Username = username,

@@ -12,7 +12,7 @@ namespace CinemaPB.GlobalSQL
         public static string connectionString = @"Data Source = LAPTOP-FC9GSM04\SQLEXPRESS;Initial Catalog = CinemaDB;Integrated Security = True;";
 
         public static string InsertAccount = @"
-            INSERT INTO dbo.Employees (
+            INSERT INTO emp.Employees (
                    FirstName
                   ,MiddleName
                   ,LastName
@@ -38,5 +38,36 @@ namespace CinemaPB.GlobalSQL
                 @RoleID,
                 @StatusID,
                 @EmploymentStatus);";
+
+        public static string FilterAllEmployees = @"
+           SELECT 
+                    [EmployeeID],
+                    [FirstName],
+                    [MiddleName],
+                    [LastName],
+                    [NameExtension],
+                    FirstName + ' ' + 
+                        CASE 
+                            WHEN MiddleName IS NULL OR LTRIM(RTRIM(MiddleName)) = '' 
+                                THEN LastName 
+                            ELSE LEFT(MiddleName, 1) + '. ' + LastName 
+                        END +
+                        CASE 
+                            WHEN NameExtension IS NULL OR LTRIM(RTRIM(NameExtension)) = '' 
+                                THEN '' 
+                            ELSE ' ' + NameExtension 
+                        END AS EmployeeName,
+                    [Gender],
+                    [ContactNo],
+                    [Address],
+                    [Username],
+                    r.RoleName,
+                    CASE 
+                        WHEN EmploymentStatus = 1 THEN 'Active'
+                        ELSE 'In-Active'
+                    END AS EmploymentStatus
+                FROM emp.Employees e
+                LEFT JOIN emp.Roles r ON r.RoleID = e.RoleID
+                ORDER BY EmployeeID;";
     }
 }

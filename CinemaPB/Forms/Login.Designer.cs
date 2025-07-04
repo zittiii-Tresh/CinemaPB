@@ -46,8 +46,6 @@
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.loginBTN = new DevExpress.XtraEditors.SimpleButton();
             this.usernameTE = new DevExpress.XtraEditors.ButtonEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.SignUphlbl = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
@@ -157,31 +155,6 @@
             this.usernameTE.Size = new System.Drawing.Size(324, 34);
             this.usernameTE.TabIndex = 3;
             // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI Semilight", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(200, 471);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(12, 17);
-            this.labelControl2.TabIndex = 7;
-            this.labelControl2.Text = "or";
-            // 
-            // SignUphlbl
-            // 
-            this.SignUphlbl.Appearance.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignUphlbl.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.SignUphlbl.Appearance.Options.UseFont = true;
-            this.SignUphlbl.Appearance.Options.UseForeColor = true;
-            this.SignUphlbl.Location = new System.Drawing.Point(218, 471);
-            this.SignUphlbl.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.SignUphlbl.Name = "SignUphlbl";
-            this.SignUphlbl.Size = new System.Drawing.Size(46, 17);
-            this.SignUphlbl.TabIndex = 8;
-            this.SignUphlbl.Text = "Sign Up";
-            this.SignUphlbl.Click += new System.EventHandler(this.SignUphlbl_Click);
-            // 
             // sidePanel1
             // 
             this.sidePanel1.AllowResize = false;
@@ -230,8 +203,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1166, 638);
             this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.SignUphlbl);
-            this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.usernameTE);
             this.Controls.Add(this.loginBTN);
             this.Controls.Add(this.checkEdit1);
@@ -242,7 +213,7 @@
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Login.IconOptions.Image")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -264,8 +235,6 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit1;
         private DevExpress.XtraEditors.SimpleButton loginBTN;
         private DevExpress.XtraEditors.ButtonEdit usernameTE;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.HyperlinkLabelControl SignUphlbl;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
         private DevExpress.XtraEditors.SidePanel sidePanel3;
         private DevExpress.XtraEditors.SidePanel sidePanel2;
