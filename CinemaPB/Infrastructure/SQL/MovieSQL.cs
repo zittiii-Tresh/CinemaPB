@@ -23,5 +23,8 @@ namespace CinemaPB.Infrastructure.SQL
                                                   @Poster = @Poster,
                                                   @Availability = @Availability, 
                                                   @RatingID = @RatingID;";
+
+        public static string InsertGenre = @"INSERT INTO mov.Genre (GenreName) VALUES (@GenreName);";
+        public static string InsertLanguage = @"INSERT INTO mov.Language (LanguageName) VALUES (@LanguageName);";
     }
 }
