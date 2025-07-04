@@ -198,6 +198,10 @@
             this.availabilityTS.Properties.Appearance.Options.UseFont = true;
             this.availabilityTS.Properties.AutoHeight = false;
             this.availabilityTS.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.availabilityTS.Properties.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(89)))), ((int)(((byte)(142)))));
+            this.availabilityTS.Properties.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(87)))));
+            this.availabilityTS.Properties.LookAndFeel.SkinName = "The Bezier";
+            this.availabilityTS.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.availabilityTS.Properties.OffText = "Off";
             this.availabilityTS.Properties.OnText = "On";
             this.availabilityTS.Properties.ThumbWidth = 10;
@@ -526,7 +530,7 @@
             this.addlanguageBTN.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.addlanguageBTN.AppearancePressed.Options.UseBackColor = true;
             this.addlanguageBTN.AppearancePressed.Options.UseBorderColor = true;
-            this.addlanguageBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.addlanguageBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addlanguageBTN.ImageOptions.Image")));
             this.addlanguageBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.addlanguageBTN.Location = new System.Drawing.Point(1446, 223);
             this.addlanguageBTN.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);

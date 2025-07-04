@@ -33,5 +33,7 @@ namespace CinemaPB
             TextHideShowHelper.AttachBehavior(usernameTE, "Username");
             TextHideShowHelper.AttachBehavior(passwordTE, "Password", true);
         }
+
+
     }
 }
