@@ -43,7 +43,10 @@
             this.sidePanel6 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel5 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel7 = new DevExpress.XtraEditors.SidePanel();
-            this.moviegenreLUE = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.durationTE = new DevExpress.XtraEditors.TimeEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.movienameTE = new DevExpress.XtraEditors.TextEdit();
@@ -66,12 +69,14 @@
             this.moviesGC = new DevExpress.XtraGrid.GridControl();
             this.moviesGV = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.moviedurationTE = new DevExpress.XtraEditors.DateTimeOffsetEdit();
+            this.moviegenreLUE = new DevExpress.XtraEditors.LookUpEdit();
             this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).BeginInit();
             this.sidePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityTS.Properties)).BeginInit();
             this.sidePanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.moviegenreLUE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.durationTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movienameTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
@@ -83,6 +88,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.moviesGC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moviesGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moviedurationTE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moviegenreLUE.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // sidePanel1
@@ -276,8 +282,12 @@
             // 
             this.sidePanel7.AllowResize = false;
             this.sidePanel7.BorderThickness = 0;
-            this.sidePanel7.Controls.Add(this.moviegenreLUE);
+            this.sidePanel7.Controls.Add(this.labelControl11);
+            this.sidePanel7.Controls.Add(this.labelControl10);
+            this.sidePanel7.Controls.Add(this.textEdit3);
+            this.sidePanel7.Controls.Add(this.textEdit1);
             this.sidePanel7.Controls.Add(this.durationTE);
+            this.sidePanel7.Controls.Add(this.moviegenreLUE);
             this.sidePanel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel7.Location = new System.Drawing.Point(739, 54);
             this.sidePanel7.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -286,19 +296,57 @@
             this.sidePanel7.TabIndex = 7;
             this.sidePanel7.Text = "sidePanel7";
             // 
-            // moviegenreLUE
+            // labelControl11
             // 
-            this.moviegenreLUE.Location = new System.Drawing.Point(377, 92);
-            this.moviegenreLUE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.moviegenreLUE.Name = "moviegenreLUE";
-            this.moviegenreLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.moviegenreLUE.Properties.Appearance.Options.UseBackColor = true;
-            this.moviegenreLUE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.moviegenreLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.moviegenreLUE.Properties.NullText = "";
-            this.moviegenreLUE.Size = new System.Drawing.Size(303, 34);
-            this.moviegenreLUE.TabIndex = 17;
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Appearance.Options.UseForeColor = true;
+            this.labelControl11.Location = new System.Drawing.Point(381, 385);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(113, 18);
+            this.labelControl11.TabIndex = 29;
+            this.labelControl11.Text = "Weekend Price";
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Appearance.Options.UseForeColor = true;
+            this.labelControl10.Location = new System.Drawing.Point(382, 303);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(113, 18);
+            this.labelControl10.TabIndex = 27;
+            this.labelControl10.Text = "Weekday Price";
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Location = new System.Drawing.Point(382, 347);
+            this.textEdit3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit3.Properties.Appearance.Options.UseFont = true;
+            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.textEdit3.Size = new System.Drawing.Size(303, 36);
+            this.textEdit3.TabIndex = 28;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(381, 265);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.textEdit1.Size = new System.Drawing.Size(303, 36);
+            this.textEdit1.TabIndex = 27;
             // 
             // durationTE
             // 
@@ -307,13 +355,15 @@
             this.durationTE.Margin = new System.Windows.Forms.Padding(4);
             this.durationTE.Name = "durationTE";
             this.durationTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.durationTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.durationTE.Properties.Appearance.Options.UseBackColor = true;
+            this.durationTE.Properties.Appearance.Options.UseFont = true;
             this.durationTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.durationTE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.durationTE.Properties.MaskSettings.Set("mask", "hh mm");
             this.durationTE.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.durationTE.Size = new System.Drawing.Size(303, 34);
+            this.durationTE.Size = new System.Drawing.Size(303, 36);
             this.durationTE.TabIndex = 18;
             // 
             // labelControl2
@@ -335,9 +385,11 @@
             this.movienameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.movienameTE.Name = "movienameTE";
             this.movienameTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.movienameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movienameTE.Properties.Appearance.Options.UseBackColor = true;
+            this.movienameTE.Properties.Appearance.Options.UseFont = true;
             this.movienameTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.movienameTE.Size = new System.Drawing.Size(303, 34);
+            this.movienameTE.Size = new System.Drawing.Size(303, 36);
             this.movienameTE.TabIndex = 9;
             // 
             // addgenreBTN
@@ -422,12 +474,14 @@
             this.movielanguageLUE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.movielanguageLUE.Name = "movielanguageLUE";
             this.movielanguageLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.movielanguageLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movielanguageLUE.Properties.Appearance.Options.UseBackColor = true;
+            this.movielanguageLUE.Properties.Appearance.Options.UseFont = true;
             this.movielanguageLUE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.movielanguageLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.movielanguageLUE.Properties.NullText = "";
-            this.movielanguageLUE.Size = new System.Drawing.Size(303, 34);
+            this.movielanguageLUE.Size = new System.Drawing.Size(303, 36);
             this.movielanguageLUE.TabIndex = 16;
             // 
             // labelControl6
@@ -449,12 +503,14 @@
             this.movieratingLUE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.movieratingLUE.Name = "movieratingLUE";
             this.movieratingLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.movieratingLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movieratingLUE.Properties.Appearance.Options.UseBackColor = true;
+            this.movieratingLUE.Properties.Appearance.Options.UseFont = true;
             this.movieratingLUE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.movieratingLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.movieratingLUE.Properties.NullText = "";
-            this.movieratingLUE.Size = new System.Drawing.Size(303, 34);
+            this.movieratingLUE.Size = new System.Drawing.Size(303, 36);
             this.movieratingLUE.TabIndex = 18;
             // 
             // labelControl7
@@ -489,7 +545,9 @@
             this.moviedescriptionTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.moviedescriptionTE.Name = "moviedescriptionTE";
             this.moviedescriptionTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.moviedescriptionTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moviedescriptionTE.Properties.Appearance.Options.UseBackColor = true;
+            this.moviedescriptionTE.Properties.Appearance.Options.UseFont = true;
             this.moviedescriptionTE.Properties.Appearance.Options.UseTextOptions = true;
             this.moviedescriptionTE.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.moviedescriptionTE.Properties.AppearanceFocused.Options.UseTextOptions = true;
@@ -497,7 +555,7 @@
             this.moviedescriptionTE.Properties.AppearanceFocused.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
             this.moviedescriptionTE.Properties.AutoHeight = false;
             this.moviedescriptionTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.moviedescriptionTE.Size = new System.Drawing.Size(728, 79);
+            this.moviedescriptionTE.Size = new System.Drawing.Size(304, 79);
             this.moviedescriptionTE.TabIndex = 22;
             // 
             // saveBTN
@@ -636,6 +694,21 @@
             this.moviedurationTE.Size = new System.Drawing.Size(303, 34);
             this.moviedurationTE.TabIndex = 14;
             // 
+            // moviegenreLUE
+            // 
+            this.moviegenreLUE.Location = new System.Drawing.Point(381, 92);
+            this.moviegenreLUE.Name = "moviegenreLUE";
+            this.moviegenreLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.moviegenreLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moviegenreLUE.Properties.Appearance.Options.UseBackColor = true;
+            this.moviegenreLUE.Properties.Appearance.Options.UseFont = true;
+            this.moviegenreLUE.Properties.AutoHeight = false;
+            this.moviegenreLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.moviegenreLUE.Properties.NullText = "";
+            this.moviegenreLUE.Size = new System.Drawing.Size(303, 34);
+            this.moviegenreLUE.TabIndex = 30;
+            // 
             // MoviesForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -676,7 +749,9 @@
             this.sidePanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityTS.Properties)).EndInit();
             this.sidePanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.moviegenreLUE.Properties)).EndInit();
+            this.sidePanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.durationTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movienameTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
@@ -689,6 +764,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.moviesGC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moviesGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moviedurationTE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moviegenreLUE.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -727,11 +803,15 @@
         private DevExpress.XtraGrid.GridControl moviesGC;
         private DevExpress.XtraGrid.Views.Grid.GridView moviesGV;
         private DevExpress.XtraEditors.ToggleSwitch availabilityTS;
-        private DevExpress.XtraEditors.LookUpEdit moviegenreLUE;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.DateTimeOffsetEdit moviedurationTE;
         private DevExpress.XtraEditors.LabelControl availabilityLC;
         private DevExpress.XtraEditors.TimeEdit durationTE;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.LookUpEdit moviegenreLUE;
     }
 }

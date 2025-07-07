@@ -32,5 +32,15 @@ namespace CinemaPB.Forms
         {
             FormHelper.LoadUserControl(mainSPanel, new EmployeeListForm());
         }
+
+        private void schedulinghall1BTN_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new SchedulingHall1Form());
+        }
+
+        private void schedulinghall2BTN_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new SchedulingHall2Form());
+        }
     }
 }
