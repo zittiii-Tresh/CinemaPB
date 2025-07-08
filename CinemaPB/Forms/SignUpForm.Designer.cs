@@ -179,7 +179,7 @@
             this.passwordBE.Location = new System.Drawing.Point(194, 302);
             this.passwordBE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.passwordBE.Name = "passwordBE";
-            this.passwordBE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordBE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.passwordBE.Properties.Appearance.Options.UseFont = true;
             this.passwordBE.Properties.Appearance.Options.UseForeColor = true;
@@ -320,7 +320,7 @@
             this.extensionTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.extensionTE.Name = "extensionTE";
             this.extensionTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.extensionTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extensionTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.extensionTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.extensionTE.Properties.Appearance.Options.UseBorderColor = true;
             this.extensionTE.Properties.Appearance.Options.UseFont = true;
@@ -336,7 +336,7 @@
             this.contactnoTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.contactnoTE.Name = "contactnoTE";
             this.contactnoTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.contactnoTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactnoTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactnoTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.contactnoTE.Properties.Appearance.Options.UseBorderColor = true;
             this.contactnoTE.Properties.Appearance.Options.UseFont = true;
@@ -352,7 +352,7 @@
             this.addressTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.addressTE.Name = "addressTE";
             this.addressTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.addressTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addressTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.addressTE.Properties.Appearance.Options.UseBorderColor = true;
             this.addressTE.Properties.Appearance.Options.UseFont = true;
@@ -368,7 +368,7 @@
             this.firstnameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.firstnameTE.Name = "firstnameTE";
             this.firstnameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.firstnameTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstnameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstnameTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.firstnameTE.Properties.Appearance.Options.UseBorderColor = true;
             this.firstnameTE.Properties.Appearance.Options.UseFont = true;
@@ -384,7 +384,7 @@
             this.middlenameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.middlenameTE.Name = "middlenameTE";
             this.middlenameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.middlenameTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.middlenameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.middlenameTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.middlenameTE.Properties.Appearance.Options.UseBorderColor = true;
             this.middlenameTE.Properties.Appearance.Options.UseFont = true;
@@ -400,7 +400,7 @@
             this.lastnameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.lastnameTE.Name = "lastnameTE";
             this.lastnameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.lastnameTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastnameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastnameTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.lastnameTE.Properties.Appearance.Options.UseBorderColor = true;
             this.lastnameTE.Properties.Appearance.Options.UseFont = true;
@@ -416,7 +416,7 @@
             this.usernameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.usernameTE.Name = "usernameTE";
             this.usernameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
-            this.usernameTE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameTE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.usernameTE.Properties.Appearance.Options.UseBorderColor = true;
             this.usernameTE.Properties.Appearance.Options.UseFont = true;

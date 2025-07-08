@@ -36,6 +36,9 @@
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.moviesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.schedulinghall1BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.schedulinghall2BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.employeelistACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -68,6 +71,7 @@
             this.accordionControlSeparator1,
             this.accordionControlElement3,
             this.moviesACE,
+            this.accordionControlElement4,
             this.employeelistACE,
             this.accordionControlElement6,
             this.accordionControlElement9});
@@ -143,6 +147,54 @@
             this.moviesACE.Text = "Movies";
             this.moviesACE.Click += new System.EventHandler(this.moviesACE_Click);
             // 
+            // accordionControlElement4
+            // 
+            this.accordionControlElement4.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement4.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.accordionControlElement4.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement4.Appearance.Default.Options.UseForeColor = true;
+            this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.schedulinghall1BTN,
+            this.schedulinghall2BTN});
+            this.accordionControlElement4.HeaderIndent = 34;
+            this.accordionControlElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
+            this.accordionControlElement4.Name = "accordionControlElement4";
+            this.accordionControlElement4.Text = "Showtime Scheduling";
+            // 
+            // schedulinghall1BTN
+            // 
+            this.schedulinghall1BTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.schedulinghall1BTN.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.schedulinghall1BTN.Appearance.Default.Options.UseFont = true;
+            this.schedulinghall1BTN.Appearance.Default.Options.UseForeColor = true;
+            this.schedulinghall1BTN.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.schedulinghall1BTN.Appearance.Hovered.Options.UseBackColor = true;
+            this.schedulinghall1BTN.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.schedulinghall1BTN.Appearance.Pressed.Options.UseBackColor = true;
+            this.schedulinghall1BTN.HeaderIndent = 20;
+            this.schedulinghall1BTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("schedulinghall1BTN.ImageOptions.Image")));
+            this.schedulinghall1BTN.Name = "schedulinghall1BTN";
+            this.schedulinghall1BTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.schedulinghall1BTN.Text = "Hall 1";
+            this.schedulinghall1BTN.Click += new System.EventHandler(this.schedulinghall1BTN_Click);
+            // 
+            // schedulinghall2BTN
+            // 
+            this.schedulinghall2BTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.schedulinghall2BTN.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.schedulinghall2BTN.Appearance.Default.Options.UseFont = true;
+            this.schedulinghall2BTN.Appearance.Default.Options.UseForeColor = true;
+            this.schedulinghall2BTN.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.schedulinghall2BTN.Appearance.Hovered.Options.UseBackColor = true;
+            this.schedulinghall2BTN.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.schedulinghall2BTN.Appearance.Pressed.Options.UseBackColor = true;
+            this.schedulinghall2BTN.HeaderIndent = 20;
+            this.schedulinghall2BTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("schedulinghall2BTN.ImageOptions.Image")));
+            this.schedulinghall2BTN.Name = "schedulinghall2BTN";
+            this.schedulinghall2BTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.schedulinghall2BTN.Text = "Hall 2";
+            this.schedulinghall2BTN.Click += new System.EventHandler(this.schedulinghall2BTN_Click);
+            // 
             // employeelistACE
             // 
             this.employeelistACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,7 +206,7 @@
             this.employeelistACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.employeelistACE.Appearance.Pressed.Options.UseBackColor = true;
             this.employeelistACE.HeaderIndent = 34;
-            this.employeelistACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement5.ImageOptions.SvgImage")));
+            this.employeelistACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("employeelistACE.ImageOptions.SvgImage")));
             this.employeelistACE.Name = "employeelistACE";
             this.employeelistACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.employeelistACE.Text = "Employee List";
@@ -162,7 +214,7 @@
             // 
             // accordionControlElement6
             // 
-            this.accordionControlElement6.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement6.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accordionControlElement6.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.accordionControlElement6.Appearance.Default.Options.UseFont = true;
             this.accordionControlElement6.Appearance.Default.Options.UseForeColor = true;
@@ -173,7 +225,6 @@
             this.accordionControlElement6.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement7,
             this.accordionControlElement8});
-            this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.HeaderIndent = 34;
             this.accordionControlElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement6.ImageOptions.SvgImage")));
             this.accordionControlElement6.Name = "accordionControlElement6";
@@ -233,7 +284,6 @@
             this.accordionControlElement12,
             this.accordionControlElement13,
             this.accordionControlElement14});
-            this.accordionControlElement9.Expanded = true;
             this.accordionControlElement9.HeaderIndent = 34;
             this.accordionControlElement9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement9.ImageOptions.SvgImage")));
             this.accordionControlElement9.Name = "accordionControlElement9";
@@ -409,5 +459,8 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement14;
         private DevExpress.XtraEditors.SidePanel mainSPanel;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement schedulinghall1BTN;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement schedulinghall2BTN;
     }
 }

@@ -111,6 +111,18 @@
     <Compile Include="Forms\MoviesForm.Designer.cs">
       <DependentUpon>MoviesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SchedulingHall1Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SchedulingHall1Form.Designer.cs">
+      <DependentUpon>SchedulingHall1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SchedulingHall2Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SchedulingHall2Form.Designer.cs">
+      <DependentUpon>SchedulingHall2Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MoviesForm.resx">
       <DependentUpon>MoviesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SchedulingHall1Form.resx">
+      <DependentUpon>SchedulingHall1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SchedulingHall2Form.resx">
+      <DependentUpon>SchedulingHall2Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
