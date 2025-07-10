@@ -41,7 +41,7 @@
             this.schedulinghall2BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.employeelistACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.hall1seatsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -223,31 +223,33 @@
             this.accordionControlElement6.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.accordionControlElement6.Appearance.Pressed.Options.UseBackColor = true;
             this.accordionControlElement6.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement7,
+            this.hall1seatsACE,
             this.accordionControlElement8});
+            this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.HeaderIndent = 34;
             this.accordionControlElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement6.ImageOptions.SvgImage")));
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "Halls";
             // 
-            // accordionControlElement7
+            // hall1seatsACE
             // 
-            this.accordionControlElement7.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement7.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.accordionControlElement7.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement7.Appearance.Default.Options.UseForeColor = true;
-            this.accordionControlElement7.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.accordionControlElement7.Appearance.Hovered.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.accordionControlElement7.Appearance.Hovered.Options.UseBackColor = true;
-            this.accordionControlElement7.Appearance.Hovered.Options.UseBorderColor = true;
-            this.accordionControlElement7.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.accordionControlElement7.Appearance.Pressed.Options.UseBackColor = true;
-            this.accordionControlElement7.HeaderIndent = 20;
-            this.accordionControlElement7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement7.ImageOptions.SvgImage")));
-            this.accordionControlElement7.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
-            this.accordionControlElement7.Name = "accordionControlElement7";
-            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement7.Text = "Hall 1";
+            this.hall1seatsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hall1seatsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.hall1seatsACE.Appearance.Default.Options.UseFont = true;
+            this.hall1seatsACE.Appearance.Default.Options.UseForeColor = true;
+            this.hall1seatsACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.hall1seatsACE.Appearance.Hovered.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.hall1seatsACE.Appearance.Hovered.Options.UseBackColor = true;
+            this.hall1seatsACE.Appearance.Hovered.Options.UseBorderColor = true;
+            this.hall1seatsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.hall1seatsACE.Appearance.Pressed.Options.UseBackColor = true;
+            this.hall1seatsACE.HeaderIndent = 20;
+            this.hall1seatsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement7.ImageOptions.SvgImage")));
+            this.hall1seatsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
+            this.hall1seatsACE.Name = "hall1seatsACE";
+            this.hall1seatsACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.hall1seatsACE.Text = "Hall 1";
+            this.hall1seatsACE.Click += new System.EventHandler(this.hall1seatsACE_Click);
             // 
             // accordionControlElement8
             // 
@@ -449,7 +451,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement moviesACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement employeelistACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement hall1seatsACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement9;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;

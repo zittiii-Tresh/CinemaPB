@@ -81,6 +81,12 @@
       <DependentUpon>EmployeeListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormHelper.cs" />
+    <Compile Include="Forms\Hall1Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Hall1Form.Designer.cs">
+      <DependentUpon>Hall1Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\InsertGenreForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,12 @@
     <Compile Include="Forms\SignUpForm.Designer.cs">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\StaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StaffForm.Designer.cs">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TextHideShowHelper.cs" />
     <Compile Include="GlobalSQL\SQLQuery.cs" />
     <Compile Include="Infrastructure\Repositories\MovieRepository.cs" />
@@ -142,6 +154,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\EmployeeListForm.resx">
       <DependentUpon>EmployeeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hall1Form.resx">
+      <DependentUpon>Hall1Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InsertGenreForm.resx">
       <DependentUpon>InsertGenreForm.cs</DependentUpon>

@@ -40,10 +40,10 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.closeBTN = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.passwordTE = new DevExpress.XtraEditors.ButtonEdit();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.showCE = new DevExpress.XtraEditors.CheckEdit();
             this.loginBTN = new DevExpress.XtraEditors.SimpleButton();
             this.usernameTE = new DevExpress.XtraEditors.ButtonEdit();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
@@ -51,27 +51,28 @@
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.passwordTE.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showCE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameTE.Properties)).BeginInit();
             this.sidePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
-            // simpleButton2
+            // closeBTN
             // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.White;
-            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.White;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseBorderColor = true;
-            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.simpleButton2.Location = new System.Drawing.Point(6, 597);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(1);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Padding = new System.Windows.Forms.Padding(2);
-            this.simpleButton2.Size = new System.Drawing.Size(35, 33);
-            this.simpleButton2.TabIndex = 9;
+            this.closeBTN.Appearance.BackColor = System.Drawing.Color.White;
+            this.closeBTN.Appearance.BorderColor = System.Drawing.Color.White;
+            this.closeBTN.Appearance.Options.UseBackColor = true;
+            this.closeBTN.Appearance.Options.UseBorderColor = true;
+            this.closeBTN.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.closeBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.closeBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
+            this.closeBTN.Location = new System.Drawing.Point(6, 597);
+            this.closeBTN.Margin = new System.Windows.Forms.Padding(1);
+            this.closeBTN.Name = "closeBTN";
+            this.closeBTN.Padding = new System.Windows.Forms.Padding(2);
+            this.closeBTN.Size = new System.Drawing.Size(35, 33);
+            this.closeBTN.TabIndex = 9;
+            this.closeBTN.Click += new System.EventHandler(this.closeBTN_Click);
             // 
             // labelControl1
             // 
@@ -107,18 +108,19 @@
             this.passwordTE.Size = new System.Drawing.Size(324, 34);
             this.passwordTE.TabIndex = 4;
             // 
-            // checkEdit1
+            // showCE
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(451, 368);
-            this.checkEdit1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.checkEdit1.Properties.Appearance.Options.UseFont = true;
-            this.checkEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.checkEdit1.Properties.Caption = "Show";
-            this.checkEdit1.Size = new System.Drawing.Size(68, 26);
-            this.checkEdit1.TabIndex = 5;
+            this.showCE.Location = new System.Drawing.Point(451, 368);
+            this.showCE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.showCE.Name = "showCE";
+            this.showCE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCE.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.showCE.Properties.Appearance.Options.UseFont = true;
+            this.showCE.Properties.Appearance.Options.UseForeColor = true;
+            this.showCE.Properties.Caption = "Show";
+            this.showCE.Size = new System.Drawing.Size(68, 26);
+            this.showCE.TabIndex = 5;
+            this.showCE.CheckedChanged += new System.EventHandler(this.showCE_CheckedChanged);
             // 
             // loginBTN
             // 
@@ -202,10 +204,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1166, 638);
-            this.Controls.Add(this.simpleButton2);
+            this.Controls.Add(this.closeBTN);
             this.Controls.Add(this.usernameTE);
             this.Controls.Add(this.loginBTN);
-            this.Controls.Add(this.checkEdit1);
+            this.Controls.Add(this.showCE);
             this.Controls.Add(this.passwordTE);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.sidePanel2);
@@ -218,7 +220,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.passwordTE.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showCE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameTE.Properties)).EndInit();
             this.sidePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
@@ -229,10 +231,10 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton closeBTN;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.ButtonEdit passwordTE;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
+        private DevExpress.XtraEditors.CheckEdit showCE;
         private DevExpress.XtraEditors.SimpleButton loginBTN;
         private DevExpress.XtraEditors.ButtonEdit usernameTE;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
