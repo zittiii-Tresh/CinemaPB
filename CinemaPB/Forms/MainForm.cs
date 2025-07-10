@@ -42,5 +42,10 @@ namespace CinemaPB.Forms
         {
             FormHelper.LoadUserControl(mainSPanel, new SchedulingHall2Form());
         }
+
+        private void hall1seatsACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new Hall1Form());
+        }
     }
 }
