@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using CinemaPB.ModelMovie;
 using Dapper;
 using System.Drawing;
+using CinemaPB.Infrastructure.SQL;
+using System.Data;
 
 namespace CinemaPB.Infrastructure.Repositories
 {
@@ -56,27 +58,39 @@ namespace CinemaPB.Infrastructure.Repositories
             }
         }
 
-        public void InsertMovie(Movie movie)
+        public int InsertMovie(Movie movie)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                var posterBytes = ImageToByteArray(movie.Poster); // ✅ This line needs `movie.Poster`
+                connection.Open();
 
-                var parameters = new
-                {
-                    movie.Title,
-                    movie.GenreID,
-                    movie.Description,
-                    Duration = movie.Duration.ToString(@"hh\:mm\:ss"),
-                    movie.LanguageID,
-                    Poster = posterBytes,
-                    Availability = movie.Availability == 1 ? 1 : 0,
-                    movie.RatingID
-                };
+                var parameters = new DynamicParameters();
+                parameters.Add("@Title", movie.Title);
+                parameters.Add("@GenreID", movie.GenreID);
+                parameters.Add("@Description", movie.Description);
+                parameters.Add("@Duration", movie.Duration);
+                parameters.Add("@LanguageID", movie.LanguageID);
+                parameters.Add("@Poster", ImageToByteArray(movie.Poster)); // helper method
+                parameters.Add("@Availability", movie.Availability);
+                parameters.Add("@RatingID", movie.RatingID);
+                parameters.Add("@MovieID", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-                connection.Execute(SQL.MovieSQL.InsertMovie, parameters);
+                connection.Execute(MovieSQL.InsertMovie, parameters);
+
+                return parameters.Get<int>("@MovieID"); // 🎯 MovieID after insert
             }
         }
+        public void InsertMoviePrice(int movieId, string dayType, decimal price)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                string query = @"INSERT INTO mov.MoviePrices (MovieID, DayType, Price)
+                         VALUES (@MovieID, @DayType, @Price)";
+
+                connection.Execute(query, new { MovieID = movieId, DayType = dayType, Price = price });
+            }
+        }
+
         public byte[] ImageToByteArray(Image image)
         {
             if (image == null) return null;
@@ -108,6 +122,16 @@ namespace CinemaPB.Infrastructure.Repositories
                     language.LanguageName
                 };
                 connection.Execute(SQL.MovieSQL.InsertLanguage, parameters);
+            }
+        }
+
+        public List<MovieWithDetail> GetAllMovieDetails()
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                var result = connection.Query<MovieWithDetail>(MovieSQL.RetrieveMoviePriceAndDetails).ToList();
+                return result;
             }
         }
     }

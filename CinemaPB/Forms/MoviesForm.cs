@@ -25,6 +25,7 @@ namespace CinemaPB.Forms
             InitializeComponent();
             _movieRepository = new MovieRepository(GlobalSetting.GetConnectionString());
             LoadLookUpEdit();
+            LoadMoviesIntoGrid();
             SetupToggleSwitch();
 
             availabilityTS.Toggled += availabilityTS_Toggled; // 👈 Hook the event
@@ -82,7 +83,7 @@ namespace CinemaPB.Forms
             {
                 Title = movienameTE.Text.Trim(),
                 GenreID = Convert.ToInt32(moviegenreLUE.EditValue),
-                Description = moviedescriptionTE.Text.Trim(), // Optional field
+                Description = moviedescriptionTE.Text.Trim(),
                 Duration = dur,
                 LanguageID = Convert.ToInt32(movielanguageLUE.EditValue),
                 RatingID = Convert.ToInt32(movieratingLUE.EditValue),
@@ -90,8 +91,18 @@ namespace CinemaPB.Forms
                 Poster = posterPE.Image
             };
 
-            _movieRepository.InsertMovie(movie);
-            XtraMessageBox.Show("Movie saved successfully!", "Success");
+            int movieId = _movieRepository.InsertMovie(movie); // 🎯 returns new ID
+
+            // Save prices
+            decimal weekdayPrice = Convert.ToDecimal(weekdaypriceTE.Text);
+            decimal weekendPrice = Convert.ToDecimal(weekendpriceTE.Text);
+
+            _movieRepository.InsertMoviePrice(movieId, "Weekday", weekdayPrice);
+            _movieRepository.InsertMoviePrice(movieId, "Weekend", weekendPrice);
+
+            LoadMoviesIntoGrid();
+
+            XtraMessageBox.Show("Movie and prices saved successfully!", "Success");
         }
 
 
@@ -143,6 +154,12 @@ namespace CinemaPB.Forms
         {
             FormHelper.DisplayForm(new InsertLanguageForm(_movieRepository, LoadLookUpEdit), LoadLookUpEdit);
 
+        }
+
+        private void LoadMoviesIntoGrid()
+        {
+            var movies = _movieRepository.GetAllMovieDetails();
+            moviesGC.DataSource = movies;
         }
     }
 }
