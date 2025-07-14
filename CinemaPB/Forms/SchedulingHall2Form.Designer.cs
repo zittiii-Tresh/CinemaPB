@@ -91,7 +91,7 @@
             // sidePanel1
             // 
             this.sidePanel1.AllowResize = false;
-            this.sidePanel1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.sidePanel1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.sidePanel1.Appearance.BorderColor = System.Drawing.Color.Silver;
             this.sidePanel1.Appearance.Options.UseBackColor = true;
             this.sidePanel1.Appearance.Options.UseBorderColor = true;
@@ -110,6 +110,8 @@
             // sidePanel6
             // 
             this.sidePanel6.AllowResize = false;
+            this.sidePanel6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel6.Appearance.Options.UseBackColor = true;
             this.sidePanel6.BorderThickness = 0;
             this.sidePanel6.Controls.Add(this.sidePanel10);
             this.sidePanel6.Controls.Add(this.sidePanel9);
@@ -123,6 +125,8 @@
             // sidePanel10
             // 
             this.sidePanel10.AllowResize = false;
+            this.sidePanel10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel10.Appearance.Options.UseBackColor = true;
             this.sidePanel10.BorderThickness = 0;
             this.sidePanel10.Controls.Add(this.pictureEdit1);
             this.sidePanel10.Dock = System.Windows.Forms.DockStyle.Left;
@@ -151,6 +155,8 @@
             // sidePanel9
             // 
             this.sidePanel9.AllowResize = false;
+            this.sidePanel9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel9.Appearance.Options.UseBackColor = true;
             this.sidePanel9.BorderThickness = 0;
             this.sidePanel9.Controls.Add(this.label4);
             this.sidePanel9.Controls.Add(this.priceLBL);
@@ -274,6 +280,8 @@
             // sidePanel11
             // 
             this.sidePanel11.AllowResize = false;
+            this.sidePanel11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel11.Appearance.Options.UseBackColor = true;
             this.sidePanel11.BorderThickness = 0;
             this.sidePanel11.Controls.Add(this.timeEdit1);
             this.sidePanel11.Controls.Add(this.dateEdit1);
@@ -296,7 +304,7 @@
             this.timeEdit1.EditValue = new System.DateTime(2025, 7, 8, 0, 0, 0, 0);
             this.timeEdit1.Location = new System.Drawing.Point(30, 95);
             this.timeEdit1.Name = "timeEdit1";
-            this.timeEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.timeEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.timeEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.timeEdit1.Properties.Appearance.Options.UseFont = true;
@@ -313,7 +321,7 @@
             this.dateEdit1.EditValue = null;
             this.dateEdit1.Location = new System.Drawing.Point(371, 10);
             this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.dateEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.dateEdit1.Properties.Appearance.Options.UseFont = true;
@@ -397,7 +405,7 @@
             // 
             this.gridLookUpEdit1.Location = new System.Drawing.Point(30, 10);
             this.gridLookUpEdit1.Name = "gridLookUpEdit1";
-            this.gridLookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.gridLookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.gridLookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridLookUpEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.gridLookUpEdit1.Properties.Appearance.Options.UseFont = true;
@@ -430,6 +438,8 @@
             // sidePanel4
             // 
             this.sidePanel4.AllowResize = false;
+            this.sidePanel4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel4.Appearance.Options.UseBackColor = true;
             this.sidePanel4.BorderThickness = 0;
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidePanel4.Location = new System.Drawing.Point(693, 100);
@@ -441,6 +451,8 @@
             // sidePanel3
             // 
             this.sidePanel3.AllowResize = false;
+            this.sidePanel3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel3.Appearance.Options.UseBackColor = true;
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel3.Location = new System.Drawing.Point(1, 100);
@@ -452,7 +464,7 @@
             // sidePanel2
             // 
             this.sidePanel2.AllowResize = false;
-            this.sidePanel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.sidePanel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.sidePanel2.Appearance.Options.UseBackColor = true;
             this.sidePanel2.BorderThickness = 0;
             this.sidePanel2.Controls.Add(this.labelControl4);
@@ -502,6 +514,8 @@
             // sidePanel7
             // 
             this.sidePanel7.AllowResize = false;
+            this.sidePanel7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.sidePanel7.Appearance.Options.UseBackColor = true;
             this.sidePanel7.BorderThickness = 0;
             this.sidePanel7.Controls.Add(this.labelControl1);
             this.sidePanel7.Controls.Add(this.labelControl3);
@@ -515,6 +529,8 @@
             // sidePanel8
             // 
             this.sidePanel8.AllowResize = false;
+            this.sidePanel8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.sidePanel8.Appearance.Options.UseBackColor = true;
             this.sidePanel8.BorderThickness = 0;
             this.sidePanel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel8.Location = new System.Drawing.Point(0, 122);
@@ -526,6 +542,8 @@
             // sidePanel12
             // 
             this.sidePanel12.AllowResize = false;
+            this.sidePanel12.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.sidePanel12.Appearance.Options.UseBackColor = true;
             this.sidePanel12.BorderThickness = 0;
             this.sidePanel12.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidePanel12.Location = new System.Drawing.Point(628, 122);
@@ -537,6 +555,8 @@
             // sidePanel13
             // 
             this.sidePanel13.AllowResize = false;
+            this.sidePanel13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.sidePanel13.Appearance.Options.UseBackColor = true;
             this.sidePanel13.BorderThickness = 0;
             this.sidePanel13.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.sidePanel13.Location = new System.Drawing.Point(26, 995);

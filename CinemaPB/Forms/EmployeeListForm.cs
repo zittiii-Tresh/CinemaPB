@@ -8,8 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CinemaPB.Employees;
 using CinemaPB.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraSpellChecker.Parser;
 
 namespace CinemaPB.Forms
 {
@@ -38,10 +40,41 @@ namespace CinemaPB.Forms
                     {
                         DataTable dataTable = new DataTable();
                         adapter.Fill(dataTable);
-                        employeeGC.DataSource = dataTable;
+                        gcEmployees.DataSource = dataTable;
                         return dataTable;
                     }
                 }
+            }
+        }
+
+        private void findTE_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            gvEmployees.ApplyFindFilter(e.NewValue as string);
+        }
+
+        private void repositoryItemButtonEdit1_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            string selectedUsername = Convert.ToString(gvEmployees.GetFocusedRowCellValue("Username"));
+
+            using (EditDeleteEmployeeForm employeeRecordView = new EditDeleteEmployeeForm(selectedUsername))
+            {
+                employeeRecordView.ShowDialog();
+            }
+            FilterAllEmployees();
+        }
+
+        private void gvEmployees_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            string selectedUsername = Convert.ToString(gvEmployees.GetRowCellValue(e.RowHandle, "Username"));
+
+            if (!string.IsNullOrEmpty(selectedUsername))
+            {
+                using (EditDeleteEmployeeForm editForm = new EditDeleteEmployeeForm(selectedUsername))
+                {
+                    editForm.ShowDialog();
+                }
+
+                FilterAllEmployees();
             }
         }
     }
