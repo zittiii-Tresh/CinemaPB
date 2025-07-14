@@ -74,6 +74,12 @@
   <ItemGroup>
     <Compile Include="Configuration\GlobalSetting.cs" />
     <Compile Include="Employees\Employee.cs" />
+    <Compile Include="Forms\EditDeleteEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditDeleteEmployeeForm.Designer.cs">
+      <DependentUpon>EditDeleteEmployeeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EmployeeListForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\EditDeleteEmployeeForm.resx">
+      <DependentUpon>EditDeleteEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EmployeeListForm.resx">
       <DependentUpon>EmployeeListForm.cs</DependentUpon>
     </EmbeddedResource>
