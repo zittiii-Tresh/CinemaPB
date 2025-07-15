@@ -7,21 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
 
 namespace CinemaPB.Forms
 {
-    public partial class StaffForm : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class Hall2Showing : DevExpress.XtraEditors.XtraUserControl
     {
-        public StaffForm()
+        public Hall2Showing()
         {
             InitializeComponent();
         }
-
-        private void showtimehall1BTN_Click(object sender, EventArgs e)
-        {
-            FormHelper.LoadUserControl(mainSPanel, new Hall1Showing());
-        }
-
     }
 }
