@@ -1,4 +1,4 @@
-namespace CinemaPB.Forms
+﻿namespace CinemaPB.Forms
 {
     partial class Hall2Showing
     {

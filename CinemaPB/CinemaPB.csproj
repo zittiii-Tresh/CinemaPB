@@ -74,6 +74,18 @@
   <ItemGroup>
     <Compile Include="Configuration\GlobalSetting.cs" />
     <Compile Include="Employees\Employee.cs" />
+    <Compile Include="Forms\EditDeleteEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditDeleteEmployeeForm.Designer.cs">
+      <DependentUpon>EditDeleteEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditSeatLayoutForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\EditSeatLayoutForm.Designer.cs">
+      <DependentUpon>EditSeatLayoutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EmployeeListForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +98,18 @@
     </Compile>
     <Compile Include="Forms\Hall1Form.Designer.cs">
       <DependentUpon>Hall1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Hall1Showing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Hall1Showing.Designer.cs">
+      <DependentUpon>Hall1Showing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Hall2Showing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Hall2Showing.Designer.cs">
+      <DependentUpon>Hall2Showing.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\InsertGenreForm.cs">
       <SubType>Form</SubType>
@@ -116,6 +140,12 @@
     </Compile>
     <Compile Include="Forms\MoviesForm.Designer.cs">
       <DependentUpon>MoviesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReserveSeatsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReserveSeatsForm.Designer.cs">
+      <DependentUpon>ReserveSeatsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SchedulingHall1Form.cs">
       <SubType>UserControl</SubType>
@@ -159,11 +189,23 @@
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\EditDeleteEmployeeForm.resx">
+      <DependentUpon>EditDeleteEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditSeatLayoutForm.resx">
+      <DependentUpon>EditSeatLayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EmployeeListForm.resx">
       <DependentUpon>EmployeeListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Hall1Form.resx">
       <DependentUpon>Hall1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hall1Showing.resx">
+      <DependentUpon>Hall1Showing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hall2Showing.resx">
+      <DependentUpon>Hall2Showing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InsertGenreForm.resx">
       <DependentUpon>InsertGenreForm.cs</DependentUpon>
@@ -180,6 +222,9 @@
     <EmbeddedResource Include="Forms\MoviesForm.resx">
       <DependentUpon>MoviesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReserveSeatsForm.resx">
+      <DependentUpon>ReserveSeatsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SchedulingHall1Form.resx">
       <DependentUpon>SchedulingHall1Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StaffForm.resx">
+      <DependentUpon>StaffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

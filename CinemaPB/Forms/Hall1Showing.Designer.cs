@@ -1,6 +1,6 @@
-namespace CinemaPB.Forms
+﻿namespace CinemaPB.Forms
 {
-    partial class Hall2Showing
+    partial class Hall1Showing
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@ namespace CinemaPB.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hall2Showing));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hall1Showing));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.dateLBL = new DevExpress.XtraEditors.LabelControl();
@@ -199,8 +199,11 @@ namespace CinemaPB.Forms
             this.htmlTemplate1,
             this.htmlTemplate2});
             this.winExplorerView1.Name = "winExplorerView1";
+            this.winExplorerView1.OptionsViewStyles.ExtraLarge.HtmlTemplate.Styles = resources.GetString("winExplorerView1.OptionsViewStyles.ExtraLarge.HtmlTemplate.Styles");
+            this.winExplorerView1.OptionsViewStyles.ExtraLarge.HtmlTemplate.Template = resources.GetString("winExplorerView1.OptionsViewStyles.ExtraLarge.HtmlTemplate.Template");
             this.winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Styles = resources.GetString("winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Styles");
             this.winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Template = resources.GetString("winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Template");
+            this.winExplorerView1.HtmlElementMouseClick += new DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewHtmlElementEventHandler(this.winExplorerView1_HtmlElementMouseClick);
             // 
             // gridColumn1
             // 
@@ -252,8 +255,10 @@ namespace CinemaPB.Forms
             // htmlTemplate3
             // 
             this.htmlTemplate3.Name = "htmlTemplate3";
+            this.htmlTemplate3.Styles = resources.GetString("htmlTemplate3.Styles");
+            this.htmlTemplate3.Template = resources.GetString("htmlTemplate3.Template");
             // 
-            // Hall2Showing
+            // Hall1Showing
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
             this.Appearance.Options.UseBackColor = true;
@@ -264,7 +269,7 @@ namespace CinemaPB.Forms
             this.Controls.Add(this.sidePanel5);
             this.Controls.Add(this.sidePanel4);
             this.Controls.Add(this.sidePanel1);
-            this.Name = "Hall2Showing";
+            this.Name = "Hall1Showing";
             this.Size = new System.Drawing.Size(1622, 976);
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();

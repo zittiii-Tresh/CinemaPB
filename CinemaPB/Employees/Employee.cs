@@ -8,8 +8,10 @@ namespace CinemaPB.Employees
 {
     public class Employee
     {
+        public int EmployeeID { get; set; }
         public string EmployeeName { get; set; }
         public string FirstName { get; set; }
+        public int IsLocked { get; set; }
 
         public string MiddleName { get; set; }
 

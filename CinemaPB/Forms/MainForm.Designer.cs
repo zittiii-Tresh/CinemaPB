@@ -225,7 +225,6 @@
             this.accordionControlElement6.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.hall1seatsACE,
             this.accordionControlElement8});
-            this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.HeaderIndent = 34;
             this.accordionControlElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement6.ImageOptions.SvgImage")));
             this.accordionControlElement6.Name = "accordionControlElement6";
@@ -244,7 +243,7 @@
             this.hall1seatsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.hall1seatsACE.Appearance.Pressed.Options.UseBackColor = true;
             this.hall1seatsACE.HeaderIndent = 20;
-            this.hall1seatsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement7.ImageOptions.SvgImage")));
+            this.hall1seatsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("hall1seatsACE.ImageOptions.SvgImage")));
             this.hall1seatsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
             this.hall1seatsACE.Name = "hall1seatsACE";
             this.hall1seatsACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
