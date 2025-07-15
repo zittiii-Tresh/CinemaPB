@@ -62,9 +62,10 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(41, 14);
+            this.labelControl1.Location = new System.Drawing.Point(35, 11);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(156, 56);
+            this.labelControl1.Size = new System.Drawing.Size(127, 44);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "TODAY";
             // 
@@ -79,8 +80,9 @@
             this.sidePanel1.Controls.Add(this.sidePanel3);
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel1.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(1622, 86);
+            this.sidePanel1.Size = new System.Drawing.Size(1390, 70);
             this.sidePanel1.TabIndex = 1;
             this.sidePanel1.Text = "sidePanel1";
             // 
@@ -91,9 +93,10 @@
             this.dateLBL.Appearance.Options.UseFont = true;
             this.dateLBL.Appearance.Options.UseForeColor = true;
             this.dateLBL.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dateLBL.Location = new System.Drawing.Point(1531, 29);
+            this.dateLBL.Location = new System.Drawing.Point(1315, 24);
+            this.dateLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateLBL.Name = "dateLBL";
-            this.dateLBL.Size = new System.Drawing.Size(53, 27);
+            this.dateLBL.Size = new System.Drawing.Size(42, 22);
             this.dateLBL.TabIndex = 3;
             this.dateLBL.Text = "Date";
             // 
@@ -103,9 +106,10 @@
             this.sidePanel2.Appearance.Options.UseBackColor = true;
             this.sidePanel2.BorderThickness = 0;
             this.sidePanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel2.Location = new System.Drawing.Point(1584, 29);
+            this.sidePanel2.Location = new System.Drawing.Point(1357, 24);
+            this.sidePanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel2.Name = "sidePanel2";
-            this.sidePanel2.Size = new System.Drawing.Size(38, 57);
+            this.sidePanel2.Size = new System.Drawing.Size(33, 46);
             this.sidePanel2.TabIndex = 2;
             this.sidePanel2.Text = "sidePanel2";
             // 
@@ -116,8 +120,9 @@
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel3.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel3.Name = "sidePanel3";
-            this.sidePanel3.Size = new System.Drawing.Size(1622, 29);
+            this.sidePanel3.Size = new System.Drawing.Size(1390, 24);
             this.sidePanel3.TabIndex = 2;
             this.sidePanel3.Text = "sidePanel3";
             // 
@@ -127,9 +132,10 @@
             this.sidePanel4.Appearance.Options.UseBackColor = true;
             this.sidePanel4.BorderThickness = 0;
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel4.Location = new System.Drawing.Point(0, 86);
+            this.sidePanel4.Location = new System.Drawing.Point(0, 70);
+            this.sidePanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel4.Name = "sidePanel4";
-            this.sidePanel4.Size = new System.Drawing.Size(41, 890);
+            this.sidePanel4.Size = new System.Drawing.Size(35, 723);
             this.sidePanel4.TabIndex = 2;
             this.sidePanel4.Text = "sidePanel4";
             // 
@@ -139,9 +145,10 @@
             this.sidePanel5.Appearance.Options.UseBackColor = true;
             this.sidePanel5.BorderThickness = 0;
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel5.Location = new System.Drawing.Point(1584, 86);
+            this.sidePanel5.Location = new System.Drawing.Point(1357, 70);
+            this.sidePanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel5.Name = "sidePanel5";
-            this.sidePanel5.Size = new System.Drawing.Size(38, 890);
+            this.sidePanel5.Size = new System.Drawing.Size(33, 723);
             this.sidePanel5.TabIndex = 3;
             this.sidePanel5.Text = "sidePanel5";
             // 
@@ -151,9 +158,10 @@
             this.sidePanel6.Appearance.Options.UseBackColor = true;
             this.sidePanel6.BorderThickness = 0;
             this.sidePanel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel6.Location = new System.Drawing.Point(41, 932);
+            this.sidePanel6.Location = new System.Drawing.Point(35, 757);
+            this.sidePanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel6.Name = "sidePanel6";
-            this.sidePanel6.Size = new System.Drawing.Size(1543, 44);
+            this.sidePanel6.Size = new System.Drawing.Size(1322, 36);
             this.sidePanel6.TabIndex = 4;
             this.sidePanel6.Text = "sidePanel6";
             // 
@@ -161,9 +169,10 @@
             // 
             this.sidePanel7.Controls.Add(this.gcMovies);
             this.sidePanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sidePanel7.Location = new System.Drawing.Point(41, 86);
+            this.sidePanel7.Location = new System.Drawing.Point(35, 70);
+            this.sidePanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel7.Name = "sidePanel7";
-            this.sidePanel7.Size = new System.Drawing.Size(1543, 846);
+            this.sidePanel7.Size = new System.Drawing.Size(1322, 687);
             this.sidePanel7.TabIndex = 5;
             this.sidePanel7.Text = "sidePanel7";
             // 
@@ -171,12 +180,14 @@
             // 
             this.gcMovies.Cursor = System.Windows.Forms.Cursors.Default;
             this.gcMovies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcMovies.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcMovies.Location = new System.Drawing.Point(0, 0);
             this.gcMovies.MainView = this.winExplorerView1;
+            this.gcMovies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcMovies.Name = "gcMovies";
             this.gcMovies.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit1});
-            this.gcMovies.Size = new System.Drawing.Size(1543, 846);
+            this.gcMovies.Size = new System.Drawing.Size(1322, 687);
             this.gcMovies.TabIndex = 0;
             this.gcMovies.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.winExplorerView1,
@@ -205,29 +216,29 @@
             // gridColumn1
             // 
             this.gridColumn1.Caption = "gridColumn1";
-            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.MinWidth = 21;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 94;
+            this.gridColumn1.Width = 81;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "gridColumn2";
-            this.gridColumn2.MinWidth = 25;
+            this.gridColumn2.MinWidth = 21;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 94;
+            this.gridColumn2.Width = 81;
             // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "gridColumn3";
-            this.gridColumn3.MinWidth = 25;
+            this.gridColumn3.MinWidth = 21;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 94;
+            this.gridColumn3.Width = 81;
             // 
             // htmlTemplate1
             // 
@@ -257,15 +268,16 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.sidePanel7);
             this.Controls.Add(this.sidePanel6);
             this.Controls.Add(this.sidePanel5);
             this.Controls.Add(this.sidePanel4);
             this.Controls.Add(this.sidePanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Hall2Showing";
-            this.Size = new System.Drawing.Size(1622, 976);
+            this.Size = new System.Drawing.Size(1390, 793);
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
             this.sidePanel7.ResumeLayout(false);
