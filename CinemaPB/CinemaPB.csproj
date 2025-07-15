@@ -93,12 +93,6 @@
       <DependentUpon>EmployeeListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormHelper.cs" />
-    <Compile Include="Forms\Hall1Form.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Hall1Form.Designer.cs">
-      <DependentUpon>Hall1Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Hall1Showing.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -197,9 +191,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EmployeeListForm.resx">
       <DependentUpon>EmployeeListForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Hall1Form.resx">
-      <DependentUpon>Hall1Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Hall1Showing.resx">
       <DependentUpon>Hall1Showing.cs</DependentUpon>
