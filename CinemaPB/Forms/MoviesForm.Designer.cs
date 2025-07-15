@@ -34,8 +34,8 @@
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             this.availabilityLC = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.updateBTN = new DevExpress.XtraEditors.SimpleButton();
+            this.deleteBTN = new DevExpress.XtraEditors.SimpleButton();
             this.availabilityTS = new DevExpress.XtraEditors.ToggleSwitch();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.browseBTN = new DevExpress.XtraEditors.SimpleButton();
@@ -48,7 +48,7 @@
             this.weekendpriceTE = new DevExpress.XtraEditors.TextEdit();
             this.weekdaypriceTE = new DevExpress.XtraEditors.TextEdit();
             this.durationTE = new DevExpress.XtraEditors.TimeEdit();
-            this.moviegenreLUE = new DevExpress.XtraEditors.LookUpEdit();
+            this.moviegenreLUE = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.movienameTE = new DevExpress.XtraEditors.TextEdit();
             this.addgenreBTN = new DevExpress.XtraEditors.SimpleButton();
@@ -144,8 +144,8 @@
             this.sidePanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Controls.Add(this.availabilityLC);
-            this.sidePanel3.Controls.Add(this.simpleButton6);
-            this.sidePanel3.Controls.Add(this.simpleButton5);
+            this.sidePanel3.Controls.Add(this.updateBTN);
+            this.sidePanel3.Controls.Add(this.deleteBTN);
             this.sidePanel3.Controls.Add(this.availabilityTS);
             this.sidePanel3.Controls.Add(this.labelControl1);
             this.sidePanel3.Controls.Add(this.browseBTN);
@@ -170,35 +170,37 @@
             this.availabilityLC.TabIndex = 19;
             this.availabilityLC.Text = "Available";
             // 
-            // simpleButton6
+            // updateBTN
             // 
-            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton6.Appearance.Options.UseBackColor = true;
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.Location = new System.Drawing.Point(1104, 11);
-            this.simpleButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Padding = new System.Windows.Forms.Padding(2);
-            this.simpleButton6.Size = new System.Drawing.Size(102, 39);
-            this.simpleButton6.TabIndex = 25;
-            this.simpleButton6.Text = "Update";
+            this.updateBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.updateBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBTN.Appearance.Options.UseBackColor = true;
+            this.updateBTN.Appearance.Options.UseFont = true;
+            this.updateBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.updateBTN.Location = new System.Drawing.Point(1104, 11);
+            this.updateBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updateBTN.Name = "updateBTN";
+            this.updateBTN.Padding = new System.Windows.Forms.Padding(2);
+            this.updateBTN.Size = new System.Drawing.Size(102, 39);
+            this.updateBTN.TabIndex = 25;
+            this.updateBTN.Text = "Update";
+            this.updateBTN.Click += new System.EventHandler(this.updateBTN_Click);
             // 
-            // simpleButton5
+            // deleteBTN
             // 
-            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.Options.UseBackColor = true;
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.simpleButton5.Location = new System.Drawing.Point(1218, 11);
-            this.simpleButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Padding = new System.Windows.Forms.Padding(2);
-            this.simpleButton5.Size = new System.Drawing.Size(102, 39);
-            this.simpleButton5.TabIndex = 24;
-            this.simpleButton5.Text = "Delete";
+            this.deleteBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.deleteBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBTN.Appearance.Options.UseBackColor = true;
+            this.deleteBTN.Appearance.Options.UseFont = true;
+            this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.deleteBTN.Location = new System.Drawing.Point(1218, 11);
+            this.deleteBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteBTN.Name = "deleteBTN";
+            this.deleteBTN.Padding = new System.Windows.Forms.Padding(2);
+            this.deleteBTN.Size = new System.Drawing.Size(102, 39);
+            this.deleteBTN.TabIndex = 24;
+            this.deleteBTN.Text = "Delete";
+            this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
             // 
             // availabilityTS
             // 
@@ -386,7 +388,6 @@
             this.moviegenreLUE.Properties.AutoHeight = false;
             this.moviegenreLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.moviegenreLUE.Properties.NullText = "";
             this.moviegenreLUE.Size = new System.Drawing.Size(260, 28);
             this.moviegenreLUE.TabIndex = 30;
             // 
@@ -711,12 +712,16 @@
             this.moviesGV.OptionsView.EnableAppearanceEvenRow = true;
             this.moviesGV.OptionsView.EnableAppearanceOddRow = true;
             this.moviesGV.PaintStyleName = "Skin";
+            this.moviesGV.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.moviesGV_RowClick);
             // 
             // MovieID
             // 
             this.MovieID.Caption = "ID";
             this.MovieID.FieldName = "MovieID";
             this.MovieID.Name = "MovieID";
+            this.MovieID.OptionsColumn.AllowEdit = false;
+            this.MovieID.OptionsColumn.AllowFocus = false;
+            this.MovieID.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.MovieID.Visible = true;
             this.MovieID.VisibleIndex = 0;
             this.MovieID.Width = 64;
@@ -726,6 +731,9 @@
             this.Title.Caption = "Movie Name";
             this.Title.FieldName = "Title";
             this.Title.Name = "Title";
+            this.Title.OptionsColumn.AllowEdit = false;
+            this.Title.OptionsColumn.AllowFocus = false;
+            this.Title.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Title.Visible = true;
             this.Title.VisibleIndex = 1;
             this.Title.Width = 64;
@@ -733,8 +741,11 @@
             // Genre
             // 
             this.Genre.Caption = "Genre";
-            this.Genre.FieldName = "GenreName";
+            this.Genre.FieldName = "Genres";
             this.Genre.Name = "Genre";
+            this.Genre.OptionsColumn.AllowEdit = false;
+            this.Genre.OptionsColumn.AllowFocus = false;
+            this.Genre.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Genre.Visible = true;
             this.Genre.VisibleIndex = 2;
             this.Genre.Width = 64;
@@ -744,6 +755,9 @@
             this.Rating.Caption = "Rating";
             this.Rating.FieldName = "RatingName";
             this.Rating.Name = "Rating";
+            this.Rating.OptionsColumn.AllowEdit = false;
+            this.Rating.OptionsColumn.AllowFocus = false;
+            this.Rating.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Rating.Visible = true;
             this.Rating.VisibleIndex = 3;
             this.Rating.Width = 64;
@@ -753,6 +767,9 @@
             this.Language.Caption = "Language";
             this.Language.FieldName = "LanguageName";
             this.Language.Name = "Language";
+            this.Language.OptionsColumn.AllowEdit = false;
+            this.Language.OptionsColumn.AllowFocus = false;
+            this.Language.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Language.Visible = true;
             this.Language.VisibleIndex = 4;
             this.Language.Width = 64;
@@ -762,6 +779,9 @@
             this.Availability.Caption = "Availability";
             this.Availability.FieldName = "Availability";
             this.Availability.Name = "Availability";
+            this.Availability.OptionsColumn.AllowEdit = false;
+            this.Availability.OptionsColumn.AllowFocus = false;
+            this.Availability.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Availability.Visible = true;
             this.Availability.VisibleIndex = 5;
             // 
@@ -874,8 +894,8 @@
         private DevExpress.XtraGrid.GridControl moviesGC;
         private DevExpress.XtraGrid.Views.Grid.GridView moviesGV;
         private DevExpress.XtraEditors.ToggleSwitch availabilityTS;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton updateBTN;
+        private DevExpress.XtraEditors.SimpleButton deleteBTN;
         private DevExpress.XtraEditors.DateTimeOffsetEdit moviedurationTE;
         private DevExpress.XtraEditors.LabelControl availabilityLC;
         private DevExpress.XtraEditors.TimeEdit durationTE;
@@ -883,12 +903,12 @@
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.TextEdit weekendpriceTE;
         private DevExpress.XtraEditors.TextEdit weekdaypriceTE;
-        private DevExpress.XtraEditors.LookUpEdit moviegenreLUE;
         private DevExpress.XtraGrid.Columns.GridColumn MovieID;
         private DevExpress.XtraGrid.Columns.GridColumn Title;
         private DevExpress.XtraGrid.Columns.GridColumn Genre;
         private DevExpress.XtraGrid.Columns.GridColumn Rating;
         private DevExpress.XtraGrid.Columns.GridColumn Language;
         private DevExpress.XtraGrid.Columns.GridColumn Availability;
+        private DevExpress.XtraEditors.CheckedComboBoxEdit moviegenreLUE;
     }
 }

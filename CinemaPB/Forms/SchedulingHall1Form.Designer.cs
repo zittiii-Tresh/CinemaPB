@@ -29,11 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchedulingHall1Form));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel6 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel10 = new DevExpress.XtraEditors.SidePanel();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.posterPE = new DevExpress.XtraEditors.PictureEdit();
             this.sidePanel9 = new DevExpress.XtraEditors.SidePanel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.starttime3TE = new DevExpress.XtraEditors.TimeEdit();
+            this.starttime2TE = new DevExpress.XtraEditors.TimeEdit();
+            this.starttime1TE = new DevExpress.XtraEditors.TimeEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.label4 = new System.Windows.Forms.Label();
             this.priceLBL = new DevExpress.XtraEditors.LabelControl();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,14 +61,12 @@
             this.movienameLBL = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel5 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel11 = new DevExpress.XtraEditors.SidePanel();
-            this.starttimeTE = new DevExpress.XtraEditors.TimeEdit();
+            this.deleteBTN = new DevExpress.XtraEditors.SimpleButton();
+            this.updateBTN = new DevExpress.XtraEditors.SimpleButton();
             this.showdateDE = new DevExpress.XtraEditors.DateEdit();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.saveBTN = new DevExpress.XtraEditors.SimpleButton();
-            this.daytypeRG = new DevExpress.XtraEditors.RadioGroup();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.availablemovieLUE = new DevExpress.XtraEditors.LookUpEdit();
             this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
@@ -66,31 +81,34 @@
             this.sidePanel14 = new DevExpress.XtraEditors.SidePanel();
             this.showtime1GC = new DevExpress.XtraGrid.GridControl();
             this.showtime1GV = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.realTimeSource1 = new DevExpress.Data.RealTimeSource();
-            this.ShowtimeID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Title = new DevExpress.XtraGrid.Columns.GridColumn();
             this.StartTime = new DevExpress.XtraGrid.Columns.GridColumn();
             this.EndTime = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DayType = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Price = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ShowDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Screening = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemButtonEditUpdate = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.realTimeSource1 = new DevExpress.Data.RealTimeSource();
             this.sidePanel1.SuspendLayout();
             this.sidePanel6.SuspendLayout();
             this.sidePanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).BeginInit();
             this.sidePanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.starttime3TE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.starttime2TE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.starttime1TE.Properties)).BeginInit();
             this.sidePanel5.SuspendLayout();
             this.sidePanel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.starttimeTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.daytypeRG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.availablemovieLUE.Properties)).BeginInit();
             this.sidePanel2.SuspendLayout();
             this.sidePanel7.SuspendLayout();
             this.sidePanel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showtime1GC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showtime1GV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditUpdate)).BeginInit();
             this.SuspendLayout();
             // 
             // sidePanel1
@@ -131,7 +149,7 @@
             // 
             this.sidePanel10.AllowResize = false;
             this.sidePanel10.BorderThickness = 0;
-            this.sidePanel10.Controls.Add(this.pictureEdit1);
+            this.sidePanel10.Controls.Add(this.posterPE);
             this.sidePanel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel10.Location = new System.Drawing.Point(0, 0);
             this.sidePanel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -140,25 +158,32 @@
             this.sidePanel10.TabIndex = 6;
             this.sidePanel10.Text = "sidePanel10";
             // 
-            // pictureEdit1
+            // posterPE
             // 
-            this.pictureEdit1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureEdit1.BackgroundImage")));
-            this.pictureEdit1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(5, 5);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(70)))), ((int)(((byte)(85)))));
-            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(353, 515);
-            this.pictureEdit1.TabIndex = 0;
+            this.posterPE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("posterPE.BackgroundImage")));
+            this.posterPE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.posterPE.EditValue = ((object)(resources.GetObject("posterPE.EditValue")));
+            this.posterPE.Location = new System.Drawing.Point(5, 5);
+            this.posterPE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.posterPE.Name = "posterPE";
+            this.posterPE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(70)))), ((int)(((byte)(85)))));
+            this.posterPE.Properties.Appearance.Options.UseBackColor = true;
+            this.posterPE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.posterPE.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.posterPE.Size = new System.Drawing.Size(353, 515);
+            this.posterPE.TabIndex = 0;
             // 
             // sidePanel9
             // 
             this.sidePanel9.AllowResize = false;
             this.sidePanel9.BorderThickness = 0;
+            this.sidePanel9.Controls.Add(this.label10);
+            this.sidePanel9.Controls.Add(this.label9);
+            this.sidePanel9.Controls.Add(this.label8);
+            this.sidePanel9.Controls.Add(this.starttime3TE);
+            this.sidePanel9.Controls.Add(this.starttime2TE);
+            this.sidePanel9.Controls.Add(this.starttime1TE);
+            this.sidePanel9.Controls.Add(this.labelControl5);
             this.sidePanel9.Controls.Add(this.label4);
             this.sidePanel9.Controls.Add(this.priceLBL);
             this.sidePanel9.Controls.Add(this.label3);
@@ -174,6 +199,106 @@
             this.sidePanel9.Size = new System.Drawing.Size(219, 514);
             this.sidePanel9.TabIndex = 5;
             this.sidePanel9.Text = "sidePanel9";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.label10.Location = new System.Drawing.Point(11, 489);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(95, 17);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "Last Screening";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.label9.Location = new System.Drawing.Point(11, 431);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(117, 17);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "Second Screening";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.label8.Location = new System.Drawing.Point(11, 373);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(94, 17);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "First Screening";
+            // 
+            // starttime3TE
+            // 
+            this.starttime3TE.EditValue = new System.DateTime(2025, 7, 8, 0, 0, 0, 0);
+            this.starttime3TE.Location = new System.Drawing.Point(4, 455);
+            this.starttime3TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.starttime3TE.Name = "starttime3TE";
+            this.starttime3TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.starttime3TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.starttime3TE.Properties.Appearance.Options.UseBackColor = true;
+            this.starttime3TE.Properties.Appearance.Options.UseFont = true;
+            this.starttime3TE.Properties.AutoHeight = false;
+            this.starttime3TE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.starttime3TE.Properties.MaskSettings.Set("mask", "t");
+            this.starttime3TE.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.starttime3TE.Size = new System.Drawing.Size(197, 32);
+            this.starttime3TE.TabIndex = 34;
+            // 
+            // starttime2TE
+            // 
+            this.starttime2TE.EditValue = new System.DateTime(2025, 7, 8, 0, 0, 0, 0);
+            this.starttime2TE.Location = new System.Drawing.Point(4, 397);
+            this.starttime2TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.starttime2TE.Name = "starttime2TE";
+            this.starttime2TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.starttime2TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.starttime2TE.Properties.Appearance.Options.UseBackColor = true;
+            this.starttime2TE.Properties.Appearance.Options.UseFont = true;
+            this.starttime2TE.Properties.AutoHeight = false;
+            this.starttime2TE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.starttime2TE.Properties.MaskSettings.Set("mask", "t");
+            this.starttime2TE.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.starttime2TE.Size = new System.Drawing.Size(197, 32);
+            this.starttime2TE.TabIndex = 33;
+            // 
+            // starttime1TE
+            // 
+            this.starttime1TE.EditValue = new System.DateTime(2025, 7, 8, 0, 0, 0, 0);
+            this.starttime1TE.Location = new System.Drawing.Point(4, 339);
+            this.starttime1TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.starttime1TE.Name = "starttime1TE";
+            this.starttime1TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.starttime1TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.starttime1TE.Properties.Appearance.Options.UseBackColor = true;
+            this.starttime1TE.Properties.Appearance.Options.UseFont = true;
+            this.starttime1TE.Properties.AutoHeight = false;
+            this.starttime1TE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.starttime1TE.Properties.MaskSettings.Set("mask", "t");
+            this.starttime1TE.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.starttime1TE.Size = new System.Drawing.Size(197, 32);
+            this.starttime1TE.TabIndex = 32;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(13, 273);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(12, 25);
+            this.labelControl5.TabIndex = 8;
+            this.labelControl5.Text = "₱";
             // 
             // label4
             // 
@@ -192,7 +317,7 @@
             this.priceLBL.Appearance.ForeColor = System.Drawing.Color.White;
             this.priceLBL.Appearance.Options.UseFont = true;
             this.priceLBL.Appearance.Options.UseForeColor = true;
-            this.priceLBL.Location = new System.Drawing.Point(15, 275);
+            this.priceLBL.Location = new System.Drawing.Point(27, 275);
             this.priceLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.priceLBL.Name = "priceLBL";
             this.priceLBL.Size = new System.Drawing.Size(44, 22);
@@ -288,14 +413,12 @@
             // 
             this.sidePanel11.AllowResize = false;
             this.sidePanel11.BorderThickness = 0;
-            this.sidePanel11.Controls.Add(this.starttimeTE);
+            this.sidePanel11.Controls.Add(this.deleteBTN);
+            this.sidePanel11.Controls.Add(this.updateBTN);
             this.sidePanel11.Controls.Add(this.showdateDE);
             this.sidePanel11.Controls.Add(this.label7);
-            this.sidePanel11.Controls.Add(this.label6);
             this.sidePanel11.Controls.Add(this.label5);
             this.sidePanel11.Controls.Add(this.saveBTN);
-            this.sidePanel11.Controls.Add(this.daytypeRG);
-            this.sidePanel11.Controls.Add(this.labelControl2);
             this.sidePanel11.Controls.Add(this.availablemovieLUE);
             this.sidePanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sidePanel11.Location = new System.Drawing.Point(0, 0);
@@ -305,23 +428,37 @@
             this.sidePanel11.TabIndex = 0;
             this.sidePanel11.Text = "sidePanel11";
             // 
-            // starttimeTE
+            // deleteBTN
             // 
-            this.starttimeTE.EditValue = new System.DateTime(2025, 7, 8, 0, 0, 0, 0);
-            this.starttimeTE.Location = new System.Drawing.Point(26, 77);
-            this.starttimeTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.starttimeTE.Name = "starttimeTE";
-            this.starttimeTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
-            this.starttimeTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.starttimeTE.Properties.Appearance.Options.UseBackColor = true;
-            this.starttimeTE.Properties.Appearance.Options.UseFont = true;
-            this.starttimeTE.Properties.AutoHeight = false;
-            this.starttimeTE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.starttimeTE.Properties.MaskSettings.Set("mask", "t");
-            this.starttimeTE.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.starttimeTE.Size = new System.Drawing.Size(231, 32);
-            this.starttimeTE.TabIndex = 31;
+            this.deleteBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.deleteBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBTN.Appearance.Options.UseBackColor = true;
+            this.deleteBTN.Appearance.Options.UseFont = true;
+            this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("deleteBTN.ImageOptions.Image")));
+            this.deleteBTN.Location = new System.Drawing.Point(436, 147);
+            this.deleteBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteBTN.Name = "deleteBTN";
+            this.deleteBTN.Padding = new System.Windows.Forms.Padding(2);
+            this.deleteBTN.Size = new System.Drawing.Size(102, 39);
+            this.deleteBTN.TabIndex = 33;
+            this.deleteBTN.Text = "Delete";
+            this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
+            // 
+            // updateBTN
+            // 
+            this.updateBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.updateBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBTN.Appearance.Options.UseBackColor = true;
+            this.updateBTN.Appearance.Options.UseFont = true;
+            this.updateBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("updateBTN.ImageOptions.Image")));
+            this.updateBTN.Location = new System.Drawing.Point(313, 147);
+            this.updateBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updateBTN.Name = "updateBTN";
+            this.updateBTN.Padding = new System.Windows.Forms.Padding(2);
+            this.updateBTN.Size = new System.Drawing.Size(102, 39);
+            this.updateBTN.TabIndex = 32;
+            this.updateBTN.Text = "Update";
+            this.updateBTN.Click += new System.EventHandler(this.updateBTN_Click);
             // 
             // showdateDE
             // 
@@ -352,17 +489,6 @@
             this.label7.TabIndex = 29;
             this.label7.Text = "Showdate:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label6.Location = new System.Drawing.Point(27, 115);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 17);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Start Time:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -387,42 +513,6 @@
             this.saveBTN.TabIndex = 27;
             this.saveBTN.Text = "SAVE";
             this.saveBTN.Click += new System.EventHandler(this.saveBTN_Click);
-            // 
-            // daytypeRG
-            // 
-            this.daytypeRG.Location = new System.Drawing.Point(333, 100);
-            this.daytypeRG.Name = "daytypeRG";
-            this.daytypeRG.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.daytypeRG.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.daytypeRG.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.daytypeRG.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.daytypeRG.Properties.Appearance.Options.UseBackColor = true;
-            this.daytypeRG.Properties.Appearance.Options.UseBorderColor = true;
-            this.daytypeRG.Properties.Appearance.Options.UseFont = true;
-            this.daytypeRG.Properties.Appearance.Options.UseForeColor = true;
-            this.daytypeRG.Properties.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
-            this.daytypeRG.Properties.AppearanceDisabled.Options.UseBorderColor = true;
-            this.daytypeRG.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.daytypeRG.Properties.Columns = 2;
-            this.daytypeRG.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("Weekend", "Weekend", true, "Weekend", "Weekend"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("Weekday", "Weekday", true, "Weekday", "Weekday")});
-            this.daytypeRG.Size = new System.Drawing.Size(249, 30);
-            this.daytypeRG.TabIndex = 26;
-            this.daytypeRG.SelectedIndexChanged += new System.EventHandler(this.daytypeRG_SelectedIndexChanged);
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(318, 76);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(76, 19);
-            this.labelControl2.TabIndex = 8;
-            this.labelControl2.Text = "Day Type:";
             // 
             // availablemovieLUE
             // 
@@ -588,6 +678,8 @@
             this.showtime1GC.MainView = this.showtime1GV;
             this.showtime1GC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.showtime1GC.Name = "showtime1GC";
+            this.showtime1GC.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemButtonEditUpdate});
             this.showtime1GC.Size = new System.Drawing.Size(517, 709);
             this.showtime1GC.TabIndex = 0;
             this.showtime1GC.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -596,77 +688,108 @@
             // showtime1GV
             // 
             this.showtime1GV.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ShowtimeID,
             this.Title,
             this.StartTime,
             this.EndTime,
             this.DayType,
             this.Price,
-            this.ShowDate});
+            this.ShowDate,
+            this.Screening});
             this.showtime1GV.DetailHeight = 284;
             this.showtime1GV.GridControl = this.showtime1GC;
             this.showtime1GV.Name = "showtime1GV";
             this.showtime1GV.OptionsEditForm.PopupEditFormWidth = 686;
-            // 
-            // realTimeSource1
-            // 
-            this.realTimeSource1.DisplayableProperties = null;
-            // 
-            // ShowtimeID
-            // 
-            this.ShowtimeID.Caption = "ID";
-            this.ShowtimeID.FieldName = "ShowtimeID";
-            this.ShowtimeID.Name = "ShowtimeID";
-            this.ShowtimeID.Visible = true;
-            this.ShowtimeID.VisibleIndex = 0;
+            this.showtime1GV.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.showtime1GV_RowClick);
             // 
             // Title
             // 
             this.Title.Caption = "Movie Name";
             this.Title.FieldName = "Title";
             this.Title.Name = "Title";
+            this.Title.OptionsColumn.AllowEdit = false;
+            this.Title.OptionsColumn.AllowFocus = false;
+            this.Title.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Title.Visible = true;
-            this.Title.VisibleIndex = 1;
+            this.Title.VisibleIndex = 0;
             // 
             // StartTime
             // 
             this.StartTime.Caption = "Start Time";
             this.StartTime.FieldName = "StartTime";
             this.StartTime.Name = "StartTime";
+            this.StartTime.OptionsColumn.AllowEdit = false;
+            this.StartTime.OptionsColumn.AllowFocus = false;
+            this.StartTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.StartTime.Visible = true;
-            this.StartTime.VisibleIndex = 2;
+            this.StartTime.VisibleIndex = 1;
             // 
             // EndTime
             // 
             this.EndTime.Caption = "End Time";
             this.EndTime.FieldName = "EndTime";
             this.EndTime.Name = "EndTime";
+            this.EndTime.OptionsColumn.AllowEdit = false;
+            this.EndTime.OptionsColumn.AllowFocus = false;
+            this.EndTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.EndTime.Visible = true;
-            this.EndTime.VisibleIndex = 3;
+            this.EndTime.VisibleIndex = 2;
             // 
             // DayType
             // 
             this.DayType.Caption = "Day Type";
             this.DayType.FieldName = "DayType";
             this.DayType.Name = "DayType";
+            this.DayType.OptionsColumn.AllowEdit = false;
+            this.DayType.OptionsColumn.AllowFocus = false;
+            this.DayType.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.DayType.Visible = true;
-            this.DayType.VisibleIndex = 4;
+            this.DayType.VisibleIndex = 3;
             // 
             // Price
             // 
             this.Price.Caption = "Price";
             this.Price.FieldName = "Price";
             this.Price.Name = "Price";
+            this.Price.OptionsColumn.AllowEdit = false;
+            this.Price.OptionsColumn.AllowFocus = false;
+            this.Price.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Price.Visible = true;
-            this.Price.VisibleIndex = 5;
+            this.Price.VisibleIndex = 4;
             // 
             // ShowDate
             // 
             this.ShowDate.Caption = "Show Date";
             this.ShowDate.FieldName = "ShowDate";
             this.ShowDate.Name = "ShowDate";
+            this.ShowDate.OptionsColumn.AllowEdit = false;
+            this.ShowDate.OptionsColumn.AllowFocus = false;
+            this.ShowDate.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.ShowDate.Visible = true;
-            this.ShowDate.VisibleIndex = 6;
+            this.ShowDate.VisibleIndex = 5;
+            // 
+            // Screening
+            // 
+            this.Screening.Caption = "Screening";
+            this.Screening.FieldName = "ScreeningLabel";
+            this.Screening.Name = "Screening";
+            this.Screening.Visible = true;
+            this.Screening.VisibleIndex = 6;
+            // 
+            // repositoryItemButtonEditUpdate
+            // 
+            this.repositoryItemButtonEditUpdate.AutoHeight = false;
+            this.repositoryItemButtonEditUpdate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "EDIT", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "DELETE", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repositoryItemButtonEditUpdate.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.repositoryItemButtonEditUpdate.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.repositoryItemButtonEditUpdate.HideSelection = false;
+            this.repositoryItemButtonEditUpdate.Name = "repositoryItemButtonEditUpdate";
+            this.repositoryItemButtonEditUpdate.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            // 
+            // realTimeSource1
+            // 
+            this.realTimeSource1.DisplayableProperties = null;
             // 
             // SchedulingHall1Form
             // 
@@ -686,16 +809,17 @@
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel6.ResumeLayout(false);
             this.sidePanel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).EndInit();
             this.sidePanel9.ResumeLayout(false);
             this.sidePanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.starttime3TE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.starttime2TE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.starttime1TE.Properties)).EndInit();
             this.sidePanel5.ResumeLayout(false);
             this.sidePanel11.ResumeLayout(false);
             this.sidePanel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.starttimeTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.daytypeRG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.availablemovieLUE.Properties)).EndInit();
             this.sidePanel2.ResumeLayout(false);
             this.sidePanel2.PerformLayout();
@@ -704,6 +828,7 @@
             this.sidePanel14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.showtime1GC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showtime1GV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditUpdate)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -713,7 +838,6 @@
         private DevExpress.XtraEditors.SidePanel sidePanel1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.SidePanel sidePanel4;
         private DevExpress.XtraEditors.SidePanel sidePanel3;
         private DevExpress.XtraEditors.SidePanel sidePanel2;
@@ -721,18 +845,15 @@
         private DevExpress.XtraEditors.SidePanel sidePanel5;
         private DevExpress.XtraEditors.SidePanel sidePanel10;
         private DevExpress.XtraEditors.SidePanel sidePanel9;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PictureEdit posterPE;
         private DevExpress.XtraEditors.LabelControl movienameLBL;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private DevExpress.XtraEditors.LabelControl priceLBL;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.LabelControl timeslotLBL;
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.LabelControl showdateLBL;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.SimpleButton saveBTN;
-        private DevExpress.XtraEditors.RadioGroup daytypeRG;
         private DevExpress.XtraEditors.SidePanel sidePanel11;
         private DevExpress.XtraEditors.SidePanel sidePanel7;
         private DevExpress.XtraEditors.SidePanel sidePanel8;
@@ -743,17 +864,27 @@
         private DevExpress.XtraGrid.Views.Grid.GridView showtime1GV;
         private DevExpress.XtraEditors.DateEdit showdateDE;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private DevExpress.Data.RealTimeSource realTimeSource1;
-        private DevExpress.XtraEditors.TimeEdit starttimeTE;
         private DevExpress.XtraEditors.LookUpEdit availablemovieLUE;
-        private DevExpress.XtraGrid.Columns.GridColumn ShowtimeID;
         private DevExpress.XtraGrid.Columns.GridColumn Title;
         private DevExpress.XtraGrid.Columns.GridColumn StartTime;
         private DevExpress.XtraGrid.Columns.GridColumn EndTime;
         private DevExpress.XtraGrid.Columns.GridColumn DayType;
         private DevExpress.XtraGrid.Columns.GridColumn Price;
         private DevExpress.XtraGrid.Columns.GridColumn ShowDate;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEditUpdate;
+        private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.SimpleButton updateBTN;
+        private DevExpress.XtraEditors.SimpleButton deleteBTN;
+        private DevExpress.XtraEditors.TimeEdit starttime2TE;
+        private DevExpress.XtraEditors.TimeEdit starttime1TE;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private DevExpress.XtraEditors.TimeEdit starttime3TE;
+        private DevExpress.XtraGrid.Columns.GridColumn Screening;
     }
 }

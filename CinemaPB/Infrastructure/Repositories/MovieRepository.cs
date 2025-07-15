@@ -94,9 +94,13 @@ namespace CinemaPB.Infrastructure.Repositories
         public byte[] ImageToByteArray(Image image)
         {
             if (image == null) return null;
+
             using (var ms = new MemoryStream())
             {
-                image.Save(ms, image.RawFormat);
+                using (var bitmap = new Bitmap(image)) // clone image to avoid GDI+ lock
+                {
+                    bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png); // use fixed format
+                }
                 return ms.ToArray();
             }
         }
@@ -125,6 +129,15 @@ namespace CinemaPB.Infrastructure.Repositories
             }
         }
 
+        public void InsertMovieGenre(int movieId, int genreId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                string sql = "INSERT INTO mov.MovieGenres (MovieID, GenreID) VALUES (@MovieID, @GenreID)";
+                connection.Execute(sql, new { MovieID = movieId, GenreID = genreId });
+            }
+        }
+
         public List<MovieWithDetail> GetAllMovieDetails()
         {
             using (var connection = new SqlConnection(_connectionString))
@@ -132,6 +145,80 @@ namespace CinemaPB.Infrastructure.Repositories
                 connection.Open();
                 var result = connection.Query<MovieWithDetail>(MovieSQL.RetrieveMoviePriceAndDetails).ToList();
                 return result;
+            }
+        }
+        public List<MoviePrice> GetMoviePrices(int movieId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                string query = @"SELECT MoviePriceID, MovieID, DayType, Price 
+                         FROM mov.MoviePrices 
+                         WHERE MovieID = @MovieID";
+
+                return connection.Query<MoviePrice>(query, new { MovieID = movieId }).ToList();
+            }
+        }
+        public void UpdateMovie(Movie movie)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                connection.Execute(MovieSQL.UpdateMovie, new
+                {
+                    movie.Title,
+                    movie.Description,
+                    movie.Duration,
+                    movie.LanguageID,
+                    movie.RatingID,
+                    movie.Availability,
+                    Poster = ImageToByteArray(movie.Poster),
+                    movie.MovieID
+                });
+            }
+        }
+
+        public void UpdateMovieGenres(int movieId, List<int> genreIds)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                connection.Execute(MovieSQL.DeleteMovieGenres, new { MovieID = movieId });
+
+                foreach (var genreId in genreIds)
+                {
+                    connection.Execute(MovieSQL.InsertMovieGenre, new { MovieID = movieId, GenreID = genreId });
+                }
+            }
+        }
+
+        public void UpdateMoviePrice(int movieId, string dayType, decimal price)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                var exists = connection.ExecuteScalar<int>(MovieSQL.CheckIfMoviePriceExists,
+                    new { MovieID = movieId, DayType = dayType }) > 0;
+
+                if (exists)
+                {
+                    connection.Execute(MovieSQL.UpdateMoviePrice, new { MovieID = movieId, DayType = dayType, Price = price });
+                }
+                else
+                {
+                    connection.Execute(MovieSQL.InsertMoviePrice, new { MovieID = movieId, DayType = dayType, Price = price });
+                }
+            }
+        }
+
+        public void DeleteMovie(int movieId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                connection.Execute(MovieSQL.DeleteMovieGenres, new { MovieID = movieId });
+                connection.Execute(MovieSQL.DeleteMoviePrices, new { MovieID = movieId });
+                connection.Execute(MovieSQL.DeleteMovie, new { MovieID = movieId });
             }
         }
     }

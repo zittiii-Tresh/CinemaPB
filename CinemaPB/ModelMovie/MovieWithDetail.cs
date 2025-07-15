@@ -11,6 +11,7 @@ namespace CinemaPB.ModelMovie
         public int MovieID { get; set; }
         public string Title { get; set; }
         public int GenreID { get; set; }
+        public string Genres { get; set; }
         public string GenreName { get; set; }
         public string Description { get; set; }
         public string Duration { get; set; }
