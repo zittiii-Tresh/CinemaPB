@@ -9,7 +9,8 @@ namespace CinemaPB.GlobalSQL
 {
     public class SQLQuery
     {
-        public static string connectionString = @"Data Source = LAPTOP-FC9GSM04\SQLEXPRESS;Initial Catalog = CinemaDB;Integrated Security = True;";
+        //public static string connectionString = @"Data Source = LAPTOP-FC9GSM04\SQLEXPRESS;Initial Catalog = CinemaDB;Integrated Security = True;";
+        public static string connectionString = @"Data Source = PAGALING\SQLEXPRESS;Initial Catalog = CinemaDB;Integrated Security = True;";
 
         public static string InsertAccount = @"
             INSERT INTO emp.Employees (

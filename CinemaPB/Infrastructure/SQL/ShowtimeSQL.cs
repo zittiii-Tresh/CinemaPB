@@ -14,9 +14,19 @@ namespace CinemaPB.Infrastructure.SQL
                                                  FROM mov.MoviePrices 
                                                  WHERE MovieID = @MovieID AND DayType = @DayType;";
 
-        public static string InsertShowtime = @" INSERT INTO dbo.Showtime (MovieID, HallID, ShowDate, StartTime, EndTime, MoviePriceID)
-                                                 VALUES (@MovieID, @HallID, @ShowDate, @StartTime, @EndTime, @MoviePriceID);";
+        public static string InsertShowtime = @" INSERT INTO dbo.Showtime (MovieID, HallID, ShowDate, StartTime, EndTime, MoviePriceID, Screening)
+                                                 VALUES (@MovieID, @HallID, @ShowDate, @StartTime, @EndTime, @MoviePriceID, @Screening);";
 
-        public static string RetrieveShowtime = @"EXEC RetrieveShowtimes;";
+        public static string RetrieveShowtime = @"EXEC RetrieveShowtimes @HallID;";
+
+        public static string UpdateShowtime = @"UPDATE dbo.Showtime
+                                                SET ShowDate = @ShowDate,
+                                                    StartTime = @StartTime,
+                                                    EndTime = @EndTime,
+                                                    MoviePriceID = @MoviePriceID,
+                                                    Screening = @Screening
+                                                WHERE ShowtimeID = @ShowtimeID AND Screening = @Screening";
+
+        public static string DeleteShowtime = @"DELETE FROM dbo.Showtime WHERE ShowtimeID = @ShowtimeID";
     }
 }
