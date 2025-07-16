@@ -25,8 +25,10 @@ namespace CinemaPB.Forms
         {
             InitializeComponent();
             _showtimeRepository = new ShowtimeRepository(GlobalSetting.GetConnectionString());
+
             LoadAvailableMovies();
             LoadShowtimeGrid();
+            ClearAll();
         }
 
         private void LoadAvailableMovies()
@@ -55,6 +57,7 @@ namespace CinemaPB.Forms
 
             int movieId = Convert.ToInt32(availablemovieLUE.EditValue);
             DateTime showDate = showdateDE.DateTime;
+            int hallId = 1;
 
             var movieList = availablemovieLUE.Properties.DataSource as List<MovieWithDetail>;
             var selectedMovie = movieList?.FirstOrDefault(m => m.MovieID == movieId);
@@ -64,33 +67,78 @@ namespace CinemaPB.Forms
                 XtraMessageBox.Show("Invalid movie selection or duration.", "Error");
                 return;
             }
-
-            string dayType = (showDate.DayOfWeek == DayOfWeek.Saturday || showDate.DayOfWeek == DayOfWeek.Sunday)
-                             ? "Weekend" : "Weekday";
-
+            // Get movie price ID
+            string dayType = (showDate.DayOfWeek == DayOfWeek.Saturday || showDate.DayOfWeek == DayOfWeek.Sunday) ? "Weekend" : "Weekday";
             int moviePriceId = _showtimeRepository.GetMoviePriceID(movieId, dayType);
 
+            // 🎫 1. Check how many screenings already exist for this date
+            var existingScreenings = _showtimeRepository.GetScreeningsForDate(showDate, hallId); // e.g. [1, 2]
+            if (existingScreenings.Count >= 3)
+            {
+                XtraMessageBox.Show("All 3 screenings are already scheduled for the selected date.", "Validation Error");
+                ClearAll();
+                return;
+            }
+
+            // ⏱ 2. Fetch existing showtime ranges (start-end) for conflict validation
+            var existingSlots = _showtimeRepository.GetTimeSlotsForDate(showDate, hallId);
+
             var startTimes = new List<(TimeEdit Control, int Screening)>
-                {
-                    (starttime1TE, 1),
-                    (starttime2TE, 2),
-                    (starttime3TE, 3)
-                };
+            {
+                (starttime1TE, 1),
+                (starttime2TE, 2),
+                (starttime3TE, 3)
+            };
+
+            int insertedCount = 0;
 
             foreach (var (control, screening) in startTimes)
             {
-                if (control.EditValue != null)
-                {
-                    TimeSpan startTime = control.Time.TimeOfDay;
-                    TimeSpan endTime = startTime.Add(duration);
+                if (control.EditValue == null)
+                    continue;
 
-                    _showtimeRepository.InsertShowtime(movieId, 1, showDate, startTime, endTime, moviePriceId, screening);
+                // ⛔ 3. Skip screening if already used
+                if (existingScreenings.Contains(screening))
+                {
+                    XtraMessageBox.Show($"Screening {screening} already exists. Please choose a vacant screening.", "Validation Error");
+                    ClearAll();
+                    continue;
                 }
+
+                TimeSpan startTime = control.Time.TimeOfDay;
+                TimeSpan endTime = startTime.Add(duration);
+
+                // ⛔ 4. Overlap check
+                bool overlaps = existingSlots.Any(slot =>
+                    (startTime < slot.EndTime && endTime > slot.StartTime));
+
+                if (overlaps)
+                {
+                    XtraMessageBox.Show($"Screening {screening} time overlaps with an existing showtime.", "Overlap Conflict");
+                    ClearAll();
+                    continue;
+                }
+
+                // ✅ 5. Passed all validation, insert it
+                _showtimeRepository.InsertShowtime(movieId, hallId, showDate, startTime, endTime, moviePriceId, screening);
+                insertedCount++;
             }
 
             LoadShowtimeGrid();
-            XtraMessageBox.Show("Showtime(s) successfully scheduled!", "Success");
+
+            if (insertedCount > 0)
+            {
+                XtraMessageBox.Show($"Successfully scheduled {insertedCount} showtime(s).", "Success");
+                ClearAll();
+            }
+            else
+            {
+                XtraMessageBox.Show("No showtimes were scheduled due to conflicts or limits.", "Notice");
+            }
         }
+
+
+
         private void LoadShowtimeGrid()
         {
             int hallId = 1;
@@ -107,22 +155,36 @@ namespace CinemaPB.Forms
                 XtraMessageBox.Show("Please select a valid showtime.", "Error");
                 return;
             }
-
+            ClearAll();
+            // 🔹 Display labels
             movienameLBL.Text = selectedShowtime.Title;
             showdateLBL.Text = selectedShowtime.ShowDate.ToString("MMMM dd, yyyy");
             timeslotLBL.Text = $"{selectedShowtime.StartTimeFormatted} - {selectedShowtime.EndTimeFormatted}";
             priceLBL.Text = selectedShowtime.Price.ToString("N2");
 
+            // 🔹 Set LookUpEdit & DateEdit
             availablemovieLUE.EditValue = selectedShowtime.MovieID;
             showdateDE.DateTime = selectedShowtime.ShowDate;
 
-            if (selectedShowtime.Screening == 1)
-                starttime1TE.Time = DateTime.Today.Add(selectedShowtime.StartTime);
-            else if (selectedShowtime.Screening == 2)
-                starttime2TE.Time = DateTime.Today.Add(selectedShowtime.StartTime);
-            else if (selectedShowtime.Screening == 3)
-                starttime3TE.Time = DateTime.Today.Add(selectedShowtime.StartTime);
+            posterPE.Image = null;
 
+            // 🔹 Set only the active one
+            TimeSpan startTime = selectedShowtime.StartTime;
+            DateTime formattedTime = DateTime.Today.Add(startTime);
+            switch (selectedShowtime.Screening)
+            {
+                case 1:
+                    starttime1TE.Time = formattedTime;
+                    break;
+                case 2:
+                    starttime2TE.Time = formattedTime;
+                    break;
+                case 3:
+                    starttime3TE.Time = formattedTime;
+                    break;
+            }
+
+            // 🔹 Load poster
             if (selectedShowtime.Poster != null)
             {
                 using (var ms = new MemoryStream(selectedShowtime.Poster))
@@ -135,6 +197,7 @@ namespace CinemaPB.Forms
                 posterPE.Image = null;
             }
         }
+
 
         private void updateBTN_Click(object sender, EventArgs e)
         {
@@ -151,14 +214,13 @@ namespace CinemaPB.Forms
                 return;
             }
 
-            // 🔍 Extract Movie ID and ShowDate
             int movieId = Convert.ToInt32(availablemovieLUE.EditValue);
             DateTime showDate = showdateDE.DateTime;
+            int hallId = 1;
+            int screening = selectedShowtime.Screening;
 
-            // 🕒 Determine which time edit was filled
-            int screening = selectedShowtime.Screening; // 📌 Use the Screening from the selected row
+            // Determine new StartTime based on selected screening
             TimeSpan? newStartTime = null;
-
             switch (screening)
             {
                 case 1:
@@ -193,13 +255,6 @@ namespace CinemaPB.Forms
                     return;
             }
 
-            if (newStartTime == null)
-            {
-                XtraMessageBox.Show("Start time cannot be empty.", "Validation Error");
-                return;
-            }
-
-            // ⏱ Get duration from movie
             var movieList = availablemovieLUE.Properties.DataSource as List<MovieWithDetail>;
             var selectedMovie = movieList?.FirstOrDefault(m => m.MovieID == movieId);
 
@@ -211,11 +266,25 @@ namespace CinemaPB.Forms
 
             TimeSpan newEndTime = newStartTime.Value.Add(duration);
 
-            // 🗓️ Determine weekday/weekend
+            // Check for time overlaps (exclude current ShowtimeID)
+            var existingSlots = _showtimeRepository
+                .GetTimeSlotsForDate(showDate, hallId)
+                .Where(slot =>
+                    !(slot.StartTime == selectedShowtime.StartTime && slot.EndTime == selectedShowtime.EndTime) // skip current
+                ).ToList();
+
+            bool overlaps = existingSlots.Any(slot => (newStartTime < slot.EndTime && newEndTime > slot.StartTime));
+
+            if (overlaps)
+            {
+                XtraMessageBox.Show("This updated time overlaps with an existing showtime.", "Conflict");
+                return;
+            }
+
+            // Get correct MoviePriceID
             string dayType = (showDate.DayOfWeek == DayOfWeek.Saturday || showDate.DayOfWeek == DayOfWeek.Sunday)
                              ? "Weekend" : "Weekday";
 
-            // 💸 Get the appropriate MoviePriceID
             int moviePriceId;
             try
             {
@@ -227,7 +296,7 @@ namespace CinemaPB.Forms
                 return;
             }
 
-            // ✏️ Perform update
+            // Proceed with update
             _showtimeRepository.UpdateShowtime(
                 selectedShowtime.ShowtimeID,
                 showDate,
@@ -238,11 +307,10 @@ namespace CinemaPB.Forms
             );
 
             LoadShowtimeGrid();
+            ClearAll();
 
             XtraMessageBox.Show("Showtime updated successfully!", "Success");
         }
-
-
 
         private void deleteBTN_Click(object sender, EventArgs e)
         {
@@ -262,6 +330,26 @@ namespace CinemaPB.Forms
                 LoadShowtimeGrid();
                 XtraMessageBox.Show("Showtime deleted successfully.", "Deleted");
             }
+        }
+        private void ClearAll()
+        {
+            // Clear TimeEdits
+            starttime1TE.EditValue = null;
+            starttime2TE.EditValue = null;
+            starttime3TE.EditValue = null;
+
+            // Clear selection inputs
+            availablemovieLUE.EditValue = null;
+            showdateDE.EditValue = null;
+        }
+
+        private void ClearLabelandPoster()
+        {
+            movienameLBL.Text = string.Empty;
+            showdateLBL.Text = string.Empty;
+            timeslotLBL.Text = string.Empty;
+            priceLBL.Text = string.Empty;
+            posterPE.Image = null;
         }
 
 

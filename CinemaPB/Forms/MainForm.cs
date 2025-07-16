@@ -45,7 +45,7 @@ namespace CinemaPB.Forms
 
         private void hall1seatsACE_Click(object sender, EventArgs e)
         {
-            FormHelper.LoadUserControl(mainSPanel, new Hall1Form());
+            FormHelper.LoadUserControl(mainSPanel, new EditSeatLayoutForm());
         }
     }
 }

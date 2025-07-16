@@ -96,5 +96,24 @@ namespace CinemaPB.Infrastructure.Repositories
                 connection.Execute(ShowtimeSQL.DeleteShowtime, new { ShowtimeID = showtimeId });
             }
         }
+        public List<ShowtimeSlot> GetTimeSlotsForDate(DateTime showDate, int hallId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                return connection.Query<ShowtimeSlot>(
+                    ShowtimeSQL.GetTimeSlotsForDate,
+                    new { ShowDate = showDate.Date, HallID = hallId }).ToList();
+            }
+        }
+
+        public List<int> GetScreeningsForDate(DateTime showDate, int hallId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                return connection.Query<int>(ShowtimeSQL.GetScreeningsForDate,
+                new { ShowDate = showDate.Date, HallID = hallId }).ToList();
+            }
+        }
+
     }
 }
