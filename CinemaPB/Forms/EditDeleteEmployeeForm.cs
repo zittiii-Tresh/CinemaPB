@@ -68,7 +68,6 @@ namespace CinemaPB.Forms
             TextHideShowHelper.AttachBehavior(contactnoTE, "Contact no.");
             TextHideShowHelper.AttachBehavior(addressTE, "Address");
             TextHideShowHelper.AttachBehavior(usernameTE, "Username");
-            TextHideShowHelper.AttachBehavior(passwordBE, "Password", true);
         }
 
         private void LoadEmployeeData()
@@ -93,7 +92,6 @@ namespace CinemaPB.Forms
                     contactnoTE.Text = employee.ContactNo;
                     addressTE.Text = employee.Address;
                     usernameTE.Text = employee.Username;
-                    passwordBE.Text = ""; // Hide hashed password
 
                     positionRG.SelectedIndex = Convert.ToInt32(employee.RoleID) - 1;
 
@@ -126,18 +124,6 @@ namespace CinemaPB.Forms
             {
                 connection.Open();
 
-                // Hash or retain existing password
-                string finalPassword;
-                if (!string.IsNullOrWhiteSpace(employee.Password))
-                {
-                    finalPassword = BCrypt.Net.BCrypt.HashPassword(employee.Password);
-                }
-                else
-                {
-                    string query = "SELECT Password FROM emp.Employees WHERE Username = @Username";
-                    finalPassword = connection.QueryFirstOrDefault<string>(query, new { Username = username });
-                }
-
                 string updateQuery = GlobalSQL.SQLQuery.UpdateAccount; 
 
                 var parameters = new
@@ -150,7 +136,6 @@ namespace CinemaPB.Forms
                     employee.ContactNo,
                     employee.Address,
                     employee.Username,
-                    Password = finalPassword,
                     employee.EmploymentStatus,
                     employee.StatusID,
                     employee.IsLocked,
@@ -181,22 +166,6 @@ namespace CinemaPB.Forms
                 return;
             }
 
-            // Hash password only if new one is entered
-            string finalPassword;
-            if (!string.IsNullOrWhiteSpace(passwordBE.Text))
-            {
-                finalPassword = BCrypt.Net.BCrypt.HashPassword(passwordBE.Text);
-            }
-            else
-            {
-                using (var connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
-                {
-                    connection.Open();
-                    string query = "SELECT Password FROM emp.Employees WHERE Username = @Username";
-                    finalPassword = connection.QueryFirstOrDefault<string>(query, new { Username = username });
-                }
-            }
-
             var employee = new Employees.Employee
             {
                 RoleID = positionRG.SelectedIndex + 1,
@@ -207,7 +176,7 @@ namespace CinemaPB.Forms
                 ContactNo = contactnoTE.Text.Trim(),
                 Address = addressTE.Text.Trim(),
                 Username = usernameTE.Text.Trim(),
-                Password = finalPassword,
+                //Password = finalPassword,
                 EmploymentStatus = employeeRG.SelectedIndex + 1,
                 StatusID = 1, // Optional: Replace if needed
                 IsLocked = accountTS.IsOn ? 1 : 0
@@ -254,6 +223,13 @@ namespace CinemaPB.Forms
             }
         }
 
+        private void changepasswordHLBL_Click(object sender, EventArgs e)
+        {
+            FormHelper.DisplayForm(new ChangePasswordForm(username), () =>
+            {
+                LoadEmployeeData();
+            });
+        }
     }
 }
 

@@ -1,6 +1,6 @@
 ﻿namespace CinemaPB.Forms
 {
-    partial class EditSeatLayoutForm
+    partial class EditSeatLayoutForm2
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditSeatLayoutForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditSeatLayoutForm2));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
@@ -128,6 +128,19 @@
             this.sidePanel5 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel6 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel7 = new DevExpress.XtraEditors.SidePanel();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.H1 = new DevExpress.XtraEditors.SimpleButton();
+            this.H11 = new DevExpress.XtraEditors.SimpleButton();
+            this.H2 = new DevExpress.XtraEditors.SimpleButton();
+            this.H10 = new DevExpress.XtraEditors.SimpleButton();
+            this.H3 = new DevExpress.XtraEditors.SimpleButton();
+            this.H9 = new DevExpress.XtraEditors.SimpleButton();
+            this.H4 = new DevExpress.XtraEditors.SimpleButton();
+            this.H8 = new DevExpress.XtraEditors.SimpleButton();
+            this.H5 = new DevExpress.XtraEditors.SimpleButton();
+            this.H7 = new DevExpress.XtraEditors.SimpleButton();
+            this.H6 = new DevExpress.XtraEditors.SimpleButton();
             this.sidePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.genderRG.Properties)).BeginInit();
             this.sidePanel1.SuspendLayout();
@@ -730,7 +743,6 @@
             // 
             this.D9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.D9.Appearance.Options.UseBackColor = true;
-            this.D9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D9.BackgroundImage")));
             this.D9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("D9.ImageOptions.Image")));
             this.D9.Location = new System.Drawing.Point(767, 438);
             this.D9.Name = "D9";
@@ -742,7 +754,6 @@
             // 
             this.D8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.D8.Appearance.Options.UseBackColor = true;
-            this.D8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D8.BackgroundImage")));
             this.D8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("D8.ImageOptions.Image")));
             this.D8.Location = new System.Drawing.Point(704, 438);
             this.D8.Name = "D8";
@@ -754,7 +765,6 @@
             // 
             this.D7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.D7.Appearance.Options.UseBackColor = true;
-            this.D7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D7.BackgroundImage")));
             this.D7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("D7.ImageOptions.Image")));
             this.D7.Location = new System.Drawing.Point(641, 438);
             this.D7.Name = "D7";
@@ -766,7 +776,6 @@
             // 
             this.D6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.D6.Appearance.Options.UseBackColor = true;
-            this.D6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D6.BackgroundImage")));
             this.D6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("D6.ImageOptions.Image")));
             this.D6.Location = new System.Drawing.Point(577, 438);
             this.D6.Name = "D6";
@@ -778,7 +787,6 @@
             // 
             this.D5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.D5.Appearance.Options.UseBackColor = true;
-            this.D5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D5.BackgroundImage")));
             this.D5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("D5.ImageOptions.Image")));
             this.D5.Location = new System.Drawing.Point(513, 438);
             this.D5.Name = "D5";
@@ -790,7 +798,6 @@
             // 
             this.D4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.D4.Appearance.Options.UseBackColor = true;
-            this.D4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D4.BackgroundImage")));
             this.D4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("D4.ImageOptions.Image")));
             this.D4.Location = new System.Drawing.Point(446, 438);
             this.D4.Name = "D4";
@@ -802,7 +809,6 @@
             // 
             this.D3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.D3.Appearance.Options.UseBackColor = true;
-            this.D3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D3.BackgroundImage")));
             this.D3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("D3.ImageOptions.Image")));
             this.D3.Location = new System.Drawing.Point(378, 438);
             this.D3.Name = "D3";
@@ -814,7 +820,6 @@
             // 
             this.D2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.D2.Appearance.Options.UseBackColor = true;
-            this.D2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D2.BackgroundImage")));
             this.D2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("D2.ImageOptions.Image")));
             this.D2.Location = new System.Drawing.Point(311, 438);
             this.D2.Name = "D2";
@@ -826,7 +831,6 @@
             // 
             this.D1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.D1.Appearance.Options.UseBackColor = true;
-            this.D1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("D1.BackgroundImage")));
             this.D1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("D1.ImageOptions.Image")));
             this.D1.Location = new System.Drawing.Point(244, 438);
             this.D1.Name = "D1";
@@ -838,7 +842,6 @@
             // 
             this.C9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.C9.Appearance.Options.UseBackColor = true;
-            this.C9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C9.BackgroundImage")));
             this.C9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("C9.ImageOptions.Image")));
             this.C9.Location = new System.Drawing.Point(767, 389);
             this.C9.Name = "C9";
@@ -850,7 +853,6 @@
             // 
             this.C8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.C8.Appearance.Options.UseBackColor = true;
-            this.C8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C8.BackgroundImage")));
             this.C8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("C8.ImageOptions.Image")));
             this.C8.Location = new System.Drawing.Point(704, 389);
             this.C8.Name = "C8";
@@ -862,7 +864,6 @@
             // 
             this.C7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.C7.Appearance.Options.UseBackColor = true;
-            this.C7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C7.BackgroundImage")));
             this.C7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("C7.ImageOptions.Image")));
             this.C7.Location = new System.Drawing.Point(641, 389);
             this.C7.Name = "C7";
@@ -874,7 +875,6 @@
             // 
             this.C6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.C6.Appearance.Options.UseBackColor = true;
-            this.C6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C6.BackgroundImage")));
             this.C6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("C6.ImageOptions.Image")));
             this.C6.Location = new System.Drawing.Point(577, 389);
             this.C6.Name = "C6";
@@ -886,7 +886,6 @@
             // 
             this.C5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.C5.Appearance.Options.UseBackColor = true;
-            this.C5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C5.BackgroundImage")));
             this.C5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("C5.ImageOptions.Image")));
             this.C5.Location = new System.Drawing.Point(513, 389);
             this.C5.Name = "C5";
@@ -898,7 +897,6 @@
             // 
             this.C4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.C4.Appearance.Options.UseBackColor = true;
-            this.C4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C4.BackgroundImage")));
             this.C4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("C4.ImageOptions.Image")));
             this.C4.Location = new System.Drawing.Point(446, 389);
             this.C4.Name = "C4";
@@ -910,7 +908,6 @@
             // 
             this.C3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.C3.Appearance.Options.UseBackColor = true;
-            this.C3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C3.BackgroundImage")));
             this.C3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("C3.ImageOptions.Image")));
             this.C3.Location = new System.Drawing.Point(378, 389);
             this.C3.Name = "C3";
@@ -922,7 +919,6 @@
             // 
             this.C2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.C2.Appearance.Options.UseBackColor = true;
-            this.C2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C2.BackgroundImage")));
             this.C2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("C2.ImageOptions.Image")));
             this.C2.Location = new System.Drawing.Point(311, 389);
             this.C2.Name = "C2";
@@ -934,7 +930,6 @@
             // 
             this.C1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.C1.Appearance.Options.UseBackColor = true;
-            this.C1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("C1.BackgroundImage")));
             this.C1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("C1.ImageOptions.Image")));
             this.C1.Location = new System.Drawing.Point(244, 389);
             this.C1.Name = "C1";
@@ -946,7 +941,6 @@
             // 
             this.B9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.B9.Appearance.Options.UseBackColor = true;
-            this.B9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B9.BackgroundImage")));
             this.B9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("B9.ImageOptions.Image")));
             this.B9.Location = new System.Drawing.Point(767, 340);
             this.B9.Name = "B9";
@@ -958,7 +952,6 @@
             // 
             this.B8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.B8.Appearance.Options.UseBackColor = true;
-            this.B8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B8.BackgroundImage")));
             this.B8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("B8.ImageOptions.Image")));
             this.B8.Location = new System.Drawing.Point(704, 340);
             this.B8.Name = "B8";
@@ -970,7 +963,6 @@
             // 
             this.B7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.B7.Appearance.Options.UseBackColor = true;
-            this.B7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B7.BackgroundImage")));
             this.B7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("B7.ImageOptions.Image")));
             this.B7.Location = new System.Drawing.Point(641, 340);
             this.B7.Name = "B7";
@@ -982,7 +974,6 @@
             // 
             this.B6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.B6.Appearance.Options.UseBackColor = true;
-            this.B6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B6.BackgroundImage")));
             this.B6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("B6.ImageOptions.Image")));
             this.B6.Location = new System.Drawing.Point(577, 340);
             this.B6.Name = "B6";
@@ -994,7 +985,6 @@
             // 
             this.B5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.B5.Appearance.Options.UseBackColor = true;
-            this.B5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B5.BackgroundImage")));
             this.B5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("B5.ImageOptions.Image")));
             this.B5.Location = new System.Drawing.Point(513, 340);
             this.B5.Name = "B5";
@@ -1006,7 +996,6 @@
             // 
             this.B4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.B4.Appearance.Options.UseBackColor = true;
-            this.B4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B4.BackgroundImage")));
             this.B4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("B4.ImageOptions.Image")));
             this.B4.Location = new System.Drawing.Point(446, 340);
             this.B4.Name = "B4";
@@ -1018,7 +1007,6 @@
             // 
             this.B3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.B3.Appearance.Options.UseBackColor = true;
-            this.B3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B3.BackgroundImage")));
             this.B3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("B3.ImageOptions.Image")));
             this.B3.Location = new System.Drawing.Point(378, 340);
             this.B3.Name = "B3";
@@ -1030,7 +1018,6 @@
             // 
             this.B2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.B2.Appearance.Options.UseBackColor = true;
-            this.B2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B2.BackgroundImage")));
             this.B2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("B2.ImageOptions.Image")));
             this.B2.Location = new System.Drawing.Point(311, 340);
             this.B2.Name = "B2";
@@ -1042,7 +1029,6 @@
             // 
             this.B1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.B1.Appearance.Options.UseBackColor = true;
-            this.B1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B1.BackgroundImage")));
             this.B1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("B1.ImageOptions.Image")));
             this.B1.Location = new System.Drawing.Point(244, 340);
             this.B1.Name = "B1";
@@ -1054,7 +1040,6 @@
             // 
             this.A9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.A9.Appearance.Options.UseBackColor = true;
-            this.A9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A9.BackgroundImage")));
             this.A9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("A9.ImageOptions.Image")));
             this.A9.Location = new System.Drawing.Point(766, 291);
             this.A9.Name = "A9";
@@ -1066,7 +1051,6 @@
             // 
             this.A8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.A8.Appearance.Options.UseBackColor = true;
-            this.A8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A8.BackgroundImage")));
             this.A8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("A8.ImageOptions.Image")));
             this.A8.Location = new System.Drawing.Point(703, 291);
             this.A8.Name = "A8";
@@ -1078,7 +1062,6 @@
             // 
             this.A7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.A7.Appearance.Options.UseBackColor = true;
-            this.A7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A7.BackgroundImage")));
             this.A7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("A7.ImageOptions.Image")));
             this.A7.Location = new System.Drawing.Point(640, 291);
             this.A7.Name = "A7";
@@ -1090,7 +1073,6 @@
             // 
             this.A6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.A6.Appearance.Options.UseBackColor = true;
-            this.A6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A6.BackgroundImage")));
             this.A6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("A6.ImageOptions.Image")));
             this.A6.Location = new System.Drawing.Point(576, 291);
             this.A6.Name = "A6";
@@ -1102,7 +1084,6 @@
             // 
             this.A5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.A5.Appearance.Options.UseBackColor = true;
-            this.A5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A5.BackgroundImage")));
             this.A5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("A5.ImageOptions.Image")));
             this.A5.Location = new System.Drawing.Point(512, 291);
             this.A5.Name = "A5";
@@ -1114,7 +1095,6 @@
             // 
             this.A4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.A4.Appearance.Options.UseBackColor = true;
-            this.A4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A4.BackgroundImage")));
             this.A4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("A4.ImageOptions.Image")));
             this.A4.Location = new System.Drawing.Point(445, 291);
             this.A4.Name = "A4";
@@ -1126,7 +1106,6 @@
             // 
             this.A3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.A3.Appearance.Options.UseBackColor = true;
-            this.A3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A3.BackgroundImage")));
             this.A3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("A3.ImageOptions.Image")));
             this.A3.Location = new System.Drawing.Point(377, 291);
             this.A3.Name = "A3";
@@ -1138,7 +1117,6 @@
             // 
             this.A2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.A2.Appearance.Options.UseBackColor = true;
-            this.A2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A2.BackgroundImage")));
             this.A2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("A2.ImageOptions.Image")));
             this.A2.Location = new System.Drawing.Point(310, 291);
             this.A2.Name = "A2";
@@ -1150,7 +1128,6 @@
             // 
             this.A1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.A1.Appearance.Options.UseBackColor = true;
-            this.A1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("A1.BackgroundImage")));
             this.A1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("A1.ImageOptions.Image")));
             this.A1.Location = new System.Drawing.Point(243, 291);
             this.A1.Name = "A1";
@@ -1175,7 +1152,7 @@
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(335, 39);
+            this.labelControl8.Location = new System.Drawing.Point(332, 39);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(95, 20);
             this.labelControl8.TabIndex = 5;
@@ -1290,6 +1267,19 @@
             // sidePanel7
             // 
             this.sidePanel7.BorderThickness = 0;
+            this.sidePanel7.Controls.Add(this.labelControl2);
+            this.sidePanel7.Controls.Add(this.labelControl3);
+            this.sidePanel7.Controls.Add(this.H1);
+            this.sidePanel7.Controls.Add(this.H11);
+            this.sidePanel7.Controls.Add(this.H2);
+            this.sidePanel7.Controls.Add(this.H10);
+            this.sidePanel7.Controls.Add(this.H3);
+            this.sidePanel7.Controls.Add(this.H9);
+            this.sidePanel7.Controls.Add(this.H4);
+            this.sidePanel7.Controls.Add(this.H8);
+            this.sidePanel7.Controls.Add(this.H5);
+            this.sidePanel7.Controls.Add(this.H7);
+            this.sidePanel7.Controls.Add(this.H6);
             this.sidePanel7.Controls.Add(this.sidePanel2);
             this.sidePanel7.Controls.Add(this.E7);
             this.sidePanel7.Controls.Add(this.E6);
@@ -1381,7 +1371,152 @@
             this.sidePanel7.TabIndex = 191;
             this.sidePanel7.Text = "sidePanel7";
             // 
-            // EditSeatLayoutForm
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.Location = new System.Drawing.Point(894, 666);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(10, 20);
+            this.labelControl2.TabIndex = 195;
+            this.labelControl2.Text = "H";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(152, 664);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(10, 20);
+            this.labelControl3.TabIndex = 194;
+            this.labelControl3.Text = "H";
+            // 
+            // H1
+            // 
+            this.H1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H1.Appearance.Options.UseBackColor = true;
+            this.H1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.H1.Location = new System.Drawing.Point(181, 658);
+            this.H1.Name = "H1";
+            this.H1.Size = new System.Drawing.Size(47, 35);
+            this.H1.TabIndex = 183;
+            this.H1.Text = "simpleButton71";
+            // 
+            // H11
+            // 
+            this.H11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H11.Appearance.Options.UseBackColor = true;
+            this.H11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.H11.Location = new System.Drawing.Point(830, 658);
+            this.H11.Name = "H11";
+            this.H11.Size = new System.Drawing.Size(47, 35);
+            this.H11.TabIndex = 193;
+            this.H11.Text = "simpleButton61";
+            // 
+            // H2
+            // 
+            this.H2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H2.Appearance.Options.UseBackColor = true;
+            this.H2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.H2.Location = new System.Drawing.Point(245, 658);
+            this.H2.Name = "H2";
+            this.H2.Size = new System.Drawing.Size(47, 35);
+            this.H2.TabIndex = 184;
+            this.H2.Text = "simpleButton70";
+            // 
+            // H10
+            // 
+            this.H10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H10.Appearance.Options.UseBackColor = true;
+            this.H10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.H10.Location = new System.Drawing.Point(767, 658);
+            this.H10.Name = "H10";
+            this.H10.Size = new System.Drawing.Size(47, 35);
+            this.H10.TabIndex = 192;
+            this.H10.Text = "simpleButton62";
+            // 
+            // H3
+            // 
+            this.H3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H3.Appearance.Options.UseBackColor = true;
+            this.H3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.H3.Location = new System.Drawing.Point(310, 658);
+            this.H3.Name = "H3";
+            this.H3.Size = new System.Drawing.Size(47, 35);
+            this.H3.TabIndex = 185;
+            this.H3.Text = "simpleButton69";
+            // 
+            // H9
+            // 
+            this.H9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H9.Appearance.Options.UseBackColor = true;
+            this.H9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.H9.Location = new System.Drawing.Point(704, 658);
+            this.H9.Name = "H9";
+            this.H9.Size = new System.Drawing.Size(47, 35);
+            this.H9.TabIndex = 191;
+            this.H9.Text = "simpleButton63";
+            // 
+            // H4
+            // 
+            this.H4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H4.Appearance.Options.UseBackColor = true;
+            this.H4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
+            this.H4.Location = new System.Drawing.Point(377, 658);
+            this.H4.Name = "H4";
+            this.H4.Size = new System.Drawing.Size(47, 35);
+            this.H4.TabIndex = 186;
+            this.H4.Text = "simpleButton68";
+            // 
+            // H8
+            // 
+            this.H8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H8.Appearance.Options.UseBackColor = true;
+            this.H8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
+            this.H8.Location = new System.Drawing.Point(640, 658);
+            this.H8.Name = "H8";
+            this.H8.Size = new System.Drawing.Size(47, 35);
+            this.H8.TabIndex = 190;
+            this.H8.Text = "simpleButton64";
+            // 
+            // H5
+            // 
+            this.H5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H5.Appearance.Options.UseBackColor = true;
+            this.H5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.ImageOptions.Image")));
+            this.H5.Location = new System.Drawing.Point(446, 658);
+            this.H5.Name = "H5";
+            this.H5.Size = new System.Drawing.Size(47, 35);
+            this.H5.TabIndex = 187;
+            this.H5.Text = "simpleButton67";
+            // 
+            // H7
+            // 
+            this.H7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H7.Appearance.Options.UseBackColor = true;
+            this.H7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
+            this.H7.Location = new System.Drawing.Point(578, 658);
+            this.H7.Name = "H7";
+            this.H7.Size = new System.Drawing.Size(47, 35);
+            this.H7.TabIndex = 189;
+            this.H7.Text = "simpleButton65";
+            // 
+            // H6
+            // 
+            this.H6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.H6.Appearance.Options.UseBackColor = true;
+            this.H6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.ImageOptions.Image")));
+            this.H6.Location = new System.Drawing.Point(513, 658);
+            this.H6.Name = "H6";
+            this.H6.Size = new System.Drawing.Size(47, 35);
+            this.H6.TabIndex = 188;
+            this.H6.Text = "simpleButton66";
+            // 
+            // EditSeatLayoutForm2
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.Appearance.Options.UseBackColor = true;
@@ -1393,7 +1528,7 @@
             this.Controls.Add(this.sidePanel4);
             this.Controls.Add(this.sidePanel3);
             this.Controls.Add(this.sidePanel1);
-            this.Name = "EditSeatLayoutForm";
+            this.Name = "EditSeatLayoutForm2";
             this.Size = new System.Drawing.Size(1584, 1155);
             this.sidePanel2.ResumeLayout(false);
             this.sidePanel2.PerformLayout();
@@ -1509,5 +1644,18 @@
         private DevExpress.XtraEditors.SidePanel sidePanel5;
         private DevExpress.XtraEditors.SidePanel sidePanel6;
         private DevExpress.XtraEditors.SidePanel sidePanel7;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.SimpleButton H1;
+        private DevExpress.XtraEditors.SimpleButton H11;
+        private DevExpress.XtraEditors.SimpleButton H2;
+        private DevExpress.XtraEditors.SimpleButton H10;
+        private DevExpress.XtraEditors.SimpleButton H3;
+        private DevExpress.XtraEditors.SimpleButton H9;
+        private DevExpress.XtraEditors.SimpleButton H4;
+        private DevExpress.XtraEditors.SimpleButton H8;
+        private DevExpress.XtraEditors.SimpleButton H5;
+        private DevExpress.XtraEditors.SimpleButton H7;
+        private DevExpress.XtraEditors.SimpleButton H6;
     }
 }

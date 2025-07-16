@@ -74,6 +74,12 @@
   <ItemGroup>
     <Compile Include="Configuration\GlobalSetting.cs" />
     <Compile Include="Employees\Employee.cs" />
+    <Compile Include="Forms\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EditDeleteEmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,12 @@
     </Compile>
     <Compile Include="Forms\EditSeatLayoutForm.Designer.cs">
       <DependentUpon>EditSeatLayoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditSeatLayoutForm2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\EditSeatLayoutForm2.Designer.cs">
+      <DependentUpon>EditSeatLayoutForm2.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\EmployeeListForm.cs">
       <SubType>UserControl</SubType>
@@ -122,6 +134,36 @@
     </Compile>
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogsForm\HallLogsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\LogsForm\HallLogsForm.Designer.cs">
+      <DependentUpon>HallLogsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogsForm\MovieLogsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\LogsForm\MovieLogsForm.Designer.cs">
+      <DependentUpon>MovieLogsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogsForm\SeatLayoutLogsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\LogsForm\SeatLayoutLogsForm.Designer.cs">
+      <DependentUpon>SeatLayoutLogsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogsForm\ShowtimeLogsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\LogsForm\ShowtimeLogsForm.Designer.cs">
+      <DependentUpon>ShowtimeLogsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogsForm\TicketLogsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\LogsForm\TicketLogsForm.Designer.cs">
+      <DependentUpon>TicketLogsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -184,11 +226,17 @@
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditDeleteEmployeeForm.resx">
       <DependentUpon>EditDeleteEmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditSeatLayoutForm.resx">
       <DependentUpon>EditSeatLayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditSeatLayoutForm2.resx">
+      <DependentUpon>EditSeatLayoutForm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EmployeeListForm.resx">
       <DependentUpon>EmployeeListForm.cs</DependentUpon>
@@ -207,6 +255,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogsForm\HallLogsForm.resx">
+      <DependentUpon>HallLogsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogsForm\MovieLogsForm.resx">
+      <DependentUpon>MovieLogsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogsForm\SeatLayoutLogsForm.resx">
+      <DependentUpon>SeatLayoutLogsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogsForm\ShowtimeLogsForm.resx">
+      <DependentUpon>ShowtimeLogsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogsForm\TicketLogsForm.resx">
+      <DependentUpon>TicketLogsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

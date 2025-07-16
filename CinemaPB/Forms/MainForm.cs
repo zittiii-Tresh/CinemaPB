@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +11,7 @@ using DevExpress.XtraEditors;
 using CinemaPB.Forms;
 using CinemaPB.Infrastructure.Repositories;
 using CinemaPB.Configuration;
+using CinemaPB.Forms.LogsForm;
 
 namespace CinemaPB.Forms
 {
@@ -46,6 +47,36 @@ namespace CinemaPB.Forms
         private void hall1seatsACE_Click(object sender, EventArgs e)
         {
             FormHelper.LoadUserControl(mainSPanel, new EditSeatLayoutForm());
+        }
+
+        private void movielogsACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new MovieLogsForm());
+        }
+
+        private void showtimelogsACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new ShowtimeLogsForm());
+        }
+
+        private void halllogsACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new HallLogsForm());
+        }
+
+        private void seatlayoutlogsACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new SeatLayoutLogsForm());
+        }
+
+        private void ticketlogsACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new TicketLogsForm());
+        }
+
+        private void hall2seatsACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new EditSeatLayoutForm2());
         }
     }
 }
