@@ -28,5 +28,16 @@ namespace CinemaPB.Infrastructure.SQL
                                                 WHERE ShowtimeID = @ShowtimeID AND Screening = @Screening";
 
         public static string DeleteShowtime = @"DELETE FROM dbo.Showtime WHERE ShowtimeID = @ShowtimeID";
+
+        public static string GetShowtimesByDateAndHall = @"SELECT ShowtimeID, MovieID, StartTime, EndTime, ShowDate, Screening
+                                                           FROM dbo.Showtime
+                                                           WHERE CAST(ShowDate AS DATE) = @ShowDate AND HallID = @HallID;";
+        public static string GetScreeningsForDate = @"SELECT Screening 
+                                                      FROM dbo.Showtime 
+                                                      WHERE ShowDate = @ShowDate AND HallID = @HallID";
+
+        public static string GetTimeSlotsForDate = @"SELECT StartTime, EndTime 
+                                                     FROM dbo.Showtime 
+                                                     WHERE ShowDate = @ShowDate AND HallID = @HallID";
     }
 }

@@ -180,6 +180,7 @@
     <Compile Include="ModelMovie\Price.cs" />
     <Compile Include="ModelShowtime\Showtime.cs" />
     <Compile Include="ModelShowtime\ShowtimeDetail.cs" />
+    <Compile Include="ModelShowtime\ShowtimeSlot.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
