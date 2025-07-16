@@ -19,7 +19,6 @@ namespace CinemaPB
         {
             InitializeComponent();
             ApplyTextEditBehaviors();
-            this.FormClosing += Login_FormClosing;
         }
 
         private void SignUphlbl_Click(object sender, EventArgs e)
@@ -107,30 +106,19 @@ namespace CinemaPB
                             }
 
                             if (shouldLock)
+                            {
                                 MessageBox.Show("Account locked after 5 failed login attempts.");
+                            }
+                            else if (failedAttempts == 4)
+                            {
+                                MessageBox.Show("Invalid password. You have 1 attempt left before your account will be locked.");
+                            }
                             else
+                            {
                                 MessageBox.Show($"Invalid password. Attempt {failedAttempts} of 5.");
+                            }
                         }
                     }
-                    else
-                    {
-                        MessageBox.Show("User not found.");
-                    }
-                }
-            }
-        }
-
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
-            {
-                connection.Open();
-
-                string query = "UPDATE emp.Employees SET FailedAttempts = 0 WHERE IsLocked = 0";
-
-                using (SqlCommand cmd = new SqlCommand(query, connection))
-                {
-                    cmd.ExecuteNonQuery();
                 }
             }
         }

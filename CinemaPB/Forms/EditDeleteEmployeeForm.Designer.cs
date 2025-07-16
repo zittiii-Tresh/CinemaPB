@@ -28,14 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditDeleteEmployeeForm));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.resultcaptionLBL = new DevExpress.XtraEditors.LabelControl();
-            this.passwordBE = new DevExpress.XtraEditors.ButtonEdit();
             this.extensionTE = new DevExpress.XtraEditors.TextEdit();
             this.contactnoTE = new DevExpress.XtraEditors.TextEdit();
             this.addressTE = new DevExpress.XtraEditors.TextEdit();
@@ -55,7 +49,8 @@
             this.accountTS = new DevExpress.XtraEditors.ToggleSwitch();
             this.deleteBTN = new DevExpress.XtraEditors.SimpleButton();
             this.saveBTN = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.passwordBE.Properties)).BeginInit();
+            this.changepasswordHLBL = new DevExpress.XtraEditors.HyperlinkLabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.extensionTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactnoTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addressTE.Properties)).BeginInit();
@@ -75,24 +70,6 @@
             this.resultcaptionLBL.Name = "resultcaptionLBL";
             this.resultcaptionLBL.Size = new System.Drawing.Size(0, 16);
             this.resultcaptionLBL.TabIndex = 35;
-            // 
-            // passwordBE
-            // 
-            this.passwordBE.EditValue = "Password";
-            this.passwordBE.Location = new System.Drawing.Point(663, 155);
-            this.passwordBE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.passwordBE.Name = "passwordBE";
-            this.passwordBE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordBE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.passwordBE.Properties.Appearance.Options.UseFont = true;
-            this.passwordBE.Properties.Appearance.Options.UseForeColor = true;
-            this.passwordBE.Properties.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
-            this.passwordBE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.passwordBE.Size = new System.Drawing.Size(187, 27);
-            this.passwordBE.TabIndex = 34;
-            this.passwordBE.Tag = "close";
             // 
             // extensionTE
             // 
@@ -372,7 +349,7 @@
             this.deleteBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBTN.Appearance.Options.UseBackColor = true;
             this.deleteBTN.Appearance.Options.UseFont = true;
-            this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("deleteBTN.ImageOptions.Image")));
             this.deleteBTN.Location = new System.Drawing.Point(727, 331);
             this.deleteBTN.Name = "deleteBTN";
             this.deleteBTN.Size = new System.Drawing.Size(123, 45);
@@ -386,13 +363,36 @@
             this.saveBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBTN.Appearance.Options.UseBackColor = true;
             this.saveBTN.Appearance.Options.UseFont = true;
-            this.saveBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.saveBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("saveBTN.ImageOptions.Image")));
             this.saveBTN.Location = new System.Drawing.Point(585, 331);
             this.saveBTN.Name = "saveBTN";
             this.saveBTN.Size = new System.Drawing.Size(123, 45);
             this.saveBTN.TabIndex = 47;
             this.saveBTN.Text = "Save";
             this.saveBTN.Click += new System.EventHandler(this.saveBTN_Click);
+            // 
+            // changepasswordHLBL
+            // 
+            this.changepasswordHLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changepasswordHLBL.Appearance.Options.UseFont = true;
+            this.changepasswordHLBL.Location = new System.Drawing.Point(664, 176);
+            this.changepasswordHLBL.Name = "changepasswordHLBL";
+            this.changepasswordHLBL.Size = new System.Drawing.Size(82, 18);
+            this.changepasswordHLBL.TabIndex = 48;
+            this.changepasswordHLBL.Text = "Click Here!";
+            this.changepasswordHLBL.Click += new System.EventHandler(this.changepasswordHLBL_Click);
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(664, 155);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(125, 18);
+            this.labelControl5.TabIndex = 49;
+            this.labelControl5.Text = "Forgot Password?";
             // 
             // EditDeleteEmployeeForm
             // 
@@ -401,6 +401,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 414);
+            this.Controls.Add(this.labelControl5);
+            this.Controls.Add(this.changepasswordHLBL);
             this.Controls.Add(this.saveBTN);
             this.Controls.Add(this.deleteBTN);
             this.Controls.Add(this.availabilityLC);
@@ -414,7 +416,6 @@
             this.Controls.Add(this.positionRG);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.resultcaptionLBL);
-            this.Controls.Add(this.passwordBE);
             this.Controls.Add(this.extensionTE);
             this.Controls.Add(this.contactnoTE);
             this.Controls.Add(this.addressTE);
@@ -428,7 +429,6 @@
             this.Name = "EditDeleteEmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit/Delete Employee";
-            ((System.ComponentModel.ISupportInitialize)(this.passwordBE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.extensionTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactnoTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addressTE.Properties)).EndInit();
@@ -448,7 +448,6 @@
         #endregion
 
         private DevExpress.XtraEditors.LabelControl resultcaptionLBL;
-        private DevExpress.XtraEditors.ButtonEdit passwordBE;
         private DevExpress.XtraEditors.TextEdit extensionTE;
         private DevExpress.XtraEditors.TextEdit contactnoTE;
         private DevExpress.XtraEditors.TextEdit addressTE;
@@ -468,5 +467,7 @@
         private DevExpress.XtraEditors.SimpleButton deleteBTN;
         private DevExpress.XtraEditors.SimpleButton saveBTN;
         public DevExpress.XtraEditors.TextEdit firstnameTE;
+        private DevExpress.XtraEditors.HyperlinkLabelControl changepasswordHLBL;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
     }
 }
