@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.AdminLBL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
@@ -46,7 +46,7 @@
             this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.movielogsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.showtimelogsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.halllogsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.employeelogsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seatlayoutlogsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ticketlogsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -69,7 +69,7 @@
             this.accordionControl1.ElementPositionOnExpanding = DevExpress.XtraBars.Navigation.ElementPositionOnExpanding.Fixed;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement1,
-            this.accordionControlElement2,
+            this.AdminLBL,
             this.accordionControlSeparator1,
             this.accordionControlElement3,
             this.moviesACE,
@@ -94,17 +94,17 @@
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             // 
-            // accordionControlElement2
+            // AdminLBL
             // 
-            this.accordionControlElement2.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement2.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.accordionControlElement2.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement2.Appearance.Default.Options.UseForeColor = true;
-            this.accordionControlElement2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
-            this.accordionControlElement2.ImageOptions.SvgImageSize = new System.Drawing.Size(55, 55);
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "Admin";
+            this.AdminLBL.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminLBL.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.AdminLBL.Appearance.Default.Options.UseFont = true;
+            this.AdminLBL.Appearance.Default.Options.UseForeColor = true;
+            this.AdminLBL.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
+            this.AdminLBL.ImageOptions.SvgImageSize = new System.Drawing.Size(55, 55);
+            this.AdminLBL.Name = "AdminLBL";
+            this.AdminLBL.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.AdminLBL.Text = "Admin";
             // 
             // accordionControlSeparator1
             // 
@@ -268,7 +268,7 @@
             this.hall2seatsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.hall2seatsACE.Appearance.Pressed.Options.UseBackColor = true;
             this.hall2seatsACE.HeaderIndent = 20;
-            this.hall2seatsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement8.ImageOptions.SvgImage")));
+            this.hall2seatsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("hall2seatsACE.ImageOptions.SvgImage")));
             this.hall2seatsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
             this.hall2seatsACE.Name = "hall2seatsACE";
             this.hall2seatsACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -288,7 +288,7 @@
             this.accordionControlElement9.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.movielogsACE,
             this.showtimelogsACE,
-            this.halllogsACE,
+            this.employeelogsACE,
             this.seatlayoutlogsACE,
             this.ticketlogsACE});
             this.accordionControlElement9.Expanded = true;
@@ -337,25 +337,25 @@
             this.showtimelogsACE.Text = "Showtime Logs";
             this.showtimelogsACE.Click += new System.EventHandler(this.showtimelogsACE_Click);
             // 
-            // halllogsACE
+            // employeelogsACE
             // 
-            this.halllogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.halllogsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.halllogsACE.Appearance.Default.Options.UseFont = true;
-            this.halllogsACE.Appearance.Default.Options.UseForeColor = true;
-            this.halllogsACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.halllogsACE.Appearance.Hovered.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.halllogsACE.Appearance.Hovered.Options.UseBackColor = true;
-            this.halllogsACE.Appearance.Hovered.Options.UseBorderColor = true;
-            this.halllogsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.halllogsACE.Appearance.Pressed.Options.UseBackColor = true;
-            this.halllogsACE.HeaderIndent = 20;
-            this.halllogsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("halllogsACE.ImageOptions.SvgImage")));
-            this.halllogsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
-            this.halllogsACE.Name = "halllogsACE";
-            this.halllogsACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.halllogsACE.Text = "Hall Logs";
-            this.halllogsACE.Click += new System.EventHandler(this.halllogsACE_Click);
+            this.employeelogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeelogsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.employeelogsACE.Appearance.Default.Options.UseFont = true;
+            this.employeelogsACE.Appearance.Default.Options.UseForeColor = true;
+            this.employeelogsACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.employeelogsACE.Appearance.Hovered.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.employeelogsACE.Appearance.Hovered.Options.UseBackColor = true;
+            this.employeelogsACE.Appearance.Hovered.Options.UseBorderColor = true;
+            this.employeelogsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.employeelogsACE.Appearance.Pressed.Options.UseBackColor = true;
+            this.employeelogsACE.HeaderIndent = 20;
+            this.employeelogsACE.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("employeelogsACE.ImageOptions.Image")));
+            this.employeelogsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
+            this.employeelogsACE.Name = "employeelogsACE";
+            this.employeelogsACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.employeelogsACE.Text = "Employee Logs";
+            this.employeelogsACE.Click += new System.EventHandler(this.employeelogsACE_Click);
             // 
             // seatlayoutlogsACE
             // 
@@ -466,7 +466,7 @@
 
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement AdminLBL;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
@@ -479,7 +479,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement9;
         private DevExpress.XtraBars.Navigation.AccordionControlElement movielogsACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement showtimelogsACE;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement halllogsACE;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement employeelogsACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement seatlayoutlogsACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ticketlogsACE;
         private DevExpress.XtraEditors.SidePanel mainSPanel;

@@ -120,7 +120,8 @@ namespace CinemaPB.Forms
                 }
 
                 // ✅ 5. Passed all validation, insert it
-                _showtimeRepository.InsertShowtime(movieId, hallId, showDate, startTime, endTime, moviePriceId, screening);
+                int newShowtimeId = _showtimeRepository.InsertShowtime(movieId, hallId, showDate, startTime, endTime, moviePriceId, screening);
+                GlobalLogger.showtimeLog(newShowtimeId, "Created showtime", UserSession.Username); // or use actual logged-in user
                 insertedCount++;
             }
 
@@ -129,6 +130,7 @@ namespace CinemaPB.Forms
             if (insertedCount > 0)
             {
                 XtraMessageBox.Show($"Successfully scheduled {insertedCount} showtime(s).", "Success");
+
                 ClearAll();
             }
             else
@@ -306,6 +308,8 @@ namespace CinemaPB.Forms
                 screening
             );
 
+            GlobalLogger.showtimeLog(selectedShowtime.ShowtimeID, "Updated showtime", UserSession.Username);
+
             LoadShowtimeGrid();
             ClearAll();
 
@@ -327,6 +331,9 @@ namespace CinemaPB.Forms
             if (confirm == DialogResult.Yes)
             {
                 _showtimeRepository.DeleteShowtime(selectedShowtime.ShowtimeID);
+
+                GlobalLogger.showtimeLog(selectedShowtime.ShowtimeID, "Deleted showtime", UserSession.Username);
+
                 LoadShowtimeGrid();
                 XtraMessageBox.Show("Showtime deleted successfully.", "Deleted");
             }

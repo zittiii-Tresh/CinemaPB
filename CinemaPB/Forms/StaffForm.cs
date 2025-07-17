@@ -16,6 +16,7 @@ namespace CinemaPB.Forms
         public StaffForm()
         {
             InitializeComponent();
+            staffLBL.Text = UserSession.Username; 
         }
 
         private void showtimehall1BTN_Click(object sender, EventArgs e)

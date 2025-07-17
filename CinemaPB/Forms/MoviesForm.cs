@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,16 +14,16 @@ using CinemaPB.Configuration;
 using CinemaPB.Infrastructure.Repositories;
 using CinemaPB.ModelMovie;
 using DevExpress.XtraEditors;
-using static DevExpress.Utils.Frames.FrameHelper;
-using System.Globalization;
-using System.IO;
 using DevExpress.XtraEditors.Controls;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using static DevExpress.Utils.Frames.FrameHelper;
 
 namespace CinemaPB.Forms
 {
     public partial class MoviesForm : DevExpress.XtraEditors.XtraUserControl
     {
         private readonly MovieRepository _movieRepository;
+
         public MoviesForm()
         {
             InitializeComponent();
@@ -129,6 +131,7 @@ namespace CinemaPB.Forms
             LoadMoviesIntoGrid();
 
             XtraMessageBox.Show("Movie, genres, and prices saved successfully!", "Success");
+            GlobalLogger.movieLog("Movie",movieId, "Added a movie", UserSession.Username);
         }
 
 
@@ -316,6 +319,7 @@ namespace CinemaPB.Forms
             LoadMoviesIntoGrid();
 
             XtraMessageBox.Show("Movie updated successfully!");
+            GlobalLogger.movieLog("Movie", movie.MovieID, "Updated movie details", UserSession.Username);
         }
 
         private void deleteBTN_Click(object sender, EventArgs e)
@@ -330,8 +334,11 @@ namespace CinemaPB.Forms
             var result = XtraMessageBox.Show("Are you sure you want to delete this movie?",
                                              "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
+            GlobalLogger.movieLog("Movie", selectedMovie.MovieID, $"Deleted a movie: {selectedMovie.Title}", UserSession.Username);
+
             if (result == DialogResult.Yes)
             {
+               
                 _movieRepository.DeleteMovie(selectedMovie.MovieID);
                 LoadMoviesIntoGrid();
                 XtraMessageBox.Show("Movie deleted successfully!");

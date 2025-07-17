@@ -22,6 +22,7 @@ namespace CinemaPB.Forms
         {
             InitializeComponent();
             _movieRepository = new MovieRepository(GlobalSetting.GetConnectionString());
+            AdminLBL.Text = UserSession.Username;
         }
 
         private void moviesACE_Click(object sender, EventArgs e)
@@ -59,11 +60,6 @@ namespace CinemaPB.Forms
             FormHelper.LoadUserControl(mainSPanel, new ShowtimeLogsForm());
         }
 
-        private void halllogsACE_Click(object sender, EventArgs e)
-        {
-            FormHelper.LoadUserControl(mainSPanel, new HallLogsForm());
-        }
-
         private void seatlayoutlogsACE_Click(object sender, EventArgs e)
         {
             FormHelper.LoadUserControl(mainSPanel, new SeatLayoutLogsForm());
@@ -77,6 +73,11 @@ namespace CinemaPB.Forms
         private void hall2seatsACE_Click(object sender, EventArgs e)
         {
             FormHelper.LoadUserControl(mainSPanel, new EditSeatLayoutForm2());
+        }
+
+        private void employeelogsACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new EmployeeLogs());
         }
     }
 }

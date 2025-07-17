@@ -1,6 +1,6 @@
 ﻿namespace CinemaPB.Forms.LogsForm
 {
-    partial class ShowtimeLogsForm
+    partial class EmployeeLogs
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowtimeLogsForm));
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
@@ -38,18 +37,18 @@
             this.sidePanel7 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel6 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel5 = new DevExpress.XtraEditors.SidePanel();
-            this.gcShowtimeLogs = new DevExpress.XtraGrid.GridControl();
-            this.gvShowtimeLogs = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gcEmployeeLogs = new DevExpress.XtraGrid.GridControl();
+            this.gvEmployeeLogs = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.LogID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ShowtimeID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Username = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DateTime = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Activity = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Authentication = new DevExpress.XtraGrid.Columns.GridColumn();
             this.sidePanel1.SuspendLayout();
             this.sidePanel4.SuspendLayout();
             this.sidePanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gcShowtimeLogs)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvShowtimeLogs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcEmployeeLogs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvEmployeeLogs)).BeginInit();
             this.SuspendLayout();
             // 
             // sidePanel1
@@ -71,9 +70,9 @@
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(58, 45);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(213, 37);
+            this.labelControl1.Size = new System.Drawing.Size(218, 37);
             this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Showtime Logs";
+            this.labelControl1.Text = "Employee Logs";
             // 
             // sidePanel2
             // 
@@ -115,7 +114,6 @@
             this.printBTN.Appearance.Options.UseBackColor = true;
             this.printBTN.Appearance.Options.UseFont = true;
             this.printBTN.Dock = System.Windows.Forms.DockStyle.Right;
-            this.printBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("printBTN.ImageOptions.SvgImage")));
             this.printBTN.Location = new System.Drawing.Point(1211, 28);
             this.printBTN.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.printBTN.Name = "printBTN";
@@ -147,7 +145,7 @@
             // sidePanel5
             // 
             this.sidePanel5.BorderThickness = 0;
-            this.sidePanel5.Controls.Add(this.gcShowtimeLogs);
+            this.sidePanel5.Controls.Add(this.gcEmployeeLogs);
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sidePanel5.Location = new System.Drawing.Point(58, 96);
             this.sidePanel5.Name = "sidePanel5";
@@ -155,28 +153,28 @@
             this.sidePanel5.TabIndex = 4;
             this.sidePanel5.Text = "sidePanel5";
             // 
-            // gcShowtimeLogs
+            // gcEmployeeLogs
             // 
-            this.gcShowtimeLogs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcShowtimeLogs.Location = new System.Drawing.Point(0, 0);
-            this.gcShowtimeLogs.MainView = this.gvShowtimeLogs;
-            this.gcShowtimeLogs.Name = "gcShowtimeLogs";
-            this.gcShowtimeLogs.Size = new System.Drawing.Size(1331, 513);
-            this.gcShowtimeLogs.TabIndex = 1;
-            this.gcShowtimeLogs.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvShowtimeLogs});
-            this.gcShowtimeLogs.Load += new System.EventHandler(this.gcShowtimeLogs_Load);
+            this.gcEmployeeLogs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcEmployeeLogs.Location = new System.Drawing.Point(0, 0);
+            this.gcEmployeeLogs.MainView = this.gvEmployeeLogs;
+            this.gcEmployeeLogs.Name = "gcEmployeeLogs";
+            this.gcEmployeeLogs.Size = new System.Drawing.Size(1331, 513);
+            this.gcEmployeeLogs.TabIndex = 0;
+            this.gcEmployeeLogs.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvEmployeeLogs});
+            this.gcEmployeeLogs.Load += new System.EventHandler(this.gcEmployeeLogs_Load);
             // 
-            // gvShowtimeLogs
+            // gvEmployeeLogs
             // 
-            this.gvShowtimeLogs.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gvEmployeeLogs.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.LogID,
-            this.ShowtimeID,
             this.Username,
             this.DateTime,
-            this.Activity});
-            this.gvShowtimeLogs.GridControl = this.gcShowtimeLogs;
-            this.gvShowtimeLogs.Name = "gvShowtimeLogs";
+            this.Activity,
+            this.Authentication});
+            this.gvEmployeeLogs.GridControl = this.gcEmployeeLogs;
+            this.gvEmployeeLogs.Name = "gvEmployeeLogs";
             // 
             // LogID
             // 
@@ -201,32 +199,7 @@
             this.LogID.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.LogID.Visible = true;
             this.LogID.VisibleIndex = 0;
-            this.LogID.Width = 104;
-            // 
-            // ShowtimeID
-            // 
-            this.ShowtimeID.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowtimeID.AppearanceCell.Options.UseFont = true;
-            this.ShowtimeID.AppearanceCell.Options.UseTextOptions = true;
-            this.ShowtimeID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.ShowtimeID.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ShowtimeID.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.ShowtimeID.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.ShowtimeID.AppearanceHeader.Options.UseBackColor = true;
-            this.ShowtimeID.AppearanceHeader.Options.UseFont = true;
-            this.ShowtimeID.AppearanceHeader.Options.UseForeColor = true;
-            this.ShowtimeID.AppearanceHeader.Options.UseTextOptions = true;
-            this.ShowtimeID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.ShowtimeID.Caption = "ShowtimeID";
-            this.ShowtimeID.FieldName = "ShowtimeID";
-            this.ShowtimeID.MinWidth = 25;
-            this.ShowtimeID.Name = "ShowtimeID";
-            this.ShowtimeID.OptionsColumn.AllowEdit = false;
-            this.ShowtimeID.OptionsColumn.AllowFocus = false;
-            this.ShowtimeID.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
-            this.ShowtimeID.Visible = true;
-            this.ShowtimeID.VisibleIndex = 3;
-            this.ShowtimeID.Width = 248;
+            this.LogID.Width = 78;
             // 
             // Username
             // 
@@ -251,7 +224,7 @@
             this.Username.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Username.Visible = true;
             this.Username.VisibleIndex = 1;
-            this.Username.Width = 249;
+            this.Username.Width = 186;
             // 
             // DateTime
             // 
@@ -276,7 +249,7 @@
             this.DateTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.DateTime.Visible = true;
             this.DateTime.VisibleIndex = 2;
-            this.DateTime.Width = 352;
+            this.DateTime.Width = 256;
             // 
             // Activity
             // 
@@ -303,9 +276,32 @@
             this.Activity.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Activity.Visible = true;
             this.Activity.VisibleIndex = 4;
-            this.Activity.Width = 382;
+            this.Activity.Width = 335;
             // 
-            // ShowtimeLogsForm
+            // Authentication
+            // 
+            this.Authentication.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Authentication.AppearanceCell.Options.UseFont = true;
+            this.Authentication.AppearanceCell.Options.UseTextOptions = true;
+            this.Authentication.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Authentication.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Authentication.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Authentication.AppearanceHeader.Options.UseBackColor = true;
+            this.Authentication.AppearanceHeader.Options.UseFont = true;
+            this.Authentication.AppearanceHeader.Options.UseTextOptions = true;
+            this.Authentication.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Authentication.Caption = "Authentication";
+            this.Authentication.FieldName = "Authentication";
+            this.Authentication.MinWidth = 25;
+            this.Authentication.Name = "Authentication";
+            this.Authentication.OptionsColumn.AllowEdit = false;
+            this.Authentication.OptionsColumn.AllowFocus = false;
+            this.Authentication.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.Authentication.Visible = true;
+            this.Authentication.VisibleIndex = 3;
+            this.Authentication.Width = 166;
+            // 
+            // EmployeeLogs
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.Appearance.Options.UseBackColor = true;
@@ -316,14 +312,14 @@
             this.Controls.Add(this.sidePanel3);
             this.Controls.Add(this.sidePanel2);
             this.Controls.Add(this.sidePanel1);
-            this.Name = "ShowtimeLogsForm";
+            this.Name = "EmployeeLogs";
             this.Size = new System.Drawing.Size(1442, 742);
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
             this.sidePanel4.ResumeLayout(false);
             this.sidePanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gcShowtimeLogs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvShowtimeLogs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcEmployeeLogs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvEmployeeLogs)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -338,13 +334,13 @@
         private DevExpress.XtraEditors.SidePanel sidePanel6;
         private DevExpress.XtraEditors.SidePanel sidePanel5;
         private DevExpress.XtraEditors.SimpleButton printBTN;
+        private DevExpress.XtraGrid.GridControl gcEmployeeLogs;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvEmployeeLogs;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraGrid.GridControl gcShowtimeLogs;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvShowtimeLogs;
         private DevExpress.XtraGrid.Columns.GridColumn LogID;
         private DevExpress.XtraGrid.Columns.GridColumn Username;
         private DevExpress.XtraGrid.Columns.GridColumn DateTime;
         private DevExpress.XtraGrid.Columns.GridColumn Activity;
-        private DevExpress.XtraGrid.Columns.GridColumn ShowtimeID;
+        private DevExpress.XtraGrid.Columns.GridColumn Authentication;
     }
 }
