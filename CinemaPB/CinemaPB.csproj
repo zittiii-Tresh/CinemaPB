@@ -210,8 +210,10 @@
     <Compile Include="Forms\TextHideShowHelper.cs" />
     <Compile Include="GlobalSQL\SQLQuery.cs" />
     <Compile Include="Infrastructure\Repositories\MovieRepository.cs" />
+    <Compile Include="Infrastructure\Repositories\SeatRepository.cs" />
     <Compile Include="Infrastructure\Repositories\ShowtimeRepository.cs" />
     <Compile Include="Infrastructure\SQL\MovieSQL.cs" />
+    <Compile Include="Infrastructure\SQL\SeatSQL.cs" />
     <Compile Include="Infrastructure\SQL\ShowtimeSQL.cs" />
     <Compile Include="ModelMovie\ContentRating.cs" />
     <Compile Include="ModelMovie\Genre.cs" />
@@ -220,6 +222,7 @@
     <Compile Include="ModelMovie\MoviePrice.cs" />
     <Compile Include="ModelMovie\MovieWithDetail.cs" />
     <Compile Include="ModelMovie\Price.cs" />
+    <Compile Include="ModelSeat\Seat.cs" />
     <Compile Include="ModelShowtime\Showtime.cs" />
     <Compile Include="ModelShowtime\ShowtimeDetail.cs" />
     <Compile Include="ModelShowtime\ShowtimeSlot.cs" />
