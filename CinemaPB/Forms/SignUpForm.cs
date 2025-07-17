@@ -148,6 +148,7 @@ namespace CinemaPB.Forms
 
             RegisterAccount(employee);
 
+            GlobalLogger.employeeLog("Added new employee", UserSession.Username);
             XtraMessageBox.Show("Account saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }

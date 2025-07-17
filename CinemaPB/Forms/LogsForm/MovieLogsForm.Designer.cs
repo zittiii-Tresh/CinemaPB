@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieLogsForm));
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
@@ -39,7 +40,11 @@
             this.sidePanel5 = new DevExpress.XtraEditors.SidePanel();
             this.gcMovieLogs = new DevExpress.XtraGrid.GridControl();
             this.gvMovieLogs = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.LogID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Username = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DateTime = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Activity = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Title = new DevExpress.XtraGrid.Columns.GridColumn();
             this.sidePanel1.SuspendLayout();
             this.sidePanel4.SuspendLayout();
             this.sidePanel5.SuspendLayout();
@@ -57,6 +62,18 @@
             this.sidePanel1.Size = new System.Drawing.Size(1442, 96);
             this.sidePanel1.TabIndex = 0;
             this.sidePanel1.Text = "sidePanel1";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(58, 45);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(162, 37);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Movie Logs";
             // 
             // sidePanel2
             // 
@@ -148,23 +165,143 @@
             this.gcMovieLogs.TabIndex = 0;
             this.gcMovieLogs.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvMovieLogs});
+            this.gcMovieLogs.Load += new System.EventHandler(this.gcMovieLogs_Load);
             // 
             // gvMovieLogs
             // 
+            this.gvMovieLogs.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.LogID,
+            this.Username,
+            this.DateTime,
+            this.Activity,
+            this.Title});
             this.gvMovieLogs.GridControl = this.gcMovieLogs;
             this.gvMovieLogs.Name = "gvMovieLogs";
             // 
-            // labelControl1
+            // LogID
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(58, 45);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(162, 37);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Movie Logs";
+            this.LogID.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.LogID.AppearanceCell.Options.UseFont = true;
+            this.LogID.AppearanceCell.Options.UseTextOptions = true;
+            this.LogID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.LogID.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LogID.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.LogID.AppearanceHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LogID.AppearanceHeader.Options.UseBackColor = true;
+            this.LogID.AppearanceHeader.Options.UseFont = true;
+            this.LogID.AppearanceHeader.Options.UseForeColor = true;
+            this.LogID.AppearanceHeader.Options.UseTextOptions = true;
+            this.LogID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.LogID.Caption = "#";
+            this.LogID.FieldName = "LogID";
+            this.LogID.MinWidth = 25;
+            this.LogID.Name = "LogID";
+            this.LogID.OptionsColumn.AllowEdit = false;
+            this.LogID.OptionsColumn.AllowFocus = false;
+            this.LogID.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.LogID.Visible = true;
+            this.LogID.VisibleIndex = 0;
+            this.LogID.Width = 84;
+            // 
+            // Username
+            // 
+            this.Username.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Username.AppearanceCell.Options.UseFont = true;
+            this.Username.AppearanceCell.Options.UseTextOptions = true;
+            this.Username.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Username.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Username.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Username.AppearanceHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Username.AppearanceHeader.Options.UseBackColor = true;
+            this.Username.AppearanceHeader.Options.UseFont = true;
+            this.Username.AppearanceHeader.Options.UseForeColor = true;
+            this.Username.AppearanceHeader.Options.UseTextOptions = true;
+            this.Username.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Username.Caption = "Username";
+            this.Username.FieldName = "Username";
+            this.Username.MinWidth = 25;
+            this.Username.Name = "Username";
+            this.Username.OptionsColumn.AllowEdit = false;
+            this.Username.OptionsColumn.AllowFocus = false;
+            this.Username.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.Username.Visible = true;
+            this.Username.VisibleIndex = 1;
+            this.Username.Width = 200;
+            // 
+            // DateTime
+            // 
+            this.DateTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.DateTime.AppearanceCell.Options.UseFont = true;
+            this.DateTime.AppearanceCell.Options.UseTextOptions = true;
+            this.DateTime.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.DateTime.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DateTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.DateTime.AppearanceHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DateTime.AppearanceHeader.Options.UseBackColor = true;
+            this.DateTime.AppearanceHeader.Options.UseFont = true;
+            this.DateTime.AppearanceHeader.Options.UseForeColor = true;
+            this.DateTime.AppearanceHeader.Options.UseTextOptions = true;
+            this.DateTime.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.DateTime.Caption = "Date/Time";
+            this.DateTime.FieldName = "DateTime";
+            this.DateTime.MinWidth = 25;
+            this.DateTime.Name = "DateTime";
+            this.DateTime.OptionsColumn.AllowEdit = false;
+            this.DateTime.OptionsColumn.AllowFocus = false;
+            this.DateTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.DateTime.Visible = true;
+            this.DateTime.VisibleIndex = 3;
+            this.DateTime.Width = 329;
+            // 
+            // Activity
+            // 
+            this.Activity.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Italic);
+            this.Activity.AppearanceCell.ForeColor = System.Drawing.Color.Gray;
+            this.Activity.AppearanceCell.Options.UseFont = true;
+            this.Activity.AppearanceCell.Options.UseForeColor = true;
+            this.Activity.AppearanceCell.Options.UseTextOptions = true;
+            this.Activity.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Activity.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Activity.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Activity.AppearanceHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Activity.AppearanceHeader.Options.UseBackColor = true;
+            this.Activity.AppearanceHeader.Options.UseFont = true;
+            this.Activity.AppearanceHeader.Options.UseForeColor = true;
+            this.Activity.AppearanceHeader.Options.UseTextOptions = true;
+            this.Activity.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Activity.Caption = "Activity";
+            this.Activity.FieldName = "Activity";
+            this.Activity.MinWidth = 25;
+            this.Activity.Name = "Activity";
+            this.Activity.OptionsColumn.AllowEdit = false;
+            this.Activity.OptionsColumn.AllowFocus = false;
+            this.Activity.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.Activity.Visible = true;
+            this.Activity.VisibleIndex = 4;
+            this.Activity.Width = 363;
+            // 
+            // Title
+            // 
+            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Title.AppearanceCell.Options.UseFont = true;
+            this.Title.AppearanceCell.Options.UseTextOptions = true;
+            this.Title.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Title.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Title.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Title.AppearanceHeader.Options.UseBackColor = true;
+            this.Title.AppearanceHeader.Options.UseFont = true;
+            this.Title.AppearanceHeader.Options.UseTextOptions = true;
+            this.Title.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Title.Caption = "Title";
+            this.Title.FieldName = "Title";
+            this.Title.MinWidth = 25;
+            this.Title.Name = "Title";
+            this.Title.OptionsColumn.AllowEdit = false;
+            this.Title.OptionsColumn.AllowFocus = false;
+            this.Title.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
+            this.Title.Visible = true;
+            this.Title.VisibleIndex = 2;
+            this.Title.Width = 359;
             // 
             // MovieLogsForm
             // 
@@ -202,5 +339,10 @@
         private DevExpress.XtraGrid.GridControl gcMovieLogs;
         private DevExpress.XtraGrid.Views.Grid.GridView gvMovieLogs;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraGrid.Columns.GridColumn LogID;
+        private DevExpress.XtraGrid.Columns.GridColumn Username;
+        private DevExpress.XtraGrid.Columns.GridColumn DateTime;
+        private DevExpress.XtraGrid.Columns.GridColumn Activity;
+        private DevExpress.XtraGrid.Columns.GridColumn Title;
     }
 }

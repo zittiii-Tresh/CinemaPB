@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffForm));
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.staffLBL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.showtimehall1BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -54,7 +54,7 @@
             this.accordionControl1.ElementPositionOnExpanding = DevExpress.XtraBars.Navigation.ElementPositionOnExpanding.Fixed;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement1,
-            this.accordionControlElement2,
+            this.staffLBL,
             this.accordionControlSeparator1,
             this.accordionControlElement4,
             this.accordionControlElement3});
@@ -73,17 +73,17 @@
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             // 
-            // accordionControlElement2
+            // staffLBL
             // 
-            this.accordionControlElement2.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement2.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.accordionControlElement2.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement2.Appearance.Default.Options.UseForeColor = true;
-            this.accordionControlElement2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
-            this.accordionControlElement2.ImageOptions.SvgImageSize = new System.Drawing.Size(55, 55);
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "Staff";
+            this.staffLBL.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.staffLBL.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.staffLBL.Appearance.Default.Options.UseFont = true;
+            this.staffLBL.Appearance.Default.Options.UseForeColor = true;
+            this.staffLBL.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
+            this.staffLBL.ImageOptions.SvgImageSize = new System.Drawing.Size(55, 55);
+            this.staffLBL.Name = "staffLBL";
+            this.staffLBL.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.staffLBL.Text = "Staff";
             // 
             // accordionControlSeparator1
             // 
@@ -197,7 +197,7 @@
 
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement staffLBL;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraBars.Navigation.AccordionControlElement showtimehall1BTN;

@@ -105,6 +105,7 @@
       <DependentUpon>EmployeeListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormHelper.cs" />
+    <Compile Include="Forms\GlobalLogger.cs" />
     <Compile Include="Forms\Hall1Showing.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,11 +136,11 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\LogsForm\HallLogsForm.cs">
+    <Compile Include="Forms\LogsForm\EmployeeLogs.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\LogsForm\HallLogsForm.Designer.cs">
-      <DependentUpon>HallLogsForm.cs</DependentUpon>
+    <Compile Include="Forms\LogsForm\EmployeeLogs.Designer.cs">
+      <DependentUpon>EmployeeLogs.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LogsForm\MovieLogsForm.cs">
       <SubType>UserControl</SubType>
@@ -208,6 +209,7 @@
       <DependentUpon>StaffForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TextHideShowHelper.cs" />
+    <Compile Include="Forms\UserSession.cs" />
     <Compile Include="GlobalSQL\SQLQuery.cs" />
     <Compile Include="Infrastructure\Repositories\MovieRepository.cs" />
     <Compile Include="Infrastructure\Repositories\ShowtimeRepository.cs" />
@@ -256,8 +258,8 @@
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LogsForm\HallLogsForm.resx">
-      <DependentUpon>HallLogsForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\LogsForm\EmployeeLogs.resx">
+      <DependentUpon>EmployeeLogs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LogsForm\MovieLogsForm.resx">
       <DependentUpon>MovieLogsForm.cs</DependentUpon>

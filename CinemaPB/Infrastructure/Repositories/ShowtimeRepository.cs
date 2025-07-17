@@ -46,11 +46,16 @@ namespace CinemaPB.Infrastructure.Repositories
             }
         }
 
-        public void InsertShowtime(int movieId, int hallId, DateTime showDate, TimeSpan startTime, TimeSpan endTime, int moviePriceId, int screening)
+        public int InsertShowtime(int movieId, int hallId, DateTime showDate, TimeSpan startTime, TimeSpan endTime, int moviePriceId, int screening)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                connection.Execute(ShowtimeSQL.InsertShowtime, new
+                string insertQuery = @"
+            INSERT INTO dbo.Showtime (MovieID, HallID, ShowDate, StartTime, EndTime, MoviePriceID, Screening)
+            VALUES (@MovieID, @HallID, @ShowDate, @StartTime, @EndTime, @MoviePriceID, @Screening);
+            SELECT CAST(SCOPE_IDENTITY() as int);";
+
+                return connection.ExecuteScalar<int>(insertQuery, new
                 {
                     MovieID = movieId,
                     HallID = hallId,

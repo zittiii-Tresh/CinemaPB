@@ -36,9 +36,9 @@ namespace CinemaPB
                 connection.Open();
 
                 string query = @"
-                                SELECT Password, RoleID, FailedAttempts, IsLocked
-                                FROM emp.Employees
-                                WHERE Username = @username";
+            SELECT Password, RoleID, FailedAttempts, IsLocked
+            FROM emp.Employees
+            WHERE Username = @username";
 
                 using (SqlCommand cmd = new SqlCommand(query, connection))
                 {
@@ -51,27 +51,31 @@ namespace CinemaPB
                         int roleID = Convert.ToInt32(reader["RoleID"]);
                         int failedAttempts = reader.IsDBNull(reader.GetOrdinal("FailedAttempts")) ? 0 : Convert.ToInt32(reader["FailedAttempts"]);
                         bool isLocked = reader.IsDBNull(reader.GetOrdinal("IsLocked")) ? false : Convert.ToBoolean(reader["IsLocked"]);
-                        reader.Close(); // Close before new SQL command
+                        reader.Close();
 
                         if (isLocked)
                         {
                             MessageBox.Show("Your account is locked. Please contact the administrator.");
+                            GlobalLogger.employeeLoginLog(username, false);
                             return;
                         }
 
                         if (BCrypt.Net.BCrypt.Verify(password, hashedPassword))
                         {
-                            // Successful login: reset FailedAttempts to 0
+                            UserSession.Username = username;
+
                             string resetQuery = @"
-                                                    UPDATE emp.Employees 
-                                                    SET FailedAttempts = 0 
-                                                    WHERE Username = @username";
+                        UPDATE emp.Employees 
+                        SET FailedAttempts = 0 
+                        WHERE Username = @username";
 
                             using (SqlCommand resetCmd = new SqlCommand(resetQuery, connection))
                             {
                                 resetCmd.Parameters.AddWithValue("@username", username);
                                 resetCmd.ExecuteNonQuery();
                             }
+
+                            GlobalLogger.employeeLoginLog(username, true);
 
                             this.Hide();
                             if (roleID == 1)
@@ -88,14 +92,13 @@ namespace CinemaPB
                         }
                         else
                         {
-                            // Increment failed attempts
                             failedAttempts++;
                             bool shouldLock = failedAttempts >= 5;
 
                             string updateQuery = @"
-                                                    UPDATE emp.Employees 
-                                                    SET FailedAttempts = @failed, IsLocked = @locked 
-                                                    WHERE Username = @username";
+                        UPDATE emp.Employees 
+                        SET FailedAttempts = @failed, IsLocked = @locked 
+                        WHERE Username = @username";
 
                             using (SqlCommand updateCmd = new SqlCommand(updateQuery, connection))
                             {
@@ -104,6 +107,8 @@ namespace CinemaPB
                                 updateCmd.Parameters.AddWithValue("@username", username);
                                 updateCmd.ExecuteNonQuery();
                             }
+
+                            GlobalLogger.employeeLoginLog(username, false);
 
                             if (shouldLock)
                             {
@@ -118,6 +123,13 @@ namespace CinemaPB
                                 MessageBox.Show($"Invalid password. Attempt {failedAttempts} of 5.");
                             }
                         }
+                    }
+                    else
+                    {
+                        // 👇 USER NOT FOUND HANDLER HERE
+                        reader.Close(); // Always good to close if no match found
+                        GlobalLogger.employeeLoginLog(username, false);
+                        MessageBox.Show("Invalid username or password.");
                     }
                 }
             }

@@ -146,6 +146,8 @@ namespace CinemaPB.Forms
 
                 if (rowsAffected > 0)
                 {
+                    GlobalLogger.employeeLog("Edited employee details", UserSession.Username);
+
                     XtraMessageBox.Show("Employee updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return true;
                 }
@@ -213,6 +215,8 @@ namespace CinemaPB.Forms
 
                 if (rowsAffected > 0)
                 {
+                    GlobalLogger.employeeLog("Deleted employee", UserSession.Username);
+
                     XtraMessageBox.Show("Employee deleted successfully!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close(); // Close the edit form
                 }

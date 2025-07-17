@@ -13,9 +13,9 @@ using DevExpress.XtraEditors;
 
 namespace CinemaPB.Forms.LogsForm
 {
-    public partial class ShowtimeLogsForm : DevExpress.XtraEditors.XtraUserControl
+    public partial class EmployeeLogs : DevExpress.XtraEditors.XtraUserControl
     {
-        public ShowtimeLogsForm()
+        public EmployeeLogs()
         {
             InitializeComponent();
         }
@@ -24,20 +24,20 @@ namespace CinemaPB.Forms.LogsForm
         {
             using (SqlConnection conn = new SqlConnection(GlobalSetting.GetConnectionString()))
             {
-                string query = @"SELECT    sl.LogID, 
-                                           sl.ShowtimeID,
-                                           sl.Username,
-	                                       sl.DateTime, 
-	                                       sl.Activity 
-                                    FROM log.ShowtimeLogs sl
-                                    ORDER BY sl.LogID DESC";
+                string query = @"SELECT    el.LogID, 
+                                           el.Username,
+	                                       el.DateTime, 
+	                                       el.Activity,
+                                           el.Authentication
+                                    FROM log.EmployeeLogs el
+                                    ORDER BY el.LogID DESC";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
 
-                gcShowtimeLogs.DataSource = dt;
+                gcEmployeeLogs.DataSource = dt;
 
-                var view = gcShowtimeLogs.MainView as DevExpress.XtraGrid.Views.Grid.GridView;
+                var view = gcEmployeeLogs.MainView as DevExpress.XtraGrid.Views.Grid.GridView;
                 if (view != null)
                 {
                     view.Columns["DateTime"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
@@ -47,11 +47,9 @@ namespace CinemaPB.Forms.LogsForm
             }
         }
 
-        private void gcShowtimeLogs_Load(object sender, EventArgs e)
+        private void gcEmployeeLogs_Load(object sender, EventArgs e)
         {
             LoadLogsIntoGrid();
         }
     }
 }
-
-    
