@@ -10,18 +10,15 @@ using System.Windows.Forms;
 using CinemaPB.Configuration;
 using CinemaPB.Infrastructure.Repositories;
 using DevExpress.XtraEditors;
-using DevExpress.XtraGrid.Views.Base.ViewInfo;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CinemaPB.Forms
 {
-    public partial class ReserveSeatsForm : DevExpress.XtraEditors.XtraForm
+    public partial class ReserveSeatsForm2 : DevExpress.XtraEditors.XtraForm
     {
         private SeatRepository _seatRepository;
         private List<SimpleButton> seatButtons;
-        private const int HallID = 1; // or pass this in dynamically later
-
-        public ReserveSeatsForm()
+        private const int HallID = 2; // or pass this in dynamically later
+        public ReserveSeatsForm2()
         {
             InitializeComponent();
             _seatRepository = new SeatRepository(GlobalSetting.GetConnectionString());
@@ -40,30 +37,24 @@ namespace CinemaPB.Forms
                     btn.Enabled = true;
                     btn.Tag = seat.IsAvailable;
 
+                    // Apply color
                     btn.Appearance.BackColor = (seat.IsAvailable == 0)
-                        ? Color.FromArgb(0, 126, 65)     // Green (Enabled)
-                        : Color.FromArgb(160, 106, 13);  // Orange (Disabled)
+                        ? Color.FromArgb(0, 126, 65)     // Available - Green
+                        : Color.FromArgb(160, 106, 13);   // Disabled - Orange
                 }
             }
         }
 
         private void LoadSeatButtons()
         {
-            seatButtons = seatPanel.Controls.OfType<SimpleButton>()
-                .Where(b => !string.IsNullOrEmpty(b.Name) &&
-                            char.IsLetter(b.Name[0]) &&
-                            char.IsDigit(b.Name[1]))
-                .ToList();
-        }
-
-        private void confirmBTN_Click(object sender, EventArgs e)
-        {
-
+            seatButtons = sidePanel7.Controls.OfType<SimpleButton>()
+                                              .Where(b => !string.IsNullOrEmpty(b.Name) && char.IsLetter(b.Name[0]) && char.IsDigit(b.Name[1]))
+                                              .ToList();
         }
 
         private void closeBTN_Click(object sender, EventArgs e)
         {
-            ReserveSeatsForm.ActiveForm.Close();
+            ReserveSeatsForm2.ActiveForm.Close();
         }
     }
 }
