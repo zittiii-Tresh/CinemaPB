@@ -24,5 +24,14 @@ namespace CinemaPB.Forms
             FormHelper.LoadUserControl(mainSPanel, new Hall1Showing());
         }
 
+        private void hall1seatsTempBTN_Click(object sender, EventArgs e)
+        {
+            FormHelper.DisplayForm(new ReserveSeatsForm());
+        }
+
+        private void hall2seatsTempBTN_Click(object sender, EventArgs e)
+        {
+            FormHelper.DisplayForm(new ReserveSeatsForm2());
+        }
     }
 }

@@ -23,11 +23,13 @@ namespace CinemaPB.Forms
     public partial class MoviesForm : DevExpress.XtraEditors.XtraUserControl
     {
         private readonly MovieRepository _movieRepository;
+        private Image _defaultPoster;
 
         public MoviesForm()
         {
             InitializeComponent();
             _movieRepository = new MovieRepository(GlobalSetting.GetConnectionString());
+            _defaultPoster = posterPE.Image;
             LoadLookUpEdit();
             LoadMoviesIntoGrid();
             SetupToggleSwitch();
@@ -79,19 +81,28 @@ namespace CinemaPB.Forms
 
         private void saveBTN_Click(object sender, EventArgs e)
         {
-            // ✅ Validate required fields (description is NOT required)
-            //if (string.IsNullOrWhiteSpace(movienameTE.Text) ||
-            //    moviegenreLUE.EditValue == null ||
-            //    string.IsNullOrWhiteSpace(moviedurationTE.Text) ||
-            //    movielanguageLUE.EditValue == null ||
-            //    movieratingLUE.EditValue == null ||
-            //    posterPE.Image == null)
-            //{
-            //    XtraMessageBox.Show("Please fill in all required fields (except description) and select a poster image.", "Validation Error");
-            //    return;
-            //}
+            if (string.IsNullOrWhiteSpace(movienameTE.Text) ||
+            string.IsNullOrWhiteSpace(moviedescriptionTE.Text) ||
+            movielanguageLUE.EditValue == null ||
+            movieratingLUE.EditValue == null ||
+            moviegenreLUE.Properties.GetCheckedItems() == null ||
+            moviegenreLUE.Properties.GetCheckedItems().ToString().Trim() == string.Empty ||
+            string.IsNullOrWhiteSpace(weekdaypriceTE.Text) ||
+            string.IsNullOrWhiteSpace(weekendpriceTE.Text) ||
+            posterPE.Image == null || posterPE.Image == _defaultPoster)
+                if (posterPE.Image == null || posterPE.Image == _defaultPoster)
+                {
+                    XtraMessageBox.Show("Please upload a movie poster.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-            // ✅ Parse duration safely
+
+            if (durationTE.EditValue == null)
+            {
+                XtraMessageBox.Show("Please enter a movie duration.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             TimeSpan dur = durationTE.Time.TimeOfDay;
 
             var movie = new ModelMovie.Movie

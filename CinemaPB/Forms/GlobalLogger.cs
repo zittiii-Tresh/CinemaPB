@@ -115,9 +115,28 @@ namespace CinemaPB.Forms
             }
         }
 
+        public static void seatLayoutLog(string username, string seatId, int hallId, string activity)
+        {
+            string connectionString = GlobalSetting.GetConnectionString();
 
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
 
+                string insertQuery = @"
+            INSERT INTO log.SeatLayoutLogs (Username, SeatID, HallID, DateTime, Activity)
+            VALUES (@Username, @SeatID, @HallID, @DateTime, @Activity)";
 
-
+                using (SqlCommand cmd = new SqlCommand(insertQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@SeatID", seatId);
+                    cmd.Parameters.AddWithValue("@HallID", hallId);
+                    cmd.Parameters.AddWithValue("@DateTime", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@Activity", activity); // "Enabled a seat" or "Disabled a seat"
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

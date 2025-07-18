@@ -120,6 +120,8 @@ namespace CinemaPB.Forms
                 if (result)
                 {
                     updatesMade++;
+                    string activity = isAvailable == 0 ? "Enabled a seat" : "Disabled a seat";
+                    GlobalLogger.seatLayoutLog(UserSession.Username, seatName, HallID, activity);
                 }
                 else
                 {
