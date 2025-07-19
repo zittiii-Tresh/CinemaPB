@@ -132,10 +132,12 @@
             this.seatPanel = new DevExpress.XtraEditors.SidePanel();
             this.confirmBTN = new DevExpress.XtraEditors.SimpleButton();
             this.closeBTN = new DevExpress.XtraEditors.SimpleButton();
+            this.movieLUE = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.sidePanel1.SuspendLayout();
             this.sidePanel2.SuspendLayout();
             this.seatPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.movieLUE.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureEdit1
@@ -1448,6 +1450,23 @@
             this.closeBTN.TabIndex = 96;
             this.closeBTN.Click += new System.EventHandler(this.closeBTN_Click);
             // 
+            // movieLUE
+            // 
+            this.movieLUE.Location = new System.Drawing.Point(549, 144);
+            this.movieLUE.Name = "movieLUE";
+            this.movieLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
+            this.movieLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movieLUE.Properties.Appearance.Options.UseBackColor = true;
+            this.movieLUE.Properties.Appearance.Options.UseFont = true;
+            this.movieLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.movieLUE.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Title", "Title"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Time", "Time"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("HallID", "Hall")});
+            this.movieLUE.Size = new System.Drawing.Size(608, 36);
+            this.movieLUE.TabIndex = 97;
+            // 
             // ReserveSeatsForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
@@ -1457,6 +1476,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1479, 896);
+            this.Controls.Add(this.movieLUE);
             this.Controls.Add(this.closeBTN);
             this.Controls.Add(this.seatPanel);
             this.Controls.Add(this.labelControl7);
@@ -1482,6 +1502,7 @@
             this.sidePanel2.PerformLayout();
             this.seatPanel.ResumeLayout(false);
             this.seatPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.movieLUE.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1592,5 +1613,6 @@
         private DevExpress.XtraEditors.SidePanel seatPanel;
         private DevExpress.XtraEditors.SimpleButton confirmBTN;
         private DevExpress.XtraEditors.SimpleButton closeBTN;
+        private DevExpress.XtraEditors.LookUpEdit movieLUE;
     }
 }
