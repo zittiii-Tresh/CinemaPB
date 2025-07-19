@@ -7,23 +7,46 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CinemaPB.Configuration;
+using CinemaPB.Infrastructure.Repositories;
+using CinemaPB.ModelShowing;
 using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.WinExplorer;
 
 namespace CinemaPB.Forms
 {
     public partial class Hall1Showing : DevExpress.XtraEditors.XtraUserControl
     {
+        private readonly ShowingRepository _showingRepository;
+        private const int HallID = 1;
+
         public Hall1Showing()
         {
             InitializeComponent();
+            _showingRepository = new ShowingRepository(GlobalSetting.GetConnectionString());
             dateLBL.Text = DateTime.Now.ToString("MMMM dd, yyyy - hh:mm tt");
+            LoadShowings();
 
         }
 
-        private void winExplorerView1_HtmlElementMouseClick(object sender, DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewHtmlElementEventArgs e)
+        private void LoadShowings()
         {
-            
+            var today = DateTime.Today;
+            var cards = _showingRepository.GetCurrentShowings(today, HallID);
 
+            showingGC.DataSource = cards;
+            showingGC.RefreshDataSource();
+        }
+
+        private void showingEV_Click(object sender, EventArgs e)
+        {
+            var selected = showingEV.GetFocusedRow() as ShowingCard;
+            if (selected != null)
+            {
+                MessageBox.Show($"You selected: {selected.Title} - First: {selected.First}");
+            }
+        }
+     
         }
     }
-}
+
