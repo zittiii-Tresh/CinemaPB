@@ -228,6 +228,7 @@
     <Compile Include="ModelMovie\Language.cs" />
     <Compile Include="ModelMovie\Movie.cs" />
     <Compile Include="ModelMovie\MoviePrice.cs" />
+    <Compile Include="ModelMovie\MovieShowtimeInfo.cs" />
     <Compile Include="ModelMovie\MovieWithDetail.cs" />
     <Compile Include="ModelMovie\Price.cs" />
     <Compile Include="ModelSeat\Seat.cs" />

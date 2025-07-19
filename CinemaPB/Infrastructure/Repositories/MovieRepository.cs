@@ -221,5 +221,18 @@ namespace CinemaPB.Infrastructure.Repositories
                 connection.Execute(MovieSQL.DeleteMovie, new { MovieID = movieId });
             }
         }
+
+        public List<MovieShowtimeInfo> GetMovieShowtimeList()
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                string sql = @"
+                SELECT M.Title, S.HallID, S.StartTime, S.Screening
+                FROM dbo.Showtime S
+                LEFT JOIN mov.Movies M ON M.MovieID = S.MovieID";
+
+                return connection.Query<MovieShowtimeInfo>(sql).ToList();
+            }
+        }
     }
 }
