@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="winExplorerView1.OptionsViewStyles.ExtraLarge.HtmlTemplate.Styles" xml:space="preserve">
+  <data name="showingEV.OptionsViewStyles.ExtraLarge.HtmlTemplate.Styles" xml:space="preserve">
     <value>body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #1e1e1e;
@@ -202,7 +202,7 @@
 }
 </value>
   </data>
-  <data name="winExplorerView1.OptionsViewStyles.ExtraLarge.HtmlTemplate.Template" xml:space="preserve">
+  <data name="showingEV.OptionsViewStyles.ExtraLarge.HtmlTemplate.Template" xml:space="preserve">
     <value>  &lt;div class="movie-card"&gt;
         &lt;img class="poster" src="" alt="Movie Poster" /&gt;
         &lt;div class="content"&gt;
@@ -217,7 +217,7 @@
         &lt;/div&gt;
     &lt;/div&gt;</value>
   </data>
-  <data name="winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Styles" xml:space="preserve">
+  <data name="showingEV.OptionsViewStyles.Medium.HtmlTemplate.Styles" xml:space="preserve">
     <value>body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #1b1d25;
@@ -295,18 +295,44 @@
 .showtime:hover {
     background-color: #d8933a;
 }
+
+
+/*&lt;div class="movie-card"&gt;
+    &lt;img class="poster" src="${PosterImage}" alt="Movie Poster" /&gt;
+    &lt;div class="content"&gt;
+        &lt;div class="title"&gt;${Title}&lt;/div&gt;
+        &lt;div class="details"&gt;${Genres} | {Duration} | {RatingName}&lt;/div&gt;
+        &lt;div class="showtimes"&gt;
+            &lt;div id="firstscreeningBTN" class="showtime" onclick="onFirstButtonClick"&gt;
+					${First}
+				&lt;/div&gt;
+        	&lt;div id="secondscreeningBTN" class="showtime" onclick="onSecondButtonClick"&gt;
+					${Second}
+				&lt;/div&gt;
+        	&lt;div id="lastscreeningBTN" class="showtime" onclick="onLastButtonClick"&gt;
+					${Last}
+				&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;*/
 </value>
   </data>
-  <data name="winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Template" xml:space="preserve">
+  <data name="showingEV.OptionsViewStyles.Medium.HtmlTemplate.Template" xml:space="preserve">
     <value>&lt;div class="movie-card"&gt;
-    &lt;img class="poster" src="{PosterUrl}" alt="Movie Poster" /&gt;
+    &lt;img class="poster" src="${PosterImage}" alt="Movie Poster" /&gt;
     &lt;div class="content"&gt;
-        &lt;div class="title"&gt;{Title}&lt;/div&gt;
-        &lt;div class="details"&gt;{Genre} | {Duration} | {Rating}&lt;/div&gt;
+        &lt;div class="title"&gt;${Title}&lt;/div&gt;
+        &lt;div class="details"&gt;${Genres} | {Duration} | {RatingName}&lt;/div&gt;
         &lt;div class="showtimes"&gt;
-            &lt;div class="showtime"&gt;{Time1}&lt;/div&gt;
-            &lt;div class="showtime"&gt;{Time2}&lt;/div&gt;
-            &lt;div class="showtime"&gt;{Time3}&lt;/div&gt;
+            &lt;div id="firstscreeningBTN" class="showtime" onclick="onFirstButtonClick"&gt;
+					${First}
+				&lt;/div&gt;
+        	&lt;div id="secondscreeningBTN" class="showtime" onclick="onSecondButtonClick"&gt;
+					${Second}
+				&lt;/div&gt;
+        	&lt;div id="lastscreeningBTN" class="showtime" onclick="onLastButtonClick"&gt;
+					${Last}
+				&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
