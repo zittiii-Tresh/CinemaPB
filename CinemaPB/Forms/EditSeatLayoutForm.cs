@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CinemaPB.Configuration;
 using CinemaPB.Infrastructure.Repositories;
 using CinemaPB.ModelSeat;
+using CinemaPB.ModelShowing;
 using DevExpress.XtraEditors;
 
 namespace CinemaPB.Forms

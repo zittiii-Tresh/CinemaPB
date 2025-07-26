@@ -100,7 +100,7 @@
             this.AdminLBL.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.AdminLBL.Appearance.Default.Options.UseFont = true;
             this.AdminLBL.Appearance.Default.Options.UseForeColor = true;
-            this.AdminLBL.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
+            this.AdminLBL.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("AdminLBL.ImageOptions.SvgImage")));
             this.AdminLBL.ImageOptions.SvgImageSize = new System.Drawing.Size(55, 55);
             this.AdminLBL.Name = "AdminLBL";
             this.AdminLBL.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -229,7 +229,6 @@
             this.accordionControlElement6.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.hall1seatsACE,
             this.hall2seatsACE});
-            this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.HeaderIndent = 34;
             this.accordionControlElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement6.ImageOptions.SvgImage")));
             this.accordionControlElement6.Name = "accordionControlElement6";
@@ -291,7 +290,6 @@
             this.employeelogsACE,
             this.seatlayoutlogsACE,
             this.ticketlogsACE});
-            this.accordionControlElement9.Expanded = true;
             this.accordionControlElement9.HeaderIndent = 34;
             this.accordionControlElement9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement9.ImageOptions.SvgImage")));
             this.accordionControlElement9.Name = "accordionControlElement9";

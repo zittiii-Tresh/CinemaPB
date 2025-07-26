@@ -44,12 +44,9 @@
             this.Genres = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Duration = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Rating = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Screening = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ScreeningLabel = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Poster = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.First = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Second = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Last = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Timeslot = new DevExpress.XtraGrid.Columns.GridColumn();
             this.htmlTemplate1 = new DevExpress.Utils.Html.HtmlTemplate();
             this.htmlTemplate2 = new DevExpress.Utils.Html.HtmlTemplate();
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
@@ -213,12 +210,9 @@
             this.Genres,
             this.Duration,
             this.Rating,
-            this.Screening,
+            this.ScreeningLabel,
             this.Poster,
-            this.First,
-            this.Second,
-            this.Last,
-            this.gridColumn1});
+            this.Timeslot});
             this.showingEV.GridControl = this.showingGC;
             this.showingEV.HtmlTemplates.AddRange(new DevExpress.Utils.Html.HtmlTemplate[] {
             this.htmlTemplate1,
@@ -268,13 +262,13 @@
             this.Rating.Visible = true;
             this.Rating.VisibleIndex = 3;
             // 
-            // Screening
+            // ScreeningLabel
             // 
-            this.Screening.Caption = "Screening";
-            this.Screening.FieldName = "Screening";
-            this.Screening.Name = "Screening";
-            this.Screening.Visible = true;
-            this.Screening.VisibleIndex = 4;
+            this.ScreeningLabel.Caption = "ScreeningLabel";
+            this.ScreeningLabel.FieldName = "ScreeningLabel";
+            this.ScreeningLabel.Name = "ScreeningLabel";
+            this.ScreeningLabel.Visible = true;
+            this.ScreeningLabel.VisibleIndex = 4;
             // 
             // Poster
             // 
@@ -284,35 +278,13 @@
             this.Poster.Visible = true;
             this.Poster.VisibleIndex = 5;
             // 
-            // First
+            // Timeslot
             // 
-            this.First.Caption = "First";
-            this.First.FieldName = "First";
-            this.First.Name = "First";
-            this.First.Visible = true;
-            this.First.VisibleIndex = 6;
-            // 
-            // Second
-            // 
-            this.Second.Caption = "Second";
-            this.Second.FieldName = "Second";
-            this.Second.Name = "Second";
-            this.Second.Visible = true;
-            this.Second.VisibleIndex = 7;
-            // 
-            // Last
-            // 
-            this.Last.Caption = "Last";
-            this.Last.FieldName = "Last";
-            this.Last.Name = "Last";
-            this.Last.Visible = true;
-            this.Last.VisibleIndex = 8;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 9;
+            this.Timeslot.Caption = "Timeslot";
+            this.Timeslot.FieldName = "Timeslot";
+            this.Timeslot.Name = "Timeslot";
+            this.Timeslot.Visible = true;
+            this.Timeslot.VisibleIndex = 6;
             // 
             // htmlTemplate1
             // 
@@ -387,11 +359,8 @@
         private DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView winExplorerView2;
         private DevExpress.Utils.Html.HtmlTemplate htmlTemplate3;
         private DevExpress.XtraGrid.Columns.GridColumn Rating;
-        private DevExpress.XtraGrid.Columns.GridColumn Screening;
+        private DevExpress.XtraGrid.Columns.GridColumn ScreeningLabel;
         private DevExpress.XtraGrid.Columns.GridColumn Poster;
-        private DevExpress.XtraGrid.Columns.GridColumn First;
-        private DevExpress.XtraGrid.Columns.GridColumn Second;
-        private DevExpress.XtraGrid.Columns.GridColumn Last;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn Timeslot;
     }
 }
