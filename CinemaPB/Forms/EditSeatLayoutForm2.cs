@@ -140,7 +140,5 @@ namespace CinemaPB.Forms
                 XtraMessageBox.Show("No seats were updated in the database.", "Debug", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
-        
     }
 }

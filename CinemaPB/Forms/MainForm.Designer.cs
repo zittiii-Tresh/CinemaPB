@@ -33,8 +33,6 @@
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AdminLBL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.moviesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.schedulinghall1BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -49,7 +47,10 @@
             this.employeelogsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.seatlayoutlogsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ticketlogsACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.SalesReportACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.dailysalesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.weeklysalesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.monthlysalesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.mainSPanel = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
@@ -71,24 +72,25 @@
             this.accordionControlElement1,
             this.AdminLBL,
             this.accordionControlSeparator1,
-            this.accordionControlElement3,
             this.moviesACE,
             this.accordionControlElement4,
             this.employeelistACE,
             this.accordionControlElement6,
             this.accordionControlElement9,
-            this.accordionControlElement5});
+            this.SalesReportACE});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.OptionsFooter.ActiveGroupDisplayMode = DevExpress.XtraBars.Navigation.ActiveGroupDisplayMode.GroupHeaderAndContent;
             this.accordionControl1.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.True;
-            this.accordionControl1.Padding = new System.Windows.Forms.Padding(10);
+            this.accordionControl1.Padding = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(342, 700);
+            this.accordionControl1.Size = new System.Drawing.Size(293, 634);
             this.accordionControl1.TabIndex = 0;
             // 
             // accordionControlElement1
             // 
+            this.accordionControlElement1.HeaderIndent = 0;
             this.accordionControlElement1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement1.ImageOptions.SvgImage")));
             this.accordionControlElement1.ImageOptions.SvgImageSize = new System.Drawing.Size(210, 65);
             this.accordionControlElement1.Name = "accordionControlElement1";
@@ -109,30 +111,6 @@
             // accordionControlSeparator1
             // 
             this.accordionControlSeparator1.Name = "accordionControlSeparator1";
-            // 
-            // accordionControlElement3
-            // 
-            this.accordionControlElement3.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement3.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.accordionControlElement3.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement3.Appearance.Default.Options.UseForeColor = true;
-            this.accordionControlElement3.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.accordionControlElement3.Appearance.Hovered.Options.UseBackColor = true;
-            this.accordionControlElement3.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.accordionControlElement3.Appearance.Pressed.Options.UseBackColor = true;
-            this.accordionControlElement3.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlSeparator2});
-            this.accordionControlElement3.HeaderIndent = 35;
-            this.accordionControlElement3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement3.ImageOptions.SvgImage")));
-            this.accordionControlElement3.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
-            this.accordionControlElement3.Name = "accordionControlElement3";
-            this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "Dashboard";
-            // 
-            // accordionControlSeparator2
-            // 
-            this.accordionControlSeparator2.Name = "accordionControlSeparator2";
-            this.accordionControlSeparator2.Visible = false;
             // 
             // moviesACE
             // 
@@ -160,14 +138,14 @@
             this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.schedulinghall1BTN,
             this.schedulinghall2BTN});
-            this.accordionControlElement4.HeaderIndent = 34;
+            this.accordionControlElement4.HeaderIndent = 24;
             this.accordionControlElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "Showtime Scheduling";
             // 
             // schedulinghall1BTN
             // 
-            this.schedulinghall1BTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.schedulinghall1BTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.schedulinghall1BTN.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.schedulinghall1BTN.Appearance.Default.Options.UseFont = true;
             this.schedulinghall1BTN.Appearance.Default.Options.UseForeColor = true;
@@ -175,7 +153,7 @@
             this.schedulinghall1BTN.Appearance.Hovered.Options.UseBackColor = true;
             this.schedulinghall1BTN.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.schedulinghall1BTN.Appearance.Pressed.Options.UseBackColor = true;
-            this.schedulinghall1BTN.HeaderIndent = 20;
+            this.schedulinghall1BTN.HeaderIndent = 34;
             this.schedulinghall1BTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("schedulinghall1BTN.ImageOptions.Image")));
             this.schedulinghall1BTN.Name = "schedulinghall1BTN";
             this.schedulinghall1BTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -184,7 +162,7 @@
             // 
             // schedulinghall2BTN
             // 
-            this.schedulinghall2BTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.schedulinghall2BTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.schedulinghall2BTN.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.schedulinghall2BTN.Appearance.Default.Options.UseFont = true;
             this.schedulinghall2BTN.Appearance.Default.Options.UseForeColor = true;
@@ -192,7 +170,7 @@
             this.schedulinghall2BTN.Appearance.Hovered.Options.UseBackColor = true;
             this.schedulinghall2BTN.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.schedulinghall2BTN.Appearance.Pressed.Options.UseBackColor = true;
-            this.schedulinghall2BTN.HeaderIndent = 20;
+            this.schedulinghall2BTN.HeaderIndent = 34;
             this.schedulinghall2BTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("schedulinghall2BTN.ImageOptions.Image")));
             this.schedulinghall2BTN.Name = "schedulinghall2BTN";
             this.schedulinghall2BTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -236,7 +214,7 @@
             // 
             // hall1seatsACE
             // 
-            this.hall1seatsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hall1seatsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hall1seatsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.hall1seatsACE.Appearance.Default.Options.UseFont = true;
             this.hall1seatsACE.Appearance.Default.Options.UseForeColor = true;
@@ -246,7 +224,7 @@
             this.hall1seatsACE.Appearance.Hovered.Options.UseBorderColor = true;
             this.hall1seatsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.hall1seatsACE.Appearance.Pressed.Options.UseBackColor = true;
-            this.hall1seatsACE.HeaderIndent = 20;
+            this.hall1seatsACE.HeaderIndent = 34;
             this.hall1seatsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("hall1seatsACE.ImageOptions.SvgImage")));
             this.hall1seatsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
             this.hall1seatsACE.Name = "hall1seatsACE";
@@ -256,7 +234,7 @@
             // 
             // hall2seatsACE
             // 
-            this.hall2seatsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hall2seatsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hall2seatsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.hall2seatsACE.Appearance.Default.Options.UseFont = true;
             this.hall2seatsACE.Appearance.Default.Options.UseForeColor = true;
@@ -266,7 +244,7 @@
             this.hall2seatsACE.Appearance.Hovered.Options.UseBorderColor = true;
             this.hall2seatsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.hall2seatsACE.Appearance.Pressed.Options.UseBackColor = true;
-            this.hall2seatsACE.HeaderIndent = 20;
+            this.hall2seatsACE.HeaderIndent = 34;
             this.hall2seatsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("hall2seatsACE.ImageOptions.SvgImage")));
             this.hall2seatsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
             this.hall2seatsACE.Name = "hall2seatsACE";
@@ -297,7 +275,7 @@
             // 
             // movielogsACE
             // 
-            this.movielogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movielogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movielogsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.movielogsACE.Appearance.Default.Options.UseFont = true;
             this.movielogsACE.Appearance.Default.Options.UseForeColor = true;
@@ -307,7 +285,7 @@
             this.movielogsACE.Appearance.Hovered.Options.UseBorderColor = true;
             this.movielogsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.movielogsACE.Appearance.Pressed.Options.UseBackColor = true;
-            this.movielogsACE.HeaderIndent = 20;
+            this.movielogsACE.HeaderIndent = 30;
             this.movielogsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("movielogsACE.ImageOptions.SvgImage")));
             this.movielogsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
             this.movielogsACE.Name = "movielogsACE";
@@ -317,7 +295,7 @@
             // 
             // showtimelogsACE
             // 
-            this.showtimelogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtimelogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showtimelogsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.showtimelogsACE.Appearance.Default.Options.UseFont = true;
             this.showtimelogsACE.Appearance.Default.Options.UseForeColor = true;
@@ -327,7 +305,7 @@
             this.showtimelogsACE.Appearance.Hovered.Options.UseBorderColor = true;
             this.showtimelogsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.showtimelogsACE.Appearance.Pressed.Options.UseBackColor = true;
-            this.showtimelogsACE.HeaderIndent = 20;
+            this.showtimelogsACE.HeaderIndent = 30;
             this.showtimelogsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("showtimelogsACE.ImageOptions.SvgImage")));
             this.showtimelogsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
             this.showtimelogsACE.Name = "showtimelogsACE";
@@ -337,7 +315,7 @@
             // 
             // employeelogsACE
             // 
-            this.employeelogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeelogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeelogsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.employeelogsACE.Appearance.Default.Options.UseFont = true;
             this.employeelogsACE.Appearance.Default.Options.UseForeColor = true;
@@ -347,7 +325,7 @@
             this.employeelogsACE.Appearance.Hovered.Options.UseBorderColor = true;
             this.employeelogsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.employeelogsACE.Appearance.Pressed.Options.UseBackColor = true;
-            this.employeelogsACE.HeaderIndent = 20;
+            this.employeelogsACE.HeaderIndent = 25;
             this.employeelogsACE.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("employeelogsACE.ImageOptions.Image")));
             this.employeelogsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
             this.employeelogsACE.Name = "employeelogsACE";
@@ -357,7 +335,7 @@
             // 
             // seatlayoutlogsACE
             // 
-            this.seatlayoutlogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seatlayoutlogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seatlayoutlogsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.seatlayoutlogsACE.Appearance.Default.Options.UseFont = true;
             this.seatlayoutlogsACE.Appearance.Default.Options.UseForeColor = true;
@@ -367,7 +345,7 @@
             this.seatlayoutlogsACE.Appearance.Hovered.Options.UseBorderColor = true;
             this.seatlayoutlogsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.seatlayoutlogsACE.Appearance.Pressed.Options.UseBackColor = true;
-            this.seatlayoutlogsACE.HeaderIndent = 20;
+            this.seatlayoutlogsACE.HeaderIndent = 34;
             this.seatlayoutlogsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("seatlayoutlogsACE.ImageOptions.SvgImage")));
             this.seatlayoutlogsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
             this.seatlayoutlogsACE.Name = "seatlayoutlogsACE";
@@ -377,7 +355,7 @@
             // 
             // ticketlogsACE
             // 
-            this.ticketlogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ticketlogsACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ticketlogsACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.ticketlogsACE.Appearance.Default.Options.UseFont = true;
             this.ticketlogsACE.Appearance.Default.Options.UseForeColor = true;
@@ -387,7 +365,7 @@
             this.ticketlogsACE.Appearance.Hovered.Options.UseBorderColor = true;
             this.ticketlogsACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.ticketlogsACE.Appearance.Pressed.Options.UseBackColor = true;
-            this.ticketlogsACE.HeaderIndent = 20;
+            this.ticketlogsACE.HeaderIndent = 35;
             this.ticketlogsACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ticketlogsACE.ImageOptions.SvgImage")));
             this.ticketlogsACE.ImageOptions.SvgImageSize = new System.Drawing.Size(33, 33);
             this.ticketlogsACE.Name = "ticketlogsACE";
@@ -395,23 +373,82 @@
             this.ticketlogsACE.Text = "Ticket Logs";
             this.ticketlogsACE.Click += new System.EventHandler(this.ticketlogsACE_Click);
             // 
-            // accordionControlElement5
+            // SalesReportACE
             // 
-            this.accordionControlElement5.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement5.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.accordionControlElement5.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement5.Appearance.Default.Options.UseForeColor = true;
-            this.accordionControlElement5.HeaderIndent = 34;
-            this.accordionControlElement5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement5.ImageOptions.Image")));
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "Sales Report";
+            this.SalesReportACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesReportACE.Appearance.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SalesReportACE.Appearance.Default.Options.UseFont = true;
+            this.SalesReportACE.Appearance.Default.Options.UseForeColor = true;
+            this.SalesReportACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.SalesReportACE.Appearance.Hovered.Options.UseBackColor = true;
+            this.SalesReportACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.SalesReportACE.Appearance.Pressed.Options.UseBackColor = true;
+            this.SalesReportACE.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.dailysalesACE,
+            this.weeklysalesACE,
+            this.monthlysalesACE});
+            this.SalesReportACE.HeaderIndent = 24;
+            this.SalesReportACE.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SalesReportACE.ImageOptions.Image")));
+            this.SalesReportACE.Name = "SalesReportACE";
+            this.SalesReportACE.Text = "Sales Report";
+            // 
+            // dailysalesACE
+            // 
+            this.dailysalesACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dailysalesACE.Appearance.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dailysalesACE.Appearance.Default.Options.UseFont = true;
+            this.dailysalesACE.Appearance.Default.Options.UseForeColor = true;
+            this.dailysalesACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.dailysalesACE.Appearance.Hovered.Options.UseBackColor = true;
+            this.dailysalesACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.dailysalesACE.Appearance.Pressed.Options.UseBackColor = true;
+            this.dailysalesACE.HeaderIndent = 34;
+            this.dailysalesACE.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("dailysalesACE.ImageOptions.Image")));
+            this.dailysalesACE.Name = "dailysalesACE";
+            this.dailysalesACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.dailysalesACE.Text = "Daily Sales Report";
+            this.dailysalesACE.Click += new System.EventHandler(this.dailysalesACE_Click);
+            // 
+            // weeklysalesACE
+            // 
+            this.weeklysalesACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weeklysalesACE.Appearance.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.weeklysalesACE.Appearance.Default.Options.UseFont = true;
+            this.weeklysalesACE.Appearance.Default.Options.UseForeColor = true;
+            this.weeklysalesACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.weeklysalesACE.Appearance.Hovered.Options.UseBackColor = true;
+            this.weeklysalesACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.weeklysalesACE.Appearance.Pressed.Options.UseBackColor = true;
+            this.weeklysalesACE.HeaderIndent = 34;
+            this.weeklysalesACE.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("weeklysalesACE.ImageOptions.Image")));
+            this.weeklysalesACE.Name = "weeklysalesACE";
+            this.weeklysalesACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.weeklysalesACE.Text = "Weekly Sales Report";
+            this.weeklysalesACE.Click += new System.EventHandler(this.weeklysalesACE_Click);
+            // 
+            // monthlysalesACE
+            // 
+            this.monthlysalesACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monthlysalesACE.Appearance.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.monthlysalesACE.Appearance.Default.Options.UseFont = true;
+            this.monthlysalesACE.Appearance.Default.Options.UseForeColor = true;
+            this.monthlysalesACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.monthlysalesACE.Appearance.Hovered.Options.UseBackColor = true;
+            this.monthlysalesACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.monthlysalesACE.Appearance.Pressed.Options.UseBackColor = true;
+            this.monthlysalesACE.HeaderIndent = 34;
+            this.monthlysalesACE.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("monthlysalesACE.ImageOptions.Image")));
+            this.monthlysalesACE.Name = "monthlysalesACE";
+            this.monthlysalesACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.monthlysalesACE.Text = "Monthly Sales Report";
+            this.monthlysalesACE.Click += new System.EventHandler(this.monthlysalesACE_Click);
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(194, 266);
+            this.simpleButton1.Location = new System.Drawing.Point(166, 216);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton1.Size = new System.Drawing.Size(81, 24);
             this.simpleButton1.TabIndex = 1;
             this.simpleButton1.Text = "simpleButton1";
             // 
@@ -420,9 +457,10 @@
             this.mainSPanel.BorderThickness = 0;
             this.mainSPanel.Controls.Add(this.sidePanel1);
             this.mainSPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainSPanel.Location = new System.Drawing.Point(342, 0);
+            this.mainSPanel.Location = new System.Drawing.Point(293, 0);
+            this.mainSPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainSPanel.Name = "mainSPanel";
-            this.mainSPanel.Size = new System.Drawing.Size(1149, 700);
+            this.mainSPanel.Size = new System.Drawing.Size(985, 634);
             this.mainSPanel.TabIndex = 2;
             this.mainSPanel.Text = "sidePanel1";
             // 
@@ -432,8 +470,9 @@
             this.sidePanel1.BorderThickness = 0;
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel1.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(249, 700);
+            this.sidePanel1.Size = new System.Drawing.Size(213, 634);
             this.sidePanel1.TabIndex = 0;
             this.sidePanel1.Text = "sidePanel1";
             // 
@@ -441,15 +480,16 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1491, 700);
+            this.ClientSize = new System.Drawing.Size(1278, 634);
             this.Controls.Add(this.mainSPanel);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.simpleButton1);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("MainForm.IconOptions.Image")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "B&P Ticketing System";
@@ -466,8 +506,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement AdminLBL;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement moviesACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement employeelistACE;
@@ -485,6 +523,9 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraBars.Navigation.AccordionControlElement schedulinghall1BTN;
         private DevExpress.XtraBars.Navigation.AccordionControlElement schedulinghall2BTN;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement SalesReportACE;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement dailysalesACE;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement weeklysalesACE;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement monthlysalesACE;
     }
 }

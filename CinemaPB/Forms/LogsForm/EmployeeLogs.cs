@@ -51,5 +51,33 @@ namespace CinemaPB.Forms.LogsForm
         {
             LoadLogsIntoGrid();
         }
+
+        private void printBTN_Click(object sender, EventArgs e)
+        {
+            LogsReport.EmployeeLogsReport reports = new LogsReport.EmployeeLogsReport();
+
+            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
+            {
+                string query = @"SELECT    el.LogID, 
+                                           el.Username,
+	                                       el.DateTime, 
+	                                       el.Activity,
+                                           el.Authentication
+                                    FROM log.EmployeeLogs el
+                                    ORDER BY el.LogID DESC";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        reports.DataSource = dataTable;
+                        DevExpress.XtraReports.UI.ReportPrintTool printTool = new DevExpress.XtraReports.UI.ReportPrintTool(reports);
+                        printTool.ShowPreviewDialog();
+                    }
+                }
+            }
+        }
     }
 }

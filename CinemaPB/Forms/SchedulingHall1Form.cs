@@ -139,8 +139,6 @@ namespace CinemaPB.Forms
             }
         }
 
-
-
         private void LoadShowtimeGrid()
         {
             int hallId = 1;

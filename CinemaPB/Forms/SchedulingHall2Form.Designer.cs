@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchedulingHall2Form));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel6 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel10 = new DevExpress.XtraEditors.SidePanel();
@@ -56,8 +57,6 @@
             this.timeslotLBL = new DevExpress.XtraEditors.LabelControl();
             this.label2 = new System.Windows.Forms.Label();
             this.showdateLBL = new DevExpress.XtraEditors.LabelControl();
-            this.label1 = new System.Windows.Forms.Label();
-            this.movienameLBL = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel5 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel11 = new DevExpress.XtraEditors.SidePanel();
             this.deleteBTN = new DevExpress.XtraEditors.SimpleButton();
@@ -71,6 +70,7 @@
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.movienameLBL = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel7 = new DevExpress.XtraEditors.SidePanel();
@@ -137,10 +137,10 @@
             this.sidePanel6.Controls.Add(this.sidePanel10);
             this.sidePanel6.Controls.Add(this.sidePanel9);
             this.sidePanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sidePanel6.Location = new System.Drawing.Point(12, 81);
+            this.sidePanel6.Location = new System.Drawing.Point(12, 125);
             this.sidePanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel6.Name = "sidePanel6";
-            this.sidePanel6.Size = new System.Drawing.Size(582, 514);
+            this.sidePanel6.Size = new System.Drawing.Size(582, 522);
             this.sidePanel6.TabIndex = 8;
             this.sidePanel6.Text = "sidePanel6";
             // 
@@ -153,13 +153,14 @@
             this.sidePanel10.Location = new System.Drawing.Point(0, 0);
             this.sidePanel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel10.Name = "sidePanel10";
-            this.sidePanel10.Size = new System.Drawing.Size(361, 514);
+            this.sidePanel10.Size = new System.Drawing.Size(361, 522);
             this.sidePanel10.TabIndex = 6;
             this.sidePanel10.Text = "sidePanel10";
             // 
             // posterPE
             // 
             this.posterPE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.posterPE.EditValue = ((object)(resources.GetObject("posterPE.EditValue")));
             this.posterPE.Location = new System.Drawing.Point(5, 5);
             this.posterPE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.posterPE.Name = "posterPE";
@@ -187,13 +188,11 @@
             this.sidePanel9.Controls.Add(this.timeslotLBL);
             this.sidePanel9.Controls.Add(this.label2);
             this.sidePanel9.Controls.Add(this.showdateLBL);
-            this.sidePanel9.Controls.Add(this.label1);
-            this.sidePanel9.Controls.Add(this.movienameLBL);
             this.sidePanel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidePanel9.Location = new System.Drawing.Point(363, 0);
             this.sidePanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel9.Name = "sidePanel9";
-            this.sidePanel9.Size = new System.Drawing.Size(219, 514);
+            this.sidePanel9.Size = new System.Drawing.Size(219, 522);
             this.sidePanel9.TabIndex = 5;
             this.sidePanel9.Text = "sidePanel9";
             // 
@@ -202,7 +201,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label10.Location = new System.Drawing.Point(11, 489);
+            this.label10.Location = new System.Drawing.Point(11, 410);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(95, 17);
             this.label10.TabIndex = 37;
@@ -213,7 +212,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label9.Location = new System.Drawing.Point(11, 431);
+            this.label9.Location = new System.Drawing.Point(11, 351);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(117, 17);
             this.label9.TabIndex = 36;
@@ -224,7 +223,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label8.Location = new System.Drawing.Point(11, 373);
+            this.label8.Location = new System.Drawing.Point(11, 293);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 17);
             this.label8.TabIndex = 35;
@@ -233,11 +232,11 @@
             // starttime3TE
             // 
             this.starttime3TE.EditValue = new System.DateTime(2025, 7, 8, 0, 0, 0, 0);
-            this.starttime3TE.Location = new System.Drawing.Point(4, 455);
+            this.starttime3TE.Location = new System.Drawing.Point(4, 375);
             this.starttime3TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starttime3TE.Name = "starttime3TE";
             this.starttime3TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
-            this.starttime3TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.starttime3TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.starttime3TE.Properties.Appearance.Options.UseBackColor = true;
             this.starttime3TE.Properties.Appearance.Options.UseFont = true;
             this.starttime3TE.Properties.AutoHeight = false;
@@ -251,11 +250,11 @@
             // starttime2TE
             // 
             this.starttime2TE.EditValue = new System.DateTime(2025, 7, 8, 0, 0, 0, 0);
-            this.starttime2TE.Location = new System.Drawing.Point(4, 397);
+            this.starttime2TE.Location = new System.Drawing.Point(4, 318);
             this.starttime2TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starttime2TE.Name = "starttime2TE";
             this.starttime2TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
-            this.starttime2TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.starttime2TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.starttime2TE.Properties.Appearance.Options.UseBackColor = true;
             this.starttime2TE.Properties.Appearance.Options.UseFont = true;
             this.starttime2TE.Properties.AutoHeight = false;
@@ -269,11 +268,11 @@
             // starttime1TE
             // 
             this.starttime1TE.EditValue = new System.DateTime(2025, 7, 8, 0, 0, 0, 0);
-            this.starttime1TE.Location = new System.Drawing.Point(4, 339);
+            this.starttime1TE.Location = new System.Drawing.Point(4, 259);
             this.starttime1TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starttime1TE.Name = "starttime1TE";
             this.starttime1TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
-            this.starttime1TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.starttime1TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.starttime1TE.Properties.Appearance.Options.UseBackColor = true;
             this.starttime1TE.Properties.Appearance.Options.UseFont = true;
             this.starttime1TE.Properties.AutoHeight = false;
@@ -290,7 +289,7 @@
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(13, 273);
+            this.labelControl5.Location = new System.Drawing.Point(12, 190);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(12, 25);
@@ -302,7 +301,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label4.Location = new System.Drawing.Point(11, 310);
+            this.label4.Location = new System.Drawing.Point(11, 231);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 17);
             this.label4.TabIndex = 7;
@@ -314,7 +313,7 @@
             this.priceLBL.Appearance.ForeColor = System.Drawing.Color.White;
             this.priceLBL.Appearance.Options.UseFont = true;
             this.priceLBL.Appearance.Options.UseForeColor = true;
-            this.priceLBL.Location = new System.Drawing.Point(27, 275);
+            this.priceLBL.Location = new System.Drawing.Point(27, 195);
             this.priceLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.priceLBL.Name = "priceLBL";
             this.priceLBL.Size = new System.Drawing.Size(44, 22);
@@ -326,7 +325,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label3.Location = new System.Drawing.Point(11, 218);
+            this.label3.Location = new System.Drawing.Point(11, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 17);
             this.label3.TabIndex = 5;
@@ -338,7 +337,7 @@
             this.timeslotLBL.Appearance.ForeColor = System.Drawing.Color.White;
             this.timeslotLBL.Appearance.Options.UseFont = true;
             this.timeslotLBL.Appearance.Options.UseForeColor = true;
-            this.timeslotLBL.Location = new System.Drawing.Point(13, 188);
+            this.timeslotLBL.Location = new System.Drawing.Point(13, 108);
             this.timeslotLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.timeslotLBL.Name = "timeslotLBL";
             this.timeslotLBL.Size = new System.Drawing.Size(71, 22);
@@ -350,7 +349,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label2.Location = new System.Drawing.Point(11, 132);
+            this.label2.Location = new System.Drawing.Point(11, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 17);
             this.label2.TabIndex = 3;
@@ -362,36 +361,12 @@
             this.showdateLBL.Appearance.ForeColor = System.Drawing.Color.White;
             this.showdateLBL.Appearance.Options.UseFont = true;
             this.showdateLBL.Appearance.Options.UseForeColor = true;
-            this.showdateLBL.Location = new System.Drawing.Point(13, 102);
+            this.showdateLBL.Location = new System.Drawing.Point(13, 23);
             this.showdateLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.showdateLBL.Name = "showdateLBL";
             this.showdateLBL.Size = new System.Drawing.Size(87, 22);
             this.showdateLBL.TabIndex = 2;
             this.showdateLBL.Text = "Showdate";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.label1.Location = new System.Drawing.Point(11, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Movie Name:";
-            // 
-            // movienameLBL
-            // 
-            this.movienameLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movienameLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.movienameLBL.Appearance.Options.UseFont = true;
-            this.movienameLBL.Appearance.Options.UseForeColor = true;
-            this.movienameLBL.Location = new System.Drawing.Point(13, 12);
-            this.movienameLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.movienameLBL.Name = "movienameLBL";
-            this.movienameLBL.Size = new System.Drawing.Size(162, 30);
-            this.movienameLBL.TabIndex = 0;
-            this.movienameLBL.Text = "Movie Name";
             // 
             // sidePanel5
             // 
@@ -399,10 +374,10 @@
             this.sidePanel5.BorderThickness = 0;
             this.sidePanel5.Controls.Add(this.sidePanel11);
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel5.Location = new System.Drawing.Point(12, 595);
+            this.sidePanel5.Location = new System.Drawing.Point(12, 647);
             this.sidePanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel5.Name = "sidePanel5";
-            this.sidePanel5.Size = new System.Drawing.Size(582, 236);
+            this.sidePanel5.Size = new System.Drawing.Size(582, 184);
             this.sidePanel5.TabIndex = 7;
             this.sidePanel5.Text = "sidePanel5";
             // 
@@ -421,7 +396,7 @@
             this.sidePanel11.Location = new System.Drawing.Point(0, 0);
             this.sidePanel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel11.Name = "sidePanel11";
-            this.sidePanel11.Size = new System.Drawing.Size(582, 236);
+            this.sidePanel11.Size = new System.Drawing.Size(582, 184);
             this.sidePanel11.TabIndex = 0;
             this.sidePanel11.Text = "sidePanel11";
             // 
@@ -431,7 +406,8 @@
             this.deleteBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBTN.Appearance.Options.UseBackColor = true;
             this.deleteBTN.Appearance.Options.UseFont = true;
-            this.deleteBTN.Location = new System.Drawing.Point(436, 147);
+            this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("deleteBTN.ImageOptions.Image")));
+            this.deleteBTN.Location = new System.Drawing.Point(444, 124);
             this.deleteBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteBTN.Name = "deleteBTN";
             this.deleteBTN.Padding = new System.Windows.Forms.Padding(2);
@@ -446,7 +422,8 @@
             this.updateBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBTN.Appearance.Options.UseBackColor = true;
             this.updateBTN.Appearance.Options.UseFont = true;
-            this.updateBTN.Location = new System.Drawing.Point(313, 147);
+            this.updateBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("updateBTN.ImageOptions.Image")));
+            this.updateBTN.Location = new System.Drawing.Point(321, 124);
             this.updateBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.updateBTN.Name = "updateBTN";
             this.updateBTN.Padding = new System.Windows.Forms.Padding(2);
@@ -462,7 +439,7 @@
             this.showdateDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.showdateDE.Name = "showdateDE";
             this.showdateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
-            this.showdateDE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showdateDE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showdateDE.Properties.Appearance.Options.UseBackColor = true;
             this.showdateDE.Properties.Appearance.Options.UseFont = true;
             this.showdateDE.Properties.AutoHeight = false;
@@ -501,7 +478,7 @@
             this.saveBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBTN.Appearance.Options.UseBackColor = true;
             this.saveBTN.Appearance.Options.UseFont = true;
-            this.saveBTN.Location = new System.Drawing.Point(26, 151);
+            this.saveBTN.Location = new System.Drawing.Point(28, 128);
             this.saveBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBTN.Name = "saveBTN";
             this.saveBTN.Size = new System.Drawing.Size(121, 30);
@@ -515,7 +492,7 @@
             this.availablemovieLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.availablemovieLUE.Name = "availablemovieLUE";
             this.availablemovieLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
-            this.availablemovieLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.availablemovieLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.availablemovieLUE.Properties.Appearance.Options.UseBackColor = true;
             this.availablemovieLUE.Properties.Appearance.Options.UseFont = true;
             this.availablemovieLUE.Properties.AutoHeight = false;
@@ -530,10 +507,10 @@
             this.sidePanel4.AllowResize = false;
             this.sidePanel4.BorderThickness = 0;
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel4.Location = new System.Drawing.Point(594, 81);
+            this.sidePanel4.Location = new System.Drawing.Point(594, 125);
             this.sidePanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel4.Name = "sidePanel4";
-            this.sidePanel4.Size = new System.Drawing.Size(24, 750);
+            this.sidePanel4.Size = new System.Drawing.Size(24, 706);
             this.sidePanel4.TabIndex = 5;
             this.sidePanel4.Text = "sidePanel4";
             // 
@@ -542,10 +519,10 @@
             this.sidePanel3.AllowResize = false;
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel3.Location = new System.Drawing.Point(1, 81);
+            this.sidePanel3.Location = new System.Drawing.Point(1, 125);
             this.sidePanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel3.Name = "sidePanel3";
-            this.sidePanel3.Size = new System.Drawing.Size(11, 750);
+            this.sidePanel3.Size = new System.Drawing.Size(11, 706);
             this.sidePanel3.TabIndex = 4;
             this.sidePanel3.Text = "sidePanel3";
             // 
@@ -556,11 +533,12 @@
             this.sidePanel2.Appearance.Options.UseBackColor = true;
             this.sidePanel2.BorderThickness = 0;
             this.sidePanel2.Controls.Add(this.labelControl4);
+            this.sidePanel2.Controls.Add(this.movienameLBL);
             this.sidePanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel2.Location = new System.Drawing.Point(1, 0);
             this.sidePanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel2.Name = "sidePanel2";
-            this.sidePanel2.Size = new System.Drawing.Size(617, 81);
+            this.sidePanel2.Size = new System.Drawing.Size(617, 125);
             this.sidePanel2.TabIndex = 3;
             this.sidePanel2.Text = "sidePanel2";
             // 
@@ -576,6 +554,19 @@
             this.labelControl4.Size = new System.Drawing.Size(79, 37);
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "Hall 2";
+            // 
+            // movienameLBL
+            // 
+            this.movienameLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movienameLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.movienameLBL.Appearance.Options.UseFont = true;
+            this.movienameLBL.Appearance.Options.UseForeColor = true;
+            this.movienameLBL.Location = new System.Drawing.Point(18, 87);
+            this.movienameLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movienameLBL.Name = "movienameLBL";
+            this.movienameLBL.Size = new System.Drawing.Size(162, 30);
+            this.movienameLBL.TabIndex = 0;
+            this.movienameLBL.Text = "Movie Name";
             // 
             // labelControl1
             // 
@@ -698,7 +689,15 @@
             // 
             // Title
             // 
-            this.Title.Caption = "Movie Name";
+            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.AppearanceCell.Options.UseFont = true;
+            this.Title.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Title.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.AppearanceHeader.Options.UseBackColor = true;
+            this.Title.AppearanceHeader.Options.UseFont = true;
+            this.Title.AppearanceHeader.Options.UseTextOptions = true;
+            this.Title.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Title.Caption = "Title";
             this.Title.FieldName = "Title";
             this.Title.Name = "Title";
             this.Title.OptionsColumn.AllowEdit = false;
@@ -709,7 +708,15 @@
             // 
             // StartTime
             // 
-            this.StartTime.Caption = "Start Time";
+            this.StartTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartTime.AppearanceCell.Options.UseFont = true;
+            this.StartTime.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StartTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartTime.AppearanceHeader.Options.UseBackColor = true;
+            this.StartTime.AppearanceHeader.Options.UseFont = true;
+            this.StartTime.AppearanceHeader.Options.UseTextOptions = true;
+            this.StartTime.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.StartTime.Caption = "Start";
             this.StartTime.FieldName = "StartTime";
             this.StartTime.Name = "StartTime";
             this.StartTime.OptionsColumn.AllowEdit = false;
@@ -720,7 +727,15 @@
             // 
             // EndTime
             // 
-            this.EndTime.Caption = "End Time";
+            this.EndTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EndTime.AppearanceCell.Options.UseFont = true;
+            this.EndTime.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EndTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EndTime.AppearanceHeader.Options.UseBackColor = true;
+            this.EndTime.AppearanceHeader.Options.UseFont = true;
+            this.EndTime.AppearanceHeader.Options.UseTextOptions = true;
+            this.EndTime.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.EndTime.Caption = "End";
             this.EndTime.FieldName = "EndTime";
             this.EndTime.Name = "EndTime";
             this.EndTime.OptionsColumn.AllowEdit = false;
@@ -731,6 +746,14 @@
             // 
             // DayType
             // 
+            this.DayType.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayType.AppearanceCell.Options.UseFont = true;
+            this.DayType.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DayType.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayType.AppearanceHeader.Options.UseBackColor = true;
+            this.DayType.AppearanceHeader.Options.UseFont = true;
+            this.DayType.AppearanceHeader.Options.UseTextOptions = true;
+            this.DayType.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.DayType.Caption = "Day Type";
             this.DayType.FieldName = "DayType";
             this.DayType.Name = "DayType";
@@ -742,6 +765,14 @@
             // 
             // Price
             // 
+            this.Price.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price.AppearanceCell.Options.UseFont = true;
+            this.Price.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Price.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price.AppearanceHeader.Options.UseBackColor = true;
+            this.Price.AppearanceHeader.Options.UseFont = true;
+            this.Price.AppearanceHeader.Options.UseTextOptions = true;
+            this.Price.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Price.Caption = "Price";
             this.Price.FieldName = "Price";
             this.Price.Name = "Price";
@@ -753,7 +784,15 @@
             // 
             // ShowDate
             // 
-            this.ShowDate.Caption = "Show Date";
+            this.ShowDate.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowDate.AppearanceCell.Options.UseFont = true;
+            this.ShowDate.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ShowDate.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowDate.AppearanceHeader.Options.UseBackColor = true;
+            this.ShowDate.AppearanceHeader.Options.UseFont = true;
+            this.ShowDate.AppearanceHeader.Options.UseTextOptions = true;
+            this.ShowDate.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.ShowDate.Caption = "Date";
             this.ShowDate.FieldName = "ShowDate";
             this.ShowDate.Name = "ShowDate";
             this.ShowDate.OptionsColumn.AllowEdit = false;
@@ -764,9 +803,20 @@
             // 
             // Screening
             // 
+            this.Screening.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Screening.AppearanceCell.Options.UseFont = true;
+            this.Screening.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Screening.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Screening.AppearanceHeader.Options.UseBackColor = true;
+            this.Screening.AppearanceHeader.Options.UseFont = true;
+            this.Screening.AppearanceHeader.Options.UseTextOptions = true;
+            this.Screening.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Screening.Caption = "Screening";
             this.Screening.FieldName = "ScreeningLabel";
             this.Screening.Name = "Screening";
+            this.Screening.OptionsColumn.AllowEdit = false;
+            this.Screening.OptionsColumn.AllowFocus = false;
+            this.Screening.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Screening.Visible = true;
             this.Screening.VisibleIndex = 6;
             // 
@@ -774,8 +824,8 @@
             // 
             this.repositoryItemButtonEditUpdate.AutoHeight = false;
             this.repositoryItemButtonEditUpdate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "EDIT", -1, true, true, false, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "DELETE", -1, true, true, false, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "EDIT", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "DELETE", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEditUpdate.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.repositoryItemButtonEditUpdate.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.repositoryItemButtonEditUpdate.HideSelection = false;
@@ -870,7 +920,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn ShowDate;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEditUpdate;
-        private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.SimpleButton updateBTN;
         private DevExpress.XtraEditors.SimpleButton deleteBTN;

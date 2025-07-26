@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CinemaPB.Configuration;
 using DevExpress.XtraEditors;
+using Dapper;
 
 namespace CinemaPB.Forms.LogsForm
 {
@@ -52,5 +53,36 @@ namespace CinemaPB.Forms.LogsForm
         {
             LoadLogsIntoGrid();
         }
+
+        private void printBTN_Click(object sender, EventArgs e)
+        {
+            LogsReport.MovieLogsReport reports = new LogsReport.MovieLogsReport();
+
+            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
+            {
+                string query = @"SELECT    ml.LogID,
+                                  ml.Username,
+                                  m.Title,
+                                  ml.DateTime,
+                                  ml.Activity
+                           FROM log.MovieLogs ml
+                           LEFT JOIN mov.Movies m
+                           ON m.MovieID = ml.MovieID
+                           ORDER BY ml.LogID DESC;";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        reports.DataSource = dataTable;
+                        DevExpress.XtraReports.UI.ReportPrintTool printTool = new DevExpress.XtraReports.UI.ReportPrintTool(reports);
+                        printTool.ShowPreviewDialog();
+                    }
+                }
+            }
+        }
     }
 }
+

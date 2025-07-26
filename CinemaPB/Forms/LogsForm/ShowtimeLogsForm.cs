@@ -41,7 +41,7 @@ namespace CinemaPB.Forms.LogsForm
                 if (view != null)
                 {
                     view.Columns["DateTime"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-                    view.Columns["DateTime"].DisplayFormat.FormatString = "MM/dd/yyyy hh:mm tt"; // example: 07/16/2025 02:15 PM
+                    view.Columns["DateTime"].DisplayFormat.FormatString = "MM/dd/yyyy hh:mm tt";
                     view.BestFitColumns(); // optional: auto-fit columns
                 }
             }
@@ -50,6 +50,34 @@ namespace CinemaPB.Forms.LogsForm
         private void gcShowtimeLogs_Load(object sender, EventArgs e)
         {
             LoadLogsIntoGrid();
+        }
+
+        private void printBTN_Click(object sender, EventArgs e)
+        {
+            LogsReport.ShowtimeLogsReport reports = new LogsReport.ShowtimeLogsReport();
+
+            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
+            {
+                string query = @"SELECT    sl.LogID, 
+                                           sl.ShowtimeID,
+                                           sl.Username,
+	                                       sl.DateTime, 
+	                                       sl.Activity 
+                                    FROM log.ShowtimeLogs sl
+                                    ORDER BY sl.LogID DESC";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        reports.DataSource = dataTable;
+                        DevExpress.XtraReports.UI.ReportPrintTool printTool = new DevExpress.XtraReports.UI.ReportPrintTool(reports);
+                        printTool.ShowPreviewDialog();
+                    }
+                }
+            }
         }
     }
 }

@@ -33,9 +33,9 @@
             this.posterPE = new DevExpress.XtraEditors.PictureEdit();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
+            this.sidePanel10 = new DevExpress.XtraEditors.SidePanel();
             this.availabilityLC = new DevExpress.XtraEditors.LabelControl();
             this.updateBTN = new DevExpress.XtraEditors.SimpleButton();
-            this.deleteBTN = new DevExpress.XtraEditors.SimpleButton();
             this.availabilityTS = new DevExpress.XtraEditors.ToggleSwitch();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.browseBTN = new DevExpress.XtraEditors.SimpleButton();
@@ -45,13 +45,15 @@
             this.sidePanel7 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.addlanguageBTN = new DevExpress.XtraEditors.SimpleButton();
             this.weekendpriceTE = new DevExpress.XtraEditors.TextEdit();
+            this.Mo = new DevExpress.XtraEditors.SimpleButton();
             this.weekdaypriceTE = new DevExpress.XtraEditors.TextEdit();
             this.durationTE = new DevExpress.XtraEditors.TimeEdit();
             this.moviegenreLUE = new DevExpress.XtraEditors.CheckedComboBoxEdit();
+            this.addgenreBTN = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.movienameTE = new DevExpress.XtraEditors.TextEdit();
-            this.addgenreBTN = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -62,8 +64,6 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.moviedescriptionTE = new DevExpress.XtraEditors.TextEdit();
-            this.Mo = new DevExpress.XtraEditors.SimpleButton();
-            this.addlanguageBTN = new DevExpress.XtraEditors.SimpleButton();
             this.sidePanel8 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel9 = new DevExpress.XtraEditors.SidePanel();
@@ -76,6 +76,8 @@
             this.Language = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Availability = new DevExpress.XtraGrid.Columns.GridColumn();
             this.moviedurationTE = new DevExpress.XtraEditors.DateTimeOffsetEdit();
+            this.sidePanel11 = new DevExpress.XtraEditors.SidePanel();
+            this.deleteBTN = new DevExpress.XtraEditors.SimpleButton();
             this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).BeginInit();
             this.sidePanel3.SuspendLayout();
@@ -106,7 +108,7 @@
             this.sidePanel1.Location = new System.Drawing.Point(42, 44);
             this.sidePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(562, 753);
+            this.sidePanel1.Size = new System.Drawing.Size(641, 753);
             this.sidePanel1.TabIndex = 0;
             this.sidePanel1.Text = "sidePanel1";
             // 
@@ -123,7 +125,7 @@
             this.posterPE.Properties.Appearance.Options.UseBackColor = true;
             this.posterPE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.posterPE.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.posterPE.Size = new System.Drawing.Size(562, 753);
+            this.posterPE.Size = new System.Drawing.Size(641, 753);
             this.posterPE.TabIndex = 0;
             // 
             // sidePanel2
@@ -134,7 +136,7 @@
             this.sidePanel2.Location = new System.Drawing.Point(0, 0);
             this.sidePanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel2.Name = "sidePanel2";
-            this.sidePanel2.Size = new System.Drawing.Size(1365, 44);
+            this.sidePanel2.Size = new System.Drawing.Size(1633, 44);
             this.sidePanel2.TabIndex = 1;
             this.sidePanel2.Text = "sidePanel2";
             // 
@@ -143,6 +145,8 @@
             this.sidePanel3.AllowResize = false;
             this.sidePanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sidePanel3.BorderThickness = 0;
+            this.sidePanel3.Controls.Add(this.sidePanel11);
+            this.sidePanel3.Controls.Add(this.sidePanel10);
             this.sidePanel3.Controls.Add(this.availabilityLC);
             this.sidePanel3.Controls.Add(this.updateBTN);
             this.sidePanel3.Controls.Add(this.deleteBTN);
@@ -153,9 +157,19 @@
             this.sidePanel3.Location = new System.Drawing.Point(0, 797);
             this.sidePanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel3.Name = "sidePanel3";
-            this.sidePanel3.Size = new System.Drawing.Size(1365, 72);
+            this.sidePanel3.Size = new System.Drawing.Size(1633, 72);
             this.sidePanel3.TabIndex = 2;
             this.sidePanel3.Text = "sidePanel3";
+            // 
+            // sidePanel10
+            // 
+            this.sidePanel10.BorderThickness = 0;
+            this.sidePanel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.sidePanel10.Location = new System.Drawing.Point(1595, 0);
+            this.sidePanel10.Name = "sidePanel10";
+            this.sidePanel10.Size = new System.Drawing.Size(38, 72);
+            this.sidePanel10.TabIndex = 26;
+            this.sidePanel10.Text = "sidePanel10";
             // 
             // availabilityLC
             // 
@@ -176,8 +190,8 @@
             this.updateBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBTN.Appearance.Options.UseBackColor = true;
             this.updateBTN.Appearance.Options.UseFont = true;
-            this.updateBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.updateBTN.Location = new System.Drawing.Point(1104, 11);
+            this.updateBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("updateBTN.ImageOptions.Image")));
+            this.updateBTN.Location = new System.Drawing.Point(1362, 23);
             this.updateBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.updateBTN.Name = "updateBTN";
             this.updateBTN.Padding = new System.Windows.Forms.Padding(2);
@@ -185,22 +199,6 @@
             this.updateBTN.TabIndex = 25;
             this.updateBTN.Text = "Update";
             this.updateBTN.Click += new System.EventHandler(this.updateBTN_Click);
-            // 
-            // deleteBTN
-            // 
-            this.deleteBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.deleteBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteBTN.Appearance.Options.UseBackColor = true;
-            this.deleteBTN.Appearance.Options.UseFont = true;
-            this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.deleteBTN.Location = new System.Drawing.Point(1218, 11);
-            this.deleteBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.deleteBTN.Name = "deleteBTN";
-            this.deleteBTN.Padding = new System.Windows.Forms.Padding(2);
-            this.deleteBTN.Size = new System.Drawing.Size(102, 39);
-            this.deleteBTN.TabIndex = 24;
-            this.deleteBTN.Text = "Delete";
-            this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
             // 
             // availabilityTS
             // 
@@ -229,7 +227,7 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(404, 28);
+            this.labelControl1.Location = new System.Drawing.Point(496, 28);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(96, 19);
@@ -242,7 +240,7 @@
             this.browseBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.browseBTN.Appearance.Options.UseBackColor = true;
             this.browseBTN.Appearance.Options.UseFont = true;
-            this.browseBTN.Location = new System.Drawing.Point(516, 23);
+            this.browseBTN.Location = new System.Drawing.Point(602, 23);
             this.browseBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.browseBTN.Name = "browseBTN";
             this.browseBTN.Size = new System.Drawing.Size(88, 28);
@@ -267,7 +265,7 @@
             this.sidePanel6.AllowResize = false;
             this.sidePanel6.BorderThickness = 0;
             this.sidePanel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel6.Location = new System.Drawing.Point(1327, 44);
+            this.sidePanel6.Location = new System.Drawing.Point(1595, 44);
             this.sidePanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel6.Name = "sidePanel6";
             this.sidePanel6.Size = new System.Drawing.Size(38, 753);
@@ -279,7 +277,7 @@
             this.sidePanel5.AllowResize = false;
             this.sidePanel5.BorderThickness = 0;
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel5.Location = new System.Drawing.Point(604, 44);
+            this.sidePanel5.Location = new System.Drawing.Point(683, 44);
             this.sidePanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel5.Name = "sidePanel5";
             this.sidePanel5.Size = new System.Drawing.Size(29, 753);
@@ -292,15 +290,29 @@
             this.sidePanel7.BorderThickness = 0;
             this.sidePanel7.Controls.Add(this.labelControl11);
             this.sidePanel7.Controls.Add(this.labelControl10);
+            this.sidePanel7.Controls.Add(this.labelControl2);
+            this.sidePanel7.Controls.Add(this.labelControl8);
+            this.sidePanel7.Controls.Add(this.moviedescriptionTE);
+            this.sidePanel7.Controls.Add(this.addlanguageBTN);
             this.sidePanel7.Controls.Add(this.weekendpriceTE);
+            this.sidePanel7.Controls.Add(this.labelControl7);
+            this.sidePanel7.Controls.Add(this.Mo);
+            this.sidePanel7.Controls.Add(this.movieratingLUE);
             this.sidePanel7.Controls.Add(this.weekdaypriceTE);
+            this.sidePanel7.Controls.Add(this.labelControl5);
+            this.sidePanel7.Controls.Add(this.labelControl6);
+            this.sidePanel7.Controls.Add(this.labelControl3);
             this.sidePanel7.Controls.Add(this.durationTE);
+            this.sidePanel7.Controls.Add(this.movienameTE);
+            this.sidePanel7.Controls.Add(this.movielanguageLUE);
             this.sidePanel7.Controls.Add(this.moviegenreLUE);
+            this.sidePanel7.Controls.Add(this.addgenreBTN);
+            this.sidePanel7.Controls.Add(this.labelControl4);
             this.sidePanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sidePanel7.Location = new System.Drawing.Point(633, 44);
+            this.sidePanel7.Location = new System.Drawing.Point(712, 44);
             this.sidePanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel7.Name = "sidePanel7";
-            this.sidePanel7.Size = new System.Drawing.Size(694, 418);
+            this.sidePanel7.Size = new System.Drawing.Size(883, 422);
             this.sidePanel7.TabIndex = 7;
             this.sidePanel7.Text = "sidePanel7";
             // 
@@ -310,7 +322,7 @@
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl11.Appearance.Options.UseFont = true;
             this.labelControl11.Appearance.Options.UseForeColor = true;
-            this.labelControl11.Location = new System.Drawing.Point(327, 313);
+            this.labelControl11.Location = new System.Drawing.Point(382, 321);
             this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(90, 16);
@@ -323,16 +335,39 @@
             this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.Location = new System.Drawing.Point(327, 246);
+            this.labelControl10.Location = new System.Drawing.Point(382, 256);
             this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(90, 16);
             this.labelControl10.TabIndex = 27;
             this.labelControl10.Text = "Weekday Price";
             // 
+            // addlanguageBTN
+            // 
+            this.addlanguageBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.addlanguageBTN.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.addlanguageBTN.Appearance.Options.UseBackColor = true;
+            this.addlanguageBTN.Appearance.Options.UseBorderColor = true;
+            this.addlanguageBTN.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.addlanguageBTN.AppearanceHovered.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.addlanguageBTN.AppearanceHovered.Options.UseBackColor = true;
+            this.addlanguageBTN.AppearanceHovered.Options.UseBorderColor = true;
+            this.addlanguageBTN.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.addlanguageBTN.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.addlanguageBTN.AppearancePressed.Options.UseBackColor = true;
+            this.addlanguageBTN.AppearancePressed.Options.UseBorderColor = true;
+            this.addlanguageBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addlanguageBTN.ImageOptions.Image")));
+            this.addlanguageBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.addlanguageBTN.Location = new System.Drawing.Point(660, 144);
+            this.addlanguageBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addlanguageBTN.Name = "addlanguageBTN";
+            this.addlanguageBTN.Size = new System.Drawing.Size(46, 39);
+            this.addlanguageBTN.TabIndex = 24;
+            this.addlanguageBTN.Click += new System.EventHandler(this.addlanguageBTN_Click);
+            // 
             // weekendpriceTE
             // 
-            this.weekendpriceTE.Location = new System.Drawing.Point(327, 282);
+            this.weekendpriceTE.Location = new System.Drawing.Point(382, 286);
             this.weekendpriceTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.weekendpriceTE.Name = "weekendpriceTE";
             this.weekendpriceTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -344,9 +379,25 @@
             this.weekendpriceTE.Size = new System.Drawing.Size(260, 30);
             this.weekendpriceTE.TabIndex = 28;
             // 
+            // Mo
+            // 
+            this.Mo.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.Mo.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mo.Appearance.Options.UseBackColor = true;
+            this.Mo.Appearance.Options.UseFont = true;
+            this.Mo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Mo.ImageOptions.Image")));
+            this.Mo.Location = new System.Drawing.Point(737, 368);
+            this.Mo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Mo.Name = "Mo";
+            this.Mo.Padding = new System.Windows.Forms.Padding(2);
+            this.Mo.Size = new System.Drawing.Size(129, 39);
+            this.Mo.TabIndex = 23;
+            this.Mo.Text = "Save Movie";
+            this.Mo.Click += new System.EventHandler(this.saveBTN_Click);
+            // 
             // weekdaypriceTE
             // 
-            this.weekdaypriceTE.Location = new System.Drawing.Point(327, 215);
+            this.weekdaypriceTE.Location = new System.Drawing.Point(382, 222);
             this.weekdaypriceTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.weekdaypriceTE.Name = "weekdaypriceTE";
             this.weekdaypriceTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -362,7 +413,7 @@
             // durationTE
             // 
             this.durationTE.EditValue = null;
-            this.durationTE.Location = new System.Drawing.Point(29, 143);
+            this.durationTE.Location = new System.Drawing.Point(70, 150);
             this.durationTE.Name = "durationTE";
             this.durationTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.durationTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -378,7 +429,7 @@
             // 
             // moviegenreLUE
             // 
-            this.moviegenreLUE.Location = new System.Drawing.Point(327, 75);
+            this.moviegenreLUE.Location = new System.Drawing.Point(382, 77);
             this.moviegenreLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.moviegenreLUE.Name = "moviegenreLUE";
             this.moviegenreLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -390,32 +441,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.moviegenreLUE.Size = new System.Drawing.Size(260, 28);
             this.moviegenreLUE.TabIndex = 30;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(639, 54);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(169, 37);
-            this.labelControl2.TabIndex = 8;
-            this.labelControl2.Text = "ADD MOVIE";
-            // 
-            // movienameTE
-            // 
-            this.movienameTE.Location = new System.Drawing.Point(662, 119);
-            this.movienameTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.movienameTE.Name = "movienameTE";
-            this.movienameTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.movienameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movienameTE.Properties.Appearance.Options.UseBackColor = true;
-            this.movienameTE.Properties.Appearance.Options.UseFont = true;
-            this.movienameTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.movienameTE.Size = new System.Drawing.Size(260, 30);
-            this.movienameTE.TabIndex = 9;
             // 
             // addgenreBTN
             // 
@@ -433,12 +458,38 @@
             this.addgenreBTN.AppearancePressed.Options.UseBorderColor = true;
             this.addgenreBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addgenreBTN.ImageOptions.Image")));
             this.addgenreBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.addgenreBTN.Location = new System.Drawing.Point(1239, 112);
+            this.addgenreBTN.Location = new System.Drawing.Point(660, 71);
             this.addgenreBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addgenreBTN.Name = "addgenreBTN";
-            this.addgenreBTN.Size = new System.Drawing.Size(40, 39);
+            this.addgenreBTN.Size = new System.Drawing.Size(46, 39);
             this.addgenreBTN.TabIndex = 11;
             this.addgenreBTN.Click += new System.EventHandler(this.addgenreBTN_Click);
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.Location = new System.Drawing.Point(24, 4);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(169, 37);
+            this.labelControl2.TabIndex = 8;
+            this.labelControl2.Text = "ADD MOVIE";
+            // 
+            // movienameTE
+            // 
+            this.movienameTE.Location = new System.Drawing.Point(70, 77);
+            this.movienameTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movienameTE.Name = "movienameTE";
+            this.movienameTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.movienameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movienameTE.Properties.Appearance.Options.UseBackColor = true;
+            this.movienameTE.Properties.Appearance.Options.UseFont = true;
+            this.movienameTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.movienameTE.Size = new System.Drawing.Size(260, 30);
+            this.movienameTE.TabIndex = 9;
             // 
             // labelControl3
             // 
@@ -446,7 +497,7 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(666, 151);
+            this.labelControl3.Location = new System.Drawing.Point(70, 114);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(76, 16);
@@ -459,7 +510,7 @@
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(961, 151);
+            this.labelControl4.Location = new System.Drawing.Point(382, 114);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(77, 16);
@@ -472,7 +523,7 @@
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(665, 220);
+            this.labelControl5.Location = new System.Drawing.Point(70, 185);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(88, 16);
@@ -495,7 +546,7 @@
             // 
             // movielanguageLUE
             // 
-            this.movielanguageLUE.Location = new System.Drawing.Point(959, 188);
+            this.movielanguageLUE.Location = new System.Drawing.Point(382, 149);
             this.movielanguageLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.movielanguageLUE.Name = "movielanguageLUE";
             this.movielanguageLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -515,7 +566,7 @@
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(962, 222);
+            this.labelControl6.Location = new System.Drawing.Point(382, 184);
             this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(99, 16);
@@ -524,7 +575,7 @@
             // 
             // movieratingLUE
             // 
-            this.movieratingLUE.Location = new System.Drawing.Point(662, 259);
+            this.movieratingLUE.Location = new System.Drawing.Point(70, 222);
             this.movieratingLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.movieratingLUE.Name = "movieratingLUE";
             this.movieratingLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -544,7 +595,7 @@
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(665, 292);
+            this.labelControl7.Location = new System.Drawing.Point(70, 256);
             this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(76, 16);
@@ -557,7 +608,7 @@
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(664, 398);
+            this.labelControl8.Location = new System.Drawing.Point(70, 356);
             this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(105, 16);
@@ -566,7 +617,7 @@
             // 
             // moviedescriptionTE
             // 
-            this.moviedescriptionTE.Location = new System.Drawing.Point(662, 326);
+            this.moviedescriptionTE.Location = new System.Drawing.Point(70, 285);
             this.moviedescriptionTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.moviedescriptionTE.Name = "moviedescriptionTE";
             this.moviedescriptionTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -583,55 +634,16 @@
             this.moviedescriptionTE.Size = new System.Drawing.Size(261, 64);
             this.moviedescriptionTE.TabIndex = 22;
             // 
-            // Mo
-            // 
-            this.Mo.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.Mo.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mo.Appearance.Options.UseBackColor = true;
-            this.Mo.Appearance.Options.UseFont = true;
-            this.Mo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Mo.ImageOptions.Image")));
-            this.Mo.Location = new System.Drawing.Point(1156, 418);
-            this.Mo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Mo.Name = "Mo";
-            this.Mo.Padding = new System.Windows.Forms.Padding(2);
-            this.Mo.Size = new System.Drawing.Size(129, 39);
-            this.Mo.TabIndex = 23;
-            this.Mo.Text = "Save Movie";
-            this.Mo.Click += new System.EventHandler(this.saveBTN_Click);
-            // 
-            // addlanguageBTN
-            // 
-            this.addlanguageBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.addlanguageBTN.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.addlanguageBTN.Appearance.Options.UseBackColor = true;
-            this.addlanguageBTN.Appearance.Options.UseBorderColor = true;
-            this.addlanguageBTN.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.addlanguageBTN.AppearanceHovered.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.addlanguageBTN.AppearanceHovered.Options.UseBackColor = true;
-            this.addlanguageBTN.AppearanceHovered.Options.UseBorderColor = true;
-            this.addlanguageBTN.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.addlanguageBTN.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.addlanguageBTN.AppearancePressed.Options.UseBackColor = true;
-            this.addlanguageBTN.AppearancePressed.Options.UseBorderColor = true;
-            this.addlanguageBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addlanguageBTN.ImageOptions.Image")));
-            this.addlanguageBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.addlanguageBTN.Location = new System.Drawing.Point(1239, 181);
-            this.addlanguageBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.addlanguageBTN.Name = "addlanguageBTN";
-            this.addlanguageBTN.Size = new System.Drawing.Size(40, 39);
-            this.addlanguageBTN.TabIndex = 24;
-            this.addlanguageBTN.Click += new System.EventHandler(this.addlanguageBTN_Click);
-            // 
             // sidePanel8
             // 
             this.sidePanel8.AllowResize = false;
             this.sidePanel8.BorderThickness = 0;
             this.sidePanel8.Controls.Add(this.labelControl9);
             this.sidePanel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sidePanel8.Location = new System.Drawing.Point(633, 462);
+            this.sidePanel8.Location = new System.Drawing.Point(712, 466);
             this.sidePanel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel8.Name = "sidePanel8";
-            this.sidePanel8.Size = new System.Drawing.Size(694, 50);
+            this.sidePanel8.Size = new System.Drawing.Size(883, 50);
             this.sidePanel8.TabIndex = 25;
             this.sidePanel8.Text = "sidePanel8";
             // 
@@ -653,10 +665,10 @@
             this.sidePanel9.AllowResize = false;
             this.sidePanel9.Controls.Add(this.moviesGC);
             this.sidePanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sidePanel9.Location = new System.Drawing.Point(633, 512);
+            this.sidePanel9.Location = new System.Drawing.Point(712, 516);
             this.sidePanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel9.Name = "sidePanel9";
-            this.sidePanel9.Size = new System.Drawing.Size(694, 285);
+            this.sidePanel9.Size = new System.Drawing.Size(883, 281);
             this.sidePanel9.TabIndex = 26;
             this.sidePanel9.Text = "sidePanel9";
             // 
@@ -670,7 +682,7 @@
             this.moviesGC.MainView = this.moviesGV;
             this.moviesGC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.moviesGC.Name = "moviesGC";
-            this.moviesGC.Size = new System.Drawing.Size(694, 285);
+            this.moviesGC.Size = new System.Drawing.Size(883, 281);
             this.moviesGC.TabIndex = 0;
             this.moviesGC.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.moviesGV});
@@ -716,6 +728,14 @@
             // 
             // MovieID
             // 
+            this.MovieID.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.MovieID.AppearanceCell.Options.UseFont = true;
+            this.MovieID.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MovieID.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.MovieID.AppearanceHeader.Options.UseBackColor = true;
+            this.MovieID.AppearanceHeader.Options.UseFont = true;
+            this.MovieID.AppearanceHeader.Options.UseTextOptions = true;
+            this.MovieID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.MovieID.Caption = "ID";
             this.MovieID.FieldName = "MovieID";
             this.MovieID.Name = "MovieID";
@@ -724,10 +744,18 @@
             this.MovieID.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.MovieID.Visible = true;
             this.MovieID.VisibleIndex = 0;
-            this.MovieID.Width = 64;
+            this.MovieID.Width = 88;
             // 
             // Title
             // 
+            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Title.AppearanceCell.Options.UseFont = true;
+            this.Title.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Title.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.Title.AppearanceHeader.Options.UseBackColor = true;
+            this.Title.AppearanceHeader.Options.UseFont = true;
+            this.Title.AppearanceHeader.Options.UseTextOptions = true;
+            this.Title.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Title.Caption = "Movie Name";
             this.Title.FieldName = "Title";
             this.Title.Name = "Title";
@@ -736,10 +764,18 @@
             this.Title.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Title.Visible = true;
             this.Title.VisibleIndex = 1;
-            this.Title.Width = 64;
+            this.Title.Width = 428;
             // 
             // Genre
             // 
+            this.Genre.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Genre.AppearanceCell.Options.UseFont = true;
+            this.Genre.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Genre.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.Genre.AppearanceHeader.Options.UseBackColor = true;
+            this.Genre.AppearanceHeader.Options.UseFont = true;
+            this.Genre.AppearanceHeader.Options.UseTextOptions = true;
+            this.Genre.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Genre.Caption = "Genre";
             this.Genre.FieldName = "Genres";
             this.Genre.Name = "Genre";
@@ -748,10 +784,18 @@
             this.Genre.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Genre.Visible = true;
             this.Genre.VisibleIndex = 2;
-            this.Genre.Width = 64;
+            this.Genre.Width = 342;
             // 
             // Rating
             // 
+            this.Rating.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Rating.AppearanceCell.Options.UseFont = true;
+            this.Rating.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Rating.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.Rating.AppearanceHeader.Options.UseBackColor = true;
+            this.Rating.AppearanceHeader.Options.UseFont = true;
+            this.Rating.AppearanceHeader.Options.UseTextOptions = true;
+            this.Rating.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Rating.Caption = "Rating";
             this.Rating.FieldName = "RatingName";
             this.Rating.Name = "Rating";
@@ -760,10 +804,18 @@
             this.Rating.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Rating.Visible = true;
             this.Rating.VisibleIndex = 3;
-            this.Rating.Width = 64;
+            this.Rating.Width = 91;
             // 
             // Language
             // 
+            this.Language.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Language.AppearanceCell.Options.UseFont = true;
+            this.Language.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Language.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.Language.AppearanceHeader.Options.UseBackColor = true;
+            this.Language.AppearanceHeader.Options.UseFont = true;
+            this.Language.AppearanceHeader.Options.UseTextOptions = true;
+            this.Language.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Language.Caption = "Language";
             this.Language.FieldName = "LanguageName";
             this.Language.Name = "Language";
@@ -772,10 +824,18 @@
             this.Language.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Language.Visible = true;
             this.Language.VisibleIndex = 4;
-            this.Language.Width = 64;
+            this.Language.Width = 134;
             // 
             // Availability
             // 
+            this.Availability.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Availability.AppearanceCell.Options.UseFont = true;
+            this.Availability.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Availability.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.Availability.AppearanceHeader.Options.UseBackColor = true;
+            this.Availability.AppearanceHeader.Options.UseFont = true;
+            this.Availability.AppearanceHeader.Options.UseTextOptions = true;
+            this.Availability.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Availability.Caption = "Availability";
             this.Availability.FieldName = "Availability";
             this.Availability.Name = "Availability";
@@ -784,6 +844,7 @@
             this.Availability.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Availability.Visible = true;
             this.Availability.VisibleIndex = 5;
+            this.Availability.Width = 267;
             // 
             // moviedurationTE
             // 
@@ -800,6 +861,32 @@
             this.moviedurationTE.Size = new System.Drawing.Size(260, 28);
             this.moviedurationTE.TabIndex = 14;
             // 
+            // sidePanel11
+            // 
+            this.sidePanel11.BorderThickness = 0;
+            this.sidePanel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidePanel11.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel11.Name = "sidePanel11";
+            this.sidePanel11.Size = new System.Drawing.Size(1595, 18);
+            this.sidePanel11.TabIndex = 27;
+            this.sidePanel11.Text = "sidePanel11";
+            // 
+            // deleteBTN
+            // 
+            this.deleteBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.deleteBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBTN.Appearance.Options.UseBackColor = true;
+            this.deleteBTN.Appearance.Options.UseFont = true;
+            this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("deleteBTN.ImageOptions.Image")));
+            this.deleteBTN.Location = new System.Drawing.Point(1476, 23);
+            this.deleteBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteBTN.Name = "deleteBTN";
+            this.deleteBTN.Padding = new System.Windows.Forms.Padding(2);
+            this.deleteBTN.Size = new System.Drawing.Size(102, 39);
+            this.deleteBTN.TabIndex = 24;
+            this.deleteBTN.Text = "Delete";
+            this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
+            // 
             // MoviesForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -808,20 +895,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.sidePanel9);
             this.Controls.Add(this.sidePanel8);
-            this.Controls.Add(this.addlanguageBTN);
-            this.Controls.Add(this.Mo);
-            this.Controls.Add(this.moviedescriptionTE);
-            this.Controls.Add(this.labelControl8);
-            this.Controls.Add(this.labelControl7);
-            this.Controls.Add(this.movieratingLUE);
-            this.Controls.Add(this.labelControl6);
-            this.Controls.Add(this.movielanguageLUE);
-            this.Controls.Add(this.labelControl5);
-            this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.addgenreBTN);
-            this.Controls.Add(this.movienameTE);
-            this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.sidePanel7);
             this.Controls.Add(this.sidePanel5);
             this.Controls.Add(this.sidePanel6);
@@ -833,7 +906,7 @@
             this.Controls.Add(this.moviedurationTE);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MoviesForm";
-            this.Size = new System.Drawing.Size(1365, 869);
+            this.Size = new System.Drawing.Size(1633, 869);
             this.sidePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).EndInit();
             this.sidePanel3.ResumeLayout(false);
@@ -857,7 +930,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.moviesGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moviedurationTE.Properties)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -895,7 +967,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView moviesGV;
         private DevExpress.XtraEditors.ToggleSwitch availabilityTS;
         private DevExpress.XtraEditors.SimpleButton updateBTN;
-        private DevExpress.XtraEditors.SimpleButton deleteBTN;
         private DevExpress.XtraEditors.DateTimeOffsetEdit moviedurationTE;
         private DevExpress.XtraEditors.LabelControl availabilityLC;
         private DevExpress.XtraEditors.TimeEdit durationTE;
@@ -910,5 +981,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn Language;
         private DevExpress.XtraGrid.Columns.GridColumn Availability;
         private DevExpress.XtraEditors.CheckedComboBoxEdit moviegenreLUE;
+        private DevExpress.XtraEditors.SidePanel sidePanel10;
+        private DevExpress.XtraEditors.SidePanel sidePanel11;
+        private DevExpress.XtraEditors.SimpleButton deleteBTN;
     }
 }
