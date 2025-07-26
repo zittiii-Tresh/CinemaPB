@@ -17,10 +17,28 @@ namespace CinemaPB.ModelShowing
         public string Duration { get; set; }
         public string RatingName { get; set; }
         public string ShowDate { get; set; }
-        public string First { get; set; }  // Time 1 (e.g. "9:30 AM - 11:15 AM")
-        public string Second { get; set; }
-        public string Last { get; set; }
+        public string Timeslot { get; set; }
+        public int HallID { get; set; }
+        public int MoviePriceID { get; set; }
+
+
         public int Screening { get; set; }
+        public string ScreeningLabel
+        {
+            get
+            {
+                if (Screening == 1)
+                    return "First Screening";
+                else if (Screening == 2)
+                    return "Second Screening";
+                else if (Screening == 3)
+                    return "Last Screening";
+                else
+                    return "Unknown";
+            }
+        }
+
+        public string ScreeningTime { get; set; }
 
         public byte[] Poster { get; set; }
 
@@ -36,4 +54,5 @@ namespace CinemaPB.ModelShowing
             }
         }
     }
+
 }

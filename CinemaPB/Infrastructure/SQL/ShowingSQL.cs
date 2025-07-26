@@ -19,6 +19,8 @@ namespace CinemaPB.Infrastructure.SQL
 	                                                      ,m.Poster
                                                           ,cr.RatingName
                                                           ,CONCAT(DATEPART(HOUR, m.Duration), 'hr:', RIGHT('0' + CAST(DATEPART(MINUTE, m.Duration) AS VARCHAR), 2), 'min') AS Duration
+                                                          ,s.ShowtimeID
+                                                          ,s.MoviePriceID
                                                     FROM dbo.Showtime s
                                                     LEFT JOIN mov.Movies m
                                                     ON m.MovieID = s.MovieID
@@ -39,6 +41,8 @@ namespace CinemaPB.Infrastructure.SQL
                                                         m.Title,
                                                         m.Poster,
                                                         cr.RatingName,
-                                                        m.Duration;";
+                                                        m.Duration,
+                                                        s.ShowtimeID,
+                                                        s.MoviePriceID;";
     }
 }

@@ -37,8 +37,6 @@
             this.showtimehall1BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.showtimehall2BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.showtimelistACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.hall1seatsTempBTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.hall2seatsTempBTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mainSPanel = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -59,15 +57,14 @@
             this.staffLBL,
             this.accordionControlSeparator1,
             this.accordionControlElement4,
-            this.showtimelistACE,
-            this.hall1seatsTempBTN,
-            this.hall2seatsTempBTN});
+            this.showtimelistACE});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.True;
-            this.accordionControl1.Padding = new System.Windows.Forms.Padding(10);
+            this.accordionControl1.Padding = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden;
-            this.accordionControl1.Size = new System.Drawing.Size(331, 784);
+            this.accordionControl1.Size = new System.Drawing.Size(284, 637);
             this.accordionControl1.TabIndex = 1;
             // 
             // accordionControlElement1
@@ -140,6 +137,7 @@
             this.showtimehall2BTN.Name = "showtimehall2BTN";
             this.showtimehall2BTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.showtimehall2BTN.Text = "Hall 2";
+            this.showtimehall2BTN.Click += new System.EventHandler(this.showtimehall2BTN_Click);
             // 
             // showtimelistACE
             // 
@@ -153,41 +151,16 @@
             this.showtimelistACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.showtimelistACE.Text = "Showtime List";
             // 
-            // hall1seatsTempBTN
-            // 
-            this.hall1seatsTempBTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hall1seatsTempBTN.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.hall1seatsTempBTN.Appearance.Default.Options.UseFont = true;
-            this.hall1seatsTempBTN.Appearance.Default.Options.UseForeColor = true;
-            this.hall1seatsTempBTN.HeaderIndent = 34;
-            this.hall1seatsTempBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("hall1seatsTempBTN.ImageOptions.Image")));
-            this.hall1seatsTempBTN.Name = "hall1seatsTempBTN";
-            this.hall1seatsTempBTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.hall1seatsTempBTN.Text = "Hall 1 Seats";
-            this.hall1seatsTempBTN.Click += new System.EventHandler(this.hall1seatsTempBTN_Click);
-            // 
-            // hall2seatsTempBTN
-            // 
-            this.hall2seatsTempBTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hall2seatsTempBTN.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.hall2seatsTempBTN.Appearance.Default.Options.UseFont = true;
-            this.hall2seatsTempBTN.Appearance.Default.Options.UseForeColor = true;
-            this.hall2seatsTempBTN.HeaderIndent = 34;
-            this.hall2seatsTempBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("hall2seatsTempBTN.ImageOptions.Image")));
-            this.hall2seatsTempBTN.Name = "hall2seatsTempBTN";
-            this.hall2seatsTempBTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.hall2seatsTempBTN.Text = "Hall 2 Seats";
-            this.hall2seatsTempBTN.Click += new System.EventHandler(this.hall2seatsTempBTN_Click);
-            // 
             // mainSPanel
             // 
             this.mainSPanel.AllowResize = false;
             this.mainSPanel.BorderThickness = 0;
             this.mainSPanel.Controls.Add(this.sidePanel1);
             this.mainSPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainSPanel.Location = new System.Drawing.Point(331, 0);
+            this.mainSPanel.Location = new System.Drawing.Point(284, 0);
+            this.mainSPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainSPanel.Name = "mainSPanel";
-            this.mainSPanel.Size = new System.Drawing.Size(1205, 784);
+            this.mainSPanel.Size = new System.Drawing.Size(1033, 637);
             this.mainSPanel.TabIndex = 3;
             this.mainSPanel.Text = "sidePanel1";
             // 
@@ -197,8 +170,9 @@
             this.sidePanel1.BorderThickness = 0;
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel1.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(249, 784);
+            this.sidePanel1.Size = new System.Drawing.Size(213, 637);
             this.sidePanel1.TabIndex = 0;
             this.sidePanel1.Text = "sidePanel1";
             // 
@@ -206,14 +180,15 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1536, 784);
+            this.ClientSize = new System.Drawing.Size(1317, 637);
             this.Controls.Add(this.mainSPanel);
             this.Controls.Add(this.accordionControl1);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("StaffForm.IconOptions.Image")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StaffForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StaffForm";
@@ -236,7 +211,5 @@
         private DevExpress.XtraEditors.SidePanel mainSPanel;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement showtimelistACE;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement hall1seatsTempBTN;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement hall2seatsTempBTN;
     }
 }
