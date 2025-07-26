@@ -213,6 +213,12 @@
     <Compile Include="Forms\SchedulingHall2Form.Designer.cs">
       <DependentUpon>SchedulingHall2Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SeatActionPromptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeatActionPromptForm.Designer.cs">
+      <DependentUpon>SeatActionPromptForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,7 @@
     <Compile Include="Infrastructure\Repositories\SeatRepository.cs" />
     <Compile Include="Infrastructure\Repositories\ShowingRepository.cs" />
     <Compile Include="Infrastructure\Repositories\ShowtimeRepository.cs" />
+    <Compile Include="Infrastructure\Repositories\TicketRepository.cs" />
     <Compile Include="Infrastructure\SQL\MovieSQL.cs" />
     <Compile Include="Infrastructure\SQL\SeatSQL.cs" />
     <Compile Include="Infrastructure\SQL\ShowingSQL.cs" />
@@ -362,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SchedulingHall2Form.resx">
       <DependentUpon>SchedulingHall2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeatActionPromptForm.resx">
+      <DependentUpon>SeatActionPromptForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>

@@ -23,41 +23,52 @@ namespace CinemaPB.Infrastructure.Repositories
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                var result = connection.Query<dynamic>(ShowingSQL.GetCurrentShowing, new { ShowDate = showDate.Date, HallID = hallId });
+                var result = connection.Query<dynamic>(
+                    ShowingSQL.GetCurrentShowing,
+                    new { ShowDate = showDate.Date, HallID = hallId });
 
-                var grouped = result
-                    .GroupBy(x => new { x.MovieID, x.Title, x.Genres, x.Duration, x.RatingName, x.Poster })
-                    .Select(g =>
+                var cards = new List<ShowingCard>();
+
+                foreach (var row in result)
+                {
+                    int showtimeId = row.ShowtimeID ?? 0;
+                    int movieId = row.MovieID ?? 0;
+                    int screening = row.Screening ?? 0;
+                    DateTime? showDateValue = row.ShowDate;
+                    TimeSpan? startTime = row.StartTime;
+                    TimeSpan? endTime = row.EndTime;
+
+                    string timeslot = (startTime.HasValue && endTime.HasValue)
+                        ? FormatTimeRange(startTime.Value, endTime.Value)
+                        : "--";
+
+                    cards.Add(new ShowingCard
                     {
-                        var screenings = g.ToDictionary(
-                            x => (int)x.Screening,
-                            x => (string)x.TimeRange
-                        );
+                        ShowtimeID = showtimeId,
+                        MovieID = movieId,
+                        Title = row.Title,
+                        Genres = row.Genres,
+                        Duration = row.Duration,
+                        RatingName = row.RatingName,
+                        ShowDate = showDateValue.HasValue ? showDateValue.Value.ToString("yyyy-MM-dd") : "",
+                        Screening = screening, // ✅ assign this
+                        Timeslot = timeslot,
+                        Poster = row.Poster,
+                        HallID = row.HallID ?? 0,
+                        MoviePriceID = row.MoviePriceID ?? 0,
+                        // ✅ ScreeningLabel is auto-computed
+                    });
+                }
 
-                        return new ShowingCard
-                        {
-                            MovieID = g.Key.MovieID,
-                            Title = g.Key.Title,
-                            Genres = g.Key.Genres,
-                            Duration = g.Key.Duration,
-                            RatingName = g.Key.RatingName,
-                            Poster = g.Key.Poster,
-                            First = screenings.ContainsKey(1) ? screenings[1] : null,
-                            Second = screenings.ContainsKey(2) ? screenings[2] : null,
-                            Last = screenings.ContainsKey(3) ? screenings[3] : null
-                        };
-                    })
-                    .ToList();
 
-                return grouped;
+                return cards;
             }
         }
 
         private string FormatTimeRange(TimeSpan start, TimeSpan end)
         {
-            DateTime today = DateTime.Today;
-            string formattedStart = today.Add(start).ToString("hh:mm tt");
-            string formattedEnd = today.Add(end).ToString("hh:mm tt");
+            var formattedStart = DateTime.Today.Add(start).ToString("h:mm tt");
+            var formattedEnd = DateTime.Today.Add(end).ToString("h:mm tt");
             return $"{formattedStart} - {formattedEnd}";
         }
 

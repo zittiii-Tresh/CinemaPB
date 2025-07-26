@@ -234,12 +234,12 @@
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s;
+    position: relative;
 }
 
 .movie-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
 }
 
 .poster {
@@ -297,6 +297,19 @@
     background-color: #d8933a;
 }
 
+.screening-label {
+    position: absolute;
+    background-color: #ce8734;
+    color: white;
+    font-weight: bold;
+    padding: 6px 10px;
+    top: 12px;
+    left: 12px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    z-index: 10;
+}
+
 
 /*&lt;div class="movie-card"&gt;
     &lt;img class="poster" src="${PosterImage}" alt="Movie Poster" /&gt;
@@ -320,24 +333,18 @@
   </data>
   <data name="showingEV.OptionsViewStyles.Medium.HtmlTemplate.Template" xml:space="preserve">
     <value>&lt;div class="movie-card"&gt;
+    &lt;div class="screening-label"&gt;${ScreeningLabel}&lt;/div&gt;
     &lt;img class="poster" src="${PosterImage}" alt="Movie Poster" /&gt;
     &lt;div class="content"&gt;
         &lt;div class="title"&gt;${Title}&lt;/div&gt;
         &lt;div class="details"&gt;${Genres} | {Duration} | {RatingName}&lt;/div&gt;
         &lt;div class="showtimes"&gt;
-            &lt;div id="firstscreeningBTN" class="showtime" onclick="onFirstButtonClick"&gt;
-					${First}
-				&lt;/div&gt;
-        	&lt;div id="secondscreeningBTN" class="showtime" onclick="onSecondButtonClick"&gt;
-					${Second}
-				&lt;/div&gt;
-        	&lt;div id="lastscreeningBTN" class="showtime" onclick="onLastButtonClick"&gt;
-					${Last}
-				&lt;/div&gt;
+            &lt;div id="screeningBTN" class="showtime" onclick="onButtonClick"&gt;
+                ${Timeslot}
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</value>
+&lt;/div&gt;</value>
   </data>
   <data name="htmlTemplate3.Styles" xml:space="preserve">
     <value>body {

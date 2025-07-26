@@ -13,10 +13,12 @@ using CinemaPB.ModelShowing;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.WinExplorer;
 
+
 namespace CinemaPB.Forms
 {
     public partial class Hall1Showing : DevExpress.XtraEditors.XtraUserControl
     {
+
         private readonly ShowingRepository _showingRepository;
         private const int HallID = 1;
 
@@ -43,7 +45,8 @@ namespace CinemaPB.Forms
             var selected = showingEV.GetFocusedRow() as ShowingCard;
             if (selected != null)
             {
-                MessageBox.Show($"You selected: {selected.Title} - First: {selected.First}");
+                var reserveForm = new ReserveSeatsForm(selected);
+                reserveForm.ShowDialog();
             }
         }
      

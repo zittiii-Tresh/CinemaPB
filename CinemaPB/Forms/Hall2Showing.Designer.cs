@@ -38,11 +38,15 @@
             this.sidePanel5 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel6 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel7 = new DevExpress.XtraEditors.SidePanel();
-            this.gcMovies = new DevExpress.XtraGrid.GridControl();
-            this.winExplorerView1 = new DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.showingGC = new DevExpress.XtraGrid.GridControl();
+            this.showingEV = new DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView();
+            this.Title = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Genres = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Duration = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Rating = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ScreeningLabel = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Poster = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Timeslot = new DevExpress.XtraGrid.Columns.GridColumn();
             this.htmlTemplate1 = new DevExpress.Utils.Html.HtmlTemplate();
             this.htmlTemplate2 = new DevExpress.Utils.Html.HtmlTemplate();
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
@@ -50,8 +54,8 @@
             this.htmlTemplate3 = new DevExpress.Utils.Html.HtmlTemplate();
             this.sidePanel1.SuspendLayout();
             this.sidePanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gcMovies)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.winExplorerView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showingGC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showingEV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.winExplorerView2)).BeginInit();
             this.SuspendLayout();
@@ -167,7 +171,7 @@
             // 
             // sidePanel7
             // 
-            this.sidePanel7.Controls.Add(this.gcMovies);
+            this.sidePanel7.Controls.Add(this.showingGC);
             this.sidePanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sidePanel7.Location = new System.Drawing.Point(35, 70);
             this.sidePanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -176,69 +180,113 @@
             this.sidePanel7.TabIndex = 5;
             this.sidePanel7.Text = "sidePanel7";
             // 
-            // gcMovies
+            // showingGC
             // 
-            this.gcMovies.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gcMovies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcMovies.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gcMovies.Location = new System.Drawing.Point(0, 0);
-            this.gcMovies.MainView = this.winExplorerView1;
-            this.gcMovies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gcMovies.Name = "gcMovies";
-            this.gcMovies.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.showingGC.Cursor = System.Windows.Forms.Cursors.Default;
+            this.showingGC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.showingGC.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.showingGC.Location = new System.Drawing.Point(0, 0);
+            this.showingGC.MainView = this.showingEV;
+            this.showingGC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.showingGC.Name = "showingGC";
+            this.showingGC.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit1});
-            this.gcMovies.Size = new System.Drawing.Size(1322, 687);
-            this.gcMovies.TabIndex = 0;
-            this.gcMovies.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.winExplorerView1,
+            this.showingGC.Size = new System.Drawing.Size(1322, 687);
+            this.showingGC.TabIndex = 0;
+            this.showingGC.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.showingEV,
             this.winExplorerView2});
             // 
-            // winExplorerView1
+            // showingEV
             // 
-            this.winExplorerView1.Appearance.EmptySpace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(37)))));
-            this.winExplorerView1.Appearance.EmptySpace.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(37)))));
-            this.winExplorerView1.Appearance.EmptySpace.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winExplorerView1.Appearance.EmptySpace.Options.UseBackColor = true;
-            this.winExplorerView1.Appearance.EmptySpace.Options.UseFont = true;
-            this.winExplorerView1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.winExplorerView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3});
-            this.winExplorerView1.GridControl = this.gcMovies;
-            this.winExplorerView1.HtmlTemplates.AddRange(new DevExpress.Utils.Html.HtmlTemplate[] {
+            this.showingEV.Appearance.EmptySpace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(37)))));
+            this.showingEV.Appearance.EmptySpace.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(37)))));
+            this.showingEV.Appearance.EmptySpace.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showingEV.Appearance.EmptySpace.Options.UseBackColor = true;
+            this.showingEV.Appearance.EmptySpace.Options.UseFont = true;
+            this.showingEV.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.showingEV.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.Title,
+            this.Genres,
+            this.Duration,
+            this.Rating,
+            this.ScreeningLabel,
+            this.Poster,
+            this.Timeslot});
+            this.showingEV.GridControl = this.showingGC;
+            this.showingEV.HtmlTemplates.AddRange(new DevExpress.Utils.Html.HtmlTemplate[] {
             this.htmlTemplate1,
             this.htmlTemplate2});
-            this.winExplorerView1.Name = "winExplorerView1";
-            this.winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Styles = resources.GetString("winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Styles");
-            this.winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Template = resources.GetString("winExplorerView1.OptionsViewStyles.Medium.HtmlTemplate.Template");
+            this.showingEV.Name = "showingEV";
+            this.showingEV.OptionsViewStyles.Medium.HtmlTemplate.Styles = resources.GetString("showingEV.OptionsViewStyles.Medium.HtmlTemplate.Styles");
+            this.showingEV.OptionsViewStyles.Medium.HtmlTemplate.Template = resources.GetString("showingEV.OptionsViewStyles.Medium.HtmlTemplate.Template");
+            this.showingEV.Click += new System.EventHandler(this.showingEV_Click);
             // 
-            // gridColumn1
+            // Title
             // 
-            this.gridColumn1.Caption = "gridColumn1";
-            this.gridColumn1.MinWidth = 21;
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 81;
+            this.Title.Caption = "Title";
+            this.Title.FieldName = "Title";
+            this.Title.MinWidth = 21;
+            this.Title.Name = "Title";
+            this.Title.Visible = true;
+            this.Title.VisibleIndex = 0;
+            this.Title.Width = 81;
             // 
-            // gridColumn2
+            // Genres
             // 
-            this.gridColumn2.Caption = "gridColumn2";
-            this.gridColumn2.MinWidth = 21;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 81;
+            this.Genres.Caption = "Genres";
+            this.Genres.FieldName = "Genres";
+            this.Genres.MinWidth = 21;
+            this.Genres.Name = "Genres";
+            this.Genres.Visible = true;
+            this.Genres.VisibleIndex = 1;
+            this.Genres.Width = 81;
             // 
-            // gridColumn3
+            // Duration
             // 
-            this.gridColumn3.Caption = "gridColumn3";
-            this.gridColumn3.MinWidth = 21;
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 81;
+            this.Duration.Caption = "Duration";
+            this.Duration.FieldName = "Duration";
+            this.Duration.MinWidth = 21;
+            this.Duration.Name = "Duration";
+            this.Duration.Visible = true;
+            this.Duration.VisibleIndex = 2;
+            this.Duration.Width = 81;
+            // 
+            // Rating
+            // 
+            this.Rating.Caption = "Rating";
+            this.Rating.FieldName = "Rating";
+            this.Rating.Name = "Rating";
+            this.Rating.Visible = true;
+            this.Rating.VisibleIndex = 3;
+            this.Rating.Width = 64;
+            // 
+            // ScreeningLabel
+            // 
+            this.ScreeningLabel.Caption = "ScreeningLabel";
+            this.ScreeningLabel.FieldName = "ScreeningLabel";
+            this.ScreeningLabel.Name = "ScreeningLabel";
+            this.ScreeningLabel.Visible = true;
+            this.ScreeningLabel.VisibleIndex = 4;
+            this.ScreeningLabel.Width = 64;
+            // 
+            // Poster
+            // 
+            this.Poster.Caption = "Poster";
+            this.Poster.FieldName = "PosterImage";
+            this.Poster.Name = "Poster";
+            this.Poster.Visible = true;
+            this.Poster.VisibleIndex = 5;
+            this.Poster.Width = 64;
+            // 
+            // Timeslot
+            // 
+            this.Timeslot.Caption = "Timeslot";
+            this.Timeslot.FieldName = "Timeslot";
+            this.Timeslot.Name = "Timeslot";
+            this.Timeslot.Visible = true;
+            this.Timeslot.VisibleIndex = 6;
+            this.Timeslot.Width = 64;
             // 
             // htmlTemplate1
             // 
@@ -255,7 +303,7 @@
             // 
             // winExplorerView2
             // 
-            this.winExplorerView2.GridControl = this.gcMovies;
+            this.winExplorerView2.GridControl = this.showingGC;
             this.winExplorerView2.HtmlTemplates.AddRange(new DevExpress.Utils.Html.HtmlTemplate[] {
             this.htmlTemplate3});
             this.winExplorerView2.Name = "winExplorerView2";
@@ -281,8 +329,8 @@
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
             this.sidePanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gcMovies)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.winExplorerView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showingGC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showingEV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.winExplorerView2)).EndInit();
             this.ResumeLayout(false);
@@ -300,15 +348,19 @@
         private DevExpress.XtraEditors.SidePanel sidePanel5;
         private DevExpress.XtraEditors.SidePanel sidePanel6;
         private DevExpress.XtraEditors.SidePanel sidePanel7;
-        private DevExpress.XtraGrid.GridControl gcMovies;
-        private DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView winExplorerView1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.GridControl showingGC;
+        private DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView showingEV;
+        private DevExpress.XtraGrid.Columns.GridColumn Title;
+        private DevExpress.XtraGrid.Columns.GridColumn Genres;
+        private DevExpress.XtraGrid.Columns.GridColumn Duration;
         private DevExpress.Utils.Html.HtmlTemplate htmlTemplate1;
         private DevExpress.Utils.Html.HtmlTemplate htmlTemplate2;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
         private DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView winExplorerView2;
         private DevExpress.Utils.Html.HtmlTemplate htmlTemplate3;
+        private DevExpress.XtraGrid.Columns.GridColumn Rating;
+        private DevExpress.XtraGrid.Columns.GridColumn ScreeningLabel;
+        private DevExpress.XtraGrid.Columns.GridColumn Poster;
+        private DevExpress.XtraGrid.Columns.GridColumn Timeslot;
     }
 }
