@@ -24,7 +24,7 @@ namespace CinemaPB.Forms.LogsForm
         {
             using (SqlConnection conn = new SqlConnection(GlobalSetting.GetConnectionString()))
             {
-                string query = @"SELECT TOP (1000) [LogID]
+                string query = @"SELECT [LogID]
                                                   ,[Username]
                                                   ,[SeatID]
                                                   ,[HallID]
@@ -51,6 +51,35 @@ namespace CinemaPB.Forms.LogsForm
         private void gcSeatLayoutLogs_Load(object sender, EventArgs e)
         {
             LoadLogsIntoGrid();
+        }
+
+        private void printBTN_Click(object sender, EventArgs e)
+        {
+            LogsReport.SeatLayoutLogsReport reports = new LogsReport.SeatLayoutLogsReport();
+
+            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
+            {
+                string query = @"SELECT[LogID]
+                                                  ,[Username]
+                                                  ,[SeatID]
+                                                  ,[HallID]
+                                                  ,[DateTime]
+                                                  ,[Activity]
+                                              FROM[CinemaDB].[log].[SeatLayoutLogs]
+                                              ORDER BY LogID DESC;";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        reports.DataSource = dataTable;
+                        DevExpress.XtraReports.UI.ReportPrintTool printTool = new DevExpress.XtraReports.UI.ReportPrintTool(reports);
+                        printTool.ShowPreviewDialog();
+                    }
+                }
+            }
         }
     }
 }

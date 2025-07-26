@@ -40,17 +40,28 @@
       <HintPath>..\packages\Dapper.2.1.66\lib\net461\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.BonusSkins.v23.2" />
+    <Reference Include="DevExpress.Charts.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.Desktop.v23.2" />
     <Reference Include="DevExpress.Data.v23.2" />
+    <Reference Include="DevExpress.Office.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v23.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Export, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v23.2" />
+    <Reference Include="DevExpress.Utils.v23.2.UI, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v23.2" />
     <Reference Include="DevExpress.Sparkline.v23.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v23.2" />
     <Reference Include="DevExpress.Drawing.v23.2" />
+    <Reference Include="DevExpress.XtraGauges.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v23.2.Extensions, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.1\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -225,6 +236,30 @@
     <Compile Include="Infrastructure\SQL\SeatSQL.cs" />
     <Compile Include="Infrastructure\SQL\ShowingSQL.cs" />
     <Compile Include="Infrastructure\SQL\ShowtimeSQL.cs" />
+    <Compile Include="LogsReport\EmployeeLogsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogsReport\EmployeeLogsReport.Designer.cs">
+      <DependentUpon>EmployeeLogsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogsReport\MovieLogsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogsReport\MovieLogsReport.Designer.cs">
+      <DependentUpon>MovieLogsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogsReport\SeatLayoutLogsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogsReport\SeatLayoutLogsReport.Designer.cs">
+      <DependentUpon>SeatLayoutLogsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogsReport\ShowtimeLogsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogsReport\ShowtimeLogsReport.Designer.cs">
+      <DependentUpon>ShowtimeLogsReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModelMovie\ContentRating.cs" />
     <Compile Include="ModelMovie\Genre.cs" />
     <Compile Include="ModelMovie\Language.cs" />
@@ -241,6 +276,30 @@
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\DailySalesReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DailySalesReport.Designer.cs">
+      <DependentUpon>DailySalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MovieTicket.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MovieTicket.Designer.cs">
+      <DependentUpon>MovieTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SalesReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SalesReport.Designer.cs">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\WeeklySalesReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\WeeklySalesReport.Designer.cs">
+      <DependentUpon>WeeklySalesReport.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\ChangePasswordForm.resx">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +369,18 @@
     <EmbeddedResource Include="Forms\StaffForm.resx">
       <DependentUpon>StaffForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogsReport\EmployeeLogsReport.resx">
+      <DependentUpon>EmployeeLogsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogsReport\MovieLogsReport.resx">
+      <DependentUpon>MovieLogsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogsReport\SeatLayoutLogsReport.resx">
+      <DependentUpon>SeatLayoutLogsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogsReport\ShowtimeLogsReport.resx">
+      <DependentUpon>ShowtimeLogsReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -321,6 +392,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reports\DailySalesReport.resx">
+      <DependentUpon>DailySalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MovieTicket.resx">
+      <DependentUpon>MovieTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SalesReport.resx">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WeeklySalesReport.resx">
+      <DependentUpon>WeeklySalesReport.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="bin\Debug\CinemaPB.exe.config" />
     <None Include="obj\Debug\CinemaPB.csproj.AssemblyReference.cache" />

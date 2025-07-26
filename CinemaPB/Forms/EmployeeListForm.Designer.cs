@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeListForm));
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
@@ -78,8 +78,9 @@
             this.sidePanel1.BorderThickness = 0;
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel1.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(1313, 22);
+            this.sidePanel1.Size = new System.Drawing.Size(1125, 18);
             this.sidePanel1.TabIndex = 0;
             this.sidePanel1.Text = "sidePanel1";
             // 
@@ -88,9 +89,10 @@
             this.sidePanel2.AllowResize = false;
             this.sidePanel2.BorderThickness = 0;
             this.sidePanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel2.Location = new System.Drawing.Point(0, 22);
+            this.sidePanel2.Location = new System.Drawing.Point(0, 18);
+            this.sidePanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel2.Name = "sidePanel2";
-            this.sidePanel2.Size = new System.Drawing.Size(29, 867);
+            this.sidePanel2.Size = new System.Drawing.Size(25, 704);
             this.sidePanel2.TabIndex = 1;
             this.sidePanel2.Text = "sidePanel2";
             // 
@@ -99,9 +101,10 @@
             this.sidePanel3.AllowResize = false;
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel3.Location = new System.Drawing.Point(1285, 22);
+            this.sidePanel3.Location = new System.Drawing.Point(1101, 18);
+            this.sidePanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel3.Name = "sidePanel3";
-            this.sidePanel3.Size = new System.Drawing.Size(28, 867);
+            this.sidePanel3.Size = new System.Drawing.Size(24, 704);
             this.sidePanel3.TabIndex = 2;
             this.sidePanel3.Text = "sidePanel3";
             // 
@@ -110,9 +113,10 @@
             this.sidePanel4.AllowResize = false;
             this.sidePanel4.BorderThickness = 0;
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel4.Location = new System.Drawing.Point(29, 848);
+            this.sidePanel4.Location = new System.Drawing.Point(25, 689);
+            this.sidePanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel4.Name = "sidePanel4";
-            this.sidePanel4.Size = new System.Drawing.Size(1256, 41);
+            this.sidePanel4.Size = new System.Drawing.Size(1076, 33);
             this.sidePanel4.TabIndex = 3;
             this.sidePanel4.Text = "sidePanel4";
             // 
@@ -127,15 +131,17 @@
             this.sidePanel5.Controls.Add(this.sidePanel6);
             this.sidePanel5.Controls.Add(this.labelControl2);
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sidePanel5.Location = new System.Drawing.Point(29, 22);
+            this.sidePanel5.Location = new System.Drawing.Point(25, 18);
+            this.sidePanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel5.Name = "sidePanel5";
-            this.sidePanel5.Size = new System.Drawing.Size(1256, 107);
+            this.sidePanel5.Size = new System.Drawing.Size(1076, 87);
             this.sidePanel5.TabIndex = 4;
             this.sidePanel5.Text = "sidePanel5";
             // 
             // findTE
             // 
-            this.findTE.Location = new System.Drawing.Point(8, 65);
+            this.findTE.Location = new System.Drawing.Point(7, 53);
+            this.findTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.findTE.Name = "findTE";
             this.findTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.findTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,7 +150,7 @@
             this.findTE.Properties.Appearance.Options.UseFont = true;
             this.findTE.Properties.Appearance.Options.UseForeColor = true;
             this.findTE.Properties.AutoHeight = false;
-            this.findTE.Size = new System.Drawing.Size(240, 28);
+            this.findTE.Size = new System.Drawing.Size(206, 23);
             this.findTE.TabIndex = 29;
             this.findTE.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.findTE_EditValueChanging);
             // 
@@ -154,9 +160,10 @@
             this.sidePanel9.BorderThickness = 0;
             this.sidePanel9.Controls.Add(this.addemployeeBTN);
             this.sidePanel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel9.Location = new System.Drawing.Point(1041, 15);
+            this.sidePanel9.Location = new System.Drawing.Point(891, 12);
+            this.sidePanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel9.Name = "sidePanel9";
-            this.sidePanel9.Size = new System.Drawing.Size(205, 84);
+            this.sidePanel9.Size = new System.Drawing.Size(176, 69);
             this.sidePanel9.TabIndex = 28;
             this.sidePanel9.Text = "sidePanel9";
             // 
@@ -168,10 +175,11 @@
             this.addemployeeBTN.Appearance.Options.UseFont = true;
             this.addemployeeBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addemployeeBTN.ImageOptions.Image")));
             this.addemployeeBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.addemployeeBTN.Location = new System.Drawing.Point(33, 2);
+            this.addemployeeBTN.Location = new System.Drawing.Point(28, 2);
+            this.addemployeeBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addemployeeBTN.Name = "addemployeeBTN";
             this.addemployeeBTN.Padding = new System.Windows.Forms.Padding(2);
-            this.addemployeeBTN.Size = new System.Drawing.Size(171, 33);
+            this.addemployeeBTN.Size = new System.Drawing.Size(147, 35);
             this.addemployeeBTN.TabIndex = 24;
             this.addemployeeBTN.Text = "Add Employee";
             this.addemployeeBTN.Click += new System.EventHandler(this.addemployeeBTN_Click);
@@ -180,9 +188,10 @@
             // 
             this.sidePanel8.BorderThickness = 0;
             this.sidePanel8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel8.Location = new System.Drawing.Point(0, 99);
+            this.sidePanel8.Location = new System.Drawing.Point(0, 81);
+            this.sidePanel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel8.Name = "sidePanel8";
-            this.sidePanel8.Size = new System.Drawing.Size(1246, 8);
+            this.sidePanel8.Size = new System.Drawing.Size(1067, 6);
             this.sidePanel8.TabIndex = 27;
             this.sidePanel8.Text = "sidePanel8";
             // 
@@ -191,9 +200,10 @@
             this.sidePanel7.AllowResize = false;
             this.sidePanel7.BorderThickness = 0;
             this.sidePanel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel7.Location = new System.Drawing.Point(1246, 15);
+            this.sidePanel7.Location = new System.Drawing.Point(1067, 12);
+            this.sidePanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel7.Name = "sidePanel7";
-            this.sidePanel7.Size = new System.Drawing.Size(10, 92);
+            this.sidePanel7.Size = new System.Drawing.Size(9, 75);
             this.sidePanel7.TabIndex = 26;
             this.sidePanel7.Text = "sidePanel7";
             // 
@@ -203,8 +213,9 @@
             this.sidePanel6.BorderThickness = 0;
             this.sidePanel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel6.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel6.Name = "sidePanel6";
-            this.sidePanel6.Size = new System.Drawing.Size(1256, 15);
+            this.sidePanel6.Size = new System.Drawing.Size(1076, 12);
             this.sidePanel6.TabIndex = 25;
             this.sidePanel6.Text = "sidePanel6";
             // 
@@ -214,9 +225,10 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(6, 7);
+            this.labelControl2.Location = new System.Drawing.Point(5, 6);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(242, 44);
+            this.labelControl2.Size = new System.Drawing.Size(195, 37);
             this.labelControl2.TabIndex = 9;
             this.labelControl2.Text = "Employee List";
             // 
@@ -228,14 +240,16 @@
             this.gcEmployees.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gcEmployees.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gcEmployees.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gcEmployees.Location = new System.Drawing.Point(29, 129);
+            this.gcEmployees.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gcEmployees.Location = new System.Drawing.Point(25, 105);
             this.gcEmployees.MainView = this.gvEmployees;
+            this.gcEmployees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcEmployees.Name = "gcEmployees";
             this.gcEmployees.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1,
             this.repositoryItemButtonEdit1,
             this.repositoryItemButtonDelete2});
-            this.gcEmployees.Size = new System.Drawing.Size(1256, 719);
+            this.gcEmployees.Size = new System.Drawing.Size(1076, 584);
             this.gcEmployees.TabIndex = 6;
             this.gcEmployees.UseEmbeddedNavigator = true;
             this.gcEmployees.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -252,10 +266,12 @@
             this.EmployeeStatus,
             this.AccountStatus,
             this.gridColumn4});
+            this.gvEmployees.DetailHeight = 284;
             this.gvEmployees.GridControl = this.gcEmployees;
             this.gvEmployees.GroupCount = 1;
             this.gvEmployees.Name = "gvEmployees";
             this.gvEmployees.OptionsBehavior.AutoExpandAllGroups = true;
+            this.gvEmployees.OptionsEditForm.PopupEditFormWidth = 686;
             this.gvEmployees.OptionsView.RowAutoHeight = true;
             this.gvEmployees.OptionsView.ShowGroupPanel = false;
             this.gvEmployees.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
@@ -280,14 +296,14 @@
             this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn1.Caption = "Employee Name";
             this.gridColumn1.FieldName = "EmployeeName";
-            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.MinWidth = 21;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             this.gridColumn1.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 299;
+            this.gridColumn1.Width = 256;
             // 
             // gridColumn2
             // 
@@ -307,14 +323,14 @@
             this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn2.Caption = "Gender";
             this.gridColumn2.FieldName = "Gender";
-            this.gridColumn2.MinWidth = 25;
+            this.gridColumn2.MinWidth = 21;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             this.gridColumn2.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 2;
-            this.gridColumn2.Width = 152;
+            this.gridColumn2.Width = 130;
             // 
             // ContactNumber
             // 
@@ -334,14 +350,14 @@
             this.ContactNumber.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.ContactNumber.Caption = "Contact Number";
             this.ContactNumber.FieldName = "ContactNo";
-            this.ContactNumber.MinWidth = 25;
+            this.ContactNumber.MinWidth = 21;
             this.ContactNumber.Name = "ContactNumber";
             this.ContactNumber.OptionsColumn.AllowEdit = false;
             this.ContactNumber.OptionsColumn.AllowFocus = false;
             this.ContactNumber.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.ContactNumber.Visible = true;
             this.ContactNumber.VisibleIndex = 1;
-            this.ContactNumber.Width = 234;
+            this.ContactNumber.Width = 201;
             // 
             // Username
             // 
@@ -361,14 +377,14 @@
             this.Username.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Username.Caption = "Username";
             this.Username.FieldName = "Username";
-            this.Username.MinWidth = 25;
+            this.Username.MinWidth = 21;
             this.Username.Name = "Username";
             this.Username.OptionsColumn.AllowEdit = false;
             this.Username.OptionsColumn.AllowFocus = false;
             this.Username.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Username.Visible = true;
             this.Username.VisibleIndex = 2;
-            this.Username.Width = 130;
+            this.Username.Width = 111;
             // 
             // Position
             // 
@@ -390,14 +406,14 @@
             this.Position.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Position.Caption = "Position";
             this.Position.FieldName = "RoleName";
-            this.Position.MinWidth = 25;
+            this.Position.MinWidth = 21;
             this.Position.Name = "Position";
             this.Position.OptionsColumn.AllowEdit = false;
             this.Position.OptionsColumn.AllowFocus = false;
             this.Position.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Position.Visible = true;
             this.Position.VisibleIndex = 3;
-            this.Position.Width = 121;
+            this.Position.Width = 104;
             // 
             // EmployeeStatus
             // 
@@ -419,14 +435,14 @@
             this.EmployeeStatus.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.EmployeeStatus.Caption = "Employee Status";
             this.EmployeeStatus.FieldName = "EmploymentStatus";
-            this.EmployeeStatus.MinWidth = 25;
+            this.EmployeeStatus.MinWidth = 21;
             this.EmployeeStatus.Name = "EmployeeStatus";
             this.EmployeeStatus.OptionsColumn.AllowEdit = false;
             this.EmployeeStatus.OptionsColumn.AllowFocus = false;
             this.EmployeeStatus.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.EmployeeStatus.Visible = true;
             this.EmployeeStatus.VisibleIndex = 5;
-            this.EmployeeStatus.Width = 161;
+            this.EmployeeStatus.Width = 138;
             // 
             // AccountStatus
             // 
@@ -448,14 +464,14 @@
             this.AccountStatus.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.AccountStatus.Caption = "Account";
             this.AccountStatus.FieldName = "IsLocked";
-            this.AccountStatus.MinWidth = 25;
+            this.AccountStatus.MinWidth = 21;
             this.AccountStatus.Name = "AccountStatus";
             this.AccountStatus.OptionsColumn.AllowEdit = false;
             this.AccountStatus.OptionsColumn.AllowFocus = false;
             this.AccountStatus.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.AccountStatus.Visible = true;
             this.AccountStatus.VisibleIndex = 4;
-            this.AccountStatus.Width = 132;
+            this.AccountStatus.Width = 113;
             // 
             // gridColumn4
             // 
@@ -475,19 +491,19 @@
             this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn4.Caption = "Action";
             this.gridColumn4.ColumnEdit = this.repositoryItemButtonEdit1;
-            this.gridColumn4.MinWidth = 25;
+            this.gridColumn4.MinWidth = 21;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.ReadOnly = true;
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 6;
-            this.gridColumn4.Width = 171;
+            this.gridColumn4.Width = 147;
             // 
             // repositoryItemButtonEdit1
             // 
             this.repositoryItemButtonEdit1.AutoHeight = false;
-            editorButtonImageOptions2.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions2.SvgImage")));
+            editorButtonImageOptions1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("editorButtonImageOptions1.SvgImage")));
             this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit1.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("repositoryItemButtonEdit1.ContextImageOptions.SvgImage")));
             this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
             this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
@@ -518,7 +534,7 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gcEmployees);
             this.Controls.Add(this.sidePanel5);
@@ -526,8 +542,9 @@
             this.Controls.Add(this.sidePanel3);
             this.Controls.Add(this.sidePanel2);
             this.Controls.Add(this.sidePanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EmployeeListForm";
-            this.Size = new System.Drawing.Size(1313, 889);
+            this.Size = new System.Drawing.Size(1125, 722);
             this.sidePanel5.ResumeLayout(false);
             this.sidePanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.findTE.Properties)).EndInit();

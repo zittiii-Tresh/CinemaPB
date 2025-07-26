@@ -66,16 +66,17 @@
             // 
             // resultcaptionLBL
             // 
-            this.resultcaptionLBL.Location = new System.Drawing.Point(419, 289);
+            this.resultcaptionLBL.Location = new System.Drawing.Point(359, 235);
+            this.resultcaptionLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resultcaptionLBL.Name = "resultcaptionLBL";
-            this.resultcaptionLBL.Size = new System.Drawing.Size(0, 16);
+            this.resultcaptionLBL.Size = new System.Drawing.Size(0, 13);
             this.resultcaptionLBL.TabIndex = 35;
             // 
             // extensionTE
             // 
             this.extensionTE.EditValue = "Extension";
-            this.extensionTE.Location = new System.Drawing.Point(663, 103);
-            this.extensionTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.extensionTE.Location = new System.Drawing.Point(568, 84);
+            this.extensionTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.extensionTE.Name = "extensionTE";
             this.extensionTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
             this.extensionTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,14 +85,14 @@
             this.extensionTE.Properties.Appearance.Options.UseFont = true;
             this.extensionTE.Properties.Appearance.Options.UseForeColor = true;
             this.extensionTE.Properties.AutoHeight = false;
-            this.extensionTE.Size = new System.Drawing.Size(187, 27);
+            this.extensionTE.Size = new System.Drawing.Size(160, 22);
             this.extensionTE.TabIndex = 30;
             // 
             // contactnoTE
             // 
             this.contactnoTE.EditValue = "Contact no.";
-            this.contactnoTE.Location = new System.Drawing.Point(44, 155);
-            this.contactnoTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.contactnoTE.Location = new System.Drawing.Point(38, 126);
+            this.contactnoTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.contactnoTE.Name = "contactnoTE";
             this.contactnoTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
             this.contactnoTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -100,14 +101,14 @@
             this.contactnoTE.Properties.Appearance.Options.UseFont = true;
             this.contactnoTE.Properties.Appearance.Options.UseForeColor = true;
             this.contactnoTE.Properties.AutoHeight = false;
-            this.contactnoTE.Size = new System.Drawing.Size(187, 27);
+            this.contactnoTE.Size = new System.Drawing.Size(160, 22);
             this.contactnoTE.TabIndex = 31;
             // 
             // addressTE
             // 
             this.addressTE.EditValue = "Address";
-            this.addressTE.Location = new System.Drawing.Point(251, 155);
-            this.addressTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.addressTE.Location = new System.Drawing.Point(215, 126);
+            this.addressTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addressTE.Name = "addressTE";
             this.addressTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
             this.addressTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,14 +117,14 @@
             this.addressTE.Properties.Appearance.Options.UseFont = true;
             this.addressTE.Properties.Appearance.Options.UseForeColor = true;
             this.addressTE.Properties.AutoHeight = false;
-            this.addressTE.Size = new System.Drawing.Size(187, 27);
+            this.addressTE.Size = new System.Drawing.Size(160, 22);
             this.addressTE.TabIndex = 32;
             // 
             // firstnameTE
             // 
             this.firstnameTE.EditValue = "Firstname";
-            this.firstnameTE.Location = new System.Drawing.Point(44, 103);
-            this.firstnameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.firstnameTE.Location = new System.Drawing.Point(38, 84);
+            this.firstnameTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.firstnameTE.Name = "firstnameTE";
             this.firstnameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
             this.firstnameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -132,14 +133,14 @@
             this.firstnameTE.Properties.Appearance.Options.UseFont = true;
             this.firstnameTE.Properties.Appearance.Options.UseForeColor = true;
             this.firstnameTE.Properties.AutoHeight = false;
-            this.firstnameTE.Size = new System.Drawing.Size(187, 27);
+            this.firstnameTE.Size = new System.Drawing.Size(160, 22);
             this.firstnameTE.TabIndex = 27;
             // 
             // middlenameTE
             // 
             this.middlenameTE.EditValue = "Middlename";
-            this.middlenameTE.Location = new System.Drawing.Point(251, 103);
-            this.middlenameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.middlenameTE.Location = new System.Drawing.Point(215, 84);
+            this.middlenameTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.middlenameTE.Name = "middlenameTE";
             this.middlenameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
             this.middlenameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -148,14 +149,14 @@
             this.middlenameTE.Properties.Appearance.Options.UseFont = true;
             this.middlenameTE.Properties.Appearance.Options.UseForeColor = true;
             this.middlenameTE.Properties.AutoHeight = false;
-            this.middlenameTE.Size = new System.Drawing.Size(187, 27);
+            this.middlenameTE.Size = new System.Drawing.Size(160, 22);
             this.middlenameTE.TabIndex = 28;
             // 
             // lastnameTE
             // 
             this.lastnameTE.EditValue = "Lastname";
-            this.lastnameTE.Location = new System.Drawing.Point(457, 103);
-            this.lastnameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.lastnameTE.Location = new System.Drawing.Point(392, 84);
+            this.lastnameTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lastnameTE.Name = "lastnameTE";
             this.lastnameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
             this.lastnameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -164,14 +165,14 @@
             this.lastnameTE.Properties.Appearance.Options.UseFont = true;
             this.lastnameTE.Properties.Appearance.Options.UseForeColor = true;
             this.lastnameTE.Properties.AutoHeight = false;
-            this.lastnameTE.Size = new System.Drawing.Size(187, 27);
+            this.lastnameTE.Size = new System.Drawing.Size(160, 22);
             this.lastnameTE.TabIndex = 29;
             // 
             // usernameTE
             // 
             this.usernameTE.EditValue = "Username";
-            this.usernameTE.Location = new System.Drawing.Point(457, 155);
-            this.usernameTE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.usernameTE.Location = new System.Drawing.Point(392, 126);
+            this.usernameTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usernameTE.Name = "usernameTE";
             this.usernameTE.Properties.Appearance.BorderColor = System.Drawing.Color.Maroon;
             this.usernameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -180,20 +181,20 @@
             this.usernameTE.Properties.Appearance.Options.UseFont = true;
             this.usernameTE.Properties.Appearance.Options.UseForeColor = true;
             this.usernameTE.Properties.AutoHeight = false;
-            this.usernameTE.Size = new System.Drawing.Size(187, 27);
+            this.usernameTE.Size = new System.Drawing.Size(160, 22);
             this.usernameTE.TabIndex = 33;
             // 
             // resultLBL
             // 
-            this.resultLBL.Location = new System.Drawing.Point(204, 310);
+            this.resultLBL.Location = new System.Drawing.Point(175, 252);
+            this.resultLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resultLBL.Name = "resultLBL";
-            this.resultLBL.Size = new System.Drawing.Size(0, 16);
+            this.resultLBL.Size = new System.Drawing.Size(0, 13);
             this.resultLBL.TabIndex = 40;
             // 
             // genderRG
             // 
-            this.genderRG.Location = new System.Drawing.Point(272, 240);
-            this.genderRG.Margin = new System.Windows.Forms.Padding(4);
+            this.genderRG.Location = new System.Drawing.Point(233, 195);
             this.genderRG.Name = "genderRG";
             this.genderRG.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.genderRG.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
@@ -210,7 +211,7 @@
             this.genderRG.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("Male", "Male", true, "Male", "Male"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("Female", "Female", true, "Female", "Female")});
-            this.genderRG.Size = new System.Drawing.Size(166, 37);
+            this.genderRG.Size = new System.Drawing.Size(142, 30);
             this.genderRG.TabIndex = 39;
             // 
             // labelControl4
@@ -219,17 +220,16 @@
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(254, 211);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.labelControl4.Location = new System.Drawing.Point(218, 171);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(56, 23);
+            this.labelControl4.Size = new System.Drawing.Size(45, 19);
             this.labelControl4.TabIndex = 38;
             this.labelControl4.Text = "Gender";
             // 
             // positionRG
             // 
-            this.positionRG.Location = new System.Drawing.Point(65, 240);
-            this.positionRG.Margin = new System.Windows.Forms.Padding(4);
+            this.positionRG.Location = new System.Drawing.Point(56, 195);
             this.positionRG.Name = "positionRG";
             this.positionRG.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.positionRG.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
@@ -246,7 +246,7 @@
             this.positionRG.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(((short)(1)), "Admin", true, "Admin", "Admin"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(((short)(2)), "Staff", true, "Staff", "Staff")});
-            this.positionRG.Size = new System.Drawing.Size(166, 37);
+            this.positionRG.Size = new System.Drawing.Size(142, 30);
             this.positionRG.TabIndex = 36;
             // 
             // labelControl3
@@ -255,10 +255,10 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(44, 211);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.labelControl3.Location = new System.Drawing.Point(38, 171);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(61, 23);
+            this.labelControl3.Size = new System.Drawing.Size(51, 19);
             this.labelControl3.TabIndex = 37;
             this.labelControl3.Text = "Position";
             // 
@@ -268,9 +268,10 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(30, 35);
+            this.labelControl1.Location = new System.Drawing.Point(26, 28);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(280, 32);
+            this.labelControl1.Size = new System.Drawing.Size(230, 26);
             this.labelControl1.TabIndex = 41;
             this.labelControl1.Text = "Edit/Delete Employee";
             // 
@@ -280,17 +281,16 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(466, 211);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.labelControl2.Location = new System.Drawing.Point(399, 171);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(127, 23);
+            this.labelControl2.Size = new System.Drawing.Size(103, 19);
             this.labelControl2.TabIndex = 42;
             this.labelControl2.Text = "Employee Status";
             // 
             // employeeRG
             // 
-            this.employeeRG.Location = new System.Drawing.Point(488, 240);
-            this.employeeRG.Margin = new System.Windows.Forms.Padding(4);
+            this.employeeRG.Location = new System.Drawing.Point(418, 195);
             this.employeeRG.Name = "employeeRG";
             this.employeeRG.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.employeeRG.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
@@ -307,7 +307,7 @@
             this.employeeRG.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(1, "Active", true, "Active", "Active"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(0, "In-Active", true, "In-Active", "In-Active")});
-            this.employeeRG.Size = new System.Drawing.Size(196, 37);
+            this.employeeRG.Size = new System.Drawing.Size(168, 30);
             this.employeeRG.TabIndex = 43;
             // 
             // availabilityLC
@@ -316,18 +316,18 @@
             this.availabilityLC.Appearance.ForeColor = System.Drawing.Color.White;
             this.availabilityLC.Appearance.Options.UseFont = true;
             this.availabilityLC.Appearance.Options.UseForeColor = true;
-            this.availabilityLC.Location = new System.Drawing.Point(156, 346);
-            this.availabilityLC.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.availabilityLC.Location = new System.Drawing.Point(134, 281);
+            this.availabilityLC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.availabilityLC.Name = "availabilityLC";
-            this.availabilityLC.Size = new System.Drawing.Size(56, 18);
+            this.availabilityLC.Size = new System.Drawing.Size(44, 16);
             this.availabilityLC.TabIndex = 45;
             this.availabilityLC.Text = "Locked";
             // 
             // accountTS
             // 
             this.accountTS.EditValue = true;
-            this.accountTS.Location = new System.Drawing.Point(35, 333);
-            this.accountTS.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.accountTS.Location = new System.Drawing.Point(30, 271);
+            this.accountTS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.accountTS.Name = "accountTS";
             this.accountTS.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accountTS.Properties.Appearance.Options.UseFont = true;
@@ -340,7 +340,7 @@
             this.accountTS.Properties.OffText = "Off";
             this.accountTS.Properties.OnText = "On";
             this.accountTS.Properties.ThumbWidth = 10;
-            this.accountTS.Size = new System.Drawing.Size(122, 43);
+            this.accountTS.Size = new System.Drawing.Size(105, 35);
             this.accountTS.TabIndex = 44;
             // 
             // deleteBTN
@@ -350,9 +350,10 @@
             this.deleteBTN.Appearance.Options.UseBackColor = true;
             this.deleteBTN.Appearance.Options.UseFont = true;
             this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("deleteBTN.ImageOptions.Image")));
-            this.deleteBTN.Location = new System.Drawing.Point(727, 331);
+            this.deleteBTN.Location = new System.Drawing.Point(623, 269);
+            this.deleteBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteBTN.Name = "deleteBTN";
-            this.deleteBTN.Size = new System.Drawing.Size(123, 45);
+            this.deleteBTN.Size = new System.Drawing.Size(105, 40);
             this.deleteBTN.TabIndex = 46;
             this.deleteBTN.Text = "Delete";
             this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
@@ -364,9 +365,10 @@
             this.saveBTN.Appearance.Options.UseBackColor = true;
             this.saveBTN.Appearance.Options.UseFont = true;
             this.saveBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("saveBTN.ImageOptions.Image")));
-            this.saveBTN.Location = new System.Drawing.Point(585, 331);
+            this.saveBTN.Location = new System.Drawing.Point(501, 269);
+            this.saveBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBTN.Name = "saveBTN";
-            this.saveBTN.Size = new System.Drawing.Size(123, 45);
+            this.saveBTN.Size = new System.Drawing.Size(105, 40);
             this.saveBTN.TabIndex = 47;
             this.saveBTN.Text = "Save";
             this.saveBTN.Click += new System.EventHandler(this.saveBTN_Click);
@@ -375,9 +377,10 @@
             // 
             this.changepasswordHLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changepasswordHLBL.Appearance.Options.UseFont = true;
-            this.changepasswordHLBL.Location = new System.Drawing.Point(664, 176);
+            this.changepasswordHLBL.Location = new System.Drawing.Point(569, 143);
+            this.changepasswordHLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.changepasswordHLBL.Name = "changepasswordHLBL";
-            this.changepasswordHLBL.Size = new System.Drawing.Size(82, 18);
+            this.changepasswordHLBL.Size = new System.Drawing.Size(64, 16);
             this.changepasswordHLBL.TabIndex = 48;
             this.changepasswordHLBL.Text = "Click Here!";
             this.changepasswordHLBL.Click += new System.EventHandler(this.changepasswordHLBL_Click);
@@ -388,9 +391,10 @@
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(664, 155);
+            this.labelControl5.Location = new System.Drawing.Point(569, 126);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(125, 18);
+            this.labelControl5.Size = new System.Drawing.Size(102, 16);
             this.labelControl5.TabIndex = 49;
             this.labelControl5.Text = "Forgot Password?";
             // 
@@ -398,9 +402,9 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 414);
+            this.ClientSize = new System.Drawing.Size(775, 336);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.changepasswordHLBL);
             this.Controls.Add(this.saveBTN);
@@ -425,6 +429,7 @@
             this.Controls.Add(this.usernameTE);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "EditDeleteEmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

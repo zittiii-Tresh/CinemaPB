@@ -160,7 +160,9 @@ namespace CinemaPB.Forms
             // 🔹 Display labels
             movienameLBL.Text = selectedShowtime.Title;
             showdateLBL.Text = selectedShowtime.ShowDate.ToString("MMMM dd, yyyy");
-            timeslotLBL.Text = $"{selectedShowtime.StartTimeFormatted} - {selectedShowtime.EndTimeFormatted}";
+            DateTime startDateTime = DateTime.Today.Add(selectedShowtime.StartTime);
+            DateTime endDateTime = DateTime.Today.Add(selectedShowtime.EndTime);
+            timeslotLBL.Text = $"{startDateTime:hh\\:mm tt} - {endDateTime:hh\\:mm tt}";
             priceLBL.Text = selectedShowtime.Price.ToString("N2");
 
             // 🔹 Set LookUpEdit & DateEdit

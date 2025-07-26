@@ -79,5 +79,26 @@ namespace CinemaPB.Forms
         {
             FormHelper.LoadUserControl(mainSPanel, new EmployeeLogs());
         }
+
+        private void dailysalesACE_Click(object sender, EventArgs e)
+        {
+            var report = new Reports.DailySalesReport();
+            var tool = new DevExpress.XtraReports.UI.ReportPrintTool(report);
+            tool.ShowPreviewDialog();
+        }
+
+        private void weeklysalesACE_Click(object sender, EventArgs e)
+        {
+            var report = new Reports.WeeklySalesReport();
+            var tool = new DevExpress.XtraReports.UI.ReportPrintTool(report);
+            tool.ShowPreviewDialog();
+        }
+
+        private void monthlysalesACE_Click(object sender, EventArgs e)
+        {
+            var report = new Reports.SalesReport();
+            var tool = new DevExpress.XtraReports.UI.ReportPrintTool(report);
+            tool.ShowPreviewDialog();
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeLogs));
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
@@ -57,8 +58,9 @@
             this.sidePanel1.Controls.Add(this.labelControl1);
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel1.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(1442, 96);
+            this.sidePanel1.Size = new System.Drawing.Size(1236, 78);
             this.sidePanel1.TabIndex = 0;
             this.sidePanel1.Text = "sidePanel1";
             // 
@@ -68,9 +70,10 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(58, 45);
+            this.labelControl1.Location = new System.Drawing.Point(50, 37);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(218, 37);
+            this.labelControl1.Size = new System.Drawing.Size(176, 28);
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Employee Logs";
             // 
@@ -78,9 +81,10 @@
             // 
             this.sidePanel2.BorderThickness = 0;
             this.sidePanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel2.Location = new System.Drawing.Point(1389, 96);
+            this.sidePanel2.Location = new System.Drawing.Point(1191, 78);
+            this.sidePanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel2.Name = "sidePanel2";
-            this.sidePanel2.Size = new System.Drawing.Size(53, 646);
+            this.sidePanel2.Size = new System.Drawing.Size(45, 525);
             this.sidePanel2.TabIndex = 1;
             this.sidePanel2.Text = "sidePanel2";
             // 
@@ -88,9 +92,10 @@
             // 
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel3.Location = new System.Drawing.Point(0, 96);
+            this.sidePanel3.Location = new System.Drawing.Point(0, 78);
+            this.sidePanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel3.Name = "sidePanel3";
-            this.sidePanel3.Size = new System.Drawing.Size(58, 646);
+            this.sidePanel3.Size = new System.Drawing.Size(50, 525);
             this.sidePanel3.TabIndex = 2;
             this.sidePanel3.Text = "sidePanel3";
             // 
@@ -101,9 +106,10 @@
             this.sidePanel4.Controls.Add(this.sidePanel7);
             this.sidePanel4.Controls.Add(this.sidePanel6);
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel4.Location = new System.Drawing.Point(58, 609);
+            this.sidePanel4.Location = new System.Drawing.Point(50, 495);
+            this.sidePanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel4.Name = "sidePanel4";
-            this.sidePanel4.Size = new System.Drawing.Size(1331, 133);
+            this.sidePanel4.Size = new System.Drawing.Size(1141, 108);
             this.sidePanel4.TabIndex = 3;
             this.sidePanel4.Text = "sidePanel4";
             // 
@@ -114,21 +120,24 @@
             this.printBTN.Appearance.Options.UseBackColor = true;
             this.printBTN.Appearance.Options.UseFont = true;
             this.printBTN.Dock = System.Windows.Forms.DockStyle.Right;
-            this.printBTN.Location = new System.Drawing.Point(1211, 28);
-            this.printBTN.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.printBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("printBTN.ImageOptions.SvgImage")));
+            this.printBTN.Location = new System.Drawing.Point(1038, 23);
+            this.printBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.printBTN.Name = "printBTN";
             this.printBTN.Padding = new System.Windows.Forms.Padding(2);
-            this.printBTN.Size = new System.Drawing.Size(120, 50);
+            this.printBTN.Size = new System.Drawing.Size(103, 40);
             this.printBTN.TabIndex = 24;
             this.printBTN.Text = "PRINT";
+            this.printBTN.Click += new System.EventHandler(this.printBTN_Click);
             // 
             // sidePanel7
             // 
             this.sidePanel7.BorderThickness = 0;
             this.sidePanel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel7.Location = new System.Drawing.Point(0, 78);
+            this.sidePanel7.Location = new System.Drawing.Point(0, 63);
+            this.sidePanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel7.Name = "sidePanel7";
-            this.sidePanel7.Size = new System.Drawing.Size(1331, 55);
+            this.sidePanel7.Size = new System.Drawing.Size(1141, 45);
             this.sidePanel7.TabIndex = 0;
             this.sidePanel7.Text = "sidePanel7";
             // 
@@ -137,8 +146,9 @@
             this.sidePanel6.BorderThickness = 0;
             this.sidePanel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel6.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel6.Name = "sidePanel6";
-            this.sidePanel6.Size = new System.Drawing.Size(1331, 28);
+            this.sidePanel6.Size = new System.Drawing.Size(1141, 23);
             this.sidePanel6.TabIndex = 0;
             this.sidePanel6.Text = "sidePanel6";
             // 
@@ -147,19 +157,22 @@
             this.sidePanel5.BorderThickness = 0;
             this.sidePanel5.Controls.Add(this.gcEmployeeLogs);
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sidePanel5.Location = new System.Drawing.Point(58, 96);
+            this.sidePanel5.Location = new System.Drawing.Point(50, 78);
+            this.sidePanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel5.Name = "sidePanel5";
-            this.sidePanel5.Size = new System.Drawing.Size(1331, 513);
+            this.sidePanel5.Size = new System.Drawing.Size(1141, 417);
             this.sidePanel5.TabIndex = 4;
             this.sidePanel5.Text = "sidePanel5";
             // 
             // gcEmployeeLogs
             // 
             this.gcEmployeeLogs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcEmployeeLogs.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcEmployeeLogs.Location = new System.Drawing.Point(0, 0);
             this.gcEmployeeLogs.MainView = this.gvEmployeeLogs;
+            this.gcEmployeeLogs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcEmployeeLogs.Name = "gcEmployeeLogs";
-            this.gcEmployeeLogs.Size = new System.Drawing.Size(1331, 513);
+            this.gcEmployeeLogs.Size = new System.Drawing.Size(1141, 417);
             this.gcEmployeeLogs.TabIndex = 0;
             this.gcEmployeeLogs.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvEmployeeLogs});
@@ -173,12 +186,14 @@
             this.DateTime,
             this.Activity,
             this.Authentication});
+            this.gvEmployeeLogs.DetailHeight = 284;
             this.gvEmployeeLogs.GridControl = this.gcEmployeeLogs;
             this.gvEmployeeLogs.Name = "gvEmployeeLogs";
+            this.gvEmployeeLogs.OptionsEditForm.PopupEditFormWidth = 686;
             // 
             // LogID
             // 
-            this.LogID.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.LogID.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogID.AppearanceCell.Options.UseFont = true;
             this.LogID.AppearanceCell.Options.UseTextOptions = true;
             this.LogID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -192,18 +207,18 @@
             this.LogID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.LogID.Caption = "#";
             this.LogID.FieldName = "LogID";
-            this.LogID.MinWidth = 25;
+            this.LogID.MinWidth = 21;
             this.LogID.Name = "LogID";
             this.LogID.OptionsColumn.AllowEdit = false;
             this.LogID.OptionsColumn.AllowFocus = false;
             this.LogID.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.LogID.Visible = true;
             this.LogID.VisibleIndex = 0;
-            this.LogID.Width = 78;
+            this.LogID.Width = 67;
             // 
             // Username
             // 
-            this.Username.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Username.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Username.AppearanceCell.Options.UseFont = true;
             this.Username.AppearanceCell.Options.UseTextOptions = true;
             this.Username.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -217,18 +232,18 @@
             this.Username.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Username.Caption = "Username";
             this.Username.FieldName = "Username";
-            this.Username.MinWidth = 25;
+            this.Username.MinWidth = 21;
             this.Username.Name = "Username";
             this.Username.OptionsColumn.AllowEdit = false;
             this.Username.OptionsColumn.AllowFocus = false;
             this.Username.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Username.Visible = true;
             this.Username.VisibleIndex = 1;
-            this.Username.Width = 186;
+            this.Username.Width = 159;
             // 
             // DateTime
             // 
-            this.DateTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.DateTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateTime.AppearanceCell.Options.UseFont = true;
             this.DateTime.AppearanceCell.Options.UseTextOptions = true;
             this.DateTime.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -242,18 +257,18 @@
             this.DateTime.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.DateTime.Caption = "Date/Time";
             this.DateTime.FieldName = "DateTime";
-            this.DateTime.MinWidth = 25;
+            this.DateTime.MinWidth = 21;
             this.DateTime.Name = "DateTime";
             this.DateTime.OptionsColumn.AllowEdit = false;
             this.DateTime.OptionsColumn.AllowFocus = false;
             this.DateTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.DateTime.Visible = true;
             this.DateTime.VisibleIndex = 2;
-            this.DateTime.Width = 256;
+            this.DateTime.Width = 219;
             // 
             // Activity
             // 
-            this.Activity.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Italic);
+            this.Activity.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Activity.AppearanceCell.ForeColor = System.Drawing.Color.Gray;
             this.Activity.AppearanceCell.Options.UseFont = true;
             this.Activity.AppearanceCell.Options.UseForeColor = true;
@@ -269,18 +284,18 @@
             this.Activity.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Activity.Caption = "Activity";
             this.Activity.FieldName = "Activity";
-            this.Activity.MinWidth = 25;
+            this.Activity.MinWidth = 21;
             this.Activity.Name = "Activity";
             this.Activity.OptionsColumn.AllowEdit = false;
             this.Activity.OptionsColumn.AllowFocus = false;
             this.Activity.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Activity.Visible = true;
             this.Activity.VisibleIndex = 4;
-            this.Activity.Width = 335;
+            this.Activity.Width = 287;
             // 
             // Authentication
             // 
-            this.Authentication.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Authentication.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Authentication.AppearanceCell.Options.UseFont = true;
             this.Authentication.AppearanceCell.Options.UseTextOptions = true;
             this.Authentication.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -292,28 +307,29 @@
             this.Authentication.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Authentication.Caption = "Authentication";
             this.Authentication.FieldName = "Authentication";
-            this.Authentication.MinWidth = 25;
+            this.Authentication.MinWidth = 21;
             this.Authentication.Name = "Authentication";
             this.Authentication.OptionsColumn.AllowEdit = false;
             this.Authentication.OptionsColumn.AllowFocus = false;
             this.Authentication.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Authentication.Visible = true;
             this.Authentication.VisibleIndex = 3;
-            this.Authentication.Width = 166;
+            this.Authentication.Width = 142;
             // 
             // EmployeeLogs
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.sidePanel5);
             this.Controls.Add(this.sidePanel4);
             this.Controls.Add(this.sidePanel3);
             this.Controls.Add(this.sidePanel2);
             this.Controls.Add(this.sidePanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EmployeeLogs";
-            this.Size = new System.Drawing.Size(1442, 742);
+            this.Size = new System.Drawing.Size(1236, 603);
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
             this.sidePanel4.ResumeLayout(false);
