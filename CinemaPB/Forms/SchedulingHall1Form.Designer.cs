@@ -29,16 +29,16 @@ namespace CinemaPB.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchedulingHall1Form));
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel6 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel10 = new DevExpress.XtraEditors.SidePanel();
@@ -402,7 +402,7 @@ namespace CinemaPB.Forms
             this.sidePanel11.Controls.Add(this.label5);
             this.sidePanel11.Controls.Add(this.saveBTN);
             this.sidePanel11.Controls.Add(this.availablemovieLUE);
-            this.sidePanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sidePanel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel11.Location = new System.Drawing.Point(0, 0);
             this.sidePanel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel11.Name = "sidePanel11";
@@ -703,10 +703,10 @@ namespace CinemaPB.Forms
             // 
             // Title
             // 
-            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.Title.AppearanceCell.Options.UseFont = true;
             this.Title.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Title.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.Title.AppearanceHeader.Options.UseBackColor = true;
             this.Title.AppearanceHeader.Options.UseFont = true;
             this.Title.AppearanceHeader.Options.UseTextOptions = true;
@@ -719,13 +719,14 @@ namespace CinemaPB.Forms
             this.Title.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Title.Visible = true;
             this.Title.VisibleIndex = 0;
+            this.Title.Width = 333;
             // 
             // StartTime
             // 
-            this.StartTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.StartTime.AppearanceCell.Options.UseFont = true;
             this.StartTime.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.StartTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.StartTime.AppearanceHeader.Options.UseBackColor = true;
             this.StartTime.AppearanceHeader.Options.UseFont = true;
             this.StartTime.AppearanceHeader.Options.UseTextOptions = true;
@@ -738,13 +739,14 @@ namespace CinemaPB.Forms
             this.StartTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.StartTime.Visible = true;
             this.StartTime.VisibleIndex = 1;
+            this.StartTime.Width = 142;
             // 
             // EndTime
             // 
-            this.EndTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EndTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.EndTime.AppearanceCell.Options.UseFont = true;
             this.EndTime.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.EndTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EndTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.EndTime.AppearanceHeader.Options.UseBackColor = true;
             this.EndTime.AppearanceHeader.Options.UseFont = true;
             this.EndTime.AppearanceHeader.Options.UseTextOptions = true;
@@ -757,32 +759,34 @@ namespace CinemaPB.Forms
             this.EndTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.EndTime.Visible = true;
             this.EndTime.VisibleIndex = 2;
+            this.EndTime.Width = 137;
             // 
             // DayType
             // 
-            this.DayType.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayType.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.DayType.AppearanceCell.Options.UseFont = true;
             this.DayType.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DayType.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayType.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.DayType.AppearanceHeader.Options.UseBackColor = true;
             this.DayType.AppearanceHeader.Options.UseFont = true;
             this.DayType.AppearanceHeader.Options.UseTextOptions = true;
             this.DayType.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.DayType.Caption = "Day Type";
+            this.DayType.Caption = "Day";
             this.DayType.FieldName = "DayType";
             this.DayType.Name = "DayType";
             this.DayType.OptionsColumn.AllowEdit = false;
             this.DayType.OptionsColumn.AllowFocus = false;
             this.DayType.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.DayType.Visible = true;
-            this.DayType.VisibleIndex = 3;
+            this.DayType.VisibleIndex = 5;
+            this.DayType.Width = 147;
             // 
             // Price
             // 
-            this.Price.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.Price.AppearanceCell.Options.UseFont = true;
             this.Price.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Price.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.Price.AppearanceHeader.Options.UseBackColor = true;
             this.Price.AppearanceHeader.Options.UseFont = true;
             this.Price.AppearanceHeader.Options.UseTextOptions = true;
@@ -794,14 +798,15 @@ namespace CinemaPB.Forms
             this.Price.OptionsColumn.AllowFocus = false;
             this.Price.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Price.Visible = true;
-            this.Price.VisibleIndex = 4;
+            this.Price.VisibleIndex = 6;
+            this.Price.Width = 136;
             // 
             // ShowDate
             // 
-            this.ShowDate.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowDate.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.ShowDate.AppearanceCell.Options.UseFont = true;
             this.ShowDate.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ShowDate.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowDate.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.ShowDate.AppearanceHeader.Options.UseBackColor = true;
             this.ShowDate.AppearanceHeader.Options.UseFont = true;
             this.ShowDate.AppearanceHeader.Options.UseTextOptions = true;
@@ -813,14 +818,15 @@ namespace CinemaPB.Forms
             this.ShowDate.OptionsColumn.AllowFocus = false;
             this.ShowDate.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.ShowDate.Visible = true;
-            this.ShowDate.VisibleIndex = 5;
+            this.ShowDate.VisibleIndex = 4;
+            this.ShowDate.Width = 207;
             // 
             // Screening
             // 
-            this.Screening.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Screening.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.Screening.AppearanceCell.Options.UseFont = true;
             this.Screening.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Screening.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Screening.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.Screening.AppearanceHeader.Options.UseBackColor = true;
             this.Screening.AppearanceHeader.Options.UseFont = true;
             this.Screening.AppearanceHeader.Options.UseTextOptions = true;
@@ -832,14 +838,15 @@ namespace CinemaPB.Forms
             this.Screening.OptionsColumn.AllowFocus = false;
             this.Screening.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Screening.Visible = true;
-            this.Screening.VisibleIndex = 6;
+            this.Screening.VisibleIndex = 3;
+            this.Screening.Width = 248;
             // 
             // repositoryItemButtonEditUpdate
             // 
             this.repositoryItemButtonEditUpdate.AutoHeight = false;
             this.repositoryItemButtonEditUpdate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "EDIT", -1, true, true, false, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "DELETE", -1, true, true, false, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "EDIT", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "DELETE", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEditUpdate.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.repositoryItemButtonEditUpdate.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.repositoryItemButtonEditUpdate.HideSelection = false;

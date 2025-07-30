@@ -44,6 +44,8 @@
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.seatPanel = new DevExpress.XtraEditors.SidePanel();
+            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
+            this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -150,8 +152,6 @@
             this.G6 = new DevExpress.XtraEditors.SimpleButton();
             this.closeBTN = new DevExpress.XtraEditors.SimpleButton();
             this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
-            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
-            this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
             ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).BeginInit();
             this.sidePanel1.SuspendLayout();
             this.sidePanel2.SuspendLayout();
@@ -460,13 +460,36 @@
             this.seatPanel.TabIndex = 94;
             this.seatPanel.Text = "sidePanel3";
             // 
+            // labelControl26
+            // 
+            this.labelControl26.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl26.Appearance.ForeColor = System.Drawing.Color.Silver;
+            this.labelControl26.Appearance.Options.UseFont = true;
+            this.labelControl26.Appearance.Options.UseForeColor = true;
+            this.labelControl26.Location = new System.Drawing.Point(807, 154);
+            this.labelControl26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl26.Name = "labelControl26";
+            this.labelControl26.Size = new System.Drawing.Size(39, 17);
+            this.labelControl26.TabIndex = 305;
+            this.labelControl26.Text = "E  X  I  T";
+            // 
+            // sidePanel4
+            // 
+            this.sidePanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel4.BackgroundImage")));
+            this.sidePanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.sidePanel4.Location = new System.Drawing.Point(797, 101);
+            this.sidePanel4.Name = "sidePanel4";
+            this.sidePanel4.Size = new System.Drawing.Size(58, 48);
+            this.sidePanel4.TabIndex = 304;
+            this.sidePanel4.Text = "sidePanel4";
+            // 
             // labelControl25
             // 
             this.labelControl25.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl25.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.labelControl25.Appearance.Options.UseFont = true;
             this.labelControl25.Appearance.Options.UseForeColor = true;
-            this.labelControl25.Location = new System.Drawing.Point(3, 187);
+            this.labelControl25.Location = new System.Drawing.Point(3, 154);
             this.labelControl25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl25.Name = "labelControl25";
             this.labelControl25.Size = new System.Drawing.Size(102, 17);
@@ -479,7 +502,7 @@
             this.sidePanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.sidePanel3.Location = new System.Drawing.Point(3, 101);
             this.sidePanel3.Name = "sidePanel3";
-            this.sidePanel3.Size = new System.Drawing.Size(80, 81);
+            this.sidePanel3.Size = new System.Drawing.Size(58, 48);
             this.sidePanel3.TabIndex = 302;
             this.sidePanel3.Text = "sidePanel3";
             // 
@@ -1744,29 +1767,6 @@
             this.closeBTN.Size = new System.Drawing.Size(28, 24);
             this.closeBTN.TabIndex = 95;
             this.closeBTN.Click += new System.EventHandler(this.closeBTN_Click);
-            // 
-            // labelControl26
-            // 
-            this.labelControl26.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl26.Appearance.ForeColor = System.Drawing.Color.Silver;
-            this.labelControl26.Appearance.Options.UseFont = true;
-            this.labelControl26.Appearance.Options.UseForeColor = true;
-            this.labelControl26.Location = new System.Drawing.Point(829, 191);
-            this.labelControl26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl26.Name = "labelControl26";
-            this.labelControl26.Size = new System.Drawing.Size(39, 17);
-            this.labelControl26.TabIndex = 305;
-            this.labelControl26.Text = "E  X  I  T";
-            // 
-            // sidePanel4
-            // 
-            this.sidePanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel4.BackgroundImage")));
-            this.sidePanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sidePanel4.Location = new System.Drawing.Point(807, 101);
-            this.sidePanel4.Name = "sidePanel4";
-            this.sidePanel4.Size = new System.Drawing.Size(80, 81);
-            this.sidePanel4.TabIndex = 304;
-            this.sidePanel4.Text = "sidePanel4";
             // 
             // ReserveSeatsForm2
             // 

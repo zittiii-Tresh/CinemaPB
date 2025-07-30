@@ -36,7 +36,6 @@
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.showtimehall1BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.showtimehall2BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.showtimelistACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.logoutBTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mainSPanel = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
@@ -58,7 +57,6 @@
             this.staffLBL,
             this.accordionControlSeparator1,
             this.accordionControlElement4,
-            this.showtimelistACE,
             this.logoutBTN});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -145,22 +143,6 @@
             this.showtimehall2BTN.Text = "Hall 2";
             this.showtimehall2BTN.Click += new System.EventHandler(this.showtimehall2BTN_Click);
             // 
-            // showtimelistACE
-            // 
-            this.showtimelistACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtimelistACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.showtimelistACE.Appearance.Default.Options.UseFont = true;
-            this.showtimelistACE.Appearance.Default.Options.UseForeColor = true;
-            this.showtimelistACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.showtimelistACE.Appearance.Hovered.Options.UseBackColor = true;
-            this.showtimelistACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
-            this.showtimelistACE.Appearance.Pressed.Options.UseBackColor = true;
-            this.showtimelistACE.HeaderIndent = 34;
-            this.showtimelistACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("showtimelistACE.ImageOptions.SvgImage")));
-            this.showtimelistACE.Name = "showtimelistACE";
-            this.showtimelistACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.showtimelistACE.Text = "Showtime List";
-            // 
             // logoutBTN
             // 
             this.logoutBTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -172,7 +154,7 @@
             this.logoutBTN.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
             this.logoutBTN.Appearance.Pressed.Options.UseBackColor = true;
             this.logoutBTN.HeaderIndent = 34;
-            this.logoutBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
+            this.logoutBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("logoutBTN.ImageOptions.SvgImage")));
             this.logoutBTN.Name = "logoutBTN";
             this.logoutBTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.logoutBTN.Text = "Logout";
@@ -237,7 +219,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement showtimehall2BTN;
         private DevExpress.XtraEditors.SidePanel mainSPanel;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement showtimelistACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement logoutBTN;
     }
 }

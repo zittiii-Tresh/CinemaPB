@@ -704,7 +704,7 @@
             // 
             // Title
             // 
-            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.Title.AppearanceCell.Options.UseFont = true;
             this.Title.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Title.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
@@ -720,11 +720,11 @@
             this.Title.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Title.Visible = true;
             this.Title.VisibleIndex = 0;
-            this.Title.Width = 192;
+            this.Title.Width = 316;
             // 
             // StartTime
             // 
-            this.StartTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.StartTime.AppearanceCell.Options.UseFont = true;
             this.StartTime.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.StartTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
@@ -740,11 +740,11 @@
             this.StartTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.StartTime.Visible = true;
             this.StartTime.VisibleIndex = 1;
-            this.StartTime.Width = 192;
+            this.StartTime.Width = 142;
             // 
             // EndTime
             // 
-            this.EndTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EndTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.EndTime.AppearanceCell.Options.UseFont = true;
             this.EndTime.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.EndTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
@@ -760,11 +760,11 @@
             this.EndTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.EndTime.Visible = true;
             this.EndTime.VisibleIndex = 2;
-            this.EndTime.Width = 192;
+            this.EndTime.Width = 138;
             // 
             // DayType
             // 
-            this.DayType.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayType.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.DayType.AppearanceCell.Options.UseFont = true;
             this.DayType.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DayType.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
@@ -779,12 +779,12 @@
             this.DayType.OptionsColumn.AllowFocus = false;
             this.DayType.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.DayType.Visible = true;
-            this.DayType.VisibleIndex = 3;
-            this.DayType.Width = 192;
+            this.DayType.VisibleIndex = 5;
+            this.DayType.Width = 204;
             // 
             // Price
             // 
-            this.Price.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.Price.AppearanceCell.Options.UseFont = true;
             this.Price.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Price.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
@@ -799,12 +799,12 @@
             this.Price.OptionsColumn.AllowFocus = false;
             this.Price.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Price.Visible = true;
-            this.Price.VisibleIndex = 4;
-            this.Price.Width = 192;
+            this.Price.VisibleIndex = 6;
+            this.Price.Width = 127;
             // 
             // ShowDate
             // 
-            this.ShowDate.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowDate.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.ShowDate.AppearanceCell.Options.UseFont = true;
             this.ShowDate.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ShowDate.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
@@ -819,12 +819,12 @@
             this.ShowDate.OptionsColumn.AllowFocus = false;
             this.ShowDate.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.ShowDate.Visible = true;
-            this.ShowDate.VisibleIndex = 5;
-            this.ShowDate.Width = 161;
+            this.ShowDate.VisibleIndex = 4;
+            this.ShowDate.Width = 179;
             // 
             // Screening
             // 
-            this.Screening.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Screening.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.Screening.AppearanceCell.Options.UseFont = true;
             this.Screening.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Screening.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
@@ -839,8 +839,8 @@
             this.Screening.OptionsColumn.AllowFocus = false;
             this.Screening.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Screening.Visible = true;
-            this.Screening.VisibleIndex = 6;
-            this.Screening.Width = 229;
+            this.Screening.VisibleIndex = 3;
+            this.Screening.Width = 244;
             // 
             // repositoryItemButtonEditUpdate
             // 

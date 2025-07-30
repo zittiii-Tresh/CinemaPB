@@ -131,6 +131,7 @@
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
             this.seatPanel = new DevExpress.XtraEditors.SidePanel();
+            this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
@@ -138,7 +139,6 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.closeBTN = new DevExpress.XtraEditors.SimpleButton();
             this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
-            this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).BeginInit();
             this.sidePanel1.SuspendLayout();
             this.sidePanel2.SuspendLayout();
@@ -1533,13 +1533,23 @@
             this.seatPanel.TabIndex = 94;
             this.seatPanel.Text = "sidePanel3";
             // 
+            // sidePanel3
+            // 
+            this.sidePanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel3.BackgroundImage")));
+            this.sidePanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.sidePanel3.Location = new System.Drawing.Point(0, 109);
+            this.sidePanel3.Name = "sidePanel3";
+            this.sidePanel3.Size = new System.Drawing.Size(58, 48);
+            this.sidePanel3.TabIndex = 96;
+            this.sidePanel3.Text = "sidePanel3";
+            // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(819, 162);
+            this.labelControl5.Location = new System.Drawing.Point(810, 162);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(39, 17);
@@ -1563,7 +1573,7 @@
             // 
             this.sidePanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel4.BackgroundImage")));
             this.sidePanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sidePanel4.Location = new System.Drawing.Point(810, 109);
+            this.sidePanel4.Location = new System.Drawing.Point(801, 109);
             this.sidePanel4.Name = "sidePanel4";
             this.sidePanel4.Size = new System.Drawing.Size(58, 48);
             this.sidePanel4.TabIndex = 97;
@@ -1610,16 +1620,6 @@
             this.closeBTN.Size = new System.Drawing.Size(28, 24);
             this.closeBTN.TabIndex = 96;
             this.closeBTN.Click += new System.EventHandler(this.closeBTN_Click);
-            // 
-            // sidePanel3
-            // 
-            this.sidePanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel3.BackgroundImage")));
-            this.sidePanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sidePanel3.Location = new System.Drawing.Point(0, 109);
-            this.sidePanel3.Name = "sidePanel3";
-            this.sidePanel3.Size = new System.Drawing.Size(58, 48);
-            this.sidePanel3.TabIndex = 96;
-            this.sidePanel3.Text = "sidePanel3";
             // 
             // ReserveSeatsForm
             // 
