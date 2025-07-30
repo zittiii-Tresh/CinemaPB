@@ -133,6 +133,8 @@
             // sidePanel6
             // 
             this.sidePanel6.AllowResize = false;
+            this.sidePanel6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel6.Appearance.Options.UseBackColor = true;
             this.sidePanel6.BorderThickness = 0;
             this.sidePanel6.Controls.Add(this.sidePanel10);
             this.sidePanel6.Controls.Add(this.sidePanel9);
@@ -147,6 +149,8 @@
             // sidePanel10
             // 
             this.sidePanel10.AllowResize = false;
+            this.sidePanel10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel10.Appearance.Options.UseBackColor = true;
             this.sidePanel10.BorderThickness = 0;
             this.sidePanel10.Controls.Add(this.posterPE);
             this.sidePanel10.Dock = System.Windows.Forms.DockStyle.Left;
@@ -168,12 +172,15 @@
             this.posterPE.Properties.Appearance.Options.UseBackColor = true;
             this.posterPE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.posterPE.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.posterPE.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.posterPE.Size = new System.Drawing.Size(353, 515);
             this.posterPE.TabIndex = 0;
             // 
             // sidePanel9
             // 
             this.sidePanel9.AllowResize = false;
+            this.sidePanel9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel9.Appearance.Options.UseBackColor = true;
             this.sidePanel9.BorderThickness = 0;
             this.sidePanel9.Controls.Add(this.label10);
             this.sidePanel9.Controls.Add(this.label9);
@@ -235,7 +242,7 @@
             this.starttime3TE.Location = new System.Drawing.Point(4, 375);
             this.starttime3TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starttime3TE.Name = "starttime3TE";
-            this.starttime3TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.starttime3TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.starttime3TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.starttime3TE.Properties.Appearance.Options.UseBackColor = true;
             this.starttime3TE.Properties.Appearance.Options.UseFont = true;
@@ -253,7 +260,7 @@
             this.starttime2TE.Location = new System.Drawing.Point(4, 318);
             this.starttime2TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starttime2TE.Name = "starttime2TE";
-            this.starttime2TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.starttime2TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.starttime2TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.starttime2TE.Properties.Appearance.Options.UseBackColor = true;
             this.starttime2TE.Properties.Appearance.Options.UseFont = true;
@@ -271,7 +278,7 @@
             this.starttime1TE.Location = new System.Drawing.Point(4, 259);
             this.starttime1TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starttime1TE.Name = "starttime1TE";
-            this.starttime1TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.starttime1TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.starttime1TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.starttime1TE.Properties.Appearance.Options.UseBackColor = true;
             this.starttime1TE.Properties.Appearance.Options.UseFont = true;
@@ -371,6 +378,8 @@
             // sidePanel5
             // 
             this.sidePanel5.AllowResize = false;
+            this.sidePanel5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel5.Appearance.Options.UseBackColor = true;
             this.sidePanel5.BorderThickness = 0;
             this.sidePanel5.Controls.Add(this.sidePanel11);
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -384,6 +393,8 @@
             // sidePanel11
             // 
             this.sidePanel11.AllowResize = false;
+            this.sidePanel11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel11.Appearance.Options.UseBackColor = true;
             this.sidePanel11.BorderThickness = 0;
             this.sidePanel11.Controls.Add(this.deleteBTN);
             this.sidePanel11.Controls.Add(this.updateBTN);
@@ -411,7 +422,7 @@
             this.deleteBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteBTN.Name = "deleteBTN";
             this.deleteBTN.Padding = new System.Windows.Forms.Padding(2);
-            this.deleteBTN.Size = new System.Drawing.Size(102, 39);
+            this.deleteBTN.Size = new System.Drawing.Size(102, 42);
             this.deleteBTN.TabIndex = 33;
             this.deleteBTN.Text = "Delete";
             this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
@@ -427,7 +438,7 @@
             this.updateBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.updateBTN.Name = "updateBTN";
             this.updateBTN.Padding = new System.Windows.Forms.Padding(2);
-            this.updateBTN.Size = new System.Drawing.Size(102, 39);
+            this.updateBTN.Size = new System.Drawing.Size(102, 42);
             this.updateBTN.TabIndex = 32;
             this.updateBTN.Text = "Update";
             this.updateBTN.Click += new System.EventHandler(this.updateBTN_Click);
@@ -438,7 +449,7 @@
             this.showdateDE.Location = new System.Drawing.Point(318, 8);
             this.showdateDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.showdateDE.Name = "showdateDE";
-            this.showdateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.showdateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.showdateDE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showdateDE.Properties.Appearance.Options.UseBackColor = true;
             this.showdateDE.Properties.Appearance.Options.UseFont = true;
@@ -478,10 +489,10 @@
             this.saveBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBTN.Appearance.Options.UseBackColor = true;
             this.saveBTN.Appearance.Options.UseFont = true;
-            this.saveBTN.Location = new System.Drawing.Point(28, 128);
+            this.saveBTN.Location = new System.Drawing.Point(28, 123);
             this.saveBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBTN.Name = "saveBTN";
-            this.saveBTN.Size = new System.Drawing.Size(121, 30);
+            this.saveBTN.Size = new System.Drawing.Size(102, 42);
             this.saveBTN.TabIndex = 27;
             this.saveBTN.Text = "SAVE";
             this.saveBTN.Click += new System.EventHandler(this.saveBTN_Click);
@@ -491,7 +502,7 @@
             this.availablemovieLUE.Location = new System.Drawing.Point(26, 8);
             this.availablemovieLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.availablemovieLUE.Name = "availablemovieLUE";
-            this.availablemovieLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.availablemovieLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.availablemovieLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.availablemovieLUE.Properties.Appearance.Options.UseBackColor = true;
             this.availablemovieLUE.Properties.Appearance.Options.UseFont = true;
@@ -505,6 +516,8 @@
             // sidePanel4
             // 
             this.sidePanel4.AllowResize = false;
+            this.sidePanel4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel4.Appearance.Options.UseBackColor = true;
             this.sidePanel4.BorderThickness = 0;
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidePanel4.Location = new System.Drawing.Point(594, 125);
@@ -517,6 +530,8 @@
             // sidePanel3
             // 
             this.sidePanel3.AllowResize = false;
+            this.sidePanel3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel3.Appearance.Options.UseBackColor = true;
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel3.Location = new System.Drawing.Point(1, 125);
@@ -529,7 +544,7 @@
             // sidePanel2
             // 
             this.sidePanel2.AllowResize = false;
-            this.sidePanel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.sidePanel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.sidePanel2.Appearance.Options.UseBackColor = true;
             this.sidePanel2.BorderThickness = 0;
             this.sidePanel2.Controls.Add(this.labelControl4);
@@ -689,10 +704,10 @@
             // 
             // Title
             // 
-            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.AppearanceCell.Options.UseFont = true;
             this.Title.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Title.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.Title.AppearanceHeader.Options.UseBackColor = true;
             this.Title.AppearanceHeader.Options.UseFont = true;
             this.Title.AppearanceHeader.Options.UseTextOptions = true;
@@ -705,13 +720,14 @@
             this.Title.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Title.Visible = true;
             this.Title.VisibleIndex = 0;
+            this.Title.Width = 192;
             // 
             // StartTime
             // 
-            this.StartTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartTime.AppearanceCell.Options.UseFont = true;
             this.StartTime.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.StartTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.StartTime.AppearanceHeader.Options.UseBackColor = true;
             this.StartTime.AppearanceHeader.Options.UseFont = true;
             this.StartTime.AppearanceHeader.Options.UseTextOptions = true;
@@ -724,13 +740,14 @@
             this.StartTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.StartTime.Visible = true;
             this.StartTime.VisibleIndex = 1;
+            this.StartTime.Width = 192;
             // 
             // EndTime
             // 
-            this.EndTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EndTime.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EndTime.AppearanceCell.Options.UseFont = true;
             this.EndTime.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.EndTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EndTime.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.EndTime.AppearanceHeader.Options.UseBackColor = true;
             this.EndTime.AppearanceHeader.Options.UseFont = true;
             this.EndTime.AppearanceHeader.Options.UseTextOptions = true;
@@ -743,18 +760,19 @@
             this.EndTime.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.EndTime.Visible = true;
             this.EndTime.VisibleIndex = 2;
+            this.EndTime.Width = 192;
             // 
             // DayType
             // 
-            this.DayType.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayType.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DayType.AppearanceCell.Options.UseFont = true;
             this.DayType.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DayType.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayType.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.DayType.AppearanceHeader.Options.UseBackColor = true;
             this.DayType.AppearanceHeader.Options.UseFont = true;
             this.DayType.AppearanceHeader.Options.UseTextOptions = true;
             this.DayType.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.DayType.Caption = "Day Type";
+            this.DayType.Caption = "Day";
             this.DayType.FieldName = "DayType";
             this.DayType.Name = "DayType";
             this.DayType.OptionsColumn.AllowEdit = false;
@@ -762,13 +780,14 @@
             this.DayType.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.DayType.Visible = true;
             this.DayType.VisibleIndex = 3;
+            this.DayType.Width = 192;
             // 
             // Price
             // 
-            this.Price.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Price.AppearanceCell.Options.UseFont = true;
             this.Price.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Price.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.Price.AppearanceHeader.Options.UseBackColor = true;
             this.Price.AppearanceHeader.Options.UseFont = true;
             this.Price.AppearanceHeader.Options.UseTextOptions = true;
@@ -781,13 +800,14 @@
             this.Price.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Price.Visible = true;
             this.Price.VisibleIndex = 4;
+            this.Price.Width = 192;
             // 
             // ShowDate
             // 
-            this.ShowDate.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowDate.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowDate.AppearanceCell.Options.UseFont = true;
             this.ShowDate.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ShowDate.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowDate.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.ShowDate.AppearanceHeader.Options.UseBackColor = true;
             this.ShowDate.AppearanceHeader.Options.UseFont = true;
             this.ShowDate.AppearanceHeader.Options.UseTextOptions = true;
@@ -800,13 +820,14 @@
             this.ShowDate.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.ShowDate.Visible = true;
             this.ShowDate.VisibleIndex = 5;
+            this.ShowDate.Width = 161;
             // 
             // Screening
             // 
-            this.Screening.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Screening.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Screening.AppearanceCell.Options.UseFont = true;
             this.Screening.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Screening.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Screening.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.Screening.AppearanceHeader.Options.UseBackColor = true;
             this.Screening.AppearanceHeader.Options.UseFont = true;
             this.Screening.AppearanceHeader.Options.UseTextOptions = true;
@@ -819,6 +840,7 @@
             this.Screening.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.True;
             this.Screening.Visible = true;
             this.Screening.VisibleIndex = 6;
+            this.Screening.Width = 229;
             // 
             // repositoryItemButtonEditUpdate
             // 

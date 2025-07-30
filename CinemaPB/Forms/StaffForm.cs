@@ -28,5 +28,25 @@ namespace CinemaPB.Forms
         {
             FormHelper.LoadUserControl(mainSPanel, new Hall2Showing());
         }
+
+        private void logoutBTN_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to log out?",
+                "Confirm Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                UserSession.Username = null;
+
+                Login loginForm = new Login();
+                loginForm.Show();
+
+                this.Hide();
+            }
+        }
     }
 }

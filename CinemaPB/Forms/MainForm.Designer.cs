@@ -51,6 +51,7 @@
             this.dailysalesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.weeklysalesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.monthlysalesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.logoutBTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.mainSPanel = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
@@ -77,7 +78,8 @@
             this.employeelistACE,
             this.accordionControlElement6,
             this.accordionControlElement9,
-            this.SalesReportACE});
+            this.SalesReportACE,
+            this.logoutBTN});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.accordionControl1.Name = "accordionControl1";
@@ -443,6 +445,23 @@
             this.monthlysalesACE.Text = "Monthly Sales Report";
             this.monthlysalesACE.Click += new System.EventHandler(this.monthlysalesACE_Click);
             // 
+            // logoutBTN
+            // 
+            this.logoutBTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutBTN.Appearance.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.logoutBTN.Appearance.Default.Options.UseFont = true;
+            this.logoutBTN.Appearance.Default.Options.UseForeColor = true;
+            this.logoutBTN.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.logoutBTN.Appearance.Hovered.Options.UseBackColor = true;
+            this.logoutBTN.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.logoutBTN.Appearance.Pressed.Options.UseBackColor = true;
+            this.logoutBTN.HeaderIndent = 34;
+            this.logoutBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("logoutBTN.ImageOptions.SvgImage")));
+            this.logoutBTN.Name = "logoutBTN";
+            this.logoutBTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.logoutBTN.Text = "Logout";
+            this.logoutBTN.Click += new System.EventHandler(this.logoutBTN_Click);
+            // 
             // simpleButton1
             // 
             this.simpleButton1.Location = new System.Drawing.Point(166, 216);
@@ -527,5 +546,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement dailysalesACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement weeklysalesACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement monthlysalesACE;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement logoutBTN;
     }
 }

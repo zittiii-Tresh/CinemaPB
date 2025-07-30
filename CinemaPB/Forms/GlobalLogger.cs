@@ -138,5 +138,28 @@ namespace CinemaPB.Forms
                 }
             }
         }
+
+        public static void ticketLog(int ticketId, string activity, string username)
+        {
+            string connectionString = GlobalSetting.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string insertQuery = @"
+            INSERT INTO log.TicketLogs (TicketID, Username, DateTime, Activity)
+            VALUES (@TicketID, @Username, @DateTime, @Activity)";
+
+                using (SqlCommand cmd = new SqlCommand(insertQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@TicketID", ticketId);
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@DateTime", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@Activity", activity);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
