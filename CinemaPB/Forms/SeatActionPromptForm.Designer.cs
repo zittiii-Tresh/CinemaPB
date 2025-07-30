@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeatActionPromptForm));
             this.buyBTN = new DevExpress.XtraEditors.SimpleButton();
             this.reserveBTN = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -83,11 +84,12 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.reserveBTN);
             this.Controls.Add(this.buyBTN);
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("SeatActionPromptForm.IconOptions.SvgImage")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SeatActionPromptForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SeatActionPromptForm";
+            this.Text = "Buy/Reserve Seats";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -90,5 +90,73 @@ namespace CinemaPB.GlobalSQL
                 StatusID = @StatusID,
                 IsLocked = @IsLocked
             WHERE Username = @OriginalUsername";
+
+        public static string Ticket = @"
+                                    SELECT T.ShowtimeID,
+                                           T.TicketID,
+	                                       S.HallID,
+	                                       SE.SeatNumber,
+	                                       S.StartTime,
+	                                       S.EndTime,
+	                                       M.Title,
+	                                       CR.RatingName,
+	                                       MP.Price,
+	                                       S.ShowDate,
+	                                       PurchaseTime AS PurchasedDate
+
+                                    FROM Tickets T
+                                    LEFT JOIN dbo.Showtime S
+                                    ON S.ShowtimeID = T.ShowtimeID
+                                    LEFT JOIN mov.Movies M
+                                    ON M.MovieID = S.MovieID
+                                    LEFT JOIN mov.MoviePrices MP
+                                    ON MP.MoviePriceID = T.MoviePriceID
+                                    LEFT JOIN mov.ContentRating CR
+                                    ON CR.RatingID = m.RatingID
+                                    LEFT JOIN Seats SE
+                                    ON SE.SeatID = T.SeatID
+                                    WHERE T.ShowtimeID = @ShowtimeID AND T.SeatID = @SeatID;";
+
+        public static string DailyReport = @"SELECT 
+                                                M.MovieID,
+                                                M.Title AS MovieTitle,
+                                                COUNT(T.TicketID) AS TicketsSold,
+                                                FORMAT(SUM(MP.Price), 'N2') AS TotalRevenue
+                                            FROM Tickets T
+                                            LEFT JOIN Showtime S ON S.ShowtimeID = T.ShowtimeID
+                                            LEFT JOIN mov.Movies M ON M.MovieID = S.MovieID
+                                            LEFT JOIN mov.MoviePrices MP ON MP.MoviePriceID = T.MoviePriceID
+                                            WHERE CAST(S.ShowDate AS DATE) = CAST(GETDATE() AS DATE)
+                                            GROUP BY M.MovieID, M.Title;
+                                            ";
+
+        public static string WeeklyReport = @"SELECT 
+                                                M.MovieID,
+                                                M.Title AS MovieTitle,
+                                                COUNT(T.TicketID) AS TicketsSold,
+                                                FORMAT(SUM(MP.Price), 'N2') AS TotalRevenue
+                                            FROM Tickets T
+                                            LEFT JOIN Showtime S ON S.ShowtimeID = T.ShowtimeID
+                                            LEFT JOIN mov.Movies M ON M.MovieID = S.MovieID
+                                            LEFT JOIN mov.MoviePrices MP ON MP.MoviePriceID = T.MoviePriceID
+                                            WHERE 
+                                                S.ShowDate >= DATEADD(DAY, 1 - DATEPART(WEEKDAY, GETDATE()), CAST(GETDATE() AS DATE)) 
+                                                AND S.ShowDate < DATEADD(DAY, 8 - DATEPART(WEEKDAY, GETDATE()), CAST(GETDATE() AS DATE)) 
+                                            GROUP BY M.MovieID, M.Title;";
+
+        public static string MonthlyReport = @"SELECT 
+                                                        M.MovieID,
+                                                        M.Title AS MovieTitle,
+                                                        COUNT(T.TicketID) AS TicketsSold,
+                                                        FORMAT(SUM(MP.Price), 'N2') AS TotalRevenue
+                                                    FROM Tickets T
+                                                    LEFT JOIN Showtime S ON S.ShowtimeID = T.ShowtimeID
+                                                    LEFT JOIN mov.Movies M ON M.MovieID = S.MovieID
+                                                    LEFT JOIN mov.MoviePrices MP ON MP.MoviePriceID = T.MoviePriceID
+                                                    WHERE 
+                                                        MONTH(S.ShowDate) = MONTH(GETDATE()) AND
+                                                        YEAR(S.ShowDate) = YEAR(GETDATE())
+                                                    GROUP BY M.MovieID, M.Title;
+                                                    ";
     }
 }

@@ -2,16 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using CinemaPB.Forms;
-using CinemaPB.Infrastructure.Repositories;
 using CinemaPB.Configuration;
+using CinemaPB.Forms;
 using CinemaPB.Forms.LogsForm;
+using CinemaPB.Infrastructure.Repositories;
+using CinemaPB.Reports;
+using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 
 namespace CinemaPB.Forms
 {
@@ -82,23 +85,65 @@ namespace CinemaPB.Forms
 
         private void dailysalesACE_Click(object sender, EventArgs e)
         {
-            var report = new Reports.DailySalesReport();
-            var tool = new DevExpress.XtraReports.UI.ReportPrintTool(report);
-            tool.ShowPreviewDialog();
+            DailySalesReport report = new DailySalesReport();
+
+            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
+            {
+                connection.Open();
+                string query = GlobalSQL.SQLQuery.DailyReport;
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+                        report.DataSource = table;
+                        report.ShowPreview();
+                    }
+                }
+            }
         }
 
         private void weeklysalesACE_Click(object sender, EventArgs e)
         {
-            var report = new Reports.WeeklySalesReport();
-            var tool = new DevExpress.XtraReports.UI.ReportPrintTool(report);
-            tool.ShowPreviewDialog();
+            WeeklySalesReport report = new WeeklySalesReport();
+
+            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
+            {
+                connection.Open();
+                string query = GlobalSQL.SQLQuery.WeeklyReport;
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+                        report.DataSource = table;
+                        report.ShowPreview();
+                    }
+                }
+            }
         }
 
         private void monthlysalesACE_Click(object sender, EventArgs e)
         {
-            var report = new Reports.SalesReport();
-            var tool = new DevExpress.XtraReports.UI.ReportPrintTool(report);
-            tool.ShowPreviewDialog();
+            SalesReport report = new SalesReport();
+
+            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
+            {
+                connection.Open();
+                string query = GlobalSQL.SQLQuery.MonthlyReport;
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+                        report.DataSource = table;
+                        report.ShowPreview();
+                    }
+                }
+            }
         }
 
         private void logoutBTN_Click(object sender, EventArgs e)

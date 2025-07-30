@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,16 +12,17 @@ using System.Windows.Forms;
 using CinemaPB.Configuration;
 using CinemaPB.Infrastructure.Repositories;
 using CinemaPB.ModelMovie;
+using CinemaPB.ModelSeat;
+using CinemaPB.ModelShowing;
+using CinemaPB.ModelShowtime;
+using CinemaPB.Reports;
+using Dapper;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraEditors.Filtering.Templates;
 using DevExpress.XtraGrid.Views.Base.ViewInfo;
+using DevExpress.XtraReports.UI;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
-using Dapper;
-using CinemaPB.ModelShowing;
-using System.IO;
-using CinemaPB.ModelShowtime;
-using CinemaPB.ModelSeat;
 
 
 
@@ -132,7 +134,7 @@ namespace CinemaPB.Forms
                     }
                     else if (seat.SeatStatusID == 2)
                     {
-                        btn.Appearance.BackColor = Color.FromArgb(90, 144, 255); // Reserved
+                        btn.Appearance.BackColor = Color.FromArgb(0, 0, 255); // Reserved
                         btn.Enabled = true;
                         tooltip = !string.IsNullOrWhiteSpace(seat.Username)
                             ? $"Reserved by: {seat.Username}"
@@ -190,7 +192,7 @@ namespace CinemaPB.Forms
             int seatId = _seatRepository.GetSeatIDBySeatNumberAndHall(seatNumber, _showing.HallID);
 
             // 1. Check current status of the seat
-            var seatInfo = _seatRepository.GetSeatWithUsername(_showing.ShowtimeID, seatId); // ← you'll define this method
+            var seatInfo = _seatRepository.GetSeatWithUsername(_showing.ShowtimeID, seatId); 
 
             if (string.IsNullOrEmpty(seatInfo.Username) && seatInfo.SeatStatusID == 0)
                 return;
@@ -209,7 +211,13 @@ namespace CinemaPB.Forms
                             btn.Appearance.BackColor = Color.FromArgb(240, 101, 101); // Sold
                             btn.Enabled = false;
                             toolTipController1.SetToolTip(btn, $"Sold - Seat {seatNumber}");
+                            GlobalLogger.ticketLog(
+                                                   _ticketRepository.GetLastInsertedTicketID(),  
+                                                   $"Paid ticket for reserved seat {btn.Name} (ShowtimeID: {_showing.ShowtimeID})",
+                                                   UserSession.Username
+                                               );
                             XtraMessageBox.Show("Reservation confirmed and ticket sold.", "Success");
+                            ShowMovieTicket(_showing.ShowtimeID, seatId);
                         }
                         else
                         {
@@ -222,7 +230,7 @@ namespace CinemaPB.Forms
                     }
                 }
 
-                return; // Skip Buy/Reserve prompt
+                return;
             }
 
             // 2. Handle available seats
@@ -241,7 +249,16 @@ namespace CinemaPB.Forms
                         bool inserted = _ticketRepository.InsertTicket(_showing.ShowtimeID, seatId, _showing.MoviePriceID);
 
                         if (inserted)
+                        {
+                            GlobalLogger.ticketLog(
+                                                    _ticketRepository.GetLastInsertedTicketID(),  // You may need to implement this
+                                                    $"Purchased ticket for seat {btn.Name} (ShowtimeID: {_showing.ShowtimeID})",
+                                                    UserSession.Username
+                                                );
                             XtraMessageBox.Show($"Seat {btn.Name} has been purchased. Ticket saved.", "Success");
+                            ShowMovieTicket(_showing.ShowtimeID, seatId);
+                        }
+
                         else
                             XtraMessageBox.Show("Ticket failed to save!", "Error");
                     }
@@ -257,13 +274,42 @@ namespace CinemaPB.Forms
 
                     if (reserveForm.ShowDialog() == DialogResult.OK)
                     {
-                        btn.Appearance.BackColor = Color.FromArgb(90, 144, 255); // Reserved
+                        btn.Appearance.BackColor = Color.FromArgb(0, 0, 255); // Reserved
                         btn.Enabled = true;
+                        GlobalLogger.ticketLog(
+                                                   _ticketRepository.GetLastInsertedTicketID(),  // You may need to implement this
+                                                   $"Reserved ticket for seat {btn.Name} (ShowtimeID: {_showing.ShowtimeID})",
+                                                   UserSession.Username
+                                               );
                         toolTipController1.SetToolTip(btn, $"Reserved by: {reserveForm.ReservedUsername}");
                     }
                 }
             }
         }
+
+        private void ShowMovieTicket(int showtimeId, int seatId)
+        {
+            MovieTicket report = new MovieTicket();
+
+            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
+            {
+                connection.Open();
+                string query = GlobalSQL.SQLQuery.Ticket;
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ShowtimeID", showtimeId);
+                    command.Parameters.AddWithValue("@SeatID", seatId);
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+                        report.DataSource = table;
+                        report.ShowPreview();
+                    }
+                }
+            }
+        }
+
 
 
         private void confirmBTN_Click(object sender, EventArgs e)
