@@ -56,6 +56,8 @@ namespace CinemaPB.Infrastructure.Repositories
                         Poster = row.Poster,
                         HallID = row.HallID ?? 0,
                         MoviePriceID = row.MoviePriceID ?? 0,
+                        StartTime = startTime,
+                        EndTime = endTime,
                         // ✅ ScreeningLabel is auto-computed
                     });
                 }

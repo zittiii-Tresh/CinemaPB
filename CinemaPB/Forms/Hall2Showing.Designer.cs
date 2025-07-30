@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hall2Showing));
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.dayLBL = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.dateLBL = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
@@ -52,34 +52,38 @@
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.winExplorerView2 = new DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView();
             this.htmlTemplate3 = new DevExpress.Utils.Html.HtmlTemplate();
+            this.showdateDE = new DevExpress.XtraEditors.DateEdit();
             this.sidePanel1.SuspendLayout();
             this.sidePanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingGC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showingEV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.winExplorerView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties.CalendarTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelControl1
+            // dayLBL
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(35, 11);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(127, 44);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "TODAY";
+            this.dayLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dayLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.dayLBL.Appearance.Options.UseFont = true;
+            this.dayLBL.Appearance.Options.UseForeColor = true;
+            this.dayLBL.Location = new System.Drawing.Point(35, 11);
+            this.dayLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dayLBL.Name = "dayLBL";
+            this.dayLBL.Size = new System.Drawing.Size(127, 44);
+            this.dayLBL.TabIndex = 0;
+            this.dayLBL.Text = "TODAY";
             // 
             // sidePanel1
             // 
             this.sidePanel1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(44)))), ((int)(((byte)(46)))));
             this.sidePanel1.Appearance.Options.UseBackColor = true;
             this.sidePanel1.BorderThickness = 0;
+            this.sidePanel1.Controls.Add(this.showdateDE);
             this.sidePanel1.Controls.Add(this.dateLBL);
-            this.sidePanel1.Controls.Add(this.labelControl1);
+            this.sidePanel1.Controls.Add(this.dayLBL);
             this.sidePanel1.Controls.Add(this.sidePanel2);
             this.sidePanel1.Controls.Add(this.sidePanel3);
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -312,6 +316,25 @@
             // 
             this.htmlTemplate3.Name = "htmlTemplate3";
             // 
+            // showdateDE
+            // 
+            this.showdateDE.EditValue = null;
+            this.showdateDE.Location = new System.Drawing.Point(844, 28);
+            this.showdateDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.showdateDE.Name = "showdateDE";
+            this.showdateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.showdateDE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showdateDE.Properties.Appearance.Options.UseBackColor = true;
+            this.showdateDE.Properties.Appearance.Options.UseFont = true;
+            this.showdateDE.Properties.AutoHeight = false;
+            this.showdateDE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.showdateDE.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.showdateDE.Size = new System.Drawing.Size(231, 32);
+            this.showdateDE.TabIndex = 32;
+            this.showdateDE.EditValueChanged += new System.EventHandler(this.showdateDE_EditValueChanged);
+            // 
             // Hall2Showing
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
@@ -333,13 +356,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.showingEV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.winExplorerView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl dayLBL;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
         private DevExpress.XtraEditors.SidePanel sidePanel2;
         private DevExpress.XtraEditors.LabelControl dateLBL;
@@ -362,5 +387,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn ScreeningLabel;
         private DevExpress.XtraGrid.Columns.GridColumn Poster;
         private DevExpress.XtraGrid.Columns.GridColumn Timeslot;
+        private DevExpress.XtraEditors.DateEdit showdateDE;
     }
 }
