@@ -20,6 +20,8 @@ namespace CinemaPB.ModelShowing
         public string Timeslot { get; set; }
         public int HallID { get; set; }
         public int MoviePriceID { get; set; }
+        public TimeSpan? StartTime { get; set; }
+        public TimeSpan? EndTime { get; set; }
 
 
         public int Screening { get; set; }

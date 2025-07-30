@@ -186,6 +186,21 @@ namespace CinemaPB.Forms
             var btn = sender as SimpleButton;
             if (btn == null || _showing == null) return;
 
+            // 🛡️ Screening time validation: allow booking only if current time is between StartTime and EndTime
+            if (_showing.StartTime.HasValue && _showing.EndTime.HasValue)
+            {
+                DateTime showDate = DateTime.Parse(_showing.ShowDate); // Ex: "2025-07-30"
+                DateTime showStart = showDate.Add(_showing.StartTime.Value);
+                DateTime showEnd = showDate.Add(_showing.EndTime.Value);
+
+                DateTime now = DateTime.Now;
+                if (now > showEnd)
+                {
+                    XtraMessageBox.Show("You can no longer book seats. This screening has already ended.", "Booking Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
             string seatNumber = btn.Name;
             int seatId = _seatRepository.GetSeatIDBySeatNumberAndHall(seatNumber, _showing.HallID);
 

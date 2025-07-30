@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CinemaPB.Configuration;
 using CinemaPB.Infrastructure.Repositories;
 using CinemaPB.ModelShowing;
+using DevExpress.Xpo.DB;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.WinExplorer;
 
@@ -25,14 +26,15 @@ namespace CinemaPB.Forms
             InitializeComponent();
             _showingRepository = new ShowingRepository(GlobalSetting.GetConnectionString());
             dateLBL.Text = DateTime.Now.ToString("MMMM dd, yyyy - hh:mm tt");
+            showdateDE.EditValueChanged += showdateDE_EditValueChanged; // 👈 Add this line
             LoadShowings();
 
         }
 
-        private void LoadShowings()
+        private void LoadShowings(DateTime? selectedDate = null)
         {
-            var today = DateTime.Today;
-            var cards = _showingRepository.GetCurrentShowings(today, HallID);
+            var dateToUse = selectedDate ?? DateTime.Today;
+            var cards = _showingRepository.GetCurrentShowings(dateToUse, HallID);
 
             showingGC.DataSource = cards;
             showingGC.RefreshDataSource();
@@ -46,6 +48,19 @@ namespace CinemaPB.Forms
             {
                 var reserveForm = new ReserveSeatsForm2(selected);
                 reserveForm.ShowDialog();
+            }
+        }
+
+        private void showdateDE_EditValueChanged(object sender, EventArgs e)
+        {
+            if (showdateDE.EditValue != null && DateTime.TryParse(showdateDE.EditValue.ToString(), out DateTime selectedDate))
+            {
+                LoadShowings(selectedDate);
+
+                if (selectedDate.Date == DateTime.Today)
+                    dayLBL.Text = "TODAY";
+                else
+                    dayLBL.Text = selectedDate.ToString("dddd").ToUpper(); // e.g., "MONDAY"
             }
         }
     }
