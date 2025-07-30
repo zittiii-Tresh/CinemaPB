@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using static CinemaPB.Forms.ReserveSeatsForm;
+using CinemaPB.ModelShowtime;
 
 namespace CinemaPB.Infrastructure.Repositories
 {
@@ -90,19 +91,25 @@ namespace CinemaPB.Infrastructure.Repositories
             }
         }
 
-        public List<(int SeatID, string SeatNumber, int SeatStatusID)> GetSeatsByShowtime(int showtimeId)
+        public List<(int SeatID, string SeatNumber, int SeatStatusID, string Username)> GetSeatsByShowtimeWithUsername(int showtimeId)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                return connection.Query<(int, string, int)>(
-                    @"SELECT ss.SeatID, s.SeatNumber, ss.SeatStatusID
-              FROM ShowtimeSeats ss
-              JOIN Seats s ON s.SeatID = ss.SeatID
-              WHERE ss.ShowtimeID = @ShowtimeID",
-                    new { ShowtimeID = showtimeId }
-                ).ToList();
+                string query = @"
+            SELECT 
+                ss.SeatID,
+                s.SeatNumber,
+                ss.SeatStatusID,
+                t.Username
+            FROM ShowtimeSeats ss
+            JOIN Seats s ON s.SeatID = ss.SeatID
+            LEFT JOIN Tickets t ON t.SeatID = ss.SeatID AND t.ShowtimeID = ss.ShowtimeID
+            WHERE ss.ShowtimeID = @ShowtimeID";
+
+                return connection.Query<(int, string, int, string)>(query, new { ShowtimeID = showtimeId }).ToList();
             }
         }
+
 
         public bool UpdateSeatStatus(int showtimeId, int seatId, int seatStatusId)
         {
@@ -120,6 +127,20 @@ namespace CinemaPB.Infrastructure.Repositories
                 });
 
                 return affected > 0;
+            }
+        }
+
+        public (int SeatStatusID, string Username) GetSeatWithUsername(int showtimeId, int seatId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                return connection.QueryFirstOrDefault<(int, string)>(
+                    @"SELECT ss.SeatStatusID, t.Username
+              FROM ShowtimeSeats ss
+              LEFT JOIN Tickets t ON t.SeatID = ss.SeatID AND t.ShowtimeID = ss.ShowtimeID
+              WHERE ss.ShowtimeID = @ShowtimeID AND ss.SeatID = @SeatID",
+                    new { ShowtimeID = showtimeId, SeatID = seatId }
+                );
             }
         }
     }

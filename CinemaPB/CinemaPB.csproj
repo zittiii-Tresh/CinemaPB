@@ -219,6 +219,18 @@
     <Compile Include="Forms\SeatActionPromptForm.Designer.cs">
       <DependentUpon>SeatActionPromptForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SeatReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeatReservationForm.Designer.cs">
+      <DependentUpon>SeatReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeatReserveConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeatReserveConfirmationForm.Designer.cs">
+      <DependentUpon>SeatReserveConfirmationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,6 +297,7 @@
     <Compile Include="ModelShowing\Showing.cs" />
     <Compile Include="ModelShowtime\Showtime.cs" />
     <Compile Include="ModelShowtime\ShowtimeDetail.cs" />
+    <Compile Include="ModelShowtime\ShowtimeSeat.cs" />
     <Compile Include="ModelShowtime\ShowtimeSlot.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
@@ -378,6 +391,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SeatActionPromptForm.resx">
       <DependentUpon>SeatActionPromptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeatReservationForm.resx">
+      <DependentUpon>SeatReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeatReserveConfirmationForm.resx">
+      <DependentUpon>SeatReserveConfirmationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>

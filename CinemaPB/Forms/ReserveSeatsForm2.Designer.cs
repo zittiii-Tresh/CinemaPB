@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReserveSeatsForm2));
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.posterPE = new DevExpress.XtraEditors.PictureEdit();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.moviegenreLBL = new DevExpress.XtraEditors.LabelControl();
+            this.screeningLBL = new DevExpress.XtraEditors.LabelControl();
+            this.showtimeLBL = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.movienameLBL = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.durationLBL = new DevExpress.XtraEditors.LabelControl();
+            this.movieratingLBL = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.sidePanel7 = new DevExpress.XtraEditors.SidePanel();
+            this.seatPanel = new DevExpress.XtraEditors.SidePanel();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
@@ -143,29 +144,31 @@
             this.C4 = new DevExpress.XtraEditors.SimpleButton();
             this.C3 = new DevExpress.XtraEditors.SimpleButton();
             this.G6 = new DevExpress.XtraEditors.SimpleButton();
+            this.confirmBTN = new DevExpress.XtraEditors.SimpleButton();
             this.closeBTN = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).BeginInit();
             this.sidePanel1.SuspendLayout();
             this.sidePanel2.SuspendLayout();
-            this.sidePanel7.SuspendLayout();
+            this.seatPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureEdit1
+            // posterPE
             // 
-            this.pictureEdit1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(40, 46);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureEdit1.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit1.Properties.Appearance.Options.UseBorderColor = true;
-            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(291, 463);
-            this.pictureEdit1.TabIndex = 0;
+            this.posterPE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.posterPE.EditValue = ((object)(resources.GetObject("posterPE.EditValue")));
+            this.posterPE.Location = new System.Drawing.Point(40, 46);
+            this.posterPE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.posterPE.Name = "posterPE";
+            this.posterPE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.posterPE.Properties.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.posterPE.Properties.Appearance.Options.UseBackColor = true;
+            this.posterPE.Properties.Appearance.Options.UseBorderColor = true;
+            this.posterPE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.posterPE.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.posterPE.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.posterPE.Size = new System.Drawing.Size(291, 463);
+            this.posterPE.TabIndex = 0;
             // 
             // sidePanel1
             // 
@@ -174,9 +177,9 @@
             this.sidePanel1.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(61)))), ((int)(((byte)(68)))));
             this.sidePanel1.Appearance.Options.UseBackColor = true;
             this.sidePanel1.Appearance.Options.UseBorderColor = true;
-            this.sidePanel1.Controls.Add(this.labelControl3);
-            this.sidePanel1.Controls.Add(this.labelControl2);
-            this.sidePanel1.Controls.Add(this.labelControl1);
+            this.sidePanel1.Controls.Add(this.moviegenreLBL);
+            this.sidePanel1.Controls.Add(this.screeningLBL);
+            this.sidePanel1.Controls.Add(this.showtimeLBL);
             this.sidePanel1.Location = new System.Drawing.Point(40, 508);
             this.sidePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel1.Name = "sidePanel1";
@@ -184,44 +187,44 @@
             this.sidePanel1.TabIndex = 1;
             this.sidePanel1.Text = "sidePanel1";
             // 
-            // labelControl3
+            // moviegenreLBL
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(23, 119);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(37, 17);
-            this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "Genre";
+            this.moviegenreLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moviegenreLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.moviegenreLBL.Appearance.Options.UseFont = true;
+            this.moviegenreLBL.Appearance.Options.UseForeColor = true;
+            this.moviegenreLBL.Location = new System.Drawing.Point(23, 119);
+            this.moviegenreLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.moviegenreLBL.Name = "moviegenreLBL";
+            this.moviegenreLBL.Size = new System.Drawing.Size(37, 17);
+            this.moviegenreLBL.TabIndex = 4;
+            this.moviegenreLBL.Text = "Genre";
             // 
-            // labelControl2
+            // screeningLBL
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(23, 72);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(87, 17);
-            this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "ContentRating";
+            this.screeningLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.screeningLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.screeningLBL.Appearance.Options.UseFont = true;
+            this.screeningLBL.Appearance.Options.UseForeColor = true;
+            this.screeningLBL.Location = new System.Drawing.Point(23, 72);
+            this.screeningLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.screeningLBL.Name = "screeningLBL";
+            this.screeningLBL.Size = new System.Drawing.Size(60, 17);
+            this.screeningLBL.TabIndex = 3;
+            this.screeningLBL.Text = "Screening";
             // 
-            // labelControl1
+            // showtimeLBL
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(23, 27);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(75, 19);
-            this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Showtime";
+            this.showtimeLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtimeLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.showtimeLBL.Appearance.Options.UseFont = true;
+            this.showtimeLBL.Appearance.Options.UseForeColor = true;
+            this.showtimeLBL.Location = new System.Drawing.Point(23, 27);
+            this.showtimeLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.showtimeLBL.Name = "showtimeLBL";
+            this.showtimeLBL.Size = new System.Drawing.Size(75, 19);
+            this.showtimeLBL.TabIndex = 2;
+            this.showtimeLBL.Text = "Showtime";
             // 
             // labelControl4
             // 
@@ -251,18 +254,18 @@
             this.simpleButton1.Size = new System.Drawing.Size(28, 24);
             this.simpleButton1.TabIndex = 3;
             // 
-            // labelControl5
+            // movienameLBL
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(377, 102);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(71, 46);
-            this.labelControl5.TabIndex = 4;
-            this.labelControl5.Text = "Title";
+            this.movienameLBL.Appearance.Font = new System.Drawing.Font("Bahnschrift Light", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movienameLBL.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.movienameLBL.Appearance.Options.UseFont = true;
+            this.movienameLBL.Appearance.Options.UseForeColor = true;
+            this.movienameLBL.Location = new System.Drawing.Point(377, 102);
+            this.movienameLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movienameLBL.Name = "movienameLBL";
+            this.movienameLBL.Size = new System.Drawing.Size(71, 46);
+            this.movienameLBL.TabIndex = 4;
+            this.movienameLBL.Text = "Title";
             // 
             // simpleButton2
             // 
@@ -279,37 +282,37 @@
             this.simpleButton2.Size = new System.Drawing.Size(28, 24);
             this.simpleButton2.TabIndex = 5;
             // 
-            // labelControl6
+            // durationLBL
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(1136, 132);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(53, 19);
-            this.labelControl6.TabIndex = 6;
-            this.labelControl6.Text = "Minutes";
+            this.durationLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.durationLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.durationLBL.Appearance.Options.UseFont = true;
+            this.durationLBL.Appearance.Options.UseForeColor = true;
+            this.durationLBL.Location = new System.Drawing.Point(1136, 132);
+            this.durationLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.durationLBL.Name = "durationLBL";
+            this.durationLBL.Size = new System.Drawing.Size(53, 19);
+            this.durationLBL.TabIndex = 6;
+            this.durationLBL.Text = "Minutes";
             // 
-            // labelControl7
+            // movieratingLBL
             // 
-            this.labelControl7.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(219)))), ((int)(((byte)(183)))));
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(219)))), ((int)(((byte)(183)))));
-            this.labelControl7.Appearance.Options.UseBorderColor = true;
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Appearance.Options.UseTextOptions = true;
-            this.labelControl7.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl7.Location = new System.Drawing.Point(380, 164);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(107, 23);
-            this.labelControl7.TabIndex = 7;
-            this.labelControl7.Text = "Content Rating";
+            this.movieratingLBL.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(219)))), ((int)(((byte)(183)))));
+            this.movieratingLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movieratingLBL.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(219)))), ((int)(((byte)(183)))));
+            this.movieratingLBL.Appearance.Options.UseBorderColor = true;
+            this.movieratingLBL.Appearance.Options.UseFont = true;
+            this.movieratingLBL.Appearance.Options.UseForeColor = true;
+            this.movieratingLBL.Appearance.Options.UseTextOptions = true;
+            this.movieratingLBL.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.movieratingLBL.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.movieratingLBL.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.movieratingLBL.Location = new System.Drawing.Point(380, 164);
+            this.movieratingLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movieratingLBL.Name = "movieratingLBL";
+            this.movieratingLBL.Size = new System.Drawing.Size(107, 23);
+            this.movieratingLBL.TabIndex = 7;
+            this.movieratingLBL.Text = "Content Rating";
             // 
             // sidePanel2
             // 
@@ -336,115 +339,116 @@
             this.labelControl8.TabIndex = 5;
             this.labelControl8.Text = "S  C  R  E  E  N";
             // 
-            // sidePanel7
+            // seatPanel
             // 
-            this.sidePanel7.Controls.Add(this.labelControl26);
-            this.sidePanel7.Controls.Add(this.labelControl25);
-            this.sidePanel7.Controls.Add(this.labelControl27);
-            this.sidePanel7.Controls.Add(this.labelControl28);
-            this.sidePanel7.Controls.Add(this.labelControl9);
-            this.sidePanel7.Controls.Add(this.labelControl10);
-            this.sidePanel7.Controls.Add(this.H1);
-            this.sidePanel7.Controls.Add(this.H11);
-            this.sidePanel7.Controls.Add(this.H2);
-            this.sidePanel7.Controls.Add(this.H10);
-            this.sidePanel7.Controls.Add(this.H3);
-            this.sidePanel7.Controls.Add(this.H9);
-            this.sidePanel7.Controls.Add(this.H4);
-            this.sidePanel7.Controls.Add(this.H8);
-            this.sidePanel7.Controls.Add(this.H5);
-            this.sidePanel7.Controls.Add(this.H7);
-            this.sidePanel7.Controls.Add(this.H6);
-            this.sidePanel7.Controls.Add(this.E7);
-            this.sidePanel7.Controls.Add(this.E6);
-            this.sidePanel7.Controls.Add(this.E8);
-            this.sidePanel7.Controls.Add(this.A1);
-            this.sidePanel7.Controls.Add(this.E5);
-            this.sidePanel7.Controls.Add(this.A2);
-            this.sidePanel7.Controls.Add(this.E9);
-            this.sidePanel7.Controls.Add(this.labelControl20);
-            this.sidePanel7.Controls.Add(this.E4);
-            this.sidePanel7.Controls.Add(this.A3);
-            this.sidePanel7.Controls.Add(this.E10);
-            this.sidePanel7.Controls.Add(this.labelControl21);
-            this.sidePanel7.Controls.Add(this.E3);
-            this.sidePanel7.Controls.Add(this.A4);
-            this.sidePanel7.Controls.Add(this.E11);
-            this.sidePanel7.Controls.Add(this.labelControl22);
-            this.sidePanel7.Controls.Add(this.E2);
-            this.sidePanel7.Controls.Add(this.A5);
-            this.sidePanel7.Controls.Add(this.F1);
-            this.sidePanel7.Controls.Add(this.labelControl13);
-            this.sidePanel7.Controls.Add(this.E1);
-            this.sidePanel7.Controls.Add(this.A6);
-            this.sidePanel7.Controls.Add(this.F2);
-            this.sidePanel7.Controls.Add(this.labelControl17);
-            this.sidePanel7.Controls.Add(this.D9);
-            this.sidePanel7.Controls.Add(this.A7);
-            this.sidePanel7.Controls.Add(this.F3);
-            this.sidePanel7.Controls.Add(this.labelControl18);
-            this.sidePanel7.Controls.Add(this.D8);
-            this.sidePanel7.Controls.Add(this.A8);
-            this.sidePanel7.Controls.Add(this.F4);
-            this.sidePanel7.Controls.Add(this.labelControl19);
-            this.sidePanel7.Controls.Add(this.D7);
-            this.sidePanel7.Controls.Add(this.A9);
-            this.sidePanel7.Controls.Add(this.F5);
-            this.sidePanel7.Controls.Add(this.labelControl14);
-            this.sidePanel7.Controls.Add(this.D6);
-            this.sidePanel7.Controls.Add(this.B1);
-            this.sidePanel7.Controls.Add(this.F6);
-            this.sidePanel7.Controls.Add(this.labelControl15);
-            this.sidePanel7.Controls.Add(this.D5);
-            this.sidePanel7.Controls.Add(this.B2);
-            this.sidePanel7.Controls.Add(this.F7);
-            this.sidePanel7.Controls.Add(this.labelControl16);
-            this.sidePanel7.Controls.Add(this.D4);
-            this.sidePanel7.Controls.Add(this.B3);
-            this.sidePanel7.Controls.Add(this.F8);
-            this.sidePanel7.Controls.Add(this.labelControl12);
-            this.sidePanel7.Controls.Add(this.D3);
-            this.sidePanel7.Controls.Add(this.B4);
-            this.sidePanel7.Controls.Add(this.F9);
-            this.sidePanel7.Controls.Add(this.labelControl11);
-            this.sidePanel7.Controls.Add(this.D2);
-            this.sidePanel7.Controls.Add(this.B5);
-            this.sidePanel7.Controls.Add(this.F10);
-            this.sidePanel7.Controls.Add(this.labelControl23);
-            this.sidePanel7.Controls.Add(this.D1);
-            this.sidePanel7.Controls.Add(this.B6);
-            this.sidePanel7.Controls.Add(this.F11);
-            this.sidePanel7.Controls.Add(this.labelControl24);
-            this.sidePanel7.Controls.Add(this.C9);
-            this.sidePanel7.Controls.Add(this.B7);
-            this.sidePanel7.Controls.Add(this.G1);
-            this.sidePanel7.Controls.Add(this.G11);
-            this.sidePanel7.Controls.Add(this.C8);
-            this.sidePanel7.Controls.Add(this.B8);
-            this.sidePanel7.Controls.Add(this.G2);
-            this.sidePanel7.Controls.Add(this.G10);
-            this.sidePanel7.Controls.Add(this.C7);
-            this.sidePanel7.Controls.Add(this.B9);
-            this.sidePanel7.Controls.Add(this.G3);
-            this.sidePanel7.Controls.Add(this.G9);
-            this.sidePanel7.Controls.Add(this.C6);
-            this.sidePanel7.Controls.Add(this.C1);
-            this.sidePanel7.Controls.Add(this.G4);
-            this.sidePanel7.Controls.Add(this.G8);
-            this.sidePanel7.Controls.Add(this.C5);
-            this.sidePanel7.Controls.Add(this.C2);
-            this.sidePanel7.Controls.Add(this.G5);
-            this.sidePanel7.Controls.Add(this.G7);
-            this.sidePanel7.Controls.Add(this.C4);
-            this.sidePanel7.Controls.Add(this.C3);
-            this.sidePanel7.Controls.Add(this.G6);
-            this.sidePanel7.Controls.Add(this.sidePanel2);
-            this.sidePanel7.Location = new System.Drawing.Point(366, 203);
-            this.sidePanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sidePanel7.Name = "sidePanel7";
-            this.sidePanel7.Size = new System.Drawing.Size(890, 515);
-            this.sidePanel7.TabIndex = 94;
-            this.sidePanel7.Text = "sidePanel3";
+            this.seatPanel.Controls.Add(this.labelControl26);
+            this.seatPanel.Controls.Add(this.labelControl25);
+            this.seatPanel.Controls.Add(this.labelControl27);
+            this.seatPanel.Controls.Add(this.labelControl28);
+            this.seatPanel.Controls.Add(this.labelControl9);
+            this.seatPanel.Controls.Add(this.labelControl10);
+            this.seatPanel.Controls.Add(this.H1);
+            this.seatPanel.Controls.Add(this.H11);
+            this.seatPanel.Controls.Add(this.H2);
+            this.seatPanel.Controls.Add(this.H10);
+            this.seatPanel.Controls.Add(this.H3);
+            this.seatPanel.Controls.Add(this.H9);
+            this.seatPanel.Controls.Add(this.H4);
+            this.seatPanel.Controls.Add(this.H8);
+            this.seatPanel.Controls.Add(this.H5);
+            this.seatPanel.Controls.Add(this.H7);
+            this.seatPanel.Controls.Add(this.H6);
+            this.seatPanel.Controls.Add(this.E7);
+            this.seatPanel.Controls.Add(this.E6);
+            this.seatPanel.Controls.Add(this.E8);
+            this.seatPanel.Controls.Add(this.A1);
+            this.seatPanel.Controls.Add(this.E5);
+            this.seatPanel.Controls.Add(this.A2);
+            this.seatPanel.Controls.Add(this.E9);
+            this.seatPanel.Controls.Add(this.labelControl20);
+            this.seatPanel.Controls.Add(this.E4);
+            this.seatPanel.Controls.Add(this.A3);
+            this.seatPanel.Controls.Add(this.E10);
+            this.seatPanel.Controls.Add(this.labelControl21);
+            this.seatPanel.Controls.Add(this.E3);
+            this.seatPanel.Controls.Add(this.A4);
+            this.seatPanel.Controls.Add(this.E11);
+            this.seatPanel.Controls.Add(this.labelControl22);
+            this.seatPanel.Controls.Add(this.E2);
+            this.seatPanel.Controls.Add(this.A5);
+            this.seatPanel.Controls.Add(this.F1);
+            this.seatPanel.Controls.Add(this.labelControl13);
+            this.seatPanel.Controls.Add(this.E1);
+            this.seatPanel.Controls.Add(this.A6);
+            this.seatPanel.Controls.Add(this.F2);
+            this.seatPanel.Controls.Add(this.labelControl17);
+            this.seatPanel.Controls.Add(this.D9);
+            this.seatPanel.Controls.Add(this.A7);
+            this.seatPanel.Controls.Add(this.F3);
+            this.seatPanel.Controls.Add(this.labelControl18);
+            this.seatPanel.Controls.Add(this.D8);
+            this.seatPanel.Controls.Add(this.A8);
+            this.seatPanel.Controls.Add(this.F4);
+            this.seatPanel.Controls.Add(this.labelControl19);
+            this.seatPanel.Controls.Add(this.D7);
+            this.seatPanel.Controls.Add(this.A9);
+            this.seatPanel.Controls.Add(this.F5);
+            this.seatPanel.Controls.Add(this.labelControl14);
+            this.seatPanel.Controls.Add(this.D6);
+            this.seatPanel.Controls.Add(this.B1);
+            this.seatPanel.Controls.Add(this.F6);
+            this.seatPanel.Controls.Add(this.labelControl15);
+            this.seatPanel.Controls.Add(this.D5);
+            this.seatPanel.Controls.Add(this.B2);
+            this.seatPanel.Controls.Add(this.F7);
+            this.seatPanel.Controls.Add(this.labelControl16);
+            this.seatPanel.Controls.Add(this.D4);
+            this.seatPanel.Controls.Add(this.B3);
+            this.seatPanel.Controls.Add(this.F8);
+            this.seatPanel.Controls.Add(this.labelControl12);
+            this.seatPanel.Controls.Add(this.D3);
+            this.seatPanel.Controls.Add(this.B4);
+            this.seatPanel.Controls.Add(this.F9);
+            this.seatPanel.Controls.Add(this.labelControl11);
+            this.seatPanel.Controls.Add(this.D2);
+            this.seatPanel.Controls.Add(this.B5);
+            this.seatPanel.Controls.Add(this.F10);
+            this.seatPanel.Controls.Add(this.labelControl23);
+            this.seatPanel.Controls.Add(this.D1);
+            this.seatPanel.Controls.Add(this.B6);
+            this.seatPanel.Controls.Add(this.F11);
+            this.seatPanel.Controls.Add(this.labelControl24);
+            this.seatPanel.Controls.Add(this.C9);
+            this.seatPanel.Controls.Add(this.B7);
+            this.seatPanel.Controls.Add(this.G1);
+            this.seatPanel.Controls.Add(this.G11);
+            this.seatPanel.Controls.Add(this.C8);
+            this.seatPanel.Controls.Add(this.B8);
+            this.seatPanel.Controls.Add(this.G2);
+            this.seatPanel.Controls.Add(this.G10);
+            this.seatPanel.Controls.Add(this.C7);
+            this.seatPanel.Controls.Add(this.B9);
+            this.seatPanel.Controls.Add(this.G3);
+            this.seatPanel.Controls.Add(this.G9);
+            this.seatPanel.Controls.Add(this.C6);
+            this.seatPanel.Controls.Add(this.C1);
+            this.seatPanel.Controls.Add(this.G4);
+            this.seatPanel.Controls.Add(this.G8);
+            this.seatPanel.Controls.Add(this.C5);
+            this.seatPanel.Controls.Add(this.C2);
+            this.seatPanel.Controls.Add(this.G5);
+            this.seatPanel.Controls.Add(this.G7);
+            this.seatPanel.Controls.Add(this.C4);
+            this.seatPanel.Controls.Add(this.C3);
+            this.seatPanel.Controls.Add(this.G6);
+            this.seatPanel.Controls.Add(this.confirmBTN);
+            this.seatPanel.Controls.Add(this.sidePanel2);
+            this.seatPanel.Location = new System.Drawing.Point(366, 203);
+            this.seatPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.seatPanel.Name = "seatPanel";
+            this.seatPanel.Size = new System.Drawing.Size(890, 515);
+            this.seatPanel.TabIndex = 94;
+            this.seatPanel.Text = "sidePanel3";
             // 
             // labelControl26
             // 
@@ -1666,6 +1670,19 @@
             this.G6.TabIndex = 259;
             this.G6.Text = "simpleButton66";
             // 
+            // confirmBTN
+            // 
+            this.confirmBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.confirmBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmBTN.Appearance.Options.UseBackColor = true;
+            this.confirmBTN.Appearance.Options.UseFont = true;
+            this.confirmBTN.Location = new System.Drawing.Point(786, 473);
+            this.confirmBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.confirmBTN.Name = "confirmBTN";
+            this.confirmBTN.Size = new System.Drawing.Size(94, 32);
+            this.confirmBTN.TabIndex = 95;
+            this.confirmBTN.Text = "Confirm";
+            // 
             // closeBTN
             // 
             this.closeBTN.AllowFocus = false;
@@ -1692,15 +1709,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1266, 728);
             this.Controls.Add(this.closeBTN);
-            this.Controls.Add(this.sidePanel7);
-            this.Controls.Add(this.labelControl7);
-            this.Controls.Add(this.labelControl6);
+            this.Controls.Add(this.seatPanel);
+            this.Controls.Add(this.movieratingLBL);
+            this.Controls.Add(this.durationLBL);
             this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.labelControl5);
+            this.Controls.Add(this.movienameLBL);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.sidePanel1);
-            this.Controls.Add(this.pictureEdit1);
+            this.Controls.Add(this.posterPE);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1710,13 +1727,13 @@
             this.Name = "ReserveSeatsForm2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReserveSeatsForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).EndInit();
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
             this.sidePanel2.ResumeLayout(false);
             this.sidePanel2.PerformLayout();
-            this.sidePanel7.ResumeLayout(false);
-            this.sidePanel7.PerformLayout();
+            this.seatPanel.ResumeLayout(false);
+            this.seatPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1724,20 +1741,21 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PictureEdit posterPE;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl showtimeLBL;
+        private DevExpress.XtraEditors.LabelControl screeningLBL;
+        private DevExpress.XtraEditors.LabelControl moviegenreLBL;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl movienameLBL;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl durationLBL;
+        private DevExpress.XtraEditors.LabelControl movieratingLBL;
         private DevExpress.XtraEditors.SidePanel sidePanel2;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.SidePanel sidePanel7;
+        private DevExpress.XtraEditors.SidePanel seatPanel;
+        private DevExpress.XtraEditors.SimpleButton confirmBTN;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.SimpleButton H1;
@@ -1839,5 +1857,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl27;
         private DevExpress.XtraEditors.LabelControl labelControl28;
         private DevExpress.XtraEditors.SimpleButton closeBTN;
+        private DevExpress.Utils.ToolTipController toolTipController1;
     }
 }
