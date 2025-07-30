@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hall2Showing));
             this.dayLBL = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
+            this.showdateDE = new DevExpress.XtraEditors.DateEdit();
             this.dateLBL = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
@@ -52,15 +53,14 @@
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.winExplorerView2 = new DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView();
             this.htmlTemplate3 = new DevExpress.Utils.Html.HtmlTemplate();
-            this.showdateDE = new DevExpress.XtraEditors.DateEdit();
             this.sidePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties.CalendarTimeProperties)).BeginInit();
             this.sidePanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingGC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showingEV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.winExplorerView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties.CalendarTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
             // dayLBL
@@ -69,7 +69,7 @@
             this.dayLBL.Appearance.ForeColor = System.Drawing.Color.White;
             this.dayLBL.Appearance.Options.UseFont = true;
             this.dayLBL.Appearance.Options.UseForeColor = true;
-            this.dayLBL.Location = new System.Drawing.Point(35, 11);
+            this.dayLBL.Location = new System.Drawing.Point(35, 13);
             this.dayLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dayLBL.Name = "dayLBL";
             this.dayLBL.Size = new System.Drawing.Size(127, 44);
@@ -93,6 +93,25 @@
             this.sidePanel1.Size = new System.Drawing.Size(1390, 70);
             this.sidePanel1.TabIndex = 1;
             this.sidePanel1.Text = "sidePanel1";
+            // 
+            // showdateDE
+            // 
+            this.showdateDE.EditValue = null;
+            this.showdateDE.Location = new System.Drawing.Point(293, 22);
+            this.showdateDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.showdateDE.Name = "showdateDE";
+            this.showdateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.showdateDE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showdateDE.Properties.Appearance.Options.UseBackColor = true;
+            this.showdateDE.Properties.Appearance.Options.UseFont = true;
+            this.showdateDE.Properties.AutoHeight = false;
+            this.showdateDE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.showdateDE.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.showdateDE.Size = new System.Drawing.Size(231, 32);
+            this.showdateDE.TabIndex = 32;
+            this.showdateDE.EditValueChanged += new System.EventHandler(this.showdateDE_EditValueChanged);
             // 
             // dateLBL
             // 
@@ -316,25 +335,6 @@
             // 
             this.htmlTemplate3.Name = "htmlTemplate3";
             // 
-            // showdateDE
-            // 
-            this.showdateDE.EditValue = null;
-            this.showdateDE.Location = new System.Drawing.Point(844, 28);
-            this.showdateDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.showdateDE.Name = "showdateDE";
-            this.showdateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
-            this.showdateDE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showdateDE.Properties.Appearance.Options.UseBackColor = true;
-            this.showdateDE.Properties.Appearance.Options.UseFont = true;
-            this.showdateDE.Properties.AutoHeight = false;
-            this.showdateDE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.showdateDE.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.showdateDE.Size = new System.Drawing.Size(231, 32);
-            this.showdateDE.TabIndex = 32;
-            this.showdateDE.EditValueChanged += new System.EventHandler(this.showdateDE_EditValueChanged);
-            // 
             // Hall2Showing
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
@@ -351,13 +351,13 @@
             this.Size = new System.Drawing.Size(1390, 793);
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties)).EndInit();
             this.sidePanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.showingGC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showingEV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.winExplorerView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.showdateDE.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
