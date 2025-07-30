@@ -20,6 +20,9 @@ using Dapper;
 using CinemaPB.ModelShowing;
 using System.IO;
 using CinemaPB.ModelShowtime;
+using CinemaPB.ModelSeat;
+
+
 
 namespace CinemaPB.Forms
 {
@@ -111,48 +114,48 @@ namespace CinemaPB.Forms
                 }
             }
 
-            // Now load the seat statuses from ShowtimeSeats
-            var showtimeSeats = _seatRepository.GetSeatsByShowtime(_showing.ShowtimeID);
+            // Now load the seat statuses from ShowtimeSeats (with Username)
+            var showtimeSeats = _seatRepository.GetSeatsByShowtimeWithUsername(_showing.ShowtimeID);
 
             foreach (var seat in showtimeSeats)
             {
                 var btn = seatButtons.FirstOrDefault(b => b.Name == seat.SeatNumber);
                 if (btn != null)
                 {
+                    string tooltip = "Unknown";
+
                     if (seat.SeatStatusID == 1)
                     {
                         btn.Appearance.BackColor = Color.FromArgb(0, 126, 65); // Available
                         btn.Enabled = true;
-                        toolTipController1.SetToolTip(btn, "Available");
+                        tooltip = "Available";
                     }
                     else if (seat.SeatStatusID == 2)
                     {
                         btn.Appearance.BackColor = Color.FromArgb(90, 144, 255); // Reserved
                         btn.Enabled = true;
-                        toolTipController1.SetToolTip(btn, "Reserved");
+                        tooltip = !string.IsNullOrWhiteSpace(seat.Username)
+                            ? $"Reserved by: {seat.Username}"
+                            : "Reserved";
                     }
                     else if (seat.SeatStatusID == 3)
                     {
                         btn.Appearance.BackColor = Color.FromArgb(240, 101, 101); // Sold
                         btn.Enabled = false;
-                        toolTipController1.SetToolTip(btn, "Sold");
+                        tooltip = "Sold";
                     }
                     else if (seat.SeatStatusID == 4)
                     {
                         btn.Appearance.BackColor = Color.FromArgb(160, 106, 13); // Unavailable
                         btn.Enabled = false;
-                        toolTipController1.SetToolTip(btn, "Unavailable");
+                        tooltip = "Unavailable";
                     }
-                    else
-                    {
-                        btn.Appearance.BackColor = Color.Gray;
-                        btn.Enabled = false;
-                        toolTipController1.SetToolTip(btn, "Unknown status");
-                    }
+
+                    toolTipController1.SetToolTip(btn, $"{tooltip} - Seat {seat.SeatNumber}");
                 }
             }
-
         }
+
 
         private void UpdateSeatStatus(int showtimeId, string seatNumber, int newStatus)
         {
@@ -181,48 +184,83 @@ namespace CinemaPB.Forms
         private void SeatButton_Click(object sender, EventArgs e)
         {
             var btn = sender as SimpleButton;
-            if (btn == null) return;
+            if (btn == null || _showing == null) return;
 
+            string seatNumber = btn.Name;
+            int seatId = _seatRepository.GetSeatIDBySeatNumberAndHall(seatNumber, _showing.HallID);
+
+            // 1. Check current status of the seat
+            var seatInfo = _seatRepository.GetSeatWithUsername(_showing.ShowtimeID, seatId); // ← you'll define this method
+
+            if (string.IsNullOrEmpty(seatInfo.Username) && seatInfo.SeatStatusID == 0)
+                return;
+
+            if (seatInfo.SeatStatusID == 2) // Reserved seat
+            {
+                var confirmForm = new SeatReserveConfirmationForm(seatInfo.Username);
+                if (confirmForm.ShowDialog() == DialogResult.OK)
+                {
+                    if (string.Equals(confirmForm.ReservedUsername, seatInfo.Username, StringComparison.OrdinalIgnoreCase))
+                    {
+                        // Mark seat as sold
+                        bool confirmed = _ticketRepository.ConfirmReservedTicket(_showing.ShowtimeID, seatId);
+                        if (confirmed)
+                        {
+                            btn.Appearance.BackColor = Color.FromArgb(240, 101, 101); // Sold
+                            btn.Enabled = false;
+                            toolTipController1.SetToolTip(btn, $"Sold - Seat {seatNumber}");
+                            XtraMessageBox.Show("Reservation confirmed and ticket sold.", "Success");
+                        }
+                        else
+                        {
+                            XtraMessageBox.Show("Failed to update seat status.", "Error");
+                        }
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Incorrect reserved name.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+
+                return; // Skip Buy/Reserve prompt
+            }
+
+            // 2. Handle available seats
             var prompt = new SeatActionPromptForm(btn.Name);
             if (prompt.ShowDialog() == DialogResult.OK)
             {
                 if (prompt.SelectedAction == "Buy")
                 {
-                    int seatId = _seatRepository.GetSeatIDBySeatNumberAndHall(btn.Name, _showing.HallID);
-
-                    if (_showing == null)
-                    {
-                        XtraMessageBox.Show("Showing data is missing.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-
-                    // 1. Insert or update ShowtimeSeats table
-                    bool updated = _seatRepository.UpdateSeatStatus(_showing.ShowtimeID, seatId, 3); // 3 = Sold
-
+                    bool updated = _seatRepository.UpdateSeatStatus(_showing.ShowtimeID, seatId, 3); // Sold
 
                     if (updated)
                     {
                         btn.Appearance.BackColor = Color.FromArgb(240, 101, 101); // Sold
                         btn.Enabled = false;
 
-                        // 2. Insert into dbo.Tickets table
-                        int moviePriceId = _showing.MoviePriceID;
-                        bool inserted = _ticketRepository.InsertTicket(_showing.ShowtimeID, seatId, moviePriceId);
+                        bool inserted = _ticketRepository.InsertTicket(_showing.ShowtimeID, seatId, _showing.MoviePriceID);
 
                         if (inserted)
-                        {
-                            XtraMessageBox.Show($"Seat {btn.Text} has been purchased. Ticket saved.", "Success");
-                        }
+                            XtraMessageBox.Show($"Seat {btn.Name} has been purchased. Ticket saved.", "Success");
                         else
-                        {
                             XtraMessageBox.Show("Ticket failed to save!", "Error");
-                        }
                     }
                 }
                 else if (prompt.SelectedAction == "Reserve")
                 {
-                    // Reservation logic
-                    XtraMessageBox.Show($"Seat {btn.Name} has been reserved.", "Reserve");
+                    var reserveForm = new SeatReservationForm
+                    {
+                        ShowtimeID = _showing.ShowtimeID,
+                        SeatID = seatId,
+                        MoviePriceID = _showing.MoviePriceID
+                    };
+
+                    if (reserveForm.ShowDialog() == DialogResult.OK)
+                    {
+                        btn.Appearance.BackColor = Color.FromArgb(90, 144, 255); // Reserved
+                        btn.Enabled = true;
+                        toolTipController1.SetToolTip(btn, $"Reserved by: {reserveForm.ReservedUsername}");
+                    }
                 }
             }
         }
@@ -257,13 +295,6 @@ namespace CinemaPB.Forms
                     SeatStatusID = seatStatus
                 });
             }
-        }
-
-        public class ShowtimeSeat
-        {
-            public int ShowtimeID { get; set; }
-            public int SeatID { get; set; }
-            public int SeatStatusID { get; set; }
         }
     }
 }

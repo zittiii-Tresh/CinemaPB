@@ -44,7 +44,7 @@ namespace CinemaPB.Forms
             var selected = showingEV.GetFocusedRow() as ShowingCard;
             if (selected != null)
             {
-                var reserveForm = new ReserveSeatsForm(selected);
+                var reserveForm = new ReserveSeatsForm2(selected);
                 reserveForm.ShowDialog();
             }
         }
