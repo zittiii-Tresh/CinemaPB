@@ -12,11 +12,13 @@ using CinemaPB.Configuration;
 using CinemaPB.Infrastructure.Repositories;
 using CinemaPB.Infrastructure.SQL;
 using CinemaPB.ModelShowing;
+using CinemaPB.ModelShowtime;
+using CinemaPB.Reports;
+using Dapper;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using Dapper;
-using CinemaPB.ModelShowtime;
 
 
 namespace CinemaPB.Forms
@@ -125,7 +127,7 @@ namespace CinemaPB.Forms
                     }
                     else if (seat.SeatStatusID == 2)
                     {
-                        btn.Appearance.BackColor = Color.FromArgb(90, 144, 255); // Reserved
+                        btn.Appearance.BackColor = Color.FromArgb(0, 0, 255); // Reserved
                         btn.Enabled = true;
                         string tooltip = !string.IsNullOrWhiteSpace(seat.Username)
                                          ? $"Reserved by: {seat.Username}"
@@ -208,6 +210,7 @@ namespace CinemaPB.Forms
                             btn.Enabled = false;
                             toolTipController1.SetToolTip(btn, $"Sold - Seat {seatNumber}");
                             XtraMessageBox.Show("Reservation confirmed and ticket sold.", "Success");
+                            ShowMovieTicket(_showing.ShowtimeID, seatId);
                         }
                         else
                         {
@@ -239,7 +242,15 @@ namespace CinemaPB.Forms
                         bool inserted = _ticketRepository.InsertTicket(_showing.ShowtimeID, seatId, _showing.MoviePriceID);
 
                         if (inserted)
+                        {
+                            GlobalLogger.ticketLog(
+                                                    _ticketRepository.GetLastInsertedTicketID(),  // You may need to implement this
+                                                    $"Purchased ticket for seat {btn.Name} (ShowtimeID: {_showing.ShowtimeID})",
+                                                    UserSession.Username
+                                                );
                             XtraMessageBox.Show($"Seat {btn.Name} has been purchased. Ticket saved.", "Success");
+                            ShowMovieTicket(_showing.ShowtimeID, seatId);
+                        }
                         else
                             XtraMessageBox.Show("Ticket failed to save!", "Error");
                     }
@@ -255,9 +266,32 @@ namespace CinemaPB.Forms
 
                     if (reserveForm.ShowDialog() == DialogResult.OK)
                     {
-                        btn.Appearance.BackColor = Color.FromArgb(90, 144, 255); // Reserved
+                        btn.Appearance.BackColor = Color.FromArgb(0, 0, 255); // Reserved
                         btn.Enabled = true;
                         toolTipController1.SetToolTip(btn, $"Reserved by: {reserveForm.ReservedUsername}");
+                    }
+                }
+            }
+        }
+
+        private void ShowMovieTicket(int showtimeId, int seatId)
+        {
+            MovieTicket report = new MovieTicket();
+
+            using (SqlConnection connection = new SqlConnection(GlobalSQL.SQLQuery.connectionString))
+            {
+                connection.Open();
+                string query = GlobalSQL.SQLQuery.Ticket;
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ShowtimeID", showtimeId);
+                    command.Parameters.AddWithValue("@SeatID", seatId);
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+                        report.DataSource = table;
+                        report.ShowPreview();
                     }
                 }
             }
@@ -294,5 +328,6 @@ namespace CinemaPB.Forms
                 });
             }
         }
+
     }
 }

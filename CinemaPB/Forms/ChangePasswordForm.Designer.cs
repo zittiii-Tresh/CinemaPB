@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePasswordForm));
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
             this.passwordBE = new DevExpress.XtraEditors.ButtonEdit();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.beConfirmPassword = new DevExpress.XtraEditors.ButtonEdit();
@@ -55,18 +55,18 @@
             // passwordBE
             // 
             this.passwordBE.EditValue = "Password";
-            this.passwordBE.Location = new System.Drawing.Point(41, 53);
-            this.passwordBE.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.passwordBE.Location = new System.Drawing.Point(35, 43);
+            this.passwordBE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordBE.Name = "passwordBE";
             this.passwordBE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBE.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.passwordBE.Properties.Appearance.Options.UseFont = true;
             this.passwordBE.Properties.Appearance.Options.UseForeColor = true;
             this.passwordBE.Properties.AutoHeight = false;
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.passwordBE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.passwordBE.Size = new System.Drawing.Size(228, 27);
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.passwordBE.Size = new System.Drawing.Size(195, 22);
             this.passwordBE.TabIndex = 24;
             this.passwordBE.Tag = "close";
             this.passwordBE.ButtonPressed += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.passwordBE_ButtonPressed);
@@ -81,18 +81,18 @@
             // beConfirmPassword
             // 
             this.beConfirmPassword.EditValue = "Confirm Password";
-            this.beConfirmPassword.Location = new System.Drawing.Point(313, 53);
-            this.beConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.beConfirmPassword.Location = new System.Drawing.Point(268, 43);
+            this.beConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.beConfirmPassword.Name = "beConfirmPassword";
             this.beConfirmPassword.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beConfirmPassword.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.beConfirmPassword.Properties.Appearance.Options.UseFont = true;
             this.beConfirmPassword.Properties.Appearance.Options.UseForeColor = true;
             this.beConfirmPassword.Properties.AutoHeight = false;
-            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.beConfirmPassword.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.beConfirmPassword.Size = new System.Drawing.Size(228, 27);
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.beConfirmPassword.Size = new System.Drawing.Size(195, 22);
             this.beConfirmPassword.TabIndex = 25;
             this.beConfirmPassword.Tag = "close";
             this.beConfirmPassword.ButtonPressed += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.beConfirmPassword_ButtonPressed);
@@ -104,9 +104,10 @@
             this.resultcaptionLBL.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.resultcaptionLBL.Appearance.Options.UseFont = true;
             this.resultcaptionLBL.Appearance.Options.UseForeColor = true;
-            this.resultcaptionLBL.Location = new System.Drawing.Point(45, 96);
+            this.resultcaptionLBL.Location = new System.Drawing.Point(39, 78);
+            this.resultcaptionLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resultcaptionLBL.Name = "resultcaptionLBL";
-            this.resultcaptionLBL.Size = new System.Drawing.Size(0, 17);
+            this.resultcaptionLBL.Size = new System.Drawing.Size(0, 15);
             this.resultcaptionLBL.TabIndex = 27;
             // 
             // resultLBL
@@ -115,9 +116,10 @@
             this.resultLBL.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.resultLBL.Appearance.Options.UseFont = true;
             this.resultLBL.Appearance.Options.UseForeColor = true;
-            this.resultLBL.Location = new System.Drawing.Point(45, 116);
+            this.resultLBL.Location = new System.Drawing.Point(39, 94);
+            this.resultLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resultLBL.Name = "resultLBL";
-            this.resultLBL.Size = new System.Drawing.Size(0, 17);
+            this.resultLBL.Size = new System.Drawing.Size(0, 15);
             this.resultLBL.TabIndex = 28;
             // 
             // saveBTN
@@ -126,10 +128,10 @@
             this.saveBTN.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBTN.Appearance.Options.UseBackColor = true;
             this.saveBTN.Appearance.Options.UseFont = true;
-            this.saveBTN.Location = new System.Drawing.Point(369, 144);
-            this.saveBTN.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.saveBTN.Location = new System.Drawing.Point(316, 117);
+            this.saveBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBTN.Name = "saveBTN";
-            this.saveBTN.Size = new System.Drawing.Size(172, 38);
+            this.saveBTN.Size = new System.Drawing.Size(147, 31);
             this.saveBTN.TabIndex = 29;
             this.saveBTN.Text = "SAVE";
             this.saveBTN.Click += new System.EventHandler(this.saveBTN_Click);
@@ -140,9 +142,10 @@
             this.lblConfirmPasswordCaption.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lblConfirmPasswordCaption.Appearance.Options.UseFont = true;
             this.lblConfirmPasswordCaption.Appearance.Options.UseForeColor = true;
-            this.lblConfirmPasswordCaption.Location = new System.Drawing.Point(319, 98);
+            this.lblConfirmPasswordCaption.Location = new System.Drawing.Point(273, 80);
+            this.lblConfirmPasswordCaption.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblConfirmPasswordCaption.Name = "lblConfirmPasswordCaption";
-            this.lblConfirmPasswordCaption.Size = new System.Drawing.Size(0, 17);
+            this.lblConfirmPasswordCaption.Size = new System.Drawing.Size(0, 15);
             this.lblConfirmPasswordCaption.TabIndex = 30;
             // 
             // ChangePasswordForm
@@ -151,15 +154,17 @@
             this.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseForeColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 223);
+            this.ClientSize = new System.Drawing.Size(506, 181);
             this.Controls.Add(this.lblConfirmPasswordCaption);
             this.Controls.Add(this.saveBTN);
             this.Controls.Add(this.resultLBL);
             this.Controls.Add(this.resultcaptionLBL);
             this.Controls.Add(this.beConfirmPassword);
             this.Controls.Add(this.passwordBE);
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ChangePasswordForm.IconOptions.SvgImage")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ChangePasswordForm";

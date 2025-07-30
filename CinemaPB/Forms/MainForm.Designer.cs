@@ -389,6 +389,7 @@
             this.dailysalesACE,
             this.weeklysalesACE,
             this.monthlysalesACE});
+            this.SalesReportACE.Expanded = true;
             this.SalesReportACE.HeaderIndent = 24;
             this.SalesReportACE.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SalesReportACE.ImageOptions.Image")));
             this.SalesReportACE.Name = "SalesReportACE";

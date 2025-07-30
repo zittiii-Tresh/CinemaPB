@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeatReservationForm));
             this.usernameTE = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.reserveBTN = new DevExpress.XtraEditors.SimpleButton();
@@ -77,11 +78,12 @@
             this.Controls.Add(this.reserveBTN);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.usernameTE);
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("SeatReservationForm.IconOptions.SvgImage")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SeatReservationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SeatReservationForm";
+            this.Text = "Seat Reservation";
             ((System.ComponentModel.ISupportInitialize)(this.usernameTE.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

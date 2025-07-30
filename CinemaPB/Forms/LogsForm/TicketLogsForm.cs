@@ -30,7 +30,7 @@ namespace CinemaPB.Forms.LogsForm
                                           ,DateTime
                                           ,Activity
                                       FROM log.TicketLogs
-                                    ";
+                                      ORDER BY LogID DESC";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);

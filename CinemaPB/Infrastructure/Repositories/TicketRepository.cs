@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CinemaPB.Configuration;
 using Dapper;
 
 namespace CinemaPB.Infrastructure.Repositories
@@ -21,7 +22,7 @@ namespace CinemaPB.Infrastructure.Repositories
             {
                 string query = @"INSERT INTO dbo.Tickets 
                          (ShowtimeID, SeatID, PurchaseTime, MoviePriceID, PaymentStatus, TicketStatus)
-                         VALUES (@ShowtimeID, @SeatID, @PurchaseTime, @MoviePriceID, @PaymentStatus, @TicketStatus)";
+                         VALUES (@ShowtimeID, @SeatID, GETDATE(), @MoviePriceID, @PaymentStatus, @TicketStatus)";
 
                 var parameters = new
                 {
@@ -115,5 +116,16 @@ namespace CinemaPB.Infrastructure.Repositories
                 return ticketRows > 0 && seatRows > 0;
             }
         }
+
+        public int GetLastInsertedTicketID()
+        {
+            using (var connection = new SqlConnection(GlobalSetting.GetConnectionString()))
+            {
+                connection.Open();
+                string query = "SELECT IDENT_CURRENT('Tickets')";
+                return Convert.ToInt32(new SqlCommand(query, connection).ExecuteScalar());
+            }
+        }
+
     }
 }
