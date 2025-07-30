@@ -131,7 +131,6 @@
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
             this.seatPanel = new DevExpress.XtraEditors.SidePanel();
-            this.confirmBTN = new DevExpress.XtraEditors.SimpleButton();
             this.closeBTN = new DevExpress.XtraEditors.SimpleButton();
             this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).BeginInit();
@@ -1427,7 +1426,6 @@
             // 
             // seatPanel
             // 
-            this.seatPanel.Controls.Add(this.confirmBTN);
             this.seatPanel.Controls.Add(this.sidePanel2);
             this.seatPanel.Controls.Add(this.labelControl26);
             this.seatPanel.Controls.Add(this.A1);
@@ -1522,20 +1520,6 @@
             this.seatPanel.Size = new System.Drawing.Size(891, 515);
             this.seatPanel.TabIndex = 94;
             this.seatPanel.Text = "sidePanel3";
-            // 
-            // confirmBTN
-            // 
-            this.confirmBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.confirmBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmBTN.Appearance.Options.UseBackColor = true;
-            this.confirmBTN.Appearance.Options.UseFont = true;
-            this.confirmBTN.Location = new System.Drawing.Point(784, 470);
-            this.confirmBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.confirmBTN.Name = "confirmBTN";
-            this.confirmBTN.Size = new System.Drawing.Size(94, 32);
-            this.confirmBTN.TabIndex = 95;
-            this.confirmBTN.Text = "Confirm";
-            this.confirmBTN.Click += new System.EventHandler(this.confirmBTN_Click);
             // 
             // closeBTN
             // 
@@ -1696,7 +1680,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl25;
         private DevExpress.XtraEditors.LabelControl labelControl26;
         private DevExpress.XtraEditors.SidePanel seatPanel;
-        private DevExpress.XtraEditors.SimpleButton confirmBTN;
         private DevExpress.XtraEditors.SimpleButton closeBTN;
         private DevExpress.Utils.ToolTipController toolTipController1;
     }

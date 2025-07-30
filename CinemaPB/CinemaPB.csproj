@@ -267,6 +267,12 @@
     <Compile Include="LogsReport\ShowtimeLogsReport.Designer.cs">
       <DependentUpon>ShowtimeLogsReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogsReport\TicketLogsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogsReport\TicketLogsReport.Designer.cs">
+      <DependentUpon>TicketLogsReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModelMovie\ContentRating.cs" />
     <Compile Include="ModelMovie\Genre.cs" />
     <Compile Include="ModelMovie\Language.cs" />
@@ -390,6 +396,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LogsReport\ShowtimeLogsReport.resx">
       <DependentUpon>ShowtimeLogsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogsReport\TicketLogsReport.resx">
+      <DependentUpon>TicketLogsReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -29,16 +29,16 @@ namespace CinemaPB.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchedulingHall1Form));
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel6 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel10 = new DevExpress.XtraEditors.SidePanel();
@@ -113,7 +113,7 @@ namespace CinemaPB.Forms
             // sidePanel1
             // 
             this.sidePanel1.AllowResize = false;
-            this.sidePanel1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.sidePanel1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.sidePanel1.Appearance.BorderColor = System.Drawing.Color.Silver;
             this.sidePanel1.Appearance.Options.UseBackColor = true;
             this.sidePanel1.Appearance.Options.UseBorderColor = true;
@@ -133,6 +133,8 @@ namespace CinemaPB.Forms
             // sidePanel6
             // 
             this.sidePanel6.AllowResize = false;
+            this.sidePanel6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel6.Appearance.Options.UseBackColor = true;
             this.sidePanel6.BorderThickness = 0;
             this.sidePanel6.Controls.Add(this.sidePanel10);
             this.sidePanel6.Controls.Add(this.sidePanel9);
@@ -147,6 +149,8 @@ namespace CinemaPB.Forms
             // sidePanel10
             // 
             this.sidePanel10.AllowResize = false;
+            this.sidePanel10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel10.Appearance.Options.UseBackColor = true;
             this.sidePanel10.BorderThickness = 0;
             this.sidePanel10.Controls.Add(this.posterPE);
             this.sidePanel10.Dock = System.Windows.Forms.DockStyle.Left;
@@ -169,12 +173,15 @@ namespace CinemaPB.Forms
             this.posterPE.Properties.Appearance.Options.UseBackColor = true;
             this.posterPE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.posterPE.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.posterPE.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.posterPE.Size = new System.Drawing.Size(353, 515);
             this.posterPE.TabIndex = 0;
             // 
             // sidePanel9
             // 
             this.sidePanel9.AllowResize = false;
+            this.sidePanel9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel9.Appearance.Options.UseBackColor = true;
             this.sidePanel9.BorderThickness = 0;
             this.sidePanel9.Controls.Add(this.label10);
             this.sidePanel9.Controls.Add(this.label9);
@@ -236,7 +243,7 @@ namespace CinemaPB.Forms
             this.starttime3TE.Location = new System.Drawing.Point(4, 381);
             this.starttime3TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starttime3TE.Name = "starttime3TE";
-            this.starttime3TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.starttime3TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.starttime3TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.starttime3TE.Properties.Appearance.Options.UseBackColor = true;
             this.starttime3TE.Properties.Appearance.Options.UseFont = true;
@@ -254,7 +261,7 @@ namespace CinemaPB.Forms
             this.starttime2TE.Location = new System.Drawing.Point(4, 323);
             this.starttime2TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starttime2TE.Name = "starttime2TE";
-            this.starttime2TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.starttime2TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.starttime2TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.starttime2TE.Properties.Appearance.Options.UseBackColor = true;
             this.starttime2TE.Properties.Appearance.Options.UseFont = true;
@@ -272,7 +279,7 @@ namespace CinemaPB.Forms
             this.starttime1TE.Location = new System.Drawing.Point(4, 265);
             this.starttime1TE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starttime1TE.Name = "starttime1TE";
-            this.starttime1TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.starttime1TE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.starttime1TE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.starttime1TE.Properties.Appearance.Options.UseBackColor = true;
             this.starttime1TE.Properties.Appearance.Options.UseFont = true;
@@ -371,6 +378,8 @@ namespace CinemaPB.Forms
             // 
             // sidePanel5
             // 
+            this.sidePanel5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel5.Appearance.Options.UseBackColor = true;
             this.sidePanel5.BorderThickness = 0;
             this.sidePanel5.Controls.Add(this.sidePanel11);
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -383,6 +392,8 @@ namespace CinemaPB.Forms
             // 
             // sidePanel11
             // 
+            this.sidePanel11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel11.Appearance.Options.UseBackColor = true;
             this.sidePanel11.BorderThickness = 0;
             this.sidePanel11.Controls.Add(this.deleteBTN);
             this.sidePanel11.Controls.Add(this.updateBTN);
@@ -437,7 +448,7 @@ namespace CinemaPB.Forms
             this.showdateDE.Location = new System.Drawing.Point(318, 8);
             this.showdateDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.showdateDE.Name = "showdateDE";
-            this.showdateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.showdateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.showdateDE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showdateDE.Properties.Appearance.Options.UseBackColor = true;
             this.showdateDE.Properties.Appearance.Options.UseFont = true;
@@ -477,10 +488,10 @@ namespace CinemaPB.Forms
             this.saveBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBTN.Appearance.Options.UseBackColor = true;
             this.saveBTN.Appearance.Options.UseFont = true;
-            this.saveBTN.Location = new System.Drawing.Point(30, 125);
+            this.saveBTN.Location = new System.Drawing.Point(30, 121);
             this.saveBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBTN.Name = "saveBTN";
-            this.saveBTN.Size = new System.Drawing.Size(102, 39);
+            this.saveBTN.Size = new System.Drawing.Size(102, 42);
             this.saveBTN.TabIndex = 27;
             this.saveBTN.Text = "SAVE";
             this.saveBTN.Click += new System.EventHandler(this.saveBTN_Click);
@@ -490,7 +501,7 @@ namespace CinemaPB.Forms
             this.availablemovieLUE.Location = new System.Drawing.Point(26, 8);
             this.availablemovieLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.availablemovieLUE.Name = "availablemovieLUE";
-            this.availablemovieLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.availablemovieLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.availablemovieLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.availablemovieLUE.Properties.Appearance.Options.UseBackColor = true;
             this.availablemovieLUE.Properties.Appearance.Options.UseFont = true;
@@ -504,6 +515,8 @@ namespace CinemaPB.Forms
             // sidePanel4
             // 
             this.sidePanel4.AllowResize = false;
+            this.sidePanel4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel4.Appearance.Options.UseBackColor = true;
             this.sidePanel4.BorderThickness = 0;
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidePanel4.Location = new System.Drawing.Point(594, 124);
@@ -516,6 +529,8 @@ namespace CinemaPB.Forms
             // sidePanel3
             // 
             this.sidePanel3.AllowResize = false;
+            this.sidePanel3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.sidePanel3.Appearance.Options.UseBackColor = true;
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel3.Location = new System.Drawing.Point(1, 124);
@@ -528,7 +543,7 @@ namespace CinemaPB.Forms
             // sidePanel2
             // 
             this.sidePanel2.AllowResize = false;
-            this.sidePanel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(56)))));
+            this.sidePanel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.sidePanel2.Appearance.Options.UseBackColor = true;
             this.sidePanel2.BorderThickness = 0;
             this.sidePanel2.Controls.Add(this.labelControl4);
@@ -823,8 +838,8 @@ namespace CinemaPB.Forms
             // 
             this.repositoryItemButtonEditUpdate.AutoHeight = false;
             this.repositoryItemButtonEditUpdate.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "EDIT", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "DELETE", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "EDIT", -1, true, true, false, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "DELETE", -1, true, true, false, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEditUpdate.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.repositoryItemButtonEditUpdate.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.repositoryItemButtonEditUpdate.HideSelection = false;

@@ -37,6 +37,7 @@
             this.showtimehall1BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.showtimehall2BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.showtimelistACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.logoutBTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mainSPanel = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -57,7 +58,8 @@
             this.staffLBL,
             this.accordionControlSeparator1,
             this.accordionControlElement4,
-            this.showtimelistACE});
+            this.showtimelistACE,
+            this.logoutBTN});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.accordionControl1.Name = "accordionControl1";
@@ -96,6 +98,10 @@
             this.accordionControlElement4.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.accordionControlElement4.Appearance.Default.Options.UseFont = true;
             this.accordionControlElement4.Appearance.Default.Options.UseForeColor = true;
+            this.accordionControlElement4.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.accordionControlElement4.Appearance.Hovered.Options.UseBackColor = true;
+            this.accordionControlElement4.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.accordionControlElement4.Appearance.Pressed.Options.UseBackColor = true;
             this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.showtimehall1BTN,
             this.showtimehall2BTN});
@@ -145,11 +151,32 @@
             this.showtimelistACE.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.showtimelistACE.Appearance.Default.Options.UseFont = true;
             this.showtimelistACE.Appearance.Default.Options.UseForeColor = true;
+            this.showtimelistACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.showtimelistACE.Appearance.Hovered.Options.UseBackColor = true;
+            this.showtimelistACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.showtimelistACE.Appearance.Pressed.Options.UseBackColor = true;
             this.showtimelistACE.HeaderIndent = 34;
             this.showtimelistACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("showtimelistACE.ImageOptions.SvgImage")));
             this.showtimelistACE.Name = "showtimelistACE";
             this.showtimelistACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.showtimelistACE.Text = "Showtime List";
+            // 
+            // logoutBTN
+            // 
+            this.logoutBTN.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutBTN.Appearance.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.logoutBTN.Appearance.Default.Options.UseFont = true;
+            this.logoutBTN.Appearance.Default.Options.UseForeColor = true;
+            this.logoutBTN.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.logoutBTN.Appearance.Hovered.Options.UseBackColor = true;
+            this.logoutBTN.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.logoutBTN.Appearance.Pressed.Options.UseBackColor = true;
+            this.logoutBTN.HeaderIndent = 34;
+            this.logoutBTN.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
+            this.logoutBTN.Name = "logoutBTN";
+            this.logoutBTN.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.logoutBTN.Text = "Logout";
+            this.logoutBTN.Click += new System.EventHandler(this.logoutBTN_Click);
             // 
             // mainSPanel
             // 
@@ -211,5 +238,6 @@
         private DevExpress.XtraEditors.SidePanel mainSPanel;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement showtimelistACE;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement logoutBTN;
     }
 }

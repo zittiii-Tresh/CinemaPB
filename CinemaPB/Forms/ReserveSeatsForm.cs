@@ -211,7 +211,13 @@ namespace CinemaPB.Forms
 
                         if (inserted)
                         {
-                            XtraMessageBox.Show($"Seat {btn.Text} has been purchased. Ticket saved.", "Success");
+                            GlobalLogger.ticketLog(
+                                                    _ticketRepository.GetLastInsertedTicketID(),  // You may need to implement this
+                                                    $"Purchased ticket for seat {btn.Name} (ShowtimeID: {_showing.ShowtimeID})",
+                                                    UserSession.Username
+                                                );
+
+                            XtraMessageBox.Show($"Seat {btn.Name} has been purchased. Ticket saved.", "Success");
                         }
                         else
                         {

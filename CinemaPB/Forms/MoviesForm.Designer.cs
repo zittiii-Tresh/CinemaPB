@@ -33,9 +33,11 @@
             this.posterPE = new DevExpress.XtraEditors.PictureEdit();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
+            this.sidePanel11 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel10 = new DevExpress.XtraEditors.SidePanel();
             this.availabilityLC = new DevExpress.XtraEditors.LabelControl();
             this.updateBTN = new DevExpress.XtraEditors.SimpleButton();
+            this.deleteBTN = new DevExpress.XtraEditors.SimpleButton();
             this.availabilityTS = new DevExpress.XtraEditors.ToggleSwitch();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.browseBTN = new DevExpress.XtraEditors.SimpleButton();
@@ -45,25 +47,25 @@
             this.sidePanel7 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.addlanguageBTN = new DevExpress.XtraEditors.SimpleButton();
             this.weekendpriceTE = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.Mo = new DevExpress.XtraEditors.SimpleButton();
+            this.movieratingLUE = new DevExpress.XtraEditors.LookUpEdit();
             this.weekdaypriceTE = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.durationTE = new DevExpress.XtraEditors.TimeEdit();
+            this.movienameTE = new DevExpress.XtraEditors.TextEdit();
+            this.movielanguageLUE = new DevExpress.XtraEditors.LookUpEdit();
             this.moviegenreLUE = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.addgenreBTN = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.movienameTE = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.moviedescriptionTE = new DevExpress.XtraEditors.MemoEdit();
             this.textEdit2 = new DevExpress.XtraEditors.LookUpEdit();
-            this.movielanguageLUE = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.movieratingLUE = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.moviedescriptionTE = new DevExpress.XtraEditors.TextEdit();
             this.sidePanel8 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel9 = new DevExpress.XtraEditors.SidePanel();
@@ -76,22 +78,20 @@
             this.Language = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Availability = new DevExpress.XtraGrid.Columns.GridColumn();
             this.moviedurationTE = new DevExpress.XtraEditors.DateTimeOffsetEdit();
-            this.sidePanel11 = new DevExpress.XtraEditors.SidePanel();
-            this.deleteBTN = new DevExpress.XtraEditors.SimpleButton();
             this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.posterPE.Properties)).BeginInit();
             this.sidePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityTS.Properties)).BeginInit();
             this.sidePanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.weekendpriceTE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieratingLUE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weekdaypriceTE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.durationTE.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moviegenreLUE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movienameTE.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movielanguageLUE.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movieratingLUE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moviegenreLUE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moviedescriptionTE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.sidePanel8.SuspendLayout();
             this.sidePanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.moviesGC)).BeginInit();
@@ -125,6 +125,7 @@
             this.posterPE.Properties.Appearance.Options.UseBackColor = true;
             this.posterPE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.posterPE.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.posterPE.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.posterPE.Size = new System.Drawing.Size(641, 753);
             this.posterPE.TabIndex = 0;
             // 
@@ -160,6 +161,16 @@
             this.sidePanel3.Size = new System.Drawing.Size(1633, 72);
             this.sidePanel3.TabIndex = 2;
             this.sidePanel3.Text = "sidePanel3";
+            // 
+            // sidePanel11
+            // 
+            this.sidePanel11.BorderThickness = 0;
+            this.sidePanel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidePanel11.Location = new System.Drawing.Point(0, 0);
+            this.sidePanel11.Name = "sidePanel11";
+            this.sidePanel11.Size = new System.Drawing.Size(1595, 18);
+            this.sidePanel11.TabIndex = 27;
+            this.sidePanel11.Text = "sidePanel11";
             // 
             // sidePanel10
             // 
@@ -199,6 +210,22 @@
             this.updateBTN.TabIndex = 25;
             this.updateBTN.Text = "Update";
             this.updateBTN.Click += new System.EventHandler(this.updateBTN_Click);
+            // 
+            // deleteBTN
+            // 
+            this.deleteBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.deleteBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBTN.Appearance.Options.UseBackColor = true;
+            this.deleteBTN.Appearance.Options.UseFont = true;
+            this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("deleteBTN.ImageOptions.Image")));
+            this.deleteBTN.Location = new System.Drawing.Point(1476, 23);
+            this.deleteBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteBTN.Name = "deleteBTN";
+            this.deleteBTN.Padding = new System.Windows.Forms.Padding(2);
+            this.deleteBTN.Size = new System.Drawing.Size(102, 39);
+            this.deleteBTN.TabIndex = 24;
+            this.deleteBTN.Text = "Delete";
+            this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
             // 
             // availabilityTS
             // 
@@ -292,7 +319,6 @@
             this.sidePanel7.Controls.Add(this.labelControl10);
             this.sidePanel7.Controls.Add(this.labelControl2);
             this.sidePanel7.Controls.Add(this.labelControl8);
-            this.sidePanel7.Controls.Add(this.moviedescriptionTE);
             this.sidePanel7.Controls.Add(this.addlanguageBTN);
             this.sidePanel7.Controls.Add(this.weekendpriceTE);
             this.sidePanel7.Controls.Add(this.labelControl7);
@@ -308,6 +334,7 @@
             this.sidePanel7.Controls.Add(this.moviegenreLUE);
             this.sidePanel7.Controls.Add(this.addgenreBTN);
             this.sidePanel7.Controls.Add(this.labelControl4);
+            this.sidePanel7.Controls.Add(this.moviedescriptionTE);
             this.sidePanel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel7.Location = new System.Drawing.Point(712, 44);
             this.sidePanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -322,7 +349,7 @@
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl11.Appearance.Options.UseFont = true;
             this.labelControl11.Appearance.Options.UseForeColor = true;
-            this.labelControl11.Location = new System.Drawing.Point(382, 321);
+            this.labelControl11.Location = new System.Drawing.Point(426, 321);
             this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(90, 16);
@@ -335,12 +362,38 @@
             this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.Location = new System.Drawing.Point(382, 256);
+            this.labelControl10.Location = new System.Drawing.Point(426, 256);
             this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(90, 16);
             this.labelControl10.TabIndex = 27;
             this.labelControl10.Text = "Weekday Price";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.Location = new System.Drawing.Point(24, 4);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(169, 37);
+            this.labelControl2.TabIndex = 8;
+            this.labelControl2.Text = "ADD MOVIE";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Appearance.Options.UseForeColor = true;
+            this.labelControl8.Location = new System.Drawing.Point(70, 381);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(105, 16);
+            this.labelControl8.TabIndex = 21;
+            this.labelControl8.Text = "Movie Description";
             // 
             // addlanguageBTN
             // 
@@ -358,7 +411,7 @@
             this.addlanguageBTN.AppearancePressed.Options.UseBorderColor = true;
             this.addlanguageBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addlanguageBTN.ImageOptions.Image")));
             this.addlanguageBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.addlanguageBTN.Location = new System.Drawing.Point(660, 144);
+            this.addlanguageBTN.Location = new System.Drawing.Point(704, 144);
             this.addlanguageBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addlanguageBTN.Name = "addlanguageBTN";
             this.addlanguageBTN.Size = new System.Drawing.Size(46, 39);
@@ -367,17 +420,30 @@
             // 
             // weekendpriceTE
             // 
-            this.weekendpriceTE.Location = new System.Drawing.Point(382, 286);
+            this.weekendpriceTE.Location = new System.Drawing.Point(426, 286);
             this.weekendpriceTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.weekendpriceTE.Name = "weekendpriceTE";
             this.weekendpriceTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.weekendpriceTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weekendpriceTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weekendpriceTE.Properties.Appearance.Options.UseBackColor = true;
             this.weekendpriceTE.Properties.Appearance.Options.UseFont = true;
             this.weekendpriceTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.weekendpriceTE.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.weekendpriceTE.Size = new System.Drawing.Size(260, 30);
+            this.weekendpriceTE.Size = new System.Drawing.Size(260, 32);
             this.weekendpriceTE.TabIndex = 28;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Appearance.Options.UseForeColor = true;
+            this.labelControl7.Location = new System.Drawing.Point(70, 256);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(76, 16);
+            this.labelControl7.TabIndex = 19;
+            this.labelControl7.Text = "Movie Rating";
             // 
             // Mo
             // 
@@ -395,20 +461,75 @@
             this.Mo.Text = "Save Movie";
             this.Mo.Click += new System.EventHandler(this.saveBTN_Click);
             // 
+            // movieratingLUE
+            // 
+            this.movieratingLUE.Location = new System.Drawing.Point(70, 222);
+            this.movieratingLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movieratingLUE.Name = "movieratingLUE";
+            this.movieratingLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.movieratingLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movieratingLUE.Properties.Appearance.Options.UseBackColor = true;
+            this.movieratingLUE.Properties.Appearance.Options.UseFont = true;
+            this.movieratingLUE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.movieratingLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.movieratingLUE.Properties.NullText = "";
+            this.movieratingLUE.Size = new System.Drawing.Size(260, 32);
+            this.movieratingLUE.TabIndex = 18;
+            // 
             // weekdaypriceTE
             // 
-            this.weekdaypriceTE.Location = new System.Drawing.Point(382, 222);
+            this.weekdaypriceTE.Location = new System.Drawing.Point(426, 222);
             this.weekdaypriceTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.weekdaypriceTE.Name = "weekdaypriceTE";
             this.weekdaypriceTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.weekdaypriceTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weekdaypriceTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weekdaypriceTE.Properties.Appearance.Options.UseBackColor = true;
             this.weekdaypriceTE.Properties.Appearance.Options.UseFont = true;
             this.weekdaypriceTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.weekdaypriceTE.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.weekdaypriceTE.Properties.MaskSettings.Set("mask", "");
-            this.weekdaypriceTE.Size = new System.Drawing.Size(260, 30);
+            this.weekdaypriceTE.Size = new System.Drawing.Size(260, 32);
             this.weekdaypriceTE.TabIndex = 27;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(70, 185);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(88, 16);
+            this.labelControl5.TabIndex = 15;
+            this.labelControl5.Text = "Movie Duration";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Appearance.Options.UseForeColor = true;
+            this.labelControl6.Location = new System.Drawing.Point(426, 184);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(99, 16);
+            this.labelControl6.TabIndex = 17;
+            this.labelControl6.Text = "Movie Language";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(70, 114);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(76, 16);
+            this.labelControl3.TabIndex = 12;
+            this.labelControl3.Text = "Movie Name";
             // 
             // durationTE
             // 
@@ -416,7 +537,7 @@
             this.durationTE.Location = new System.Drawing.Point(70, 150);
             this.durationTE.Name = "durationTE";
             this.durationTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.durationTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.durationTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.durationTE.Properties.Appearance.Options.UseBackColor = true;
             this.durationTE.Properties.Appearance.Options.UseFont = true;
             this.durationTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -424,16 +545,45 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.durationTE.Properties.MaskSettings.Set("mask", "hh mm");
             this.durationTE.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.durationTE.Size = new System.Drawing.Size(260, 30);
+            this.durationTE.Size = new System.Drawing.Size(260, 32);
             this.durationTE.TabIndex = 18;
+            // 
+            // movienameTE
+            // 
+            this.movienameTE.Location = new System.Drawing.Point(70, 77);
+            this.movienameTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movienameTE.Name = "movienameTE";
+            this.movienameTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.movienameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movienameTE.Properties.Appearance.Options.UseBackColor = true;
+            this.movienameTE.Properties.Appearance.Options.UseFont = true;
+            this.movienameTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.movienameTE.Size = new System.Drawing.Size(260, 32);
+            this.movienameTE.TabIndex = 9;
+            // 
+            // movielanguageLUE
+            // 
+            this.movielanguageLUE.Location = new System.Drawing.Point(426, 149);
+            this.movielanguageLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.movielanguageLUE.Name = "movielanguageLUE";
+            this.movielanguageLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.movielanguageLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movielanguageLUE.Properties.Appearance.Options.UseBackColor = true;
+            this.movielanguageLUE.Properties.Appearance.Options.UseFont = true;
+            this.movielanguageLUE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.movielanguageLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.movielanguageLUE.Properties.NullText = "";
+            this.movielanguageLUE.Size = new System.Drawing.Size(260, 32);
+            this.movielanguageLUE.TabIndex = 16;
             // 
             // moviegenreLUE
             // 
-            this.moviegenreLUE.Location = new System.Drawing.Point(382, 77);
+            this.moviegenreLUE.Location = new System.Drawing.Point(426, 77);
             this.moviegenreLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.moviegenreLUE.Name = "moviegenreLUE";
             this.moviegenreLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.moviegenreLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moviegenreLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moviegenreLUE.Properties.Appearance.Options.UseBackColor = true;
             this.moviegenreLUE.Properties.Appearance.Options.UseFont = true;
             this.moviegenreLUE.Properties.AutoHeight = false;
@@ -458,51 +608,12 @@
             this.addgenreBTN.AppearancePressed.Options.UseBorderColor = true;
             this.addgenreBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addgenreBTN.ImageOptions.Image")));
             this.addgenreBTN.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.addgenreBTN.Location = new System.Drawing.Point(660, 71);
+            this.addgenreBTN.Location = new System.Drawing.Point(704, 71);
             this.addgenreBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addgenreBTN.Name = "addgenreBTN";
             this.addgenreBTN.Size = new System.Drawing.Size(46, 39);
             this.addgenreBTN.TabIndex = 11;
             this.addgenreBTN.Click += new System.EventHandler(this.addgenreBTN_Click);
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(24, 4);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(169, 37);
-            this.labelControl2.TabIndex = 8;
-            this.labelControl2.Text = "ADD MOVIE";
-            // 
-            // movienameTE
-            // 
-            this.movienameTE.Location = new System.Drawing.Point(70, 77);
-            this.movienameTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.movienameTE.Name = "movienameTE";
-            this.movienameTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.movienameTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movienameTE.Properties.Appearance.Options.UseBackColor = true;
-            this.movienameTE.Properties.Appearance.Options.UseFont = true;
-            this.movienameTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.movienameTE.Size = new System.Drawing.Size(260, 30);
-            this.movienameTE.TabIndex = 9;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(70, 114);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(76, 16);
-            this.labelControl3.TabIndex = 12;
-            this.labelControl3.Text = "Movie Name";
             // 
             // labelControl4
             // 
@@ -510,25 +621,34 @@
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(382, 114);
+            this.labelControl4.Location = new System.Drawing.Point(426, 114);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(77, 16);
             this.labelControl4.TabIndex = 13;
             this.labelControl4.Text = "Movie Genre";
             // 
-            // labelControl5
+            // moviedescriptionTE
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(70, 185);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(88, 16);
-            this.labelControl5.TabIndex = 15;
-            this.labelControl5.Text = "Movie Duration";
+            this.moviedescriptionTE.Location = new System.Drawing.Point(70, 285);
+            this.moviedescriptionTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.moviedescriptionTE.Name = "moviedescriptionTE";
+            this.moviedescriptionTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
+            this.moviedescriptionTE.Properties.Appearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.moviedescriptionTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moviedescriptionTE.Properties.Appearance.ForeColor = System.Drawing.Color.Silver;
+            this.moviedescriptionTE.Properties.Appearance.Options.UseBackColor = true;
+            this.moviedescriptionTE.Properties.Appearance.Options.UseBorderColor = true;
+            this.moviedescriptionTE.Properties.Appearance.Options.UseFont = true;
+            this.moviedescriptionTE.Properties.Appearance.Options.UseForeColor = true;
+            this.moviedescriptionTE.Properties.Appearance.Options.UseTextOptions = true;
+            this.moviedescriptionTE.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.moviedescriptionTE.Properties.AppearanceFocused.Options.UseTextOptions = true;
+            this.moviedescriptionTE.Properties.AppearanceFocused.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.moviedescriptionTE.Properties.AppearanceFocused.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
+            this.moviedescriptionTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.moviedescriptionTE.Size = new System.Drawing.Size(320, 91);
+            this.moviedescriptionTE.TabIndex = 22;
             // 
             // textEdit2
             // 
@@ -543,96 +663,6 @@
             this.textEdit2.Properties.NullText = "";
             this.textEdit2.Size = new System.Drawing.Size(260, 28);
             this.textEdit2.TabIndex = 10;
-            // 
-            // movielanguageLUE
-            // 
-            this.movielanguageLUE.Location = new System.Drawing.Point(382, 149);
-            this.movielanguageLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.movielanguageLUE.Name = "movielanguageLUE";
-            this.movielanguageLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.movielanguageLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movielanguageLUE.Properties.Appearance.Options.UseBackColor = true;
-            this.movielanguageLUE.Properties.Appearance.Options.UseFont = true;
-            this.movielanguageLUE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.movielanguageLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.movielanguageLUE.Properties.NullText = "";
-            this.movielanguageLUE.Size = new System.Drawing.Size(260, 30);
-            this.movielanguageLUE.TabIndex = 16;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(382, 184);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(99, 16);
-            this.labelControl6.TabIndex = 17;
-            this.labelControl6.Text = "Movie Language";
-            // 
-            // movieratingLUE
-            // 
-            this.movieratingLUE.Location = new System.Drawing.Point(70, 222);
-            this.movieratingLUE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.movieratingLUE.Name = "movieratingLUE";
-            this.movieratingLUE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.movieratingLUE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movieratingLUE.Properties.Appearance.Options.UseBackColor = true;
-            this.movieratingLUE.Properties.Appearance.Options.UseFont = true;
-            this.movieratingLUE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.movieratingLUE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.movieratingLUE.Properties.NullText = "";
-            this.movieratingLUE.Size = new System.Drawing.Size(260, 30);
-            this.movieratingLUE.TabIndex = 18;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(70, 256);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(76, 16);
-            this.labelControl7.TabIndex = 19;
-            this.labelControl7.Text = "Movie Rating";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(70, 356);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(105, 16);
-            this.labelControl8.TabIndex = 21;
-            this.labelControl8.Text = "Movie Description";
-            // 
-            // moviedescriptionTE
-            // 
-            this.moviedescriptionTE.Location = new System.Drawing.Point(70, 285);
-            this.moviedescriptionTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.moviedescriptionTE.Name = "moviedescriptionTE";
-            this.moviedescriptionTE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.moviedescriptionTE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moviedescriptionTE.Properties.Appearance.Options.UseBackColor = true;
-            this.moviedescriptionTE.Properties.Appearance.Options.UseFont = true;
-            this.moviedescriptionTE.Properties.Appearance.Options.UseTextOptions = true;
-            this.moviedescriptionTE.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.moviedescriptionTE.Properties.AppearanceFocused.Options.UseTextOptions = true;
-            this.moviedescriptionTE.Properties.AppearanceFocused.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.moviedescriptionTE.Properties.AppearanceFocused.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
-            this.moviedescriptionTE.Properties.AutoHeight = false;
-            this.moviedescriptionTE.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.moviedescriptionTE.Size = new System.Drawing.Size(261, 64);
-            this.moviedescriptionTE.TabIndex = 22;
             // 
             // sidePanel8
             // 
@@ -728,7 +758,7 @@
             // 
             // MovieID
             // 
-            this.MovieID.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.MovieID.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MovieID.AppearanceCell.Options.UseFont = true;
             this.MovieID.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.MovieID.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
@@ -748,7 +778,7 @@
             // 
             // Title
             // 
-            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Title.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.AppearanceCell.Options.UseFont = true;
             this.Title.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Title.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
@@ -768,7 +798,7 @@
             // 
             // Genre
             // 
-            this.Genre.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Genre.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Genre.AppearanceCell.Options.UseFont = true;
             this.Genre.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Genre.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
@@ -788,7 +818,7 @@
             // 
             // Rating
             // 
-            this.Rating.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Rating.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rating.AppearanceCell.Options.UseFont = true;
             this.Rating.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Rating.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
@@ -808,7 +838,7 @@
             // 
             // Language
             // 
-            this.Language.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Language.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Language.AppearanceCell.Options.UseFont = true;
             this.Language.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Language.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
@@ -828,7 +858,7 @@
             // 
             // Availability
             // 
-            this.Availability.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Availability.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Availability.AppearanceCell.Options.UseFont = true;
             this.Availability.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Availability.AppearanceHeader.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
@@ -861,32 +891,6 @@
             this.moviedurationTE.Size = new System.Drawing.Size(260, 28);
             this.moviedurationTE.TabIndex = 14;
             // 
-            // sidePanel11
-            // 
-            this.sidePanel11.BorderThickness = 0;
-            this.sidePanel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sidePanel11.Location = new System.Drawing.Point(0, 0);
-            this.sidePanel11.Name = "sidePanel11";
-            this.sidePanel11.Size = new System.Drawing.Size(1595, 18);
-            this.sidePanel11.TabIndex = 27;
-            this.sidePanel11.Text = "sidePanel11";
-            // 
-            // deleteBTN
-            // 
-            this.deleteBTN.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.deleteBTN.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteBTN.Appearance.Options.UseBackColor = true;
-            this.deleteBTN.Appearance.Options.UseFont = true;
-            this.deleteBTN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("deleteBTN.ImageOptions.Image")));
-            this.deleteBTN.Location = new System.Drawing.Point(1476, 23);
-            this.deleteBTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.deleteBTN.Name = "deleteBTN";
-            this.deleteBTN.Padding = new System.Windows.Forms.Padding(2);
-            this.deleteBTN.Size = new System.Drawing.Size(102, 39);
-            this.deleteBTN.TabIndex = 24;
-            this.deleteBTN.Text = "Delete";
-            this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
-            // 
             // MoviesForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
@@ -915,14 +919,14 @@
             this.sidePanel7.ResumeLayout(false);
             this.sidePanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.weekendpriceTE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieratingLUE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weekdaypriceTE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.durationTE.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moviegenreLUE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movienameTE.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movielanguageLUE.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movieratingLUE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moviegenreLUE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moviedescriptionTE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.sidePanel8.ResumeLayout(false);
             this.sidePanel8.PerformLayout();
             this.sidePanel9.ResumeLayout(false);
@@ -957,7 +961,6 @@
         private DevExpress.XtraEditors.LookUpEdit movieratingLUE;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit moviedescriptionTE;
         private DevExpress.XtraEditors.SimpleButton Mo;
         private DevExpress.XtraEditors.SimpleButton addlanguageBTN;
         private DevExpress.XtraEditors.SidePanel sidePanel8;
@@ -984,5 +987,6 @@
         private DevExpress.XtraEditors.SidePanel sidePanel10;
         private DevExpress.XtraEditors.SidePanel sidePanel11;
         private DevExpress.XtraEditors.SimpleButton deleteBTN;
+        private DevExpress.XtraEditors.MemoEdit moviedescriptionTE;
     }
 }

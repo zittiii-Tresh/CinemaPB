@@ -281,7 +281,7 @@
             // gridColumn1
             // 
             this.gridColumn1.AppearanceCell.BackColor = System.Drawing.Color.DimGray;
-            this.gridColumn1.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn1.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn1.AppearanceCell.ForeColor = System.Drawing.Color.White;
             this.gridColumn1.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn1.AppearanceCell.Options.UseFont = true;
@@ -308,7 +308,7 @@
             // gridColumn2
             // 
             this.gridColumn2.AppearanceCell.BackColor = System.Drawing.Color.DimGray;
-            this.gridColumn2.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.gridColumn2.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn2.AppearanceCell.ForeColor = System.Drawing.Color.White;
             this.gridColumn2.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn2.AppearanceCell.Options.UseFont = true;
@@ -335,7 +335,7 @@
             // ContactNumber
             // 
             this.ContactNumber.AppearanceCell.BackColor = System.Drawing.Color.DimGray;
-            this.ContactNumber.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.ContactNumber.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactNumber.AppearanceCell.ForeColor = System.Drawing.Color.White;
             this.ContactNumber.AppearanceCell.Options.UseBackColor = true;
             this.ContactNumber.AppearanceCell.Options.UseFont = true;
@@ -362,7 +362,7 @@
             // Username
             // 
             this.Username.AppearanceCell.BackColor = System.Drawing.Color.DimGray;
-            this.Username.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Username.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Username.AppearanceCell.ForeColor = System.Drawing.Color.White;
             this.Username.AppearanceCell.Options.UseBackColor = true;
             this.Username.AppearanceCell.Options.UseFont = true;
@@ -389,7 +389,7 @@
             // Position
             // 
             this.Position.AppearanceCell.BackColor = System.Drawing.Color.DimGray;
-            this.Position.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Position.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Position.AppearanceCell.ForeColor = System.Drawing.Color.White;
             this.Position.AppearanceCell.Options.UseBackColor = true;
             this.Position.AppearanceCell.Options.UseFont = true;
@@ -418,7 +418,7 @@
             // EmployeeStatus
             // 
             this.EmployeeStatus.AppearanceCell.BackColor = System.Drawing.Color.DimGray;
-            this.EmployeeStatus.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.EmployeeStatus.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmployeeStatus.AppearanceCell.ForeColor = System.Drawing.Color.White;
             this.EmployeeStatus.AppearanceCell.Options.UseBackColor = true;
             this.EmployeeStatus.AppearanceCell.Options.UseFont = true;
@@ -447,7 +447,7 @@
             // AccountStatus
             // 
             this.AccountStatus.AppearanceCell.BackColor = System.Drawing.Color.DimGray;
-            this.AccountStatus.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.AccountStatus.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AccountStatus.AppearanceCell.ForeColor = System.Drawing.Color.White;
             this.AccountStatus.AppearanceCell.Options.UseBackColor = true;
             this.AccountStatus.AppearanceCell.Options.UseFont = true;
@@ -476,7 +476,7 @@
             // gridColumn4
             // 
             this.gridColumn4.AppearanceCell.BackColor = System.Drawing.Color.DimGray;
-            this.gridColumn4.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.gridColumn4.AppearanceCell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn4.AppearanceCell.ForeColor = System.Drawing.Color.White;
             this.gridColumn4.AppearanceCell.Options.UseBackColor = true;
             this.gridColumn4.AppearanceCell.Options.UseFont = true;

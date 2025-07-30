@@ -78,17 +78,22 @@ namespace CinemaPB
                             GlobalLogger.employeeLoginLog(username, true);
 
                             this.Hide();
+
+                            Form nextForm;
+
                             if (roleID == 1)
                             {
-                                MainForm adminForm = new MainForm();
-                                adminForm.ShowDialog();
+                                nextForm = new MainForm();
                             }
-                            else if (roleID == 2)
+                            else
                             {
-                                StaffForm staffForm = new StaffForm();
-                                staffForm.ShowDialog();
+                                nextForm = new StaffForm();
                             }
-                            this.Show();
+
+                            nextForm.FormClosed += (s, args) => Application.Exit(); // No async here
+
+                            nextForm.Show(); // Or ShowDialog() if you want to block (not required)
+
                         }
                         else
                         {
