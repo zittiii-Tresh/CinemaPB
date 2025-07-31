@@ -1225,6 +1225,7 @@
             // 
             // sidePanel2
             // 
+            this.sidePanel2.AllowResize = false;
             this.sidePanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel2.BackgroundImage")));
             this.sidePanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sidePanel2.Controls.Add(this.labelControl8);
@@ -1299,6 +1300,7 @@
             // 
             // sidePanel1
             // 
+            this.sidePanel1.AllowResize = false;
             this.sidePanel1.BorderThickness = 0;
             this.sidePanel1.Controls.Add(this.labelControl1);
             this.sidePanel1.Controls.Add(this.labelControl23);
@@ -1315,6 +1317,7 @@
             // 
             // sidePanel3
             // 
+            this.sidePanel3.AllowResize = false;
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel3.Location = new System.Drawing.Point(0, 185);
@@ -1326,6 +1329,7 @@
             // 
             // sidePanel4
             // 
+            this.sidePanel4.AllowResize = false;
             this.sidePanel4.BorderThickness = 0;
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.sidePanel4.Location = new System.Drawing.Point(89, 924);
@@ -1337,6 +1341,7 @@
             // 
             // sidePanel5
             // 
+            this.sidePanel5.AllowResize = false;
             this.sidePanel5.BorderThickness = 0;
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidePanel5.Location = new System.Drawing.Point(1507, 185);
@@ -1348,6 +1353,7 @@
             // 
             // sidePanel6
             // 
+            this.sidePanel6.AllowResize = false;
             this.sidePanel6.BorderThickness = 0;
             this.sidePanel6.Controls.Add(this.availableRG);
             this.sidePanel6.Controls.Add(this.labelControl4);
@@ -1362,6 +1368,7 @@
             // 
             // sidePanel7
             // 
+            this.sidePanel7.AllowResize = false;
             this.sidePanel7.BorderThickness = 0;
             this.sidePanel7.Controls.Add(this.labelControl2);
             this.sidePanel7.Controls.Add(this.labelControl3);

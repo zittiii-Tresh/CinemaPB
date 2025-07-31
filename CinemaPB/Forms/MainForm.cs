@@ -26,6 +26,7 @@ namespace CinemaPB.Forms
             InitializeComponent();
             _movieRepository = new MovieRepository(GlobalSetting.GetConnectionString());
             AdminLBL.Text = UserSession.Username;
+            FormHelper.LoadUserControl(mainSPanel, new DashboardForm());
         }
 
         private void moviesACE_Click(object sender, EventArgs e)

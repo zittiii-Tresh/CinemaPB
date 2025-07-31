@@ -492,6 +492,7 @@
             // 
             // mainSPanel
             // 
+            this.mainSPanel.AllowResize = false;
             this.mainSPanel.BorderThickness = 0;
             this.mainSPanel.Controls.Add(this.sidePanel1);
             this.mainSPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -504,6 +505,7 @@
             // 
             // sidePanel1
             // 
+            this.sidePanel1.AllowResize = false;
             this.sidePanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel1.BackgroundImage")));
             this.sidePanel1.BorderThickness = 0;
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Left;

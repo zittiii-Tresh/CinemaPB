@@ -186,6 +186,7 @@
             // 
             // sidePanel8
             // 
+            this.sidePanel8.AllowResize = false;
             this.sidePanel8.BorderThickness = 0;
             this.sidePanel8.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.sidePanel8.Location = new System.Drawing.Point(0, 81);

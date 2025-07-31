@@ -378,6 +378,7 @@ namespace CinemaPB.Forms
             // 
             // sidePanel5
             // 
+            this.sidePanel5.AllowResize = false;
             this.sidePanel5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.sidePanel5.Appearance.Options.UseBackColor = true;
             this.sidePanel5.BorderThickness = 0;
@@ -392,6 +393,7 @@ namespace CinemaPB.Forms
             // 
             // sidePanel11
             // 
+            this.sidePanel11.AllowResize = false;
             this.sidePanel11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
             this.sidePanel11.Appearance.Options.UseBackColor = true;
             this.sidePanel11.BorderThickness = 0;
