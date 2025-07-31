@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardForm));
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
+            this.dateDE = new DevExpress.XtraEditors.DateEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
@@ -59,10 +60,12 @@
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.ThirdTitleLBL = new DevExpress.XtraEditors.LabelControl();
             this.FirstTitleLBL = new DevExpress.XtraEditors.LabelControl();
-            this.secondTitleLBL = new DevExpress.XtraEditors.LabelControl();
+            this.SecondTitleLBL = new DevExpress.XtraEditors.LabelControl();
             this.secondMoviePE = new DevExpress.XtraEditors.PictureEdit();
             this.firstMoviePE = new DevExpress.XtraEditors.PictureEdit();
             this.sidePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateDE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateDE.Properties.CalendarTimeProperties)).BeginInit();
             this.sidePanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dailySalesGC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dailySalesGV)).BeginInit();
@@ -77,6 +80,7 @@
             // 
             this.sidePanel1.AllowResize = false;
             this.sidePanel1.BorderThickness = 0;
+            this.sidePanel1.Controls.Add(this.dateDE);
             this.sidePanel1.Controls.Add(this.labelControl1);
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel1.Location = new System.Drawing.Point(0, 0);
@@ -84,6 +88,28 @@
             this.sidePanel1.Size = new System.Drawing.Size(1503, 102);
             this.sidePanel1.TabIndex = 13;
             this.sidePanel1.Text = "sidePanel1";
+            // 
+            // dateDE
+            // 
+            this.dateDE.EditValue = null;
+            this.dateDE.Location = new System.Drawing.Point(493, 57);
+            this.dateDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateDE.Name = "dateDE";
+            this.dateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
+            this.dateDE.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateDE.Properties.Appearance.Options.UseBackColor = true;
+            this.dateDE.Properties.Appearance.Options.UseFont = true;
+            this.dateDE.Properties.AutoHeight = false;
+            this.dateDE.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateDE.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateDE.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.TouchUI;
+            this.dateDE.Properties.MaskSettings.Set("mask", "Y");
+            this.dateDE.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
+            this.dateDE.Size = new System.Drawing.Size(231, 32);
+            this.dateDE.TabIndex = 32;
+            this.dateDE.EditValueChanged += new System.EventHandler(this.dateDE_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -335,7 +361,7 @@
             this.sidePanel6.Controls.Add(this.labelControl6);
             this.sidePanel6.Controls.Add(this.ThirdTitleLBL);
             this.sidePanel6.Controls.Add(this.FirstTitleLBL);
-            this.sidePanel6.Controls.Add(this.secondTitleLBL);
+            this.sidePanel6.Controls.Add(this.SecondTitleLBL);
             this.sidePanel6.Controls.Add(this.secondMoviePE);
             this.sidePanel6.Controls.Add(this.firstMoviePE);
             this.sidePanel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -541,18 +567,18 @@
             this.FirstTitleLBL.TabIndex = 12;
             this.FirstTitleLBL.Text = "Title";
             // 
-            // secondTitleLBL
+            // SecondTitleLBL
             // 
-            this.secondTitleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secondTitleLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.secondTitleLBL.Appearance.Options.UseFont = true;
-            this.secondTitleLBL.Appearance.Options.UseForeColor = true;
-            this.secondTitleLBL.Location = new System.Drawing.Point(286, 464);
-            this.secondTitleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.secondTitleLBL.Name = "secondTitleLBL";
-            this.secondTitleLBL.Size = new System.Drawing.Size(38, 25);
-            this.secondTitleLBL.TabIndex = 11;
-            this.secondTitleLBL.Text = "Title";
+            this.SecondTitleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondTitleLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.SecondTitleLBL.Appearance.Options.UseFont = true;
+            this.SecondTitleLBL.Appearance.Options.UseForeColor = true;
+            this.SecondTitleLBL.Location = new System.Drawing.Point(286, 464);
+            this.SecondTitleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SecondTitleLBL.Name = "SecondTitleLBL";
+            this.SecondTitleLBL.Size = new System.Drawing.Size(38, 25);
+            this.SecondTitleLBL.TabIndex = 11;
+            this.SecondTitleLBL.Text = "Title";
             // 
             // secondMoviePE
             // 
@@ -598,6 +624,8 @@
             this.Size = new System.Drawing.Size(1503, 1097);
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateDE.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateDE.Properties)).EndInit();
             this.sidePanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dailySalesGC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dailySalesGV)).EndInit();
@@ -622,7 +650,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit secondMoviePE;
         private DevExpress.XtraEditors.PictureEdit firstMoviePE;
-        private DevExpress.XtraEditors.LabelControl secondTitleLBL;
+        private DevExpress.XtraEditors.LabelControl SecondTitleLBL;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
@@ -646,5 +674,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn TicketsSold;
         private DevExpress.XtraGrid.Columns.GridColumn TotalRevenue;
         private DevExpress.XtraEditors.PictureEdit thirdMoviePE;
+        private DevExpress.XtraEditors.DateEdit dateDE;
     }
 }
