@@ -165,5 +165,10 @@ namespace CinemaPB.Forms
                 this.Hide();
             }
         }
+
+        private void dashboardACE_Click(object sender, EventArgs e)
+        {
+            FormHelper.LoadUserControl(mainSPanel, new DashboardForm());
+        }
     }
 }

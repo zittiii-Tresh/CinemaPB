@@ -33,6 +33,7 @@
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AdminLBL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
+            this.dashboardACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.moviesACE = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.schedulinghall1BTN = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -73,6 +74,7 @@
             this.accordionControlElement1,
             this.AdminLBL,
             this.accordionControlSeparator1,
+            this.dashboardACE,
             this.moviesACE,
             this.accordionControlElement4,
             this.employeelistACE,
@@ -113,6 +115,23 @@
             // accordionControlSeparator1
             // 
             this.accordionControlSeparator1.Name = "accordionControlSeparator1";
+            // 
+            // dashboardACE
+            // 
+            this.dashboardACE.Appearance.Default.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboardACE.Appearance.Default.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.dashboardACE.Appearance.Default.Options.UseFont = true;
+            this.dashboardACE.Appearance.Default.Options.UseForeColor = true;
+            this.dashboardACE.Appearance.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.dashboardACE.Appearance.Hovered.Options.UseBackColor = true;
+            this.dashboardACE.Appearance.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.dashboardACE.Appearance.Pressed.Options.UseBackColor = true;
+            this.dashboardACE.HeaderIndent = 34;
+            this.dashboardACE.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("dashboardACE.ImageOptions.SvgImage")));
+            this.dashboardACE.Name = "dashboardACE";
+            this.dashboardACE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.dashboardACE.Text = "Dashboard";
+            this.dashboardACE.Click += new System.EventHandler(this.dashboardACE_Click);
             // 
             // moviesACE
             // 
@@ -389,7 +408,6 @@
             this.dailysalesACE,
             this.weeklysalesACE,
             this.monthlysalesACE});
-            this.SalesReportACE.Expanded = true;
             this.SalesReportACE.HeaderIndent = 24;
             this.SalesReportACE.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SalesReportACE.ImageOptions.Image")));
             this.SalesReportACE.Name = "SalesReportACE";
@@ -548,5 +566,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement weeklysalesACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement monthlysalesACE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement logoutBTN;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement dashboardACE;
     }
 }
