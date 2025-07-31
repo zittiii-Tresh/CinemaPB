@@ -177,7 +177,6 @@
             // 
             // sidePanel1
             // 
-            this.sidePanel1.AllowResize = false;
             this.sidePanel1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(61)))), ((int)(((byte)(68)))));
             this.sidePanel1.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(61)))), ((int)(((byte)(68)))));
             this.sidePanel1.Appearance.Options.UseBackColor = true;
@@ -321,6 +320,7 @@
             // 
             // sidePanel2
             // 
+            this.sidePanel2.AllowResize = false;
             this.sidePanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel2.BackgroundImage")));
             this.sidePanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sidePanel2.Controls.Add(this.labelControl8);
@@ -475,6 +475,7 @@
             // 
             // sidePanel4
             // 
+            this.sidePanel4.AllowResize = false;
             this.sidePanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel4.BackgroundImage")));
             this.sidePanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.sidePanel4.Location = new System.Drawing.Point(797, 101);
@@ -498,6 +499,7 @@
             // 
             // sidePanel3
             // 
+            this.sidePanel3.AllowResize = false;
             this.sidePanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel3.BackgroundImage")));
             this.sidePanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.sidePanel3.Location = new System.Drawing.Point(3, 101);

@@ -78,6 +78,7 @@
             // 
             // sidePanel1
             // 
+            this.sidePanel1.AllowResize = false;
             this.sidePanel1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(44)))), ((int)(((byte)(46)))));
             this.sidePanel1.Appearance.Options.UseBackColor = true;
             this.sidePanel1.BorderThickness = 0;
@@ -129,6 +130,7 @@
             // 
             // sidePanel2
             // 
+            this.sidePanel2.AllowResize = false;
             this.sidePanel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(44)))), ((int)(((byte)(46)))));
             this.sidePanel2.Appearance.Options.UseBackColor = true;
             this.sidePanel2.BorderThickness = 0;
@@ -142,6 +144,7 @@
             // 
             // sidePanel3
             // 
+            this.sidePanel3.AllowResize = false;
             this.sidePanel3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(44)))), ((int)(((byte)(46)))));
             this.sidePanel3.Appearance.Options.UseBackColor = true;
             this.sidePanel3.BorderThickness = 0;
@@ -155,6 +158,7 @@
             // 
             // sidePanel4
             // 
+            this.sidePanel4.AllowResize = false;
             this.sidePanel4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(37)))));
             this.sidePanel4.Appearance.Options.UseBackColor = true;
             this.sidePanel4.BorderThickness = 0;
@@ -168,6 +172,7 @@
             // 
             // sidePanel5
             // 
+            this.sidePanel5.AllowResize = false;
             this.sidePanel5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(37)))));
             this.sidePanel5.Appearance.Options.UseBackColor = true;
             this.sidePanel5.BorderThickness = 0;
@@ -181,6 +186,7 @@
             // 
             // sidePanel6
             // 
+            this.sidePanel6.AllowResize = false;
             this.sidePanel6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(37)))));
             this.sidePanel6.Appearance.Options.UseBackColor = true;
             this.sidePanel6.BorderThickness = 0;
@@ -194,6 +200,7 @@
             // 
             // sidePanel7
             // 
+            this.sidePanel7.AllowResize = false;
             this.sidePanel7.Controls.Add(this.showingGC);
             this.sidePanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sidePanel7.Location = new System.Drawing.Point(35, 70);

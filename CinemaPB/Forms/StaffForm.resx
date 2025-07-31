@@ -600,6 +600,9 @@
   <metadata name="mainSPanel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="sidePanel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="sidePanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAP0AAAStCAYAAACP9F0YAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -897,7 +900,7 @@
   <data name="StaffForm.IconOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAA+1JREFUWEftmG1oW3UUxn+5aV6atlnSZk2TJu1cu7S02XyZU/wg+ALqVIRNZFMc
+        vQAADr0BR/uQrQAAA+1JREFUWEftmG1oW3UUxn+5aV6atlnSZk2TJu1cu7S02XyZU/wg+ALqVIRNZFMc
         6Jj6QUWK84MOFGQfhiADFUHRKUxQcL5tfhBRi0y2gU5h4gtsdpUJvs+tKvgGR87dveNwE9qm3MYhfeAh
         yXnOuffJ+f//55LAAhYw71gBlILBMwE3AD8CAvwN3BFMaAYywHXAo8BB4GnA8bQosNszqPzFi80rUuZ9
         wjPlG/CpZn0kgQ+MttJooWApsAl4BvjMu8lGo+eBo3VM3mNytMufA1PAGhNvGNr+c4FREzsbOBm4ue6n

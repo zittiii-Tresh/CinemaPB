@@ -76,6 +76,7 @@
             // 
             // sidePanel1
             // 
+            this.sidePanel1.AllowResize = false;
             this.sidePanel1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(24)))), ((int)(((byte)(35)))));
             this.sidePanel1.Appearance.Options.UseBackColor = true;
             this.sidePanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel1.BackgroundImage")));
@@ -91,6 +92,7 @@
             // 
             // sidePanel2
             // 
+            this.sidePanel2.AllowResize = false;
             this.sidePanel2.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.sidePanel2.Appearance.Options.UseBackColor = true;
             this.sidePanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel2.BackgroundImage")));
@@ -290,6 +292,7 @@
             // 
             // sidePanel3
             // 
+            this.sidePanel3.AllowResize = false;
             this.sidePanel3.BorderThickness = 0;
             this.sidePanel3.Controls.Add(this.sidePanel4);
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -303,6 +306,7 @@
             // 
             // sidePanel4
             // 
+            this.sidePanel4.AllowResize = false;
             this.sidePanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidePanel4.BackgroundImage")));
             this.sidePanel4.BorderThickness = 0;
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Left;

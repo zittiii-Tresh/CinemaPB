@@ -45,22 +45,25 @@
             this.sidePanel7 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel6 = new DevExpress.XtraEditors.SidePanel();
-            this.thirdMoviePE = new DevExpress.XtraEditors.PictureEdit();
-            this.ThirdTotalSaleLBL = new DevExpress.XtraEditors.LabelControl();
-            this.ThirdTotalTicketsSoldLBL = new DevExpress.XtraEditors.LabelControl();
-            this.ThirdTotalShowingCountLBL = new DevExpress.XtraEditors.LabelControl();
-            this.SecondTotalSaleLBL = new DevExpress.XtraEditors.LabelControl();
-            this.SecondTotalTicketsSoldLBL = new DevExpress.XtraEditors.LabelControl();
-            this.SecondTotalShowingCountLBL = new DevExpress.XtraEditors.LabelControl();
-            this.FirstTotalSaleLBL = new DevExpress.XtraEditors.LabelControl();
-            this.FirstTotalTicketsSoldLBL = new DevExpress.XtraEditors.LabelControl();
+            this.sidePanel9 = new DevExpress.XtraEditors.SidePanel();
+            this.FirstTitleLBL = new DevExpress.XtraEditors.LabelControl();
             this.FirstTotalShowingCountLBL = new DevExpress.XtraEditors.LabelControl();
+            this.FirstTotalTicketsSoldLBL = new DevExpress.XtraEditors.LabelControl();
+            this.FirstTotalSaleLBL = new DevExpress.XtraEditors.LabelControl();
+            this.sidePanel10 = new DevExpress.XtraEditors.SidePanel();
+            this.ThirdTotalShowingCountLBL = new DevExpress.XtraEditors.LabelControl();
+            this.ThirdTitleLBL = new DevExpress.XtraEditors.LabelControl();
+            this.ThirdTotalTicketsSoldLBL = new DevExpress.XtraEditors.LabelControl();
+            this.ThirdTotalSaleLBL = new DevExpress.XtraEditors.LabelControl();
+            this.sidePanel8 = new DevExpress.XtraEditors.SidePanel();
+            this.SecondTotalShowingCountLBL = new DevExpress.XtraEditors.LabelControl();
+            this.SecondTotalTicketsSoldLBL = new DevExpress.XtraEditors.LabelControl();
+            this.SecondTotalSaleLBL = new DevExpress.XtraEditors.LabelControl();
+            this.SecondTitleLBL = new DevExpress.XtraEditors.LabelControl();
+            this.thirdMoviePE = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.ThirdTitleLBL = new DevExpress.XtraEditors.LabelControl();
-            this.FirstTitleLBL = new DevExpress.XtraEditors.LabelControl();
-            this.SecondTitleLBL = new DevExpress.XtraEditors.LabelControl();
             this.secondMoviePE = new DevExpress.XtraEditors.PictureEdit();
             this.firstMoviePE = new DevExpress.XtraEditors.PictureEdit();
             this.sidePanel1.SuspendLayout();
@@ -71,6 +74,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dailySalesGV)).BeginInit();
             this.sidePanel7.SuspendLayout();
             this.sidePanel6.SuspendLayout();
+            this.sidePanel9.SuspendLayout();
+            this.sidePanel10.SuspendLayout();
+            this.sidePanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thirdMoviePE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondMoviePE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstMoviePE.Properties)).BeginInit();
@@ -92,7 +98,7 @@
             // dateDE
             // 
             this.dateDE.EditValue = null;
-            this.dateDE.Location = new System.Drawing.Point(493, 57);
+            this.dateDE.Location = new System.Drawing.Point(425, 50);
             this.dateDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateDE.Name = "dateDE";
             this.dateDE.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(33)))));
@@ -346,22 +352,13 @@
             // 
             this.sidePanel6.AllowResize = false;
             this.sidePanel6.BorderThickness = 0;
+            this.sidePanel6.Controls.Add(this.sidePanel9);
+            this.sidePanel6.Controls.Add(this.sidePanel10);
+            this.sidePanel6.Controls.Add(this.sidePanel8);
             this.sidePanel6.Controls.Add(this.thirdMoviePE);
-            this.sidePanel6.Controls.Add(this.ThirdTotalSaleLBL);
-            this.sidePanel6.Controls.Add(this.ThirdTotalTicketsSoldLBL);
-            this.sidePanel6.Controls.Add(this.ThirdTotalShowingCountLBL);
-            this.sidePanel6.Controls.Add(this.SecondTotalSaleLBL);
-            this.sidePanel6.Controls.Add(this.SecondTotalTicketsSoldLBL);
-            this.sidePanel6.Controls.Add(this.SecondTotalShowingCountLBL);
-            this.sidePanel6.Controls.Add(this.FirstTotalSaleLBL);
-            this.sidePanel6.Controls.Add(this.FirstTotalTicketsSoldLBL);
-            this.sidePanel6.Controls.Add(this.FirstTotalShowingCountLBL);
             this.sidePanel6.Controls.Add(this.labelControl8);
             this.sidePanel6.Controls.Add(this.labelControl7);
             this.sidePanel6.Controls.Add(this.labelControl6);
-            this.sidePanel6.Controls.Add(this.ThirdTitleLBL);
-            this.sidePanel6.Controls.Add(this.FirstTitleLBL);
-            this.sidePanel6.Controls.Add(this.SecondTitleLBL);
             this.sidePanel6.Controls.Add(this.secondMoviePE);
             this.sidePanel6.Controls.Add(this.firstMoviePE);
             this.sidePanel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -370,6 +367,213 @@
             this.sidePanel6.Size = new System.Drawing.Size(1363, 649);
             this.sidePanel6.TabIndex = 18;
             this.sidePanel6.Text = "sidePanel6";
+            // 
+            // sidePanel9
+            // 
+            this.sidePanel9.AllowResize = false;
+            this.sidePanel9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.sidePanel9.Appearance.BorderColor = System.Drawing.Color.Gray;
+            this.sidePanel9.Appearance.Options.UseBackColor = true;
+            this.sidePanel9.Appearance.Options.UseBorderColor = true;
+            this.sidePanel9.Controls.Add(this.FirstTitleLBL);
+            this.sidePanel9.Controls.Add(this.FirstTotalShowingCountLBL);
+            this.sidePanel9.Controls.Add(this.FirstTotalTicketsSoldLBL);
+            this.sidePanel9.Controls.Add(this.FirstTotalSaleLBL);
+            this.sidePanel9.Location = new System.Drawing.Point(568, 500);
+            this.sidePanel9.Name = "sidePanel9";
+            this.sidePanel9.Size = new System.Drawing.Size(340, 134);
+            this.sidePanel9.TabIndex = 30;
+            this.sidePanel9.Text = "sidePanel9";
+            // 
+            // FirstTitleLBL
+            // 
+            this.FirstTitleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstTitleLBL.Appearance.ForeColor = System.Drawing.Color.Peru;
+            this.FirstTitleLBL.Appearance.Options.UseFont = true;
+            this.FirstTitleLBL.Appearance.Options.UseForeColor = true;
+            this.FirstTitleLBL.Location = new System.Drawing.Point(12, 3);
+            this.FirstTitleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FirstTitleLBL.Name = "FirstTitleLBL";
+            this.FirstTitleLBL.Size = new System.Drawing.Size(48, 32);
+            this.FirstTitleLBL.TabIndex = 12;
+            this.FirstTitleLBL.Text = "Title";
+            // 
+            // FirstTotalShowingCountLBL
+            // 
+            this.FirstTotalShowingCountLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstTotalShowingCountLBL.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.FirstTotalShowingCountLBL.Appearance.Options.UseFont = true;
+            this.FirstTotalShowingCountLBL.Appearance.Options.UseForeColor = true;
+            this.FirstTotalShowingCountLBL.Location = new System.Drawing.Point(12, 39);
+            this.FirstTotalShowingCountLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FirstTotalShowingCountLBL.Name = "FirstTotalShowingCountLBL";
+            this.FirstTotalShowingCountLBL.Size = new System.Drawing.Size(186, 23);
+            this.FirstTotalShowingCountLBL.TabIndex = 17;
+            this.FirstTotalShowingCountLBL.Text = "Total Showing Count";
+            // 
+            // FirstTotalTicketsSoldLBL
+            // 
+            this.FirstTotalTicketsSoldLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstTotalTicketsSoldLBL.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.FirstTotalTicketsSoldLBL.Appearance.Options.UseFont = true;
+            this.FirstTotalTicketsSoldLBL.Appearance.Options.UseForeColor = true;
+            this.FirstTotalTicketsSoldLBL.Location = new System.Drawing.Point(12, 64);
+            this.FirstTotalTicketsSoldLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FirstTotalTicketsSoldLBL.Name = "FirstTotalTicketsSoldLBL";
+            this.FirstTotalTicketsSoldLBL.Size = new System.Drawing.Size(123, 18);
+            this.FirstTotalTicketsSoldLBL.TabIndex = 18;
+            this.FirstTotalTicketsSoldLBL.Text = "Total Tickets Sold";
+            // 
+            // FirstTotalSaleLBL
+            // 
+            this.FirstTotalSaleLBL.Appearance.Font = new System.Drawing.Font("Arial", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstTotalSaleLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.FirstTotalSaleLBL.Appearance.Options.UseFont = true;
+            this.FirstTotalSaleLBL.Appearance.Options.UseForeColor = true;
+            this.FirstTotalSaleLBL.Location = new System.Drawing.Point(11, 95);
+            this.FirstTotalSaleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FirstTotalSaleLBL.Name = "FirstTotalSaleLBL";
+            this.FirstTotalSaleLBL.Size = new System.Drawing.Size(111, 27);
+            this.FirstTotalSaleLBL.TabIndex = 19;
+            this.FirstTotalSaleLBL.Text = "Total Sale";
+            // 
+            // sidePanel10
+            // 
+            this.sidePanel10.AllowResize = false;
+            this.sidePanel10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.sidePanel10.Appearance.BorderColor = System.Drawing.Color.Silver;
+            this.sidePanel10.Appearance.Options.UseBackColor = true;
+            this.sidePanel10.Appearance.Options.UseBorderColor = true;
+            this.sidePanel10.Controls.Add(this.ThirdTotalShowingCountLBL);
+            this.sidePanel10.Controls.Add(this.ThirdTitleLBL);
+            this.sidePanel10.Controls.Add(this.ThirdTotalTicketsSoldLBL);
+            this.sidePanel10.Controls.Add(this.ThirdTotalSaleLBL);
+            this.sidePanel10.Location = new System.Drawing.Point(1034, 448);
+            this.sidePanel10.Name = "sidePanel10";
+            this.sidePanel10.Size = new System.Drawing.Size(259, 122);
+            this.sidePanel10.TabIndex = 29;
+            this.sidePanel10.Text = "sidePanel10";
+            // 
+            // ThirdTotalShowingCountLBL
+            // 
+            this.ThirdTotalShowingCountLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThirdTotalShowingCountLBL.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.ThirdTotalShowingCountLBL.Appearance.Options.UseFont = true;
+            this.ThirdTotalShowingCountLBL.Appearance.Options.UseForeColor = true;
+            this.ThirdTotalShowingCountLBL.Location = new System.Drawing.Point(13, 38);
+            this.ThirdTotalShowingCountLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ThirdTotalShowingCountLBL.Name = "ThirdTotalShowingCountLBL";
+            this.ThirdTotalShowingCountLBL.Size = new System.Drawing.Size(157, 19);
+            this.ThirdTotalShowingCountLBL.TabIndex = 24;
+            this.ThirdTotalShowingCountLBL.Text = "Total Showing Count";
+            // 
+            // ThirdTitleLBL
+            // 
+            this.ThirdTitleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThirdTitleLBL.Appearance.ForeColor = System.Drawing.Color.Peru;
+            this.ThirdTitleLBL.Appearance.Options.UseFont = true;
+            this.ThirdTitleLBL.Appearance.Options.UseForeColor = true;
+            this.ThirdTitleLBL.Location = new System.Drawing.Point(13, 9);
+            this.ThirdTitleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ThirdTitleLBL.Name = "ThirdTitleLBL";
+            this.ThirdTitleLBL.Size = new System.Drawing.Size(38, 25);
+            this.ThirdTitleLBL.TabIndex = 13;
+            this.ThirdTitleLBL.Text = "Title";
+            // 
+            // ThirdTotalTicketsSoldLBL
+            // 
+            this.ThirdTotalTicketsSoldLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThirdTotalTicketsSoldLBL.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.ThirdTotalTicketsSoldLBL.Appearance.Options.UseFont = true;
+            this.ThirdTotalTicketsSoldLBL.Appearance.Options.UseForeColor = true;
+            this.ThirdTotalTicketsSoldLBL.Location = new System.Drawing.Point(13, 59);
+            this.ThirdTotalTicketsSoldLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ThirdTotalTicketsSoldLBL.Name = "ThirdTotalTicketsSoldLBL";
+            this.ThirdTotalTicketsSoldLBL.Size = new System.Drawing.Size(111, 16);
+            this.ThirdTotalTicketsSoldLBL.TabIndex = 25;
+            this.ThirdTotalTicketsSoldLBL.Text = "Total Tickets Sold";
+            // 
+            // ThirdTotalSaleLBL
+            // 
+            this.ThirdTotalSaleLBL.Appearance.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThirdTotalSaleLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ThirdTotalSaleLBL.Appearance.Options.UseFont = true;
+            this.ThirdTotalSaleLBL.Appearance.Options.UseForeColor = true;
+            this.ThirdTotalSaleLBL.Location = new System.Drawing.Point(12, 87);
+            this.ThirdTotalSaleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ThirdTotalSaleLBL.Name = "ThirdTotalSaleLBL";
+            this.ThirdTotalSaleLBL.Size = new System.Drawing.Size(92, 22);
+            this.ThirdTotalSaleLBL.TabIndex = 26;
+            this.ThirdTotalSaleLBL.Text = "Total Sale";
+            // 
+            // sidePanel8
+            // 
+            this.sidePanel8.AllowResize = false;
+            this.sidePanel8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.sidePanel8.Appearance.BorderColor = System.Drawing.Color.Silver;
+            this.sidePanel8.Appearance.Options.UseBackColor = true;
+            this.sidePanel8.Appearance.Options.UseBorderColor = true;
+            this.sidePanel8.Controls.Add(this.SecondTotalShowingCountLBL);
+            this.sidePanel8.Controls.Add(this.SecondTotalTicketsSoldLBL);
+            this.sidePanel8.Controls.Add(this.SecondTotalSaleLBL);
+            this.sidePanel8.Controls.Add(this.SecondTitleLBL);
+            this.sidePanel8.Location = new System.Drawing.Point(181, 448);
+            this.sidePanel8.Name = "sidePanel8";
+            this.sidePanel8.Size = new System.Drawing.Size(259, 122);
+            this.sidePanel8.TabIndex = 28;
+            this.sidePanel8.Text = "sidePanel8";
+            // 
+            // SecondTotalShowingCountLBL
+            // 
+            this.SecondTotalShowingCountLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondTotalShowingCountLBL.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.SecondTotalShowingCountLBL.Appearance.Options.UseFont = true;
+            this.SecondTotalShowingCountLBL.Appearance.Options.UseForeColor = true;
+            this.SecondTotalShowingCountLBL.Location = new System.Drawing.Point(13, 38);
+            this.SecondTotalShowingCountLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SecondTotalShowingCountLBL.Name = "SecondTotalShowingCountLBL";
+            this.SecondTotalShowingCountLBL.Size = new System.Drawing.Size(157, 19);
+            this.SecondTotalShowingCountLBL.TabIndex = 20;
+            this.SecondTotalShowingCountLBL.Text = "Total Showing Count";
+            // 
+            // SecondTotalTicketsSoldLBL
+            // 
+            this.SecondTotalTicketsSoldLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondTotalTicketsSoldLBL.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.SecondTotalTicketsSoldLBL.Appearance.Options.UseFont = true;
+            this.SecondTotalTicketsSoldLBL.Appearance.Options.UseForeColor = true;
+            this.SecondTotalTicketsSoldLBL.Location = new System.Drawing.Point(13, 61);
+            this.SecondTotalTicketsSoldLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SecondTotalTicketsSoldLBL.Name = "SecondTotalTicketsSoldLBL";
+            this.SecondTotalTicketsSoldLBL.Size = new System.Drawing.Size(111, 16);
+            this.SecondTotalTicketsSoldLBL.TabIndex = 21;
+            this.SecondTotalTicketsSoldLBL.Text = "Total Tickets Sold";
+            // 
+            // SecondTotalSaleLBL
+            // 
+            this.SecondTotalSaleLBL.Appearance.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondTotalSaleLBL.Appearance.ForeColor = System.Drawing.Color.White;
+            this.SecondTotalSaleLBL.Appearance.Options.UseFont = true;
+            this.SecondTotalSaleLBL.Appearance.Options.UseForeColor = true;
+            this.SecondTotalSaleLBL.Location = new System.Drawing.Point(12, 88);
+            this.SecondTotalSaleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SecondTotalSaleLBL.Name = "SecondTotalSaleLBL";
+            this.SecondTotalSaleLBL.Size = new System.Drawing.Size(92, 22);
+            this.SecondTotalSaleLBL.TabIndex = 22;
+            this.SecondTotalSaleLBL.Text = "Total Sale";
+            // 
+            // SecondTitleLBL
+            // 
+            this.SecondTitleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondTitleLBL.Appearance.ForeColor = System.Drawing.Color.Peru;
+            this.SecondTitleLBL.Appearance.Options.UseFont = true;
+            this.SecondTitleLBL.Appearance.Options.UseForeColor = true;
+            this.SecondTitleLBL.Location = new System.Drawing.Point(13, 9);
+            this.SecondTitleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SecondTitleLBL.Name = "SecondTitleLBL";
+            this.SecondTitleLBL.Size = new System.Drawing.Size(38, 25);
+            this.SecondTitleLBL.TabIndex = 11;
+            this.SecondTitleLBL.Text = "Title";
             // 
             // thirdMoviePE
             // 
@@ -385,130 +589,13 @@
             this.thirdMoviePE.Size = new System.Drawing.Size(259, 357);
             this.thirdMoviePE.TabIndex = 27;
             // 
-            // ThirdTotalSaleLBL
-            // 
-            this.ThirdTotalSaleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThirdTotalSaleLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.ThirdTotalSaleLBL.Appearance.Options.UseFont = true;
-            this.ThirdTotalSaleLBL.Appearance.Options.UseForeColor = true;
-            this.ThirdTotalSaleLBL.Location = new System.Drawing.Point(1132, 542);
-            this.ThirdTotalSaleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ThirdTotalSaleLBL.Name = "ThirdTotalSaleLBL";
-            this.ThirdTotalSaleLBL.Size = new System.Drawing.Size(73, 19);
-            this.ThirdTotalSaleLBL.TabIndex = 26;
-            this.ThirdTotalSaleLBL.Text = "Total Sale";
-            // 
-            // ThirdTotalTicketsSoldLBL
-            // 
-            this.ThirdTotalTicketsSoldLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThirdTotalTicketsSoldLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.ThirdTotalTicketsSoldLBL.Appearance.Options.UseFont = true;
-            this.ThirdTotalTicketsSoldLBL.Appearance.Options.UseForeColor = true;
-            this.ThirdTotalTicketsSoldLBL.Location = new System.Drawing.Point(1106, 519);
-            this.ThirdTotalTicketsSoldLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ThirdTotalTicketsSoldLBL.Name = "ThirdTotalTicketsSoldLBL";
-            this.ThirdTotalTicketsSoldLBL.Size = new System.Drawing.Size(127, 19);
-            this.ThirdTotalTicketsSoldLBL.TabIndex = 25;
-            this.ThirdTotalTicketsSoldLBL.Text = "Total Tickets Sold";
-            // 
-            // ThirdTotalShowingCountLBL
-            // 
-            this.ThirdTotalShowingCountLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThirdTotalShowingCountLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.ThirdTotalShowingCountLBL.Appearance.Options.UseFont = true;
-            this.ThirdTotalShowingCountLBL.Appearance.Options.UseForeColor = true;
-            this.ThirdTotalShowingCountLBL.Location = new System.Drawing.Point(1095, 496);
-            this.ThirdTotalShowingCountLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ThirdTotalShowingCountLBL.Name = "ThirdTotalShowingCountLBL";
-            this.ThirdTotalShowingCountLBL.Size = new System.Drawing.Size(157, 19);
-            this.ThirdTotalShowingCountLBL.TabIndex = 24;
-            this.ThirdTotalShowingCountLBL.Text = "Total Showing Count";
-            // 
-            // SecondTotalSaleLBL
-            // 
-            this.SecondTotalSaleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SecondTotalSaleLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.SecondTotalSaleLBL.Appearance.Options.UseFont = true;
-            this.SecondTotalSaleLBL.Appearance.Options.UseForeColor = true;
-            this.SecondTotalSaleLBL.Location = new System.Drawing.Point(267, 540);
-            this.SecondTotalSaleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SecondTotalSaleLBL.Name = "SecondTotalSaleLBL";
-            this.SecondTotalSaleLBL.Size = new System.Drawing.Size(73, 19);
-            this.SecondTotalSaleLBL.TabIndex = 22;
-            this.SecondTotalSaleLBL.Text = "Total Sale";
-            // 
-            // SecondTotalTicketsSoldLBL
-            // 
-            this.SecondTotalTicketsSoldLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SecondTotalTicketsSoldLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.SecondTotalTicketsSoldLBL.Appearance.Options.UseFont = true;
-            this.SecondTotalTicketsSoldLBL.Appearance.Options.UseForeColor = true;
-            this.SecondTotalTicketsSoldLBL.Location = new System.Drawing.Point(241, 517);
-            this.SecondTotalTicketsSoldLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SecondTotalTicketsSoldLBL.Name = "SecondTotalTicketsSoldLBL";
-            this.SecondTotalTicketsSoldLBL.Size = new System.Drawing.Size(127, 19);
-            this.SecondTotalTicketsSoldLBL.TabIndex = 21;
-            this.SecondTotalTicketsSoldLBL.Text = "Total Tickets Sold";
-            // 
-            // SecondTotalShowingCountLBL
-            // 
-            this.SecondTotalShowingCountLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SecondTotalShowingCountLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.SecondTotalShowingCountLBL.Appearance.Options.UseFont = true;
-            this.SecondTotalShowingCountLBL.Appearance.Options.UseForeColor = true;
-            this.SecondTotalShowingCountLBL.Location = new System.Drawing.Point(230, 494);
-            this.SecondTotalShowingCountLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SecondTotalShowingCountLBL.Name = "SecondTotalShowingCountLBL";
-            this.SecondTotalShowingCountLBL.Size = new System.Drawing.Size(157, 19);
-            this.SecondTotalShowingCountLBL.TabIndex = 20;
-            this.SecondTotalShowingCountLBL.Text = "Total Showing Count";
-            // 
-            // FirstTotalSaleLBL
-            // 
-            this.FirstTotalSaleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstTotalSaleLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.FirstTotalSaleLBL.Appearance.Options.UseFont = true;
-            this.FirstTotalSaleLBL.Appearance.Options.UseForeColor = true;
-            this.FirstTotalSaleLBL.Location = new System.Drawing.Point(692, 608);
-            this.FirstTotalSaleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FirstTotalSaleLBL.Name = "FirstTotalSaleLBL";
-            this.FirstTotalSaleLBL.Size = new System.Drawing.Size(96, 25);
-            this.FirstTotalSaleLBL.TabIndex = 19;
-            this.FirstTotalSaleLBL.Text = "Total Sale";
-            // 
-            // FirstTotalTicketsSoldLBL
-            // 
-            this.FirstTotalTicketsSoldLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstTotalTicketsSoldLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.FirstTotalTicketsSoldLBL.Appearance.Options.UseFont = true;
-            this.FirstTotalTicketsSoldLBL.Appearance.Options.UseForeColor = true;
-            this.FirstTotalTicketsSoldLBL.Location = new System.Drawing.Point(660, 579);
-            this.FirstTotalTicketsSoldLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FirstTotalTicketsSoldLBL.Name = "FirstTotalTicketsSoldLBL";
-            this.FirstTotalTicketsSoldLBL.Size = new System.Drawing.Size(169, 25);
-            this.FirstTotalTicketsSoldLBL.TabIndex = 18;
-            this.FirstTotalTicketsSoldLBL.Text = "Total Tickets Sold";
-            // 
-            // FirstTotalShowingCountLBL
-            // 
-            this.FirstTotalShowingCountLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstTotalShowingCountLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.FirstTotalShowingCountLBL.Appearance.Options.UseFont = true;
-            this.FirstTotalShowingCountLBL.Appearance.Options.UseForeColor = true;
-            this.FirstTotalShowingCountLBL.Location = new System.Drawing.Point(643, 550);
-            this.FirstTotalShowingCountLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FirstTotalShowingCountLBL.Name = "FirstTotalShowingCountLBL";
-            this.FirstTotalShowingCountLBL.Size = new System.Drawing.Size(206, 25);
-            this.FirstTotalShowingCountLBL.TabIndex = 17;
-            this.FirstTotalShowingCountLBL.Text = "Total Showing Count";
-            // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(1149, 60);
+            this.labelControl8.Location = new System.Drawing.Point(1034, 60);
             this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(33, 25);
@@ -521,7 +608,7 @@
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(287, 60);
+            this.labelControl7.Location = new System.Drawing.Point(180, 60);
             this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(39, 25);
@@ -534,51 +621,12 @@
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(712, 4);
+            this.labelControl6.Location = new System.Drawing.Point(568, 5);
             this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(35, 32);
             this.labelControl6.TabIndex = 14;
             this.labelControl6.Text = "1st";
-            // 
-            // ThirdTitleLBL
-            // 
-            this.ThirdTitleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThirdTitleLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.ThirdTitleLBL.Appearance.Options.UseFont = true;
-            this.ThirdTitleLBL.Appearance.Options.UseForeColor = true;
-            this.ThirdTitleLBL.Location = new System.Drawing.Point(1150, 464);
-            this.ThirdTitleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ThirdTitleLBL.Name = "ThirdTitleLBL";
-            this.ThirdTitleLBL.Size = new System.Drawing.Size(38, 25);
-            this.ThirdTitleLBL.TabIndex = 13;
-            this.ThirdTitleLBL.Text = "Title";
-            // 
-            // FirstTitleLBL
-            // 
-            this.FirstTitleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstTitleLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.FirstTitleLBL.Appearance.Options.UseFont = true;
-            this.FirstTitleLBL.Appearance.Options.UseForeColor = true;
-            this.FirstTitleLBL.Location = new System.Drawing.Point(716, 514);
-            this.FirstTitleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FirstTitleLBL.Name = "FirstTitleLBL";
-            this.FirstTitleLBL.Size = new System.Drawing.Size(48, 32);
-            this.FirstTitleLBL.TabIndex = 12;
-            this.FirstTitleLBL.Text = "Title";
-            // 
-            // SecondTitleLBL
-            // 
-            this.SecondTitleLBL.Appearance.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SecondTitleLBL.Appearance.ForeColor = System.Drawing.Color.White;
-            this.SecondTitleLBL.Appearance.Options.UseFont = true;
-            this.SecondTitleLBL.Appearance.Options.UseForeColor = true;
-            this.SecondTitleLBL.Location = new System.Drawing.Point(286, 464);
-            this.SecondTitleLBL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SecondTitleLBL.Name = "SecondTitleLBL";
-            this.SecondTitleLBL.Size = new System.Drawing.Size(38, 25);
-            this.SecondTitleLBL.TabIndex = 11;
-            this.SecondTitleLBL.Text = "Title";
             // 
             // secondMoviePE
             // 
@@ -633,6 +681,12 @@
             this.sidePanel7.PerformLayout();
             this.sidePanel6.ResumeLayout(false);
             this.sidePanel6.PerformLayout();
+            this.sidePanel9.ResumeLayout(false);
+            this.sidePanel9.PerformLayout();
+            this.sidePanel10.ResumeLayout(false);
+            this.sidePanel10.PerformLayout();
+            this.sidePanel8.ResumeLayout(false);
+            this.sidePanel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thirdMoviePE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondMoviePE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstMoviePE.Properties)).EndInit();
@@ -675,5 +729,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn TotalRevenue;
         private DevExpress.XtraEditors.PictureEdit thirdMoviePE;
         private DevExpress.XtraEditors.DateEdit dateDE;
+        private DevExpress.XtraEditors.SidePanel sidePanel8;
+        private DevExpress.XtraEditors.SidePanel sidePanel10;
+        private DevExpress.XtraEditors.SidePanel sidePanel9;
     }
 }
