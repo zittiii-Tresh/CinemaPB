@@ -162,6 +162,7 @@ namespace CinemaPB.Forms
                     int rowsAffected = cmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
+                        GlobalLogger.employeeLog("Edited employee password", _username);
                         MessageBox.Show("Password updated successfully.");
                         this.Close();
                     }
