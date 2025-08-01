@@ -137,7 +137,7 @@
             this.sidePanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel2.Location = new System.Drawing.Point(0, 102);
             this.sidePanel2.Name = "sidePanel2";
-            this.sidePanel2.Size = new System.Drawing.Size(70, 995);
+            this.sidePanel2.Size = new System.Drawing.Size(70, 1092);
             this.sidePanel2.TabIndex = 14;
             this.sidePanel2.Text = "sidePanel2";
             // 
@@ -148,7 +148,7 @@
             this.sidePanel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidePanel3.Location = new System.Drawing.Point(1433, 102);
             this.sidePanel3.Name = "sidePanel3";
-            this.sidePanel3.Size = new System.Drawing.Size(70, 995);
+            this.sidePanel3.Size = new System.Drawing.Size(70, 1092);
             this.sidePanel3.TabIndex = 15;
             this.sidePanel3.Text = "sidePanel3";
             // 
@@ -157,7 +157,7 @@
             this.sidePanel4.AllowResize = false;
             this.sidePanel4.BorderThickness = 0;
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel4.Location = new System.Drawing.Point(70, 1061);
+            this.sidePanel4.Location = new System.Drawing.Point(70, 1158);
             this.sidePanel4.Name = "sidePanel4";
             this.sidePanel4.Size = new System.Drawing.Size(1363, 36);
             this.sidePanel4.TabIndex = 16;
@@ -170,9 +170,9 @@
             this.sidePanel5.Controls.Add(this.dailySalesGC);
             this.sidePanel5.Controls.Add(this.sidePanel7);
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel5.Location = new System.Drawing.Point(70, 751);
+            this.sidePanel5.Location = new System.Drawing.Point(70, 771);
             this.sidePanel5.Name = "sidePanel5";
-            this.sidePanel5.Size = new System.Drawing.Size(1363, 310);
+            this.sidePanel5.Size = new System.Drawing.Size(1363, 387);
             this.sidePanel5.TabIndex = 17;
             this.sidePanel5.Text = "sidePanel5";
             // 
@@ -182,7 +182,7 @@
             this.dailySalesGC.Location = new System.Drawing.Point(0, 55);
             this.dailySalesGC.MainView = this.dailySalesGV;
             this.dailySalesGC.Name = "dailySalesGC";
-            this.dailySalesGC.Size = new System.Drawing.Size(1363, 255);
+            this.dailySalesGC.Size = new System.Drawing.Size(1363, 332);
             this.dailySalesGC.TabIndex = 1;
             this.dailySalesGC.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dailySalesGV});
@@ -364,7 +364,7 @@
             this.sidePanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sidePanel6.Location = new System.Drawing.Point(70, 102);
             this.sidePanel6.Name = "sidePanel6";
-            this.sidePanel6.Size = new System.Drawing.Size(1363, 649);
+            this.sidePanel6.Size = new System.Drawing.Size(1363, 669);
             this.sidePanel6.TabIndex = 18;
             this.sidePanel6.Text = "sidePanel6";
             // 
@@ -669,7 +669,7 @@
             this.Controls.Add(this.sidePanel2);
             this.Controls.Add(this.sidePanel1);
             this.Name = "DashboardForm";
-            this.Size = new System.Drawing.Size(1503, 1097);
+            this.Size = new System.Drawing.Size(1503, 1194);
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateDE.Properties.CalendarTimeProperties)).EndInit();

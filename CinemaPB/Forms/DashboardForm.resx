@@ -129,9 +129,6 @@
   <metadata name="sidePanel4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="sidePanel5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="sidePanel7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2769,7 +2766,7 @@
   <data name="secondMoviePE.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVQAAAHLCAYAAACXomAjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7MvWe7HUl2nYkyMFXw98J77z1QKJRrUiNRooZSN9lstmPTk2pSoijN
+        vAAADrwBlbxySQAA/7JJREFUeF7MvWe7HUl2nYkyMFXw98J77z1QKJRrUiNRooZSN9lstmPTk2pSoijN
         zP9HzrP3WmvvFZF5gUI1NZoP8WRkZJ4DNFn11rtNxNl36MSd5eDJu8uBE3eX/SfuLQdyfm/Zf/Lusv8k
         rvEsxsHj92p+4Pid5eDxO5zH2p1l/wne5xVzrN1Z9vPdg/Hn6f3jGJ+euI05vyPH8dt93XPwO/T5YzHu
         LvuPx7izfKq143eWT2KcuJ0j1j89geef5rvx9+zP5Fr83+A4x4m7y6caJ+9gnLi7fHL8Xr776Yl7yycn
@@ -5387,7 +5384,7 @@
   <data name="firstMoviePE.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVQAAAHLCAYAAACXomAjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7MvWe7HUl2nYkyMFXw98J77z1QKJRrUiNRooZSN9lstmPTk2pSoijN
+        vAAADrwBlbxySQAA/7JJREFUeF7MvWe7HUl2nYkyMFXw98J77z1QKJRrUiNRooZSN9lstmPTk2pSoijN
         zP9HzrP3WmvvFZF5gUI1NZoP8WRkZJ4DNFn11rtNxNl36MSd5eDJu8uBE3eX/SfuLQdyfm/Zf/Lusv8k
         rvEsxsHj92p+4Pid5eDxO5zH2p1l/wne5xVzrN1Z9vPdg/Hn6f3jGJ+euI05vyPH8dt93XPwO/T5YzHu
         LvuPx7izfKq143eWT2KcuJ0j1j89geef5rvx9+zP5Fr83+A4x4m7y6caJ+9gnLi7fHL8Xr776Yl7yycn
